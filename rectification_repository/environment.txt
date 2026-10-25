@@ -1,0 +1,6 @@
+Python: 3.12.14
+SymPy: 1.14.0
+SymPy ground types: python
+Required external packages: sympy (and its installed dependency mpmath)
+FLINT: not required
+Verification command: python -u verify.py

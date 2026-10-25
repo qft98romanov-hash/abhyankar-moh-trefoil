@@ -1,0 +1,593 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=24mm,headheight=14pt]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\hypersetup{pdftitle={Polynomial Rectification of the Shastri Trefoil and a Harmonic Figure-Eight},pdfauthor={Ivan Dorofeev},pdfsubject={Exact polynomial constructions and a computational certificate}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Polynomial rectification}
+\fancyhead[R]{\small Ivan Dorofeev}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=*}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\A}{\mathbb A}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\comp}{\circ}
+\title{\vspace{-15mm}\LARGE\bfseries Polynomial Rectification of the Shastri Trefoil\newline and a Harmonic Figure-Eight}
+\author{Ivan Dorofeev\\[3pt]\normalsize Independent Researcher\\\normalsize\href{mailto:qft98romanov@gmail.com}{\texttt{qft98romanov@gmail.com}}}
+\date{24 October 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\vspace{-4mm}
+
+\begin{abstract}
+We give an explicit implementation of coordinate transfer through affine
+modifications, including repeated exceptional factors. We then
+construct polynomial automorphisms rectifying the Shastri trefoil and a
+harmonic figure-eight over $\Q(\sqrt{-3})$, with explicit polynomial inverses.
+\end{abstract}
+
+\smallskip
+\begin{quote}\small
+The results were obtained on 24 October 2026 through interactive work with
+GPT Astra. The main polynomial identities and both explicit rectifications
+have been checked by exact symbolic computation. A reproducible
+computational certificate is provided in \texttt{verify.py}, with its run
+log in \texttt{verification.log}.
+\end{quote}
+
+\section{Methods}
+
+\subsection{The embedding problem and its sources}
+
+The embedding problem asks whether every closed embedding
+$\gamma:\A^1_{\C}\hookrightarrow\A^3_{\C}$ admits
+$\Phi\in\operatorname{Aut}_{\C}(\A^3)$ with
+$\Phi(\gamma(t))=(t,0,0)$. The plane case is the theorem of
+Abhyankar--Moh and Suzuki \cite{AM,Suzuki}. The spatial question has a
+different history: Abhyankar's Kyoto 1977 conjectures are recorded in
+\cite[Chapter 11, pp.~413--414]{Abhyankar}, as documented in
+\cite[Introduction, pp.~115--116]{Craighero} and
+\cite[\S1, p.~11]{Shastri}. In particular, the historical conjecture
+asserted the existence of nonrectifiable spatial lines.
+
+Shastri's trefoil is taken from \cite[\S3, Example~1]{Shastri}.
+The harmonic figure-eight comes from the Chebyshev-knot literature
+\cite[Introduction, Definition~1.2 and the following paragraph]{KP}.
+The coordinate-lift strategy has a precedent in
+\cite[Proposition~3, pp.~117--118]{Craighero}: starting with a polynomial
+restricting to $t$, one changes it by an element of the curve ideal.
+Our output consists of explicit automorphisms, inverses and certificates
+for the two specified parametrizations.
+
+\subsection{Exact division and global polynomial identities}
+
+Work over a field $k$ of characteristic zero. A polynomial map is called an
+automorphism when a polynomial inverse is supplied. The basic transition is
+\[
+\boxed{\text{invertible after localization}
+\; +\; \text{polynomial in both directions}
+\;\Longrightarrow\; \text{polynomial automorphism}.}
+\]
+Indeed, for $0\ne m\in k[x]$, the inclusion
+\[
+k[x,y,z]\hookrightarrow k[x,1/m,y,z]
+\]
+is injective. Once both maps have polynomial components, composition
+identities proved after adjoining $1/m$ hold in the original polynomial
+ring. Thus the fibres $m(x)=0$ are included.
+
+\subsection{Transfer of coordinates}
+
+Suppose polynomial inverses are given:
+\begin{equation}\label{eq:given}
+\begin{aligned}
+A(x,y,z)&=(x,H(x,y,z),W(x,y,z)),\\
+A^{-1}(x,T,V)&=(x,R(x,T,V),S(x,T,V)).
+\end{aligned}
+\end{equation}
+Choose $0\ne m(x)\in k[x]$ and $p(x,y)\in k[x,y]$. The modification
+\[
+\beta_m(x,y,z)=(x,p(x,y)+m(x)z,y)
+\]
+is invertible after adjoining $1/m$. We seek a correction that makes the
+complete transfer and its inverse polynomial.
+
+\begin{theorem}[Sufficient transfer criterion]\label{thm:transfer}
+Assume $\deg m>0$ and put $B=k[x]/(m)$. Write
+\[
+c(y)=H(x,p(x,y),y)=c_0+c_1y+\sum_{j=2}^{d}c_jy^j
+\quad\text{in }B[y].
+\]
+If $c_1$ is a unit in $B$ and every $c_j$, $j\ge2$, is nilpotent, then
+$H(x,p(x,y)+m(x)z,y)$ extends to a polynomial automorphism preserving $x$.
+Both the extension and its inverse are obtained by finite polynomial
+operations.
+\end{theorem}
+
+The existence conclusion is a special case of the residual-variable
+theorem of Bhatwadekar--Dutta \cite{BD}; the constructive relation to
+affine modifications is explained below. We give the formulas and an
+elementary proof in order to make the companions and inverses explicit.
+
+Over an algebraic closure, the hypothesis is equivalent to
+\[
+\deg_y H(r,p(r,y),y)=1\qquad\text{for every root }r\text{ of }m.
+\]
+The construction below retains the full multiplicities in $m$.
+
+\paragraph{Step 1: invert the centre modulo $m$.}
+Let $J=(c_2,\ldots,c_d)\subset B$ and choose $e\ge1$ with $J^e=0$.
+One may take the largest exponent in the irreducible factorization of $m$.
+In $B[T]$, set
+\begin{equation}\label{eq:iteration}
+\begin{aligned}
+\psi_0(T)&=c_1^{-1}(T-c_0),\\
+\psi_{j+1}(T)&=c_1^{-1}
+\left(T-c_0-\sum_{\ell=2}^{d}c_\ell\psi_j(T)^\ell\right),
+\qquad 0\le j<e.
+\end{aligned}
+\end{equation}
+The differences satisfy $\psi_{j+1}-\psi_j\in J^{j+1}[T]$: subtract
+successive iterations and factor every difference of powers. Consequently
+the iteration stabilizes, and
+\begin{equation}\label{eq:center-inverse}
+c(\psi_e(T))=T,\qquad \psi_e(c(y))=y.
+\end{equation}
+For the second identity, $c(v)-c(y)$ is $v-y$ times $c_1+n$, with
+$n\in J B[y,v]$. After substituting $v=\psi_e(c(y))$, this factor is a unit;
+its inverse is a finite geometric sum. Cancel it to obtain the identity.
+
+\paragraph{Step 2: choose the correction.}
+Take any representative $\varphi(x,T)\in k[x,T]$ of
+\begin{equation}\label{eq:correction}
+\varphi(x,T)\equiv
+W\bigl(x,p(x,\psi_e(T)),\psi_e(T)\bigr)\pmod{m(x)}.
+\end{equation}
+For example, choose the remainder of degree less than $\deg m$ in $x$.
+
+\paragraph{Step 3: form the maps.}
+Define $\mathcal A$ componentwise by
+\begin{equation}\label{eq:transfer}
+\begin{aligned}
+\mathcal A_1(x,y,z)&=x,\\
+\mathcal A_2(x,y,z)&=H(x,p(x,y)+m(x)z,y),\\
+\mathcal A_3(x,y,z)&=
+\frac{\begin{gathered}
+W(x,p(x,y)+m(x)z,y)\\[-2pt]
+-\varphi\bigl(x,H(x,p(x,y)+m(x)z,y)\bigr)
+\end{gathered}}{m(x)}.
+\end{aligned}
+\end{equation}
+Its inverse is
+\begin{equation}\label{eq:transfer-inverse}
+\begin{aligned}
+(\mathcal A^{-1})_1(x,T,Q)&=x,\\
+(\mathcal A^{-1})_2(x,T,Q)&=S(x,T,m(x)Q+\varphi(x,T)),\\
+(\mathcal A^{-1})_3(x,T,Q)&=
+\frac{\begin{gathered}
+R(x,T,m(x)Q+\varphi(x,T))\\[-2pt]
+-p\bigl(x,S(x,T,m(x)Q+\varphi(x,T))\bigr)
+\end{gathered}}{m(x)}.
+\end{aligned}
+\end{equation}
+Every displayed quotient is exact polynomial division of the entire numerator.
+
+\paragraph{Step 4: prove both divisions exact.}
+Equations \eqref{eq:center-inverse}--\eqref{eq:correction} give
+\[
+\varphi(x,H(x,p(x,y),y))\equiv W(x,p(x,y),y)\pmod m.
+\]
+Replacing $p$ by $p+mz$ preserves this congruence, proving the divisibility
+in \eqref{eq:transfer}.
+
+Apply $A^{-1}$ to the two centre identities. In $B[T]$ this gives
+\[
+\begin{aligned}
+R(x,T,\varphi(x,T))&=p(x,\psi_e(T)),\\
+S(x,T,\varphi(x,T))&=\psi_e(T).
+\end{aligned}
+\]
+Replacing $\varphi$ by $mQ+\varphi$ preserves the congruences. Their
+difference proves divisibility of the numerator in
+\eqref{eq:transfer-inverse} by the full $m$.
+
+\paragraph{Step 5: conclude global invertibility.}
+Over $k[x,1/m]$, let
+\[
+C_m(x,T,V)=\left(x,T,\frac{V-\varphi(x,T)}{m(x)}\right),\qquad
+C_m^{-1}(x,T,Q)=(x,T,m(x)Q+\varphi(x,T)).
+\]
+Then
+\[
+\mathcal A=C_m\comp A\comp\beta_m,\qquad
+\mathcal A^{-1}=\beta_m^{-1}\comp A^{-1}\comp C_m^{-1}.
+\]
+Both compositions are identities after localization. Polynomiality and
+injectivity now give
+\[
+\mathcal A^{-1}\comp\mathcal A=\id,
+\qquad \mathcal A\comp\mathcal A^{-1}=\id
+\]
+globally. This proves Theorem~\ref{thm:transfer}.
+If $m$ is a nonzero constant, take $\varphi=0$; both divisions are by a
+scalar and the same formulas apply. Changing $\varphi$ to $\varphi+mD(x,T)$
+only changes the third coordinate by the polynomial shear
+$-D(x,\mathcal A_2)$.
+
+\subsection{Relation to established constructions}
+
+The map $\beta_m$ is the affine modification with divisor $m=0$ and
+centre ideal $(m,Y-p(x,Z))$. Under $A=(x,H,W)$, inversion of
+$H(x,p(x,Z),Z)$ modulo the full $m$ identifies this centre with
+$(m,V-\varphi(x,T))$. Thus the transferred map is the lift between these
+two modifications furnished by \cite[Proposition~2.1]{KZ};
+\cite[Corollary~2.2]{KZ} gives the centre-preserving case.
+
+The quotient-ring step uses the classical description of one-variable
+automorphisms over a ring: a unit linear coefficient and nilpotent higher
+coefficients \cite[Proposition~1]{EV}. Related finite constructions and
+transfer arguments occur in \cite[Theorem~4 and \S5]{EV}.
+A particularly close formula is recalled in \cite[\S1, Lemma~1.1]{EVM}:
+if $b\circ c=c\circ b=\id\pmod m$, then
+\[
+F(u,v)=\left(mv+c(u),\frac{b(mv+c(u))-u}{m}\right)
+\]
+is an automorphism, with inverse
+\[
+F^{-1}(U,V)=\left(b(U)-mV,\frac{U-c(b(U)-mV)}m\right).
+\]
+Both divisions are exact, and cancellation proves the inverse identities.
+
+There is also an existence proof using \cite{BD}. Over the base $k[x]$,
+$H\circ\beta_m$ is a coordinate on the generic fibre and on every fibre
+where $m$ is nonzero. On a fibre dividing $m$, the hypothesis makes it
+linear with nonzero slope in $y$. It is therefore a residual coordinate
+in two variables, so the theorem of Bhatwadekar--Dutta applies.
+The proof above supplies explicit formulas without invoking that theorem.
+No novelty claim is made for the general lifting principle; the concrete
+rectifiers and their certificates are the focus here.
+
+\subsection{From a relative coordinate to a straight line}
+
+Suppose \eqref{eq:given} holds and
+$\gamma(t)=(b(t),c(t),d(t))$ satisfies $H(\gamma(t))=t$.
+Put $w(t)=W(\gamma(t))$. The rectifier is
+\begin{equation}\label{eq:straighten}
+\Phi(x,y,z)=\bigl(H(x,y,z),\ x-b(H(x,y,z)),\
+W(x,y,z)-w(H(x,y,z))\bigr).
+\end{equation}
+Its inverse is explicitly
+\begin{equation}\label{eq:straighten-inverse}
+\begin{aligned}
+(\Phi^{-1})_1(X,Y,Z)&=Y+b(X),\\
+(\Phi^{-1})_2(X,Y,Z)&=R(Y+b(X),X,Z+w(X)),\\
+(\Phi^{-1})_3(X,Y,Z)&=S(Y+b(X),X,Z+w(X)).
+\end{aligned}
+\end{equation}
+These maps compose $A$ with a permutation and two polynomial shears.
+Thus $\Phi(\gamma(t))=(t,0,0)$. The input is an already verified
+coordinate pair $(H,W)$, not merely a polynomial lifting the parameter.
+
+\clearpage
+\section{The Shastri trefoil}
+
+We work over
+\[
+K=\Q[a]/(a^2-a+1)\simeq\Q(\sqrt{-3}),\qquad
+a=\frac{1+i\sqrt3}{2},\qquad a(1-a)=1.
+\]
+The input curve, given in \cite[\S3, Example~1, pp.~14--15]{Shastri}, is
+\begin{equation}\label{eq:trefoil}
+\gamma_T(t)=(t^3-3t,\ t^4-4t^2,\ t^5-10t).
+\end{equation}
+Shastri already gives the parameter lift
+$yz-x^3-5xy+2z-7x$; the construction below supplies a coordinate lift
+together with a complete automorphism and its inverse.
+
+\subsection{The base coordinate pair and its inverse}
+
+Define
+\begin{equation}\label{eq:H}
+\begin{aligned}
+H(x,y,z)={}&ax^3y^2+2x^2yz+(1-a)xz^2\\
+&+\bigl((a-1)x^3-ax\bigr)y+(-1+ax^2-ax^4)z\\
+&-2x^5+(6-2a)x^3-2(1-a)x,
+\end{aligned}
+\end{equation}
+and
+\begin{equation}\label{eq:f}
+\begin{aligned}
+f(x,T)={}&-T+x\bigl((1-a)T^2+2a-2\bigr)\\
+&+x^2(2aT^3-5aT)+x^3(-5T^4+15T^2-2a)\\
+&+x^4\bigl(14(1-a)T^5+50(a-1)T^3+(29-24a)T\bigr).
+\end{aligned}
+\end{equation}
+The two exact quotients
+\begin{equation}\label{eq:base-divisions}
+\begin{aligned}
+W(x,y,z)&=\frac{a\bigl(axy+z-f(x,H(x,y,z))\bigr)}{x^5},\\
+\chi(x,T)&=\frac{a\bigl(T-H(x,0,f(x,T))\bigr)}{x^5}
+\end{aligned}
+\end{equation}
+are polynomials. Reduction by $a^2-a+1$ and coefficientwise division
+by $x^5$ give their full coefficients in the certificate.
+Define
+\begin{equation}\label{eq:RS}
+\begin{aligned}
+R(x,T,V)={}&-\chi(x,T)\\
+&+\bigl(-1+ax^2-ax^4+2(1-a)xf(x,T)\bigr)V\\
+&+(1-a)^2x^6V^2,\\[2pt]
+S(x,T,V)={}&f(x,T)+(1-a)x^5V-axR(x,T,V).
+\end{aligned}
+\end{equation}
+Then
+\[
+A_0=(x,H,W),\qquad A_0^{-1}=(x,R,S).
+\]
+
+\subsection{Certificate of both inverse identities}
+
+The exact polynomial checks are
+\begin{align}
+x^5W(x,y,z)&=a\bigl(axy+z-f(x,H(x,y,z))\bigr),\label{eq:cert1}\\
+H(x,R(x,T,V),S(x,T,V))&=T,\label{eq:cert2}\\
+axR(x,T,V)+S(x,T,V)-f(x,T)&=(1-a)x^5V,\label{eq:cert3}\\
+R(x,H(x,y,z),W(x,y,z))&=y,\label{eq:cert4}\\
+S(x,H(x,y,z),W(x,y,z))&=z.\label{eq:cert5}
+\end{align}
+Substitute $R,S$ into \eqref{eq:cert1} and use
+\eqref{eq:cert2}--\eqref{eq:cert3}:
+\[
+x^5W(x,R,S)=a(1-a)x^5V=x^5V.
+\]
+Cancellation in $K[x,T,V]$ gives $W(x,R,S)=V$.
+Together with \eqref{eq:cert2}, this proves $A_0\comp A_0^{-1}=\id$;
+\eqref{eq:cert4}--\eqref{eq:cert5} prove the opposite composition.
+The divisions in \eqref{eq:base-divisions} and this cancellation are
+polynomial operations, valid also on the fibre $x=0$.
+
+\subsection{Normalization and final rectifier}
+
+The affine maps
+\[
+M(x,y,z)=(x,y+2,z-5x),\qquad M^{-1}(x,y,z)=(x,y-2,z+5x)
+\]
+give
+\[
+M(\gamma_T(t))=(t^3-3t,\ t^4-4t^2+2,\ t^5-5t^3+5t).
+\]
+Put
+\[
+h_T(x,y,z)=H(x,y+2,z-5x),\qquad
+w_T(x,y,z)=W(x,y+2,z-5x).
+\]
+Exact substitution yields
+\[
+h_T(\gamma_T(t))=t,\qquad w_T(\gamma_T(t))=8-14t^2.
+\]
+The final components are therefore
+\begin{equation}\label{eq:PhiT}
+\begin{aligned}
+(\Phi_T)_1(x,y,z)&=h_T(x,y,z),\\
+(\Phi_T)_2(x,y,z)&=x-h_T(x,y,z)^3+3h_T(x,y,z),\\
+(\Phi_T)_3(x,y,z)&=w_T(x,y,z)-8+14h_T(x,y,z)^2.
+\end{aligned}
+\end{equation}
+The inverse, on input $(X,Y,Z)$, is
+\begin{equation}\label{eq:PhiTinv}
+\begin{aligned}
+(\Phi_T^{-1})_1(X,Y,Z)&=X^3-3X+Y,\\
+(\Phi_T^{-1})_2(X,Y,Z)&=R(X^3-3X+Y,X,Z+8-14X^2)-2,\\
+(\Phi_T^{-1})_3(X,Y,Z)&=S(X^3-3X+Y,X,Z+8-14X^2)\\
+&\quad+5(X^3-3X+Y).
+\end{aligned}
+\end{equation}
+Explicitly, with
+\[
+L_T(x,T,V)=(T,x-T^3+3T,V-8+14T^2),
+\]
+the transition is
+\[
+\boxed{\Phi_T=L_T\comp A_0\comp M,\qquad
+\Phi_T^{-1}=M^{-1}\comp A_0^{-1}\comp L_T^{-1}.}
+\]
+Each factor is a global polynomial automorphism, and
+\begin{equation}\label{eq:trefoil-result}
+\boxed{\Phi_T(\gamma_T(t))=(t,0,0),\qquad
+\deg\Phi_T=(5,15,24),\qquad \det D\Phi_T=1.}
+\end{equation}
+The degree triple records the displayed construction.
+
+\clearpage
+\input{trefoil_explicit.tex}
+
+\clearpage
+\section{The harmonic figure-eight}
+
+The second curve is
+\begin{equation}\label{eq:harmonic}
+\gamma_H(t)=
+(t^3-3t,\ t^5-5t^3+5t,\ t^7-7t^5+14t^3-7t).
+\end{equation}
+The coefficient in the second component is $+5t$.
+Indeed,
+\[
+\gamma_H(t)=\bigl(2T_3(t/2),2T_5(t/2),2T_7(t/2)\bigr),
+\]
+where $T_n(\cos\theta)=\cos(n\theta)$. This identifies the parametrization
+with the harmonic knot $H(3,5,7)$ of \cite{KP} by linear scalings.
+It is distinct from the figure-eight parametrization in
+\cite[\S3, Example~2]{Shastri}, whose second component contains $+4t$.
+
+\subsection{Modification and correction}
+
+Take $m(x)=x$ and $p(x,y)=2-y^2$. The modification
+\[
+\beta(x,y,z)=(x,xz-y^2+2,y)
+\]
+satisfies
+\begin{equation}\label{eq:curve-transition}
+\boxed{\beta(\gamma_H(t))=M(\gamma_T(t)).}
+\end{equation}
+Its inverse after adjoining $1/x$ is
+\[
+\beta^{-1}(x,Y,Z)=\left(x,Z,\frac{Y+Z^2-2}{x}\right).
+\]
+The hypothesis of Theorem~\ref{thm:transfer} follows from
+\[
+H(0,y,z)=-z,\qquad H(0,2-y^2,y)=-y.
+\]
+Thus the centre inverse is $\psi(T)=-T$, and the correction is
+\begin{equation}\label{eq:harmonic-correction}
+\begin{aligned}
+\varphi(T)&=W(0,2-T^2,-T)\\
+&=42(a-1)T^6+175(1-a)T^4+(147a-161)T^2+8.
+\end{aligned}
+\end{equation}
+The transferred coordinates are
+\begin{equation}\label{eq:harmonic-relative}
+\begin{aligned}
+h_H(x,y,z)&=H(x,xz-y^2+2,y),\\
+q_H(x,y,z)&=
+\frac{W(x,xz-y^2+2,y)-\varphi(h_H(x,y,z))}{x}.
+\end{aligned}
+\end{equation}
+The inverse of $(x,h_H,q_H)$ has components
+\begin{equation}\label{eq:harmonic-relative-inverse}
+\begin{aligned}
+R_H(x,T,Q)&=S(x,T,xQ+\varphi(T)),\\
+S_H(x,T,Q)&=
+\frac{\begin{gathered}
+R(x,T,xQ+\varphi(T))\\[-2pt]
++S(x,T,xQ+\varphi(T))^2-2
+\end{gathered}}{x}.
+\end{aligned}
+\end{equation}
+Both numerators divided by $x$ are exactly divisible. This is established
+by Theorem~\ref{thm:transfer} and verified directly in the certificate.
+
+\subsection{The transition is global}
+
+Over $K[x,1/x]$, set
+\[
+C(x,T,V)=\left(x,T,\frac{V-\varphi(T)}x\right),\qquad
+C^{-1}(x,T,Q)=(x,T,xQ+\varphi(T)).
+\]
+Then
+\begin{equation}\label{eq:harmonic-factorization}
+\begin{aligned}
+(x,h_H,q_H)&=C\comp A_0\comp\beta,\\
+(x,R_H,S_H)&=\beta^{-1}\comp A_0^{-1}\comp C^{-1}.
+\end{aligned}
+\end{equation}
+The individual maps $\beta^{-1}$ and $C$ require $1/x$. The complete maps
+in \eqref{eq:harmonic-factorization} are polynomial by the two exact
+divisions. Injectivity of localization therefore proves both composition
+identities in $K[x,y,z]$, including $x=0$.
+
+\subsection{Final rectifier and inverse}
+
+Curve substitution gives
+\[
+h_H(\gamma_H(t))=t,\qquad
+q_H(\gamma_H(t))=(1-a)(42t^3-49t).
+\]
+Define
+\begin{equation}\label{eq:PhiH}
+\begin{aligned}
+(\Phi_H)_1(x,y,z)&=h_H(x,y,z),\\
+(\Phi_H)_2(x,y,z)&=x-h_H(x,y,z)^3+3h_H(x,y,z),\\
+(\Phi_H)_3(x,y,z)&=q_H(x,y,z)\\
+&\quad-(1-a)\bigl(42h_H(x,y,z)^3-49h_H(x,y,z)\bigr).
+\end{aligned}
+\end{equation}
+The inverse is
+\begin{equation}\label{eq:PhiHinv}
+\begin{aligned}
+(\Phi_H^{-1})_1(X,Y,Z)&=X^3-3X+Y,\\
+(\Phi_H^{-1})_2(X,Y,Z)&=
+R_H\bigl(X^3-3X+Y,X,Z+(1-a)(42X^3-49X)\bigr),\\
+(\Phi_H^{-1})_3(X,Y,Z)&=
+S_H\bigl(X^3-3X+Y,X,Z+(1-a)(42X^3-49X)\bigr).
+\end{aligned}
+\end{equation}
+All auxiliary polynomials in these formulas have been explicitly defined
+in \eqref{eq:H}--\eqref{eq:RS} and
+\eqref{eq:harmonic-relative}--\eqref{eq:harmonic-relative-inverse}.
+The final transition is the permutation and shear
+\[
+L_H(x,T,Q)=(T,x-T^3+3T,Q-(1-a)(42T^3-49T)),
+\]
+so
+\[
+\boxed{\Phi_H=L_H\comp C\comp A_0\comp\beta.}
+\]
+The resulting identities and degrees are
+\begin{equation}\label{eq:harmonic-result}
+\boxed{\Phi_H(\gamma_H(t))=(t,0,0),\qquad
+\deg\Phi_H=(7,21,41),\qquad \det D\Phi_H=-1.}
+\end{equation}
+
+\clearpage
+\input{harmonic_explicit.tex}
+
+\clearpage
+\subsection{Further transfers from the same base coordinate}
+
+For every $N\ge1$ and $p\in K[x,y]$, the coordinate
+\[
+H(x,p(x,y)+x^N z,y)
+\]
+satisfies Theorem~\ref{thm:transfer}: modulo the nilradical of
+$K[x]/(x^N)$ its centre is $-y$. The finite algorithm constructs a
+companion and a polynomial inverse, retaining all powers of $x$ up to
+$x^N$. This is a sufficient construction for the specified inputs; it
+does not assert that every embedding of $\A^1$ into $\A^3$ admits such
+a presentation.
+
+\subsection{Computational certificate}
+
+The file \texttt{verify.py} performs exact arithmetic in
+$\Q[a,x,y,z,t]/(a^2-a+1)$ using SymPy. It checks:
+\begin{enumerate}
+\item the exact divisions in \eqref{eq:base-divisions} and both harmonic
+      directions;
+\item the five identities \eqref{eq:cert1}--\eqref{eq:cert5}, the outer
+      substitutions, and the transfer identities;
+\item all components of $\Phi_T(\gamma_T(t))=(t,0,0)$ and
+      $\Phi_H(\gamma_H(t))=(t,0,0)$, and both inverse substitutions on
+      the line $(t,0,0)$;
+\item the component degrees and the relative Jacobian determinants.
+\end{enumerate}
+The polynomial certificates, cancellation argument, and factorization
+\eqref{eq:harmonic-factorization} establish the full inverse identities.
+The successful run is recorded in \texttt{verification.log}. To reproduce it:
+\begin{quote}\ttfamily\small
+python -m pip install -r requirements.txt\\
+python -u verify.py
+\end{quote}
+The displayed automorphisms are defined over $K\subset\C$; their
+coefficients do not define a rectification by real polynomial automorphisms.
+
+\clearpage
+\input{references.tex}
+
+\end{document}
