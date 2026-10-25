@@ -1,8 +1,20 @@
 PASS false_identity_optimized exit 1
 PASS nondivisible_numerator_optimized exit 1
+PASS positive_explicit_times_optimized exit 0
+PASS positive_core_optimized exit 0
 PASS positive_trefoil_optimized exit 0
 PASS positive_harmonic_optimized exit 0
+PASS positive_harmonic_standalone_optimized exit 0
 PASS negative_trefoil_wrapper exit 1
 PASS negative_harmonic_wrapper exit 1
 PASS negative_harmonic_standalone_optimized exit 1
-ALL NEGATIVE CONTROLS REJECTED; OPTIMIZED POSITIVE CHECKS PASSED
+PASS negative_trefoil_unbraced_exponent_optimized exit 1
+PASS negative_trefoil_component_label_optimized exit 1
+PASS negative_harmonic_unbraced_exponent_optimized exit 1
+PASS negative_harmonic_unbraced_exponent_standalone_optimized exit 1
+PASS negative_harmonic_component_label_optimized exit 1
+PASS negative_harmonic_component_label_standalone_optimized exit 1
+PASS negative_harmonic_u_to_y_independent_optimized exit 1
+PASS negative_harmonic_u_to_y_standalone_optimized exit 1
+PASS negative_harmonic_inverse_callable_optimized exit 1
+ALL NEGATIVE CONTROLS REJECTED; OPTIMIZED POSITIVE CHECKS PASSED {'positive_cases': 5, 'negative_cases': 14, 'total_cases': 19, 'seconds': 281.973}

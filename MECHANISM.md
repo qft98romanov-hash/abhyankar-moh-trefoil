@@ -555,7 +555,7 @@ $$
 \gamma_H(t)=\bigl(2T_3(t/2),2T_5(t/2),2T_7(t/2)\bigr).
 $$
 
-The transfer in Section 5 is an explicit application of the lifting principle for affine modifications in [Kaliman–Zaidenberg, Proposition 2.1](https://arxiv.org/abs/math/9801076). For the quotient-ring construction, see [Edo–Vénéreau, Proposition 1 and Theorem 4](https://doi.org/10.4064/ap76-1-6), and [Edo–van den Essen–Maubach, Lemma 1.1](https://arxiv.org/abs/0809.0767). Existence of a companion also follows from the [Bhatwadekar–Dutta residual-variable theorem](https://doi.org/10.1080/00927879308824585).
+The transfer in Section 5 is an explicit application of the lifting principle for affine modifications in [Kaliman–Zaidenberg, Proposition 2.1](https://arxiv.org/abs/math/9801076). For the quotient-ring construction, see [Edo–Vénéreau, Proposition 1 and Theorem 4](https://doi.org/10.4064/ap76-1-6), and [Edo–van den Essen–Maubach, Lemma 1.1](https://arxiv.org/abs/0809.0767). Existence of a companion also follows from the [Bhatwadekar–Dutta residual-variable theorem, Theorem 3.2](https://doi.org/10.1080/00927879308824585).
 
 The paper's Methods section explains these connections, states the embedding problem with its historical sources, and provides the full bibliography. The general lifting principle is not claimed as new.
 
@@ -574,6 +574,8 @@ The normalized Chebyshev trefoil $(C_3,C_4,C_5)$ is already covered by this repo
 $$
 M(x,y,z)=(x,y+2,z-5x),\qquad M^{-1}(x,y,z)=(x,y-2,z+5x).
 $$
+
+This affine normalization was already noted by [Freudenburg and Freudenburg, Introduction, p. 3](https://arxiv.org/abs/0902.3440).
 
 Its rectifier is $\Psi=\Phi_T\circ M^{-1}$, with inverse $\Psi^{-1}=M\circ\Phi_T^{-1}$. Thus $\Psi(C_3(t),C_4(t),C_5(t))=(t,0,0)$ over $\mathbb Q(\sqrt{-3})$.
 

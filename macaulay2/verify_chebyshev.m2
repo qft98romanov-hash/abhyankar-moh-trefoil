@@ -1,6 +1,6 @@
 -- Three additional exact checks of the normalized Chebyshev models.
 -- The main 27 checks are loaded first and are reported separately.
-load "verify_rectification.m2";
+load "./verify_rectification.m2";
 chebC = n -> (if n == 0 then 2_P else if n == 1 then t else t*chebC(n-1)-chebC(n-2));
 certList("CHEBYSHEV: M(gamma_T)=(C3,C4,C5)",
     {gammaT#0,gammaT#1+2,gammaT#2-5*gammaT#0}

@@ -1,0 +1,36 @@
+SymPy 1.14.0
+SHA256 verify.py 73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef
+SHA256 harmonic_explicit.tex 56190320188b2386f241873eac27f01287f730610eb781e395ec027094e167d7
+Both compact constructions loaded in 1.136 seconds
+PASS independent parsing component 1 ; 19 QQ monomials
+PASS independent parsing component 2 ; 322 QQ monomials
+Traceback (most recent call last):
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py", line 163, in <module>
+    actual.append(TexParser(body,names).parse())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py", line 110, in parse
+    result=red(self.expr());require(self.peek()=='EOF', 'Validation failed');return result
+               ^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py", line 71, in expr
+    op=self.consume();q=self.product();result=result+q if op=='+' else result-q
+                        ^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py", line 84, in product
+    result=red(result*factor_sign*self.power())
+                                  ^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py", line 87, in power
+    result=self.atom()
+           ^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py", line 105, in atom
+    result=self.expr()
+           ^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py", line 69, in expr
+    result=self.product()
+           ^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py", line 84, in product
+    result=red(result*factor_sign*self.power())
+                                  ^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py", line 94, in power
+    require(len(exponent)==1 and exponent.isdigit(),
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py", line 15, in require
+    raise AssertionError(message)
+AssertionError: Unbraced TeX exponent must be a single digit

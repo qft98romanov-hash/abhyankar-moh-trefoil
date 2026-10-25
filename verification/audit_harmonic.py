@@ -76,7 +76,10 @@ class Parser:
                 self.pop()
                 exponent = self.pop()
                 require(self.pop() == '}', 'Validation failed')
-            else: exponent = self.pop()
+            else:
+                exponent = self.pop()
+                require(exponent is not None and len(exponent) == 1,
+                        'Unbraced TeX exponent must be a single digit')
             require(exponent.isdigit(), 'Validation failed')
             v = self.red(v**int(exponent))
         return v
@@ -129,6 +132,10 @@ def main():
     printed_inverse = []
     for i, (_, block) in enumerate(blocks):
         label, rhs = block.split('=', 1)
+        signature = (rf'(\Phi_H)_{i+1}(x,y,z)' if i < 3 else
+                     rf'(\Phi_H^{{-1}})_{i-2}(X,Y,Z)')
+        require(re.sub(r'\s+', '', label) == signature,
+                ('Unexpected component label or argument order', label, signature))
         require(len(re.findall('=', block)) == 1, 'Validation failed')
         if i < 3:
             printed = parse(rhs)

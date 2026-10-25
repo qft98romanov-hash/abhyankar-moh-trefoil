@@ -25,7 +25,7 @@ PASS 22: harmonic inverse on axis
 PASS 23: harmonic forward degrees [ 7, 21, 41 ]
 PASS 24: negative control rejects the +4t model
 BOTH RECTIFICATIONS VERIFIED IN GAP
-Checks: 24; runtime (CPU ms): 3063
+Checks: 24; runtime (CPU ms): 2652
 GAP 4.12.1 exact rectification verification
 Coefficient a = -E(3); arithmetic in Q(E(3)).
 PASS 1: coefficient field
@@ -53,7 +53,7 @@ PASS 22: harmonic inverse on axis
 PASS 23: harmonic forward degrees [ 7, 21, 41 ]
 PASS 24: negative control rejects the +4t model
 BOTH RECTIFICATIONS VERIFIED IN GAP
-Checks: 24; runtime (CPU ms): 2677
+Checks: 24; runtime (CPU ms): 2998
 EXTRA PASS 1: M and its inverse; M(gamma_T)=(C3,C4,C5)
 EXTRA PASS 2: harmonic gamma_H=(C3,C5,C7)
 EXTRA PASS 3: transported Chebyshev rectifier and inverse on the axis

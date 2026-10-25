@@ -1,7 +1,7 @@
 SymPy 1.14.0
-SHA256 verify.py 5eafc642b3e7f8ab5a4e69aa36e919d3122496d0175c885d5a41700b396da2d5
-SHA256 trefoil_explicit.tex 3b876b410aa9499e4e7f250e6dd9e0c18a870b2ae078fd63a1699ad18cef9112
-Compact trefoil constructed in 0.317 seconds
+SHA256 verify.py 73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef
+SHA256 trefoil_explicit.tex a9a1ed9987fe2aaaa37c998de34626f53bc015d854b57e6d9c7ab1e65d7466d5
+Compact trefoil constructed in 0.228 seconds
 PASS independent parsing component 1 ; 16 QQ monomials
 PASS independent parsing component 2 ; 201 QQ monomials
 PASS independent parsing component 3 ; 756 QQ monomials
@@ -34,7 +34,7 @@ forward 3 0
 inverse 1 0
 inverse 2 0
 inverse 3 0
-Elapsed 1.401 seconds
+Elapsed 1.146 seconds
 
 INVERSE CHECK IN INDEPENDENT COORDINATES (X,U,V):
 inverse 2 (x,y,z denote X,U,V) delta: 0
@@ -67,11 +67,12 @@ inverse at (0,1,-8)
 inverse at (0,1,-7)
   printed: ('1', '7*a - 3', '-7*a + 11')
   compact: ('1', '7*a - 3', '-7*a + 11')
-Total elapsed 1.674 seconds
+Total elapsed 1.352 seconds
 PASS: base polynomial identity for W
 PASS: base inverse: first nontrivial component
 PASS: base inverse: certificate for the other component
 PASS: inverse after forward: both nontrivial components expanded
+PASS: the trefoil inverse callable matches the proved factorization
 PASS: the original trefoil normalization is invertible
 PASS: the trefoil outer map is invertible in both directions
 PASS: the trefoil maps to (t,0,0)
@@ -80,12 +81,13 @@ PASS: component degrees (5, 15, 24)
 PASS: the base relative Jacobian determinant is -1
 PASS: polynomiality of the forward figure-eight transfer
 PASS: polynomiality of the inverse figure-eight transfer
+PASS: the figure-eight inverse callable matches the proved factorization
 PASS: the figure-eight outer map is invertible in both directions
 PASS: the harmonic figure-eight maps to (t,0,0)
 PASS: the inverse recovers the figure-eight from the axis
 PASS: component degrees (7, 21, 41)
 PASS: the figure-eight relative Jacobian determinant is +1
-BOTH RECTIFICATIONS VERIFIED; elapsed: 33.27 s
+BOTH RECTIFICATIONS VERIFIED; elapsed: 36.19 s
 Parser self-tests passed 5
 {"component": 1, "label": "(\\Phi_H)_1(x,y,z)", "equal": true, "printed_terms": 19, "compact_terms": 19, "differing_QQ_a_coefficients": 0, "coordinate_system": "original x,y,z"}
 {"component": 2, "label": "(\\Phi_H)_2(x,y,z)", "equal": true, "printed_terms": 322, "compact_terms": 322, "differing_QQ_a_coefficients": 0, "coordinate_system": "original x,y,z"}
@@ -95,5 +97,5 @@ Parser self-tests passed 5
 {"component": 6, "label": "(\\Phi_H^{-1})_3(X,Y,Z)", "equal": true, "printed_terms": 477, "compact_terms": 477, "differing_QQ_a_coefficients": 0, "coordinate_system": "X=y, Y=x-y^3+3y, Z=z-(1-a)(42y^3-49y)"}
 Printed harmonic_inverse(1,0,0): ('-2', '1', '1')
 Expected gamma_H(1): ('-2', '1', '1')
-TOTAL 0 unequal of 6; seconds 34.664197985999635
+TOTAL 0 unequal of 6; seconds 37.82004674599739
 ALL 12 PRINTED COMPONENTS MATCH THE COMPACT CONSTRUCTION

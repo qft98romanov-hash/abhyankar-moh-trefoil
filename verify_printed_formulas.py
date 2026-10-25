@@ -13,13 +13,14 @@ import tempfile
 ROOT = Path(__file__).resolve().parent
 
 def main():
+    optimization = ['-' + 'O'*sys.flags.optimize] if sys.flags.optimize else []
     subprocess.run([
-        sys.executable, '-u', str(ROOT/'verification/audit_trefoil.py'),
+        sys.executable, *optimization, '-u', str(ROOT/'verification/audit_trefoil.py'),
         '--repository', str(ROOT), '--expect-correct'
     ], check=True)
     with tempfile.TemporaryDirectory(prefix='rectification_tex_audit_') as tmp:
         subprocess.run([
-            sys.executable, '-u', str(ROOT/'verification/audit_harmonic.py'),
+            sys.executable, *optimization, '-u', str(ROOT/'verification/audit_harmonic.py'),
             '--repo', str(ROOT), '--output', tmp
         ], check=True)
         results = json.loads((Path(tmp)/'results.json').read_text())

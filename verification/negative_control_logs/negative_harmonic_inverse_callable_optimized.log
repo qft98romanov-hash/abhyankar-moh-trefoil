@@ -1,0 +1,19 @@
+PASS: base polynomial identity for W
+PASS: base inverse: first nontrivial component
+PASS: base inverse: certificate for the other component
+PASS: inverse after forward: both nontrivial components expanded
+PASS: the trefoil inverse callable matches the proved factorization
+PASS: the original trefoil normalization is invertible
+PASS: the trefoil outer map is invertible in both directions
+PASS: the trefoil maps to (t,0,0)
+PASS: the inverse recovers the trefoil from the axis
+PASS: component degrees (5, 15, 24)
+PASS: the base relative Jacobian determinant is -1
+PASS: polynomiality of the forward figure-eight transfer
+PASS: polynomiality of the inverse figure-eight transfer
+Traceback (most recent call last):
+  File "/tmp/rectification_callable_g2ni8anu/repository/verify.py", line 203, in <module>
+    check("the figure-eight inverse callable matches the proved factorization",
+  File "/tmp/rectification_callable_g2ni8anu/repository/verify.py", line 70, in check
+    raise AssertionError(label)
+AssertionError: the figure-eight inverse callable matches the proved factorization

@@ -1,27 +1,31 @@
 {
-  "recorded_utc": "2026-10-25T19:52:37.129965+00:00",
-  "system": "Ubuntu 24.04.3 LTS",
+  "verification_date": "2026-10-26",
   "gap_version": "4.12.1",
-  "source_verify_py_sha256": "5eafc642b3e7f8ab5a4e69aa36e919d3122496d0175c885d5a41700b396da2d5",
+  "source_verify_py_sha256": "73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef",
   "runs": [
     {
-      "script": "verify_rectification.g",
+      "name": "gap_core",
       "command": [
         "gap",
         "-q",
         "--quitonbreak",
         "--norepl",
-        "verify_rectification.g"
+        "gap/verify_rectification.g"
       ],
+      "cwd": "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository",
       "exit_code": 0,
-      "elapsed_seconds": 6.583,
-      "log": "gap_run.log",
-      "sha256": "29af5bb2886702046ae0fe7bef82e98e4ac6562d93de503bef1275bf61570ac3",
-      "core_pass_count": 48,
-      "extra_chebyshev_pass_count": 6
+      "expected_exit": 0,
+      "required_marker": "BOTH RECTIFICATIONS VERIFIED IN GAP",
+      "marker_present": true,
+      "pass_lines": 48,
+      "extra_pass_lines": 6,
+      "success": true,
+      "seconds": 7.055,
+      "log": "gap/gap_run.log",
+      "log_sha256": "f93c8becaec554408a3936f2f15f3123bb3b5e5e9ad50103cf086e1860b0556f"
     },
     {
-      "script": "negative_identity.g",
+      "name": "gap_negative_identity",
       "command": [
         "gap",
         "-q",
@@ -29,15 +33,20 @@
         "--norepl",
         "negative_identity.g"
       ],
+      "cwd": "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/gap",
       "exit_code": 1,
-      "elapsed_seconds": 6.488,
-      "log": "gap_negative_identity.log",
-      "sha256": "d07b050ced3e6891401a8ced9c300003464ca64df5785dd04d0027fd91698392",
-      "expected_message": "FAILED: deliberately false identity 1=0",
-      "observed_expected_message": true
+      "expected_exit": 1,
+      "required_marker": "FAILED: deliberately false identity 1=0",
+      "marker_present": true,
+      "pass_lines": 48,
+      "extra_pass_lines": 6,
+      "success": true,
+      "seconds": 6.118,
+      "log": "gap/gap_negative_identity.log",
+      "log_sha256": "b41b9ff20efc0c51dbad74b007121a17293eceaa63f9fa031ea66b4259a1421f"
     },
     {
-      "script": "negative_division.g",
+      "name": "gap_negative_division",
       "command": [
         "gap",
         "-q",
@@ -45,12 +54,22 @@
         "--norepl",
         "negative_division.g"
       ],
+      "cwd": "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/gap",
       "exit_code": 1,
-      "elapsed_seconds": 6.673,
-      "log": "gap_negative_division.log",
-      "sha256": "c5b8c18d55782984fc119e65542c3de34b288dbeacd1a7f1763d5de154cb3e34",
-      "expected_message": "NOT DIVISIBLE: deliberate 1/x",
-      "observed_expected_message": true
+      "expected_exit": 1,
+      "required_marker": "NOT DIVISIBLE: deliberate 1/x",
+      "marker_present": true,
+      "pass_lines": 48,
+      "extra_pass_lines": 6,
+      "success": true,
+      "seconds": 6.586,
+      "log": "gap/gap_negative_division.log",
+      "log_sha256": "076fc6d204b78cfbd41222a75347b920891b52d98d51d6967f9d07384d99c079"
     }
-  ]
+  ],
+  "source_sha256": {
+    "negative_division.g": "c5b8c18d55782984fc119e65542c3de34b288dbeacd1a7f1763d5de154cb3e34",
+    "negative_identity.g": "d07b050ced3e6891401a8ced9c300003464ca64df5785dd04d0027fd91698392",
+    "verify_rectification.g": "29af5bb2886702046ae0fe7bef82e98e4ac6562d93de503bef1275bf61570ac3"
+  }
 }

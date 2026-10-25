@@ -1,0 +1,65 @@
+PASS: base polynomial identity for W
+PASS: base inverse: first nontrivial component
+PASS: base inverse: certificate for the other component
+PASS: inverse after forward: both nontrivial components expanded
+PASS: the trefoil inverse callable matches the proved factorization
+PASS: the original trefoil normalization is invertible
+PASS: the trefoil outer map is invertible in both directions
+PASS: the trefoil maps to (t,0,0)
+PASS: the inverse recovers the trefoil from the axis
+PASS: component degrees (5, 15, 24)
+PASS: the base relative Jacobian determinant is -1
+PASS: polynomiality of the forward figure-eight transfer
+PASS: polynomiality of the inverse figure-eight transfer
+PASS: the figure-eight inverse callable matches the proved factorization
+PASS: the figure-eight outer map is invertible in both directions
+PASS: the harmonic figure-eight maps to (t,0,0)
+PASS: the inverse recovers the figure-eight from the axis
+PASS: component degrees (7, 21, 41)
+PASS: the figure-eight relative Jacobian determinant is +1
+BOTH RECTIFICATIONS VERIFIED; elapsed: 31.46 s
+Parser self-tests passed 5
+{"component": 1, "label": "(\\Phi_H)_1(x,y,z)", "equal": true, "printed_terms": 19, "compact_terms": 19, "differing_QQ_a_coefficients": 0, "coordinate_system": "original x,y,z"}
+{"component": 2, "label": "(\\Phi_H)_2(x,y,z)", "equal": true, "printed_terms": 322, "compact_terms": 322, "differing_QQ_a_coefficients": 0, "coordinate_system": "original x,y,z"}
+Traceback (most recent call last):
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 177, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 141, in main
+    printed = parse(rhs)
+              ^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 118, in parse
+    return Parser(normalize(s), names or dict(zip('axyzXYZ', (a,x,y,z,x,y,z))), ring, red).parse()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 98, in parse
+    v = self.expression()
+        ^^^^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 55, in expression
+    op, w = self.pop(), self.product()
+                        ^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 63, in product
+    v = self.red(v*self.unary())
+                   ^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 69, in unary
+    return self.power()
+           ^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 72, in power
+    v = self.atom()
+        ^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 90, in atom
+    v = self.expression()
+        ^^^^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 53, in expression
+    v = self.product()
+        ^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 63, in product
+    v = self.red(v*self.unary())
+                   ^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 69, in unary
+    return self.power()
+           ^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 81, in power
+    require(exponent is not None and len(exponent) == 1,
+  File "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py", line 22, in require
+    raise AssertionError(message)
+AssertionError: Unbraced TeX exponent must be a single digit

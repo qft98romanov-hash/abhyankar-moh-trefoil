@@ -41,7 +41,8 @@ print('Both compact constructions loaded in',round(time.perf_counter()-start,3),
 # The parser reads actual TeX, erasing only presentation commands.
 COMMANDS={'bigl','bigr','Bigl','Bigr','Biggl','Biggr','left','right','qquad','quad','times'}
 class TexParser:
-    def __init__(self,source):
+    def __init__(self,source,names=None):
+        self.names = {"a":a,"x":x,"y":y,"z":z,"X":x,"Y":y,"Z":z} if names is None else names
         self.tokens=[]
         p=0
         while p<len(source):
@@ -54,6 +55,7 @@ class TexParser:
             if c=='\\':
                 m=re.match(r'\\([A-Za-z]+)',source[p:])
                 if not m or m.group(1) not in COMMANDS: raise ValueError(('Unknown TeX command',source[p:p+40]))
+                if m.group(1)=='times': self.tokens.append('*')
                 p+=len(m.group()); continue
             if c.isdigit():
                 m=re.match(r'\d+',source[p:]);self.tokens.append(m.group());p+=len(m.group());continue
@@ -73,8 +75,13 @@ class TexParser:
         while self.peek() in ('+','-'):
             if self.consume()=='-': sign=-sign
         result=self.power()*sign
-        while self.peek().isdigit() or self.peek() in 'axyzXYZ' or self.peek() in ('(','[','{'):
-            result=red(result*self.power())
+        while self.peek().isdigit() or self.peek() in 'axyzXYZ' or self.peek() in ('(','[','{','*'):
+            factor_sign=1
+            if self.peek()=='*':
+                self.consume()
+                while self.peek() in ('+','-'):
+                    if self.consume()=='-': factor_sign=-factor_sign
+            result=red(result*factor_sign*self.power())
         return result
     def power(self):
         result=self.atom()
@@ -82,13 +89,17 @@ class TexParser:
             self.consume()
             if self.peek()=='{':
                 self.consume(); exponent=int(self.consume()); require(self.consume()=='}', 'Validation failed')
-            else: exponent=int(self.consume())
+            else:
+                exponent=self.consume()
+                require(len(exponent)==1 and exponent.isdigit(),
+                        'Unbraced TeX exponent must be a single digit')
+                exponent=int(exponent)
             result=red(result**exponent)
         return result
     def atom(self):
         token=self.consume()
         if token.isdigit(): return ring(int(token))
-        if token in {'a','x','y','z','X','Y','Z'}: return {'a':a,'x':x,'y':y,'z':z,'X':x,'Y':y,'Z':z}[token]
+        if token in self.names: return self.names[token]
         if token in ('(','[','{'):
             close={'(':')','[':']','{':'}'}[token]
             result=self.expr()
@@ -99,11 +110,15 @@ class TexParser:
         result=red(self.expr());require(self.peek()=='EOF', 'Validation failed');return result
 
 tex=TEX.read_text()
-blocks=re.findall(r'\\begin\{(?:align\*|gather\*)\}(.*?)\\end\{(?:align\*|gather\*)\}',tex,re.S)
+blocks=[body for _,body in re.findall(r'\\begin\{(align\*|gather\*)\}(.*?)\\end\{\1\}',tex,re.S)]
 require(len(blocks)==6, len(blocks))
+signatures = [rf'(\Phi_H)_{i}(x,y,z)' for i in range(1,4)] + [
+    rf'(\Phi_H^{{-1}})_{i}(X,Y,Z)' for i in range(1,4)]
+for block,signature in zip(blocks,signatures):
+    require(block.count('=')==1, 'Expected exactly one equation per component')
+    require(re.sub(r'\s+', '', block.split('=',1)[0])==signature,
+            ('Unexpected component label or argument order', signature))
 bodies=[block.split('=',1)[1] for block in blocks]
-Utex='(X^3-3X+Y)'; Vtex=r'\bigl(Z+(1-a)(42X^3-49X)\bigr)'
-bodies=bodies[:3]+[b.replace(Utex,'y').replace(Vtex,'z') for b in bodies[3:]]
 actual=[]
 A,xx,yy,zz=sp.symbols('a x y z')
 # Independent backend: pairs of QQ[x,y,z] polynomials representing p+a*q.
@@ -136,12 +151,21 @@ def pair_eval(expr):
         return result
     raise ValueError(('Unsupported symbolic node',expr))
 for i,body in enumerate(bodies):
-    actual.append(TexParser(body).parse())
-    normalized=re.sub(r'\\[A-Za-z]+','',body).replace('\\\\','').replace('&','').replace('{}','')
+    # Apply the invertible substitution X=x, Y=y-x^3+3x,
+    # Z=z-(1-a)(42x^3-49x): x,y,z then denote independent X,U,V.
+    # Parse the complete original RHS; do not alias original Y/Z with U/V.
+    if i < 3:
+        names={'a':a,'x':x,'y':y,'z':z}
+        symbolic_names={'a':A,'x':xx,'y':yy,'z':zz}
+    else:
+        names={'a':a,'X':x,'Y':y-x**3+3*x,'Z':z-(1-a)*(42*x**3-49*x)}
+        symbolic_names={'a':A,'X':xx,'Y':yy-xx**3+3*xx,'Z':zz-(1-A)*(42*xx**3-49*xx)}
+    actual.append(TexParser(body,names).parse())
+    normalized=re.sub(r'\\[A-Za-z]+','',body.replace(r'\times','*')).replace('\\\\','').replace('&','').replace('{}','')
     normalized=normalized.replace('\\{','(').replace('\\}',')')
     normalized=normalized.replace('{','(').replace('}',')').replace('[','(').replace(']',')').rstrip().rstrip('.')
-    normalized=normalized.translate(str.maketrans('XYZ','xyz')).replace('\n',' ')
-    expr=parse_expr(normalized,local_dict={'a':A,'x':xx,'y':yy,'z':zz},transformations=standard_transformations+(implicit_multiplication_application,convert_xor))
+    normalized=normalized.replace('\n',' ')
+    expr=parse_expr(normalized,local_dict=symbolic_names,transformations=standard_transformations+(implicit_multiplication_application,convert_xor))
     coefficient_pair=pair_eval(expr)
     independent=zero
     for ea,coefficient in enumerate(coefficient_pair):
@@ -149,14 +173,14 @@ for i,body in enumerate(bodies):
             independent+=a**ea*ring(q)*x**ex*y**ey*z**ez
     require(independent==actual[i], ('Parser disagreement',i))
     print('PASS independent parsing component',i+1,';',len(actual[i]),'QQ monomials',flush=True)
-expected=list(ns['phi_h'])+[x**3-3*x+y,at(ns['inverse_y'],xx=y,yy=x,zz=z),at(ns['inverse_z'],xx=y,yy=x,zz=z)]
+expected=list(ns['phi_h'])+[y,at(ns['inverse_y'],xx=y,yy=x,zz=z),at(ns['inverse_z'],xx=y,yy=x,zz=z)]
 labels=['forward1','forward2','forward3','inverse1','inverse2','inverse3']
 differences=[red(p-q) for p,q in zip(actual,expected)]
 for label,d in zip(labels,differences):
     print(label,'difference (inverse x,y,z = X,U,V):',d,flush=True)
 print('Inverse axis point X=1,Y=0,Z=0 => X=1,U=-2,V=7(a-1)')
 for name,polys in [('printed',actual[3:]),('compact',expected[3:])]:
-    print(name,(str(at(polys[0],xx=one,yy=zero,zz=zero)),)+tuple(str(at(p,xx=one,yy=ring(-2),zz=7*(a-1))) for p in polys[1:]))
+    print(name,tuple(str(at(p,xx=one,yy=ring(-2),zz=7*(a-1))) for p in polys))
 print('Elapsed',round(time.perf_counter()-start,3),'seconds')
 if args.json:
     args.json.write_text(json.dumps({'labels':labels,'differences':[str(d) for d in differences]},indent=2))

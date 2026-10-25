@@ -36,6 +36,13 @@ python -u verify_printed_formulas.py
 The second command fails if any of the twelve printed forward/inverse components
 differs from the corresponding compact polynomial.
 
+The [26 October verification update](verification/HARDENING_2026-10-26.md)
+also checks component labels and exponent syntax, corrects the supplementary
+harmonic reader's inverse-coordinate substitution, and binds the actual
+inverse functions to their proved factorizations. The expanded negative
+controls exercise these defects; complete current logs and hashes are linked
+in [VERIFICATION.md](VERIFICATION.md). The construction formulas are unchanged.
+
 ## Method in brief
 
 Work over
@@ -44,31 +51,35 @@ Work over
 K=\mathbb{Q}[a]/(a^2-a+1)\simeq\mathbb{Q}(\sqrt{-3}).
 ```
 
-1. **Start with a verified relative automorphism**
-   $`A=(x,H,W)`$ and its explicit polynomial inverse.
-2. **Transfer the coordinate** through
-   $`\beta(x,y,z)=(x,p(x,y)+m(x)z,y)`$, where $`m\ne0`$.
-   Modulo $`m`$, require the centre $`H(x,p(x,y),y)`$ to have an invertible linear
-   coefficient and nilpotent higher coefficients. Finite inversion of this
-   centre produces a polynomial correction $`\varphi(x,T)`$.
-3. **Correct and divide exactly:**
+**1. Start with a verified relative automorphism**
+$`A=(x,H,W)`$ and its explicit polynomial inverse.
 
-   ```math
-   \mathcal A(x,y,z)=\left(
-   x,\ H\circ\beta,
-   \frac{W\circ\beta-\varphi(x,H\circ\beta)}{m(x)}
-   \right).
-   ```
+**2. Transfer the coordinate** through
+$`\beta(x,y,z)=(x,p(x,y)+m(x)z,y)`$, where $`m\ne0`$.
+Modulo $`m`$, require the centre $`H(x,p(x,y),y)`$ to have an invertible linear
+coefficient and nilpotent higher coefficients. Finite inversion of this
+centre produces a polynomial correction $`\varphi(x,T)`$.
 
-   Both this quotient and the corresponding inverse quotient are polynomial,
-   including when $`m`$ has repeated roots.
-4. **Pass from local to global identities.** After inverting $`m`$, the factors
-   are explicitly reversible. Polynomiality in both directions and injectivity
-   of localization give a global polynomial automorphism, including the fibres
-   where $`m=0`$.
-5. **Straighten the curve.** If
-   $`\mathcal A(\gamma(t))=(b(t),t,w(t))`$, apply
-   $`(x,T,Q)\mapsto(T,x-b(T),Q-w(T))`$ to obtain $`(t,0,0)`$.
+**3. Correct and divide exactly:**
+
+$$
+\mathcal A(x,y,z)=\left(
+x,\ H\circ\beta,
+\frac{W\circ\beta-\varphi(x,H\circ\beta)}{m(x)}
+\right).
+$$
+
+Both this quotient and the corresponding inverse quotient are polynomial,
+including when $`m`$ has repeated roots.
+
+**4. Pass from local to global identities.** After inverting $`m`$, the factors
+are explicitly reversible. Polynomiality in both directions and injectivity
+of localization give a global polynomial automorphism, including the fibres
+where $`m=0`$.
+
+**5. Straighten the curve.** If
+$`\mathcal A(\gamma(t))=(b(t),t,w(t))`$, apply
+$`(x,T,Q)\mapsto(T,x-b(T),Q-w(T))`$ to obtain $`(t,0,0)`$.
 
 The trefoil supplies the explicit base construction. For the harmonic model,
 the transfer uses $`m=x`$ and $`p=2-y^2`$; the centre is $`-y`$ at $`x=0`$.
@@ -134,7 +145,8 @@ for checking the printed LaTeX formulas.
 - Spatial problem and coordinate lifts: [Craighero (1985), Introduction and Proposition 3](https://www.numdam.org/item/RSMUP_1985__74__115_0.pdf), including the precise locations of Abhyankar's Kyoto 1977 conjectures.
 - Affine modifications: [Kaliman–Zaidenberg (1999), Proposition 2.1](https://arxiv.org/abs/math/9801076).
 - Quotient inversion and exact division: [Edo–Vénéreau (2001)](https://doi.org/10.4064/ap76-1-6); [Edo–van den Essen–Maubach (2009), Lemma 1.1](https://arxiv.org/abs/0809.0767).
-- Residual coordinates: [Bhatwadekar–Dutta (1993)](https://doi.org/10.1080/00927879308824585).
+- Affine Chebyshev normalization: [Freudenburg–Freudenburg (2009), Introduction, p. 3](https://arxiv.org/abs/0902.3440).
+- Residual coordinates: [Bhatwadekar–Dutta (1993), Theorem 3.2](https://doi.org/10.1080/00927879308824585).
 
 The paper contains the full bibliography and explains which result supplies
 each connection.
@@ -161,6 +173,8 @@ M(x,y,z)&=(x,y+2,z-5x),\\
 M^{-1}(x,y,z)&=(x,y-2,z+5x).
 \end{aligned}
 ```
+
+This affine normalization was already noted by [Freudenburg and Freudenburg, Introduction, p. 3](https://arxiv.org/abs/0902.3440).
 
 Its rectifier is $`\Psi=\Phi_T\circ M^{-1}`$, with inverse $`\Psi^{-1}=M\circ\Phi_T^{-1}`$. Thus $`\Psi(C_3(t),C_4(t),C_5(t))=(t,0,0)`$ over $`\mathbb Q(\sqrt{-3})`$.
 

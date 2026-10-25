@@ -80,7 +80,11 @@ class TexParser:
             self.consume()
             if self.peek()=='{':
                 self.consume(); exponent=int(self.consume()); require(self.consume()=='}', 'Validation failed')
-            else: exponent=int(self.consume())
+            else:
+                exponent=self.consume()
+                require(len(exponent)==1 and exponent.isdigit(),
+                        'Unbraced TeX exponent must be a single digit')
+                exponent=int(exponent)
             result=red(result**exponent)
         return result
     def atom(self):
@@ -97,8 +101,14 @@ class TexParser:
         result=red(self.expr());require(self.peek()=='EOF', 'Validation failed');return result
 
 tex=TEX.read_text()
-blocks=re.findall(r'\\begin\{(?:align\*|gather\*)\}(.*?)\\end\{(?:align\*|gather\*)\}',tex,re.S)
+blocks=[body for _,body in re.findall(r'\\begin\{(align\*|gather\*)\}(.*?)\\end\{\1\}',tex,re.S)]
 require(len(blocks)==6, 'Validation failed')
+signatures = [rf'(\Phi_T)_{i}(x,y,z)' for i in range(1,4)] + [
+    rf'(\Phi_T^{{-1}})_{i}(X,Y,Z)' for i in range(1,4)]
+for block,signature in zip(blocks,signatures):
+    require(block.count('=')==1, 'Expected exactly one equation per component')
+    require(re.sub(r'\s+', '', block.split('=',1)[0])==signature,
+            ('Unexpected component label or argument order', signature))
 bodies=[block.split('=',1)[1] for block in blocks]
 actual=[TexParser(body).parse() for body in bodies]
 # Second independent parse: symbolic expression with a separate normalization
@@ -184,7 +194,7 @@ for old,new in patches:
     else:
         require(tex.count(new)==1, ('Neither original nor corrected token occurs exactly once',old,new))
         print('Already corrected:',repr(new))
-fixed_blocks=re.findall(r'\\begin\{(?:align\*|gather\*)\}(.*?)\\end\{(?:align\*|gather\*)\}',fixed,re.S)
+fixed_blocks=[body for _,body in re.findall(r'\\begin\{(align\*|gather\*)\}(.*?)\\end\{\1\}',fixed,re.S)]
 for label,block,q in zip(labels,fixed_blocks,expected):
     require(TexParser(block.split('=',1)[1]).parse()==q, label)
 print('PASS all six literal components equal compact formulas after',patch_count,'in-memory changes')

@@ -10,9 +10,9 @@ reread and rerun. All coefficient arithmetic is exact, over
 
 | Implementation | Observed version | Result | Evidence |
 |---|---|---|---|
-| Python / SymPy | Python 3.12.14 / SymPy 1.14.0 | Both compact rectification certificates passed | [log](verification.log) |
-| Literal LaTeX audit | SymPy 1.14.0 | All 12 printed components agree with the compact construction | [log](verification/printed_formulas_corrected.log) |
-| Independent harmonic LaTeX audit | SymPy 1.14.0 | All 6 harmonic components agree using two parsing routes | [log](verification/hardened_independent_harmonic.log) |
+| Python / SymPy | Python 3.12.14 / SymPy 1.14.0 | 19 checks passed, including symbolic inverse-callable bindings | [log](verification.log) |
+| Literal LaTeX audit | SymPy 1.14.0 | All 12 printed components agree; component labels and argument order checked | [complete log](verification/printed_rerun.log) |
+| Independent harmonic LaTeX audit | SymPy 1.14.0 | All 6 harmonic components agree after an invertible coordinate substitution | [log](verification/independent_harmonic_rerun.log) |
 | GAP | 4.12.1 | 48 core checks and 6 additional Chebyshev checks passed | [log](gap/gap_run.log) |
 | Macaulay2 | 1.22 | 27 core checks and 3 additional Chebyshev checks passed | [core log](macaulay2/verification_macaulay2.log), [Chebyshev log](macaulay2/chebyshev_macaulay2.log) |
 
@@ -33,17 +33,16 @@ python verification/audit_harmonic_independent.py --repository . --expect-correc
 python verification/run_negative_controls.py
 ```
 
-No FLINT installation is required. The [recorded control results](verification/negative_control_logs/results.json) contain two successful optimized checks and five correctly rejected invalid inputs. The final control runner must succeed
-overall while rejecting deliberately false identities, non-exact divisions
-and a single restored sign error in each LaTeX appendix. It mutates temporary
-copies only. The parser guards remain active with Python's `-O` flag, and the
-standalone harmonic auditor now returns nonzero on a discrepancy.
+No FLINT installation is required. The [recorded control results](verification/negative_control_logs/results.json) contain five successful optimized cases and fourteen correctly rejected invalid inputs. The runner checks exit status and the intended diagnostic, including false identities, non-exact divisions, restored sign errors, changed component labels, unbraced multidigit exponents, a corrupted inverse-coordinate expression, and an altered inverse callable. It mutates temporary copies only. Parser validation remains active under `-O`, and the wrapper passes its optimization setting to its child interpreters.
 
 The previous auditor wrapper already rejected discrepant harmonic results,
 but its standalone child did not return a failure exit status. Several parser
 assertions also consumed tokens and were affected by `-O`; these were replaced
-by explicit guards. The underlying `verify.py` and compact formulas are
-unchanged. See [the implementation audit](verification/PYTHON_AUDIT.md).
+by explicit guards. The 26 October hardening adds two symbolic checks to
+`verify.py`; its polynomial construction formulas are unchanged. The independent
+harmonic reader now uses an invertible coordinate substitution rather than
+textual compression. See [the implementation audit](verification/PYTHON_AUDIT.md)
+and [the combined audit corrections](verification/HARDENING_2026-10-26.md).
 
 ## GAP
 
@@ -70,8 +69,10 @@ M2 --script negative_identity.m2
 M2 --script negative_division.m2
 ```
 
-The first two commands must exit 0; the last two must exit nonzero. Each
-additional script first loads the core certificate. See the
+The first two commands must exit 0; the last two must fail with their intended
+`EXTERNAL NEGATIVE CONTROL` diagnostics after the successful core certificate.
+Each additional script loads the core certificate relative to its own file,
+so it can also be launched by path from another directory. See the
 [Macaulay2 guide](macaulay2/README.md).
 
 ## Mathematical scope
@@ -88,6 +89,13 @@ criterion. The paper and MECHANISM.md give these deductions explicitly.
 The literal LaTeX audit is a separate necessary presentation check. GAP and
 Macaulay2 do not read LaTeX. Two parsing paths and deliberately corrupted
 inputs help test the auditors themselves.
+
+The current [run manifest](verification/current_verification.json) records
+commands, versions, source hashes, log hashes, exit codes and expected markers.
+Older logs and `environment_and_inputs.json` remain historical evidence of the
+25 October checks. In particular, `printed_formulas_corrected.log` and
+`hardened_printed.log` are incomplete historical captures and are not used as
+evidence for the current twelve-component result.
 
 The checks establish the two specified constructions and the stated affine
 Chebyshev normalization. They do not prove a theorem for all Chebyshev knots,

@@ -136,6 +136,12 @@ def trefoil_inverse(X, Y, Z):
                 +5*(X**3-3*X+Y)))
 
 
+# Bind the public inverse callable to its proved polynomial factors.
+check("the trefoil inverse callable matches the proved factorization",
+      *(p-target for p, target in zip(
+          trefoil_inverse(y, x-y**3+3*y, z-8+14*y**2),
+          (x, R-2, S+5*x))))
+
 # Check the outer coordinate changes and their inverses.
 check("the original trefoil normalization is invertible",
       (y+2)-2-y, (z-5*x)+5*x-z)
@@ -192,6 +198,13 @@ def harmonic_inverse(X, Y, Z):
             at(inverse_z, xx=X**3-3*X+Y, yy=X,
                zz=Z+(1-a)*(42*X**3-49*X)))
 
+
+# The outer shear cancels before substitution, avoiding large compositions.
+check("the figure-eight inverse callable matches the proved factorization",
+      *(p-target for p, target in zip(
+          harmonic_inverse(y, x-y**3+3*y,
+                           z-(1-a)*(42*y**3-49*y)),
+          (x, inverse_y, inverse_z))))
 
 check("the figure-eight outer map is invertible in both directions",
       y**3-3*y+(x-y**3+3*y)-x,

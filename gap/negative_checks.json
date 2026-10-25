@@ -1,14 +1,44 @@
 [
   {
-    "script": "negative_identity.g",
+    "name": "gap_negative_identity",
+    "command": [
+      "gap",
+      "-q",
+      "--quitonbreak",
+      "--norepl",
+      "negative_identity.g"
+    ],
+    "cwd": "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/gap",
     "exit_code": 1,
-    "expected_message": "FAILED: deliberately false identity 1=0",
-    "observed_expected_message": true
+    "expected_exit": 1,
+    "required_marker": "FAILED: deliberately false identity 1=0",
+    "marker_present": true,
+    "pass_lines": 48,
+    "extra_pass_lines": 6,
+    "success": true,
+    "seconds": 6.118,
+    "log": "gap/gap_negative_identity.log",
+    "log_sha256": "b41b9ff20efc0c51dbad74b007121a17293eceaa63f9fa031ea66b4259a1421f"
   },
   {
-    "script": "negative_division.g",
+    "name": "gap_negative_division",
+    "command": [
+      "gap",
+      "-q",
+      "--quitonbreak",
+      "--norepl",
+      "negative_division.g"
+    ],
+    "cwd": "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/gap",
     "exit_code": 1,
-    "expected_message": "NOT DIVISIBLE: deliberate 1/x",
-    "observed_expected_message": true
+    "expected_exit": 1,
+    "required_marker": "NOT DIVISIBLE: deliberate 1/x",
+    "marker_present": true,
+    "pass_lines": 48,
+    "extra_pass_lines": 6,
+    "success": true,
+    "seconds": 6.586,
+    "log": "gap/gap_negative_division.log",
+    "log_sha256": "076fc6d204b78cfbd41222a75347b920891b52d98d51d6967f9d07384d99c079"
   }
 ]

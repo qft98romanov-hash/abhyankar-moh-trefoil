@@ -1,0 +1,6 @@
+{
+  "verify.py": "73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef",
+  "paper/trefoil_explicit.tex": "3b876b410aa9499e4e7f250e6dd9e0c18a870b2ae078fd63a1699ad18cef9112",
+  "paper/harmonic_explicit.tex": "ef28dea738f08d6a022e39a1597c0dd23f117d39f964b2a3db27ed164a055585",
+  "verification/run_negative_controls.py": "94af3977b3471249f82fda4d7765336dd204c56e618f71418ddd614415c88103"
+}

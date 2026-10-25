@@ -1,0 +1,10 @@
+SymPy 1.14.0
+SHA256 verify.py 73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef
+SHA256 trefoil_explicit.tex a66260e69fda68f463fce7246ac873f1b9c7f5611e2ea98108a0b1ed428ca898
+Compact trefoil constructed in 0.229 seconds
+Traceback (most recent call last):
+  File "/tmp/rectification_syntax_az8s1u_k/repository/verification/audit_trefoil.py", line 110, in <module>
+    require(re.sub(r'\s+', '', block.split('=',1)[0])==signature,
+  File "/tmp/rectification_syntax_az8s1u_k/repository/verification/audit_trefoil.py", line 14, in require
+    raise AssertionError(message)
+AssertionError: ('Unexpected component label or argument order', '(\\Phi_T)_1(x,y,z)')

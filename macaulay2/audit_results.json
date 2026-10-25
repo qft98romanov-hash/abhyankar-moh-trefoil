@@ -1,33 +1,91 @@
 {
+  "verification_date": "2026-10-26",
   "system": "Macaulay2",
   "version": "1.22",
-  "main": {
-    "exit_code": 0,
-    "pass_lines": 27,
-    "log": "verification_macaulay2.log"
-  },
-  "chebyshev": {
-    "exit_code": 0,
-    "pass_lines_total": 30,
-    "additional_pass_lines": 3,
-    "log": "chebyshev_macaulay2.log"
-  },
-  "negative_division": {
-    "exit_code": 1,
-    "expected_failure": true,
-    "log": "negative_division.log"
-  },
-  "negative_identity": {
-    "exit_code": 1,
-    "expected_failure": true,
-    "log": "negative_identity.log"
-  },
+  "runs": [
+    {
+      "name": "m2_core",
+      "command": [
+        "M2",
+        "--script",
+        "macaulay2/verify_rectification.m2"
+      ],
+      "cwd": "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "required_marker": "BOTH RECTIFICATIONS VERIFIED (Macaulay2 certificates)",
+      "marker_present": true,
+      "pass_lines": 27,
+      "extra_pass_lines": 0,
+      "success": true,
+      "seconds": 22.927,
+      "log": "macaulay2/verification_macaulay2.log",
+      "log_sha256": "076eba320e53847462e4c668c9e57be48745ebf8c5c8664d39b4e2e83d80d69f"
+    },
+    {
+      "name": "m2_chebyshev",
+      "command": [
+        "M2",
+        "--script",
+        "macaulay2/verify_chebyshev.m2"
+      ],
+      "cwd": "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "required_marker": "THREE ADDITIONAL CHEBYSHEV CHECKS VERIFIED",
+      "marker_present": true,
+      "pass_lines": 30,
+      "extra_pass_lines": 0,
+      "success": true,
+      "seconds": 23.615,
+      "log": "macaulay2/chebyshev_macaulay2.log",
+      "log_sha256": "16ca50591287d860d1d83ad17e57ce874209942cde1e752d1b327a6a03d17721"
+    },
+    {
+      "name": "m2_negative_identity",
+      "command": [
+        "M2",
+        "--script",
+        "macaulay2/negative_identity.m2"
+      ],
+      "cwd": "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "required_marker": "FAIL: EXTERNAL NEGATIVE CONTROL: perturbed trefoil lift",
+      "marker_present": true,
+      "pass_lines": 27,
+      "extra_pass_lines": 0,
+      "success": true,
+      "seconds": 21.819,
+      "log": "macaulay2/negative_identity.log",
+      "log_sha256": "f2d6f8d837a680663c438bea65018569221449bc57da4c409b5914f43581aa8e"
+    },
+    {
+      "name": "m2_negative_division",
+      "command": [
+        "M2",
+        "--script",
+        "macaulay2/negative_division.m2"
+      ],
+      "cwd": "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository",
+      "exit_code": 1,
+      "expected_exit": 1,
+      "required_marker": "FAIL: exact division: EXTERNAL NEGATIVE CONTROL: (1+x)/x",
+      "marker_present": true,
+      "pass_lines": 27,
+      "extra_pass_lines": 0,
+      "success": true,
+      "seconds": 21.327,
+      "log": "macaulay2/negative_division.log",
+      "log_sha256": "786edc2c5695cd2c19f12b90bcb04aa82c321ce618aaa62b87f5e3be99948522"
+    }
+  ],
   "optional_full_expansions_run": false,
-  "scope": "Compact polynomial certificate identities; not literal LaTeX parsing.",
+  "scope": "Compact certificates with cancellation/localization, not literal LaTeX parsing. Wrappers tested from repository root.",
   "sha256": {
-    "negative_division.m2": "c88269b1ce9fe2220444ac2c28820194800a8743bb1704c93fba74fac585e885",
-    "negative_identity.m2": "2dc3b99fa60f953b9d8412d0aacc846fafdeb9aa5854a506d76d1c8ee5843244",
-    "verify_chebyshev.m2": "f5bbf5e262604a5d3ed56036f22407d4fcb1bb6a69359789004cef47094d8151",
+    "negative_division.m2": "52b6d9bbbcee602a107a156f55964f0f8abeb07b927fdc4ec6df84f908e3a5f9",
+    "negative_identity.m2": "39321a8697b841fd82ef3bc74dd3f102fa53dac16201a53877cc923c34713b92",
+    "verify_chebyshev.m2": "c6836c08b4f693ebfb997fb800dea14c3d867d252c9a060fdc5b75c75617c259",
     "verify_rectification.m2": "d2010cd42cbbd180339fb0518c4a97775b27df8f3044568cc1fd0f3cb884abc9"
   }
 }

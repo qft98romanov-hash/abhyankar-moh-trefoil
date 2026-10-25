@@ -1,7 +1,7 @@
 SymPy 1.14.0
-SHA256 verify.py 5eafc642b3e7f8ab5a4e69aa36e919d3122496d0175c885d5a41700b396da2d5
-SHA256 trefoil_explicit.tex 67b2445b9d55f568005da77b9541c515732febbc41f9f66c2bf269c2e88834bd
-Compact trefoil constructed in 0.218 seconds
+SHA256 verify.py 73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef
+SHA256 trefoil_explicit.tex 0cebd98569a31f2bd95f31cfa3cddc519b2b237fc91b968a3f16ad0628302366
+Compact trefoil constructed in 0.222 seconds
 PASS independent parsing component 1 ; 16 QQ monomials
 PASS independent parsing component 2 ; 201 QQ monomials
 PASS independent parsing component 3 ; 756 QQ monomials
@@ -34,7 +34,7 @@ forward 3 2604
 inverse 1 0
 inverse 2 0
 inverse 3 0
-Elapsed 1.085 seconds
+Elapsed 1.093 seconds
 
 INVERSE CHECK IN INDEPENDENT COORDINATES (X,U,V):
 inverse 2 (x,y,z denote X,U,V) delta: 0
@@ -67,13 +67,13 @@ inverse at (0,1,-8)
 inverse at (0,1,-7)
   printed: ('1', '7*a - 3', '-7*a + 11')
   compact: ('1', '7*a - 3', '-7*a + 11')
-Total elapsed 1.301 seconds
+Total elapsed 1.331 seconds
 FAIL: printed formulas differ from the compact construction.
 Traceback (most recent call last):
-  File "/tmp/rectification_negative_2zflyy01/repository/verify_printed_formulas.py", line 31, in <module>
+  File "/tmp/rectification_negative_t4ai_fqc/repository/verify_printed_formulas.py", line 32, in <module>
     main()
-  File "/tmp/rectification_negative_2zflyy01/repository/verify_printed_formulas.py", line 16, in main
+  File "/tmp/rectification_negative_t4ai_fqc/repository/verify_printed_formulas.py", line 17, in main
     subprocess.run([
   File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
     raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python', '-u', '/tmp/rectification_negative_2zflyy01/repository/verification/audit_trefoil.py', '--repository', '/tmp/rectification_negative_2zflyy01/repository', '--expect-correct']' returned non-zero exit status 1.
+subprocess.CalledProcessError: Command '['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python', '-O', '-u', '/tmp/rectification_negative_t4ai_fqc/repository/verification/audit_trefoil.py', '--repository', '/tmp/rectification_negative_t4ai_fqc/repository', '--expect-correct']' returned non-zero exit status 1.

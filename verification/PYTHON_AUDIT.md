@@ -1,5 +1,9 @@
 # Python verification: scope and implementation audit
 
+Updated 26 October 2026. Two symbolic inverse-callable checks and the parser
+corrections below have been added. The polynomial construction formulas are
+unchanged. See [HARDENING_2026-10-26.md](HARDENING_2026-10-26.md).
+
 The compact construction in `verify.py` was read and rerun independently. Its
 coefficient arithmetic is exact over
 `Q[a]/(a^2-a+1)`, with `x,y,z,t` polynomial indeterminates. No floating-point
@@ -49,9 +53,16 @@ parsing route. A separately supplied harmonic checker uses two parsing routes
 and separate coefficient normalization. All twelve corrected components are
 checked; the earlier successful compact checks alone did not check LaTeX.
 
+Each reader now validates component labels and argument order and rejects
+multidigit exponents without braces. The independent harmonic reader parses
+the actual inverse RHS with the invertible substitution
+`X=x, Y=y-x^3+3*x, Z=z-(1-a)*(42*x^3-49*x)` in both parsing routes.
+It no longer textually identifies `X^3-3*X+Y` with the original symbol `Y`.
+Its multiplication handling retains the meaning of `\times`.
+
 ## Small implementation repairs
 
-The compact formulas and `verify.py` were left unchanged.
+The following repairs were made on 25 October, when `verify.py` was unchanged:
 
 1. Replace parser `assert` statements by explicit `require` calls. Several
    assertions consumed a closing token as a side effect, so Python's `-O`
@@ -63,14 +74,22 @@ The compact formulas and `verify.py` were left unchanged.
 3. Correct its default repository location, and correct the independent
    harmonic auditor's command example and construction-loading comment.
 
+The 26 October update additionally binds the actual `trefoil_inverse` and
+`harmonic_inverse` callables to their proved factorizations by polynomial
+identities in three independent variables. It corrects the independent
+harmonic coordinate-substitution defect and the parser issues above, and
+propagates `-O` from the wrapper to its child interpreters. None of these
+changes alters the polynomial construction formulas.
+
 ## Reproducibility and negative controls
 
 Fresh runs and their actual exit codes are recorded in the accompanying logs.
-The control runner first checks the corrected sources, then restores exactly
-one previous sign error in an isolated temporary copy of each appendix.
-The wrapper must reject both altered copies with exit code 1. The standalone
-harmonic checker is also required to reject its altered copy under `python -O`.
-Temporary mutations never touch the actual paper.
+The control runner checks valid sources and deliberately invalid isolated
+copies. It retains the historical sign mutations and tests changed labels,
+unbraced multidigit exponents, the harmonic `U -> Y` corruption and an
+off-axis change to `harmonic_inverse`. It requires both the expected exit code
+and the intended diagnostic. A missing dependency or input is not an accepted
+negative-test result. Temporary mutations never touch the actual paper.
 
 This audit concerns the two concrete constructions and their presentation.
 It is not a proof of rectifiability for every polynomial embedding, nor a full
@@ -80,11 +99,15 @@ Lean formalization, nor a general-purpose LaTeX verification system.
 
 Runtime: Python 3.12.14; SymPy 1.14.0; pure Python coefficient arithmetic.
 
-- Unchanged compact verifier: exit 0, 17 PASS messages.
+- Compact verifier with two inverse-callable bindings: exit 0, 19 PASS messages.
 - Corrected literal LaTeX wrapper: exit 0, all twelve components match.
 - Separate harmonic auditor: exit 0, all six components match.
 - Hardened auditor wrapper: exit 0, all twelve components match.
-- Final portable control runner: exit 0; two positive audits under `-O` pass, and all five intended failures are rejected with exit 1. The five controls are a false compact identity, a nondivisible numerator, a trefoil sign error through the wrapper, a harmonic sign error through the wrapper, and the same harmonic error through the standalone auditor under `-O`.
+- Expanded portable control runner: exit 0; five optimized positive cases pass and all fourteen deliberately invalid cases are rejected with exit 1 and the intended diagnostics.
 
-`environment_and_inputs.json` records versions and input/output SHA256 hashes.
-`portable_control_logs/results.json` records each exit code, expected output marker, and duration.
+`environment_and_inputs.json` records historical versions and input/source
+hashes from 25 October, not hashes of current output logs.
+[current_verification.json](current_verification.json) records the current
+source and output-log hashes, versions and complete runs.
+[negative_control_logs/results.json](negative_control_logs/results.json)
+records each control's exit code, expected markers and duration.
