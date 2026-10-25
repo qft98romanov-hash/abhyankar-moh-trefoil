@@ -558,3 +558,38 @@ $$
 The transfer in Section 5 is an explicit application of the lifting principle for affine modifications in [Kaliman–Zaidenberg, Proposition 2.1](https://arxiv.org/abs/math/9801076). For the quotient-ring construction, see [Edo–Vénéreau, Proposition 1 and Theorem 4](https://doi.org/10.4064/ap76-1-6), and [Edo–van den Essen–Maubach, Lemma 1.1](https://arxiv.org/abs/0809.0767). Existence of a companion also follows from the [Bhatwadekar–Dutta residual-variable theorem](https://doi.org/10.1080/00927879308824585).
 
 The paper's Methods section explains these connections, states the embedding problem with its historical sources, and provides the full bibliography. The general lifting principle is not claimed as new.
+
+
+## Chebyshev parametrizations
+
+Use the normalized Chebyshev polynomials $C_n(t)=2T_n(t/2)$, where $T_n(\cos\theta)=\cos(n\theta)$. Then
+
+$$
+C_3=t^3-3t,\quad C_4=t^4-4t^2+2,\quad
+C_5=t^5-5t^3+5t,\quad C_7=t^7-7t^5+14t^3-7t.
+$$
+
+The normalized Chebyshev trefoil $(C_3,C_4,C_5)$ is already covered by this repository: it is the image of the Shastri parametrization under the affine automorphism
+
+$$
+M(x,y,z)=(x,y+2,z-5x),\qquad M^{-1}(x,y,z)=(x,y-2,z+5x).
+$$
+
+Its rectifier is $\Psi=\Phi_T\circ M^{-1}$, with inverse $\Psi^{-1}=M\circ\Phi_T^{-1}$. Thus $\Psi(C_3(t),C_4(t),C_5(t))=(t,0,0)$ over $\mathbb Q(\sqrt{-3})$.
+
+The harmonic figure-eight treated here is exactly $(C_3,C_5,C_7)$. The identity
+
+$$
+C_3C_7-C_5^2+2=C_4
+$$
+
+explains the modification $(x,y,z)\mapsto(x,xz-y^2+2,y)$ used in its construction. The transfer argument verifies polynomiality in both directions, including the exceptional fibre $x=0$.
+
+For the real knot identifications $H(3,4,5)$ and $H(3,5,7)$, see Koseleff and Pecker, [*Chebyshev diagrams for two-bridge knots*](https://arxiv.org/abs/0909.3281), Introduction and Definition 1.2 ([journal DOI](https://doi.org/10.1007/s10711-010-9514-7)). The normalization above changes the parameter and ambient coordinates linearly.
+
+**Scope.** These cases do not prove rectifiability of all Chebyshev or harmonic parametrizations. Further applications must verify that the complex parametrization is a closed embedding, find a coordinate restricting to the parameter, and meet the transfer theorem's hypotheses. Determining which further Chebyshev models admit this construction remains open here. Their real knot classification alone does not establish polynomial equivalence over $\mathbb C$.
+
+
+## Acknowledgements
+
+The author expresses his sincere gratitude to Alexei Kanel-Belov and Alexander Frolov.

@@ -1,0 +1,136 @@
+SymPy 1.14.0
+SHA256 verify.py 5eafc642b3e7f8ab5a4e69aa36e919d3122496d0175c885d5a41700b396da2d5
+SHA256 trefoil_explicit.tex 1113510e5fa959eb8dc13dc384c1664c94037173cc1201a4b7875d85a7757026
+Compact trefoil constructed in 0.242 seconds
+PASS independent parsing component 1 ; 16 QQ monomials
+PASS independent parsing component 2 ; 201 QQ monomials
+PASS independent parsing component 3 ; 756 QQ monomials
+PASS independent parsing component 4 ; 3 QQ monomials
+PASS independent parsing component 5 ; 160 QQ monomials
+PASS independent parsing component 6 ; 264 QQ monomials
+
+COMPONENT forward 1 delta = printed - compact: 0
+PASS literal equality
+
+COMPONENT forward 2 delta = printed - compact: 0
+PASS literal equality
+
+COMPONENT forward 3 delta = printed - compact: 2604*x**24 + 2584120*x**20 + 84919080*x**16 - 1089556*x**10 - 40318*x**4
+  exponent (4, 0, 0) printed -30180*a - 20159 correct 20159 - 30180*a difference -40318
+  exponent (10, 0, 0) printed -15005311*a - 544778 correct 544778 - 15005311*a difference -1089556
+  exponent (16, 0, 0) printed 42459540 - 57839390*a correct -57839390*a - 42459540 difference 84919080
+  exponent (20, 0, 0) printed 1292060 - 5332390*a correct -5332390*a - 1292060 difference 2584120
+  exponent (24, 0, 0) printed 1302 - 21350*a correct -21350*a - 1302 difference 2604
+
+COMPONENT inverse 1 delta = printed - compact: 0
+PASS literal equality
+
+COMPONENT inverse 2 delta = printed - compact: -112*x**14 + 8*x**12*z + 1408*x**12 - 448*x**11*y - 96*x**10*z - 6816*x**10 + 32*x**9*y*z + 4288*x**9*y - 672*x**8*y**2 + 432*x**8*z + 15552*x**8 - 288*x**7*y*z - 14400*x**7*y + 48*x**6*y**2*z + 4416*x**6*y**2 - 864*x**6*z - 15984*x**6 - 448*x**5*y**3 + 864*x**5*y*z + 19008*x**5*y - 288*x**4*y**2*z - 8352*x**4*y**2 + 648*x**4*z + 5184*x**4 + 32*x**3*y**3*z + 1600*x**3*y**3 - 864*x**3*y*z - 6912*x**3*y - 112*x**2*y**4 + 432*x**2*y**2*z + 3456*x**2*y**2 - 96*x*y**3*z - 768*x*y**3 + 8*y**4*z + 64*y**4
+  exponent (0, 4, 0) printed 32 - 8*a correct -8*a - 32 difference 64
+  exponent (0, 4, 1) printed 4 - a correct -a - 4 difference 8
+  exponent (1, 3, 0) printed 47*a - 555 correct 47*a + 213 difference -768
+  exponent (1, 3, 1) printed 12*a - 58 correct 12*a + 38 difference -96
+  exponent (2, 2, 0) printed 3042 - 202*a correct -202*a - 414 difference 3456
+  exponent (2, 2, 1) printed 306 - 56*a correct -56*a - 126 difference 432
+  exponent (2, 4, 0) printed -2722*a - 751 correct -2722*a - 639 difference -112
+  exponent (3, 1, 0) printed 401*a - 6687 correct 401*a + 225 difference -6912
+  exponent (3, 1, 1) printed 130*a - 702 correct 130*a + 162 difference -864
+  exponent (3, 3, 0) printed 4602*a + 3182 correct 4602*a + 1582 difference 1600
+  exponent (3, 3, 1) printed 3776*a + 560 correct 3776*a + 528 difference 32
+  exponent (4, 0, 0) printed 5185 correct 1 difference 5184
+  exponent (4, 0, 1) printed 592 - 127*a correct -127*a - 56 difference 648
+  exponent (4, 2, 0) printed -2504*a - 9381 correct -2504*a - 1029 difference -8352
+  exponent (4, 2, 1) printed -5364*a - 1290 correct -5364*a - 1002 difference -288
+  exponent (5, 1, 0) printed 18630 - 724*a correct -724*a - 378 difference 19008
+  exponent (5, 1, 1) printed 2966*a + 1530 correct 2966*a + 666 difference 864
+  exponent (5, 3, 0) printed -25842*a - 5506 correct -25842*a - 5058 difference -448
+  exponent (6, 0, 0) printed -15984 correct 0 difference -15984
+  exponent (6, 0, 1) printed 125*a - 810 correct 125*a + 54 difference -864
+  exponent (6, 2, 0) printed 18840*a + 9782 correct 18840*a + 5366 difference 4416
+  exponent (6, 2, 1) printed 18894*a + 1116 correct 18894*a + 1068 difference 48
+  exponent (7, 1, 0) printed 473*a - 14211 correct 473*a + 189 difference -14400
+  exponent (7, 1, 1) printed -12168*a - 1326 correct -12168*a - 1038 difference -288
+  exponent (8, 0, 0) printed 15552 correct 0 difference 15552
+  exponent (8, 0, 1) printed 414 - 56*a correct -56*a - 18 difference 432
+  exponent (8, 2, 0) printed -38982*a - 5091 correct -38982*a - 4419 difference -672
+  exponent (9, 1, 0) printed 4260 - 134*a correct -134*a - 28 difference 4288
+  exponent (9, 1, 1) printed 15116*a + 568 correct 15116*a + 536 difference 32
+  exponent (10, 0, 0) printed -6816 correct 0 difference -6816
+  exponent (10, 0, 1) printed 12*a - 94 correct 12*a + 2 difference -96
+  exponent (11, 1, 0) printed 14*a - 448 correct 14*a difference -448
+  exponent (12, 0, 0) printed 1408 correct 0 difference 1408
+  exponent (12, 0, 1) printed 8 - a correct -a difference 8
+  exponent (14, 0, 0) printed -112 correct 0 difference -112
+
+COMPONENT inverse 3 delta = printed - compact: 140*x**11 - 10*x**9*z - 1340*x**9 + 420*x**8*y + 90*x**7*z + 4500*x**7 - 30*x**6*y*z - 2760*x**6*y + 420*x**5*y**2 - 270*x**5*z - 5940*x**5 + 180*x**4*y*z + 5220*x**4*y - 30*x**3*y**2*z - 1500*x**3*y**2 + 270*x**3*z + 2154*x**3 + 140*x**2*y**3 - 270*x**2*y*z - 2160*x**2*y + 90*x*y**2*z + 720*x*y**2 + 18*x - 10*y**3*z - 80*y**3 - 6*y
+  exponent (0, 1, 0) printed -3 correct 3 difference -6
+  exponent (0, 3, 0) printed -40*a - 36 correct 44 - 40*a difference -80
+  exponent (0, 3, 1) printed -5*a - 5 correct 5 - 5*a difference -10
+  exponent (1, 0, 0) printed 8 correct -10 difference 18
+  exponent (1, 2, 0) printed 240*a + 505 correct 240*a - 215 difference 720
+  exponent (1, 2, 1) printed 45*a + 47 correct 45*a - 43 difference 90
+  exponent (2, 1, 0) printed -360*a - 1910 correct 250 - 360*a difference -2160
+  exponent (2, 1, 1) printed -135*a - 147 correct 123 - 135*a difference -270
+  exponent (2, 3, 0) printed 964*a + 184 correct 964*a + 44 difference 140
+  exponent (3, 0, 0) printed 2154 correct 0 difference 2154
+  exponent (3, 0, 1) printed 136*a + 153 correct 136*a - 117 difference 270
+  exponent (3, 2, 0) printed -1652*a - 1178 correct 322 - 1652*a difference -1500
+  exponent (3, 2, 1) printed 3 - 573*a correct 33 - 573*a difference -30
+  exponent (4, 1, 0) printed 1356*a + 4447 correct 1356*a - 773 difference 5220
+  exponent (4, 1, 1) printed 684*a + 40 correct 684*a - 140 difference 180
+  exponent (5, 0, 0) printed -5939 correct 1 difference -5940
+  exponent (5, 0, 1) printed -351*a - 93 correct 177 - 351*a difference -270
+  exponent (5, 2, 0) printed 9292 - 11257*a correct 8872 - 11257*a difference 420
+  exponent (6, 1, 0) printed -1936*a - 2050 correct 710 - 1936*a difference -2760
+  exponent (6, 1, 1) printed 10965*a - 9213 correct 10965*a - 9183 difference -30
+  exponent (7, 0, 0) printed 4500 correct 0 difference 4500
+  exponent (7, 0, 1) printed 315*a - 7 correct 315*a - 97 difference 90
+  exponent (8, 1, 0) printed 1144*a + 176 correct 1144*a - 244 difference 420
+  exponent (9, 0, 0) printed -1340 correct 0 difference -1340
+  exponent (9, 0, 1) printed 13 - 131*a correct 23 - 131*a difference -10
+  exponent (11, 0, 0) printed 140 correct 0 difference 140
+
+Counterexample (x,y,z)=(1,0,0):
+forward 1 0
+forward 2 0
+forward 3 86375930
+inverse 1 0
+inverse 2 -768
+inverse 3 -468
+Elapsed 1.141 seconds
+
+INVERSE CHECK IN INDEPENDENT COORDINATES (X,U,V):
+inverse 2 (x,y,z denote X,U,V) delta: 8*y**4*z
+  (X,U,V) exponent (0, 4, 1) printed 4 - a correct -a - 4
+inverse 3 (x,y,z denote X,U,V) delta: -10*y**3*z - 6*y
+  (X,U,V) exponent (0, 1, 0) printed -8*a - 3 correct 3 - 8*a
+  (X,U,V) exponent (0, 3, 1) printed -5*a - 5 correct 5 - 5*a
+
+EIGHT LITERAL SIGN CORRECTIONS:
+line 53 '- 30180 a - 20159' -> '- 30180 a + 20159'
+line 103 '- 15005311 a - 544778' -> '- 15005311 a + 544778'
+line 150 '- 57839390 a + 42459540' -> '- 57839390 a - 42459540'
+line 166 '- 5332390 a + 1292060' -> '- 5332390 a - 1292060'
+line 171 '- 21350 a + 1302' -> '- 21350 a - 1302'
+line 200 '- a + 4\\Bigr]' -> '- a - 4\\Bigr]'
+line 212 '- 8 a - 3\\Bigr]' -> '- 8 a + 3\\Bigr]'
+line 222 '- 5 a - 5\\Bigr]' -> '- 5 a + 5\\Bigr]'
+PASS all six literal components equal compact formulas after 8 in-memory changes
+
+EXACT CONTROL POINTS (a remains symbolic, with a^2-a+1=0):
+forward at (1,0,0)
+  printed: ('-21*a + 10', '-6993*a + 3000', '32787189*a + 74163824')
+  compact: ('-21*a + 10', '-6993*a + 3000', '32787189*a - 12212106')
+forward at trefoil point (-2,-3,-9)
+  printed: ('1', '0', '8317474560032')
+  compact: ('1', '0', '0')
+inverse at axis point (1,0,0)
+  printed: ('-2', '-771', '-477')
+  compact: ('-2', '-3', '-9')
+inverse at (0,1,-8)
+  printed: ('1', '4*a + 2', '-8*a + 1')
+  compact: ('1', '4*a + 2', '-8*a + 7')
+inverse at (0,1,-7)
+  printed: ('1', '7*a + 5', '-7*a - 5')
+  compact: ('1', '7*a - 3', '-7*a + 11')
+Total elapsed 1.364 seconds

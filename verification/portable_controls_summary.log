@@ -1,0 +1,8 @@
+PASS false_identity_optimized exit 1
+PASS nondivisible_numerator_optimized exit 1
+PASS positive_trefoil_optimized exit 0
+PASS positive_harmonic_optimized exit 0
+PASS negative_trefoil_wrapper exit 1
+PASS negative_harmonic_wrapper exit 1
+PASS negative_harmonic_standalone_optimized exit 1
+ALL NEGATIVE CONTROLS REJECTED; OPTIMIZED POSITIVE CHECKS PASSED

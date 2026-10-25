@@ -1,0 +1,33 @@
+{
+  "system": "Macaulay2",
+  "version": "1.22",
+  "main": {
+    "exit_code": 0,
+    "pass_lines": 27,
+    "log": "verification_macaulay2.log"
+  },
+  "chebyshev": {
+    "exit_code": 0,
+    "pass_lines_total": 30,
+    "additional_pass_lines": 3,
+    "log": "chebyshev_macaulay2.log"
+  },
+  "negative_division": {
+    "exit_code": 1,
+    "expected_failure": true,
+    "log": "negative_division.log"
+  },
+  "negative_identity": {
+    "exit_code": 1,
+    "expected_failure": true,
+    "log": "negative_identity.log"
+  },
+  "optional_full_expansions_run": false,
+  "scope": "Compact polynomial certificate identities; not literal LaTeX parsing.",
+  "sha256": {
+    "negative_division.m2": "c88269b1ce9fe2220444ac2c28820194800a8743bb1704c93fba74fac585e885",
+    "negative_identity.m2": "2dc3b99fa60f953b9d8412d0aacc846fafdeb9aa5854a506d76d1c8ee5843244",
+    "verify_chebyshev.m2": "f5bbf5e262604a5d3ed56036f22407d4fcb1bb6a69359789004cef47094d8151",
+    "verify_rectification.m2": "d2010cd42cbbd180339fb0518c4a97775b27df8f3044568cc1fd0f3cb884abc9"
+  }
+}

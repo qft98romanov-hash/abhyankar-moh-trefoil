@@ -1,0 +1,70 @@
+SymPy 1.14.0
+SHA256 verify.py 5eafc642b3e7f8ab5a4e69aa36e919d3122496d0175c885d5a41700b396da2d5
+SHA256 trefoil_explicit.tex 3b876b410aa9499e4e7f250e6dd9e0c18a870b2ae078fd63a1699ad18cef9112
+Compact trefoil constructed in 0.214 seconds
+PASS independent parsing component 1 ; 16 QQ monomials
+PASS independent parsing component 2 ; 201 QQ monomials
+PASS independent parsing component 3 ; 756 QQ monomials
+PASS independent parsing component 4 ; 3 QQ monomials
+PASS independent parsing component 5 ; 153 QQ monomials
+PASS independent parsing component 6 ; 260 QQ monomials
+
+COMPONENT forward 1 delta = printed - compact: 0
+PASS literal equality
+
+COMPONENT forward 2 delta = printed - compact: 0
+PASS literal equality
+
+COMPONENT forward 3 delta = printed - compact: 0
+PASS literal equality
+
+COMPONENT inverse 1 delta = printed - compact: 0
+PASS literal equality
+
+COMPONENT inverse 2 delta = printed - compact: 0
+PASS literal equality
+
+COMPONENT inverse 3 delta = printed - compact: 0
+PASS literal equality
+
+Counterexample (x,y,z)=(1,0,0):
+forward 1 0
+forward 2 0
+forward 3 0
+inverse 1 0
+inverse 2 0
+inverse 3 0
+Elapsed 1.081 seconds
+
+INVERSE CHECK IN INDEPENDENT COORDINATES (X,U,V):
+inverse 2 (x,y,z denote X,U,V) delta: 0
+inverse 3 (x,y,z denote X,U,V) delta: 0
+
+EIGHT LITERAL SIGN CORRECTIONS:
+Already corrected: '- 30180 a + 20159'
+Already corrected: '- 15005311 a + 544778'
+Already corrected: '- 57839390 a - 42459540'
+Already corrected: '- 5332390 a - 1292060'
+Already corrected: '- 21350 a - 1302'
+Already corrected: '- a - 4\\Bigr]'
+Already corrected: '- 8 a + 3\\Bigr]'
+Already corrected: '- 5 a + 5\\Bigr]'
+PASS all six literal components equal compact formulas after 0 in-memory changes
+
+EXACT CONTROL POINTS (a remains symbolic, with a^2-a+1=0):
+forward at (1,0,0)
+  printed: ('-21*a + 10', '-6993*a + 3000', '32787189*a - 12212106')
+  compact: ('-21*a + 10', '-6993*a + 3000', '32787189*a - 12212106')
+forward at trefoil point (-2,-3,-9)
+  printed: ('1', '0', '0')
+  compact: ('1', '0', '0')
+inverse at axis point (1,0,0)
+  printed: ('-2', '-3', '-9')
+  compact: ('-2', '-3', '-9')
+inverse at (0,1,-8)
+  printed: ('1', '4*a + 2', '-8*a + 7')
+  compact: ('1', '4*a + 2', '-8*a + 7')
+inverse at (0,1,-7)
+  printed: ('1', '7*a - 3', '-7*a + 11')
+  compact: ('1', '7*a - 3', '-7*a + 11')
+Total elapsed 1.299 seconds

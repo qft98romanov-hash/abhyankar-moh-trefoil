@@ -1,0 +1,51 @@
+[
+  {
+    "label": "false_identity_optimized",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "marker_present": true,
+    "seconds": 0.466
+  },
+  {
+    "label": "nondivisible_numerator_optimized",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "marker_present": true,
+    "seconds": 0.436
+  },
+  {
+    "label": "positive_trefoil_optimized",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "marker_present": true,
+    "seconds": 1.755
+  },
+  {
+    "label": "positive_harmonic_optimized",
+    "exit_code": 0,
+    "expected_exit": 0,
+    "marker_present": true,
+    "seconds": 3.985
+  },
+  {
+    "label": "negative_trefoil_wrapper",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "marker_present": true,
+    "seconds": 1.729
+  },
+  {
+    "label": "negative_harmonic_wrapper",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "marker_present": true,
+    "seconds": 35.028
+  },
+  {
+    "label": "negative_harmonic_standalone_optimized",
+    "exit_code": 1,
+    "expected_exit": 1,
+    "marker_present": true,
+    "seconds": 32.28
+  }
+]

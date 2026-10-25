@@ -1,0 +1,14 @@
+[
+  {
+    "script": "negative_identity.g",
+    "exit_code": 1,
+    "expected_message": "FAILED: deliberately false identity 1=0",
+    "observed_expected_message": true
+  },
+  {
+    "script": "negative_division.g",
+    "exit_code": 1,
+    "expected_message": "NOT DIVISIBLE: deliberate 1/x",
+    "observed_expected_message": true
+  }
+]

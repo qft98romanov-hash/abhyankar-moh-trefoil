@@ -51,6 +51,7 @@ GPT Astra. The main polynomial identities and both explicit rectifications
 have been checked by exact symbolic computation. A reproducible
 computational certificate is provided in \texttt{verify.py}, with its run
 log in \texttt{verification.log}.
+The coordinate-only formulas were corrected on 25 October 2026. All twelve displayed components are additionally checked against the compact construction by \texttt{verify\_printed\_formulas.py}; see the accompanying errata.
 \end{quote}
 
 \section{Methods}
@@ -579,13 +580,35 @@ $\Q[a,x,y,z,t]/(a^2-a+1)$ using SymPy. It checks:
 \end{enumerate}
 The polynomial certificates, cancellation argument, and factorization
 \eqref{eq:harmonic-factorization} establish the full inverse identities.
-The successful run is recorded in \texttt{verification.log}. To reproduce it:
+The successful Python run is recorded in \texttt{verification.log}.
+The additional script \texttt{verify\_printed\_formulas.py} reads the
+actual LaTeX source and checks all twelve displayed components against
+the compact construction. This separate check is essential: the original
+Python certificate did not detect transcription errors in the expanded
+appendices. The corrected signs are documented in the accompanying errata.
+
+Independent exact implementations are provided in
+\texttt{gap/verify\_rectification.g} and
+\texttt{macaulay2/verify\_rectification.m2}. They reconstruct the
+compact polynomial certificates in GAP and Macaulay2; they do not parse
+the LaTeX appendices. Each implementation is accompanied by run logs
+and negative controls. Tests of the Chebyshev normalization below are
+also included. Detailed commands, versions and the scope of each check
+are recorded in \texttt{VERIFICATION.md}.
+
+To reproduce the Python checks:
 \begin{quote}\ttfamily\small
 python -m pip install -r requirements.txt\\
-python -u verify.py
+python -u verify.py\\
+python -u verify\_printed\_formulas.py
 \end{quote}
 The displayed automorphisms are defined over $K\subset\C$; their
 coefficients do not define a rectification by real polynomial automorphisms.
+
+\clearpage
+\input{chebyshev_note.tex}
+
+\input{acknowledgements.tex}
 
 \clearpage
 \input{references.tex}

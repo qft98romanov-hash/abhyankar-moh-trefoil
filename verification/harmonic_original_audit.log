@@ -1,0 +1,29 @@
+PASS: base polynomial identity for W
+PASS: base inverse: first nontrivial component
+PASS: base inverse: certificate for the other component
+PASS: inverse after forward: both nontrivial components expanded
+PASS: the original trefoil normalization is invertible
+PASS: the trefoil outer map is invertible in both directions
+PASS: the trefoil maps to (t,0,0)
+PASS: the inverse recovers the trefoil from the axis
+PASS: component degrees (5, 15, 24)
+PASS: the base relative Jacobian determinant is -1
+PASS: polynomiality of the forward figure-eight transfer
+PASS: polynomiality of the inverse figure-eight transfer
+PASS: the figure-eight outer map is invertible in both directions
+PASS: the harmonic figure-eight maps to (t,0,0)
+PASS: the inverse recovers the figure-eight from the axis
+PASS: component degrees (7, 21, 41)
+PASS: the figure-eight relative Jacobian determinant is +1
+BOTH RECTIFICATIONS VERIFIED; elapsed: 30.97 s
+Parser self-tests passed 5
+{"component": 1, "label": "(\\Phi_H)_1(x,y,z)", "equal": true, "printed_terms": 19, "compact_terms": 19, "differing_QQ_a_coefficients": 0, "coordinate_system": "original x,y,z"}
+{"component": 2, "label": "(\\Phi_H)_2(x,y,z)", "equal": true, "printed_terms": 322, "compact_terms": 322, "differing_QQ_a_coefficients": 0, "coordinate_system": "original x,y,z"}
+{"component": 3, "label": "(\\Phi_H)_3(x,y,z)", "equal": false, "printed_terms": 2108, "compact_terms": 2108, "differing_QQ_a_coefficients": 222, "coordinate_system": "original x,y,z"}
+First discrepancies [('(22, 0, 7, 0)', -1120), ('(22, 0, 1, 0)', -2240), ('(21, 2, 6, 0)', 7840), ('(21, 2, 0, 0)', 2240), ('(21, 0, 6, 0)', -15680), ('(21, 0, 4, 0)', -10080), ('(21, 0, 0, 0)', -4480), ('(20, 4, 5, 0)', -23520), ('(20, 2, 5, 0)', 94080), ('(20, 2, 3, 0)', 40320), ('(20, 0, 9, 0)', -140), ('(20, 0, 5, 0)', -84000), ('(20, 0, 3, 0)', -124320), ('(19, 6, 4, 0)', 39200), ('(19, 4, 4, 0)', -235200), ('(19, 4, 2, 0)', -60480), ('(19, 2, 8, 0)', 1260), ('(19, 2, 4, 0)', 420000), ('(19, 2, 2, 0)', 372960), ('(19, 0, 8, 0)', -2520)]
+{"component": 4, "label": "(\\Phi_H^{-1})_1(X,Y,Z)", "equal": true, "printed_terms": 1, "compact_terms": 1, "differing_QQ_a_coefficients": 0, "coordinate_system": "X=y, Y=x-y^3+3y, Z=z-(1-a)(42y^3-49y)"}
+{"component": 5, "label": "(\\Phi_H^{-1})_2(X,Y,Z)", "equal": false, "printed_terms": 85, "compact_terms": 85, "differing_QQ_a_coefficients": 2, "coordinate_system": "X=y, Y=x-y^3+3y, Z=z-(1-a)(42y^3-49y)"}
+First discrepancies [('(4, 0, 1, 0)', -10), ('(3, 0, 0, 0)', -88)]
+{"component": 6, "label": "(\\Phi_H^{-1})_3(X,Y,Z)", "equal": false, "printed_terms": 477, "compact_terms": 477, "differing_QQ_a_coefficients": 5, "coordinate_system": "X=y, Y=x-y^3+3y, Z=z-(1-a)(42y^3-49y)"}
+First discrepancies [('(9, 0, 2, 0)', -24), ('(8, 0, 1, 0)', -1152), ('(7, 0, 2, 0)', 16), ('(6, 0, 1, 0)', 48), ('(5, 0, 0, 0)', -672)]
+TOTAL 3 unequal of 6; seconds 32.347280976006004

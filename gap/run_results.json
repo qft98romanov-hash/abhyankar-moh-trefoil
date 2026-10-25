@@ -1,0 +1,56 @@
+{
+  "recorded_utc": "2026-10-25T19:52:37.129965+00:00",
+  "system": "Ubuntu 24.04.3 LTS",
+  "gap_version": "4.12.1",
+  "source_verify_py_sha256": "5eafc642b3e7f8ab5a4e69aa36e919d3122496d0175c885d5a41700b396da2d5",
+  "runs": [
+    {
+      "script": "verify_rectification.g",
+      "command": [
+        "gap",
+        "-q",
+        "--quitonbreak",
+        "--norepl",
+        "verify_rectification.g"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.583,
+      "log": "gap_run.log",
+      "sha256": "29af5bb2886702046ae0fe7bef82e98e4ac6562d93de503bef1275bf61570ac3",
+      "core_pass_count": 48,
+      "extra_chebyshev_pass_count": 6
+    },
+    {
+      "script": "negative_identity.g",
+      "command": [
+        "gap",
+        "-q",
+        "--quitonbreak",
+        "--norepl",
+        "negative_identity.g"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 6.488,
+      "log": "gap_negative_identity.log",
+      "sha256": "d07b050ced3e6891401a8ced9c300003464ca64df5785dd04d0027fd91698392",
+      "expected_message": "FAILED: deliberately false identity 1=0",
+      "observed_expected_message": true
+    },
+    {
+      "script": "negative_division.g",
+      "command": [
+        "gap",
+        "-q",
+        "--quitonbreak",
+        "--norepl",
+        "negative_division.g"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 6.673,
+      "log": "gap_negative_division.log",
+      "sha256": "c5b8c18d55782984fc119e65542c3de34b288dbeacd1a7f1763d5de154cb3e34",
+      "expected_message": "NOT DIVISIBLE: deliberate 1/x",
+      "observed_expected_message": true
+    }
+  ]
+}

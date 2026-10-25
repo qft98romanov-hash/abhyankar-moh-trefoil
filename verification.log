@@ -15,4 +15,4 @@ PASS: the harmonic figure-eight maps to (t,0,0)
 PASS: the inverse recovers the figure-eight from the axis
 PASS: component degrees (7, 21, 41)
 PASS: the figure-eight relative Jacobian determinant is +1
-BOTH RECTIFICATIONS VERIFIED; elapsed: 31.44 s
+BOTH RECTIFICATIONS VERIFIED; elapsed: 33.32 s

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/876f75ce875d/repository_update/python_audit/repository/verification/run_negative_controls.py", line 115, in <module>
+    main()
+  File "/workspace/scratch/876f75ce875d/repository_update/python_audit/repository/verification/run_negative_controls.py", line 60, in main
+    internal_case(args.internal_case)
+  File "/workspace/scratch/876f75ce875d/repository_update/python_audit/repository/verification/run_negative_controls.py", line 36, in internal_case
+    namespace['div_x'](namespace['one'], 1)
+  File "verify.py", line 59, in div_x
+ArithmeticError: The numerator is not divisible by the required power of x

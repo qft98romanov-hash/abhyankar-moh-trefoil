@@ -14,6 +14,24 @@ certificate is included.
 
 The paper is organized as **methods → trefoil → harmonic figure-eight**.
 
+## Correction and literal-formula audit: 25 October 2026
+
+The previous coordinate-only TeX formulas contained 52 sign errors: 8 in the
+trefoil formulas and 44 in the harmonic figure-eight formulas. The compact
+construction in `verify.py` is unchanged and its exact certificate passed again.
+The displayed formulas have now been corrected and are checked by reading their
+actual LaTeX right-hand sides. See [the errata](ERRATA_2026-10-25.md).
+
+Run both the construction certificate and the literal-document check:
+
+```bash
+python -u verify.py
+python -u verify_printed_formulas.py
+```
+
+The second command fails if any of the twelve printed forward/inverse components
+differs from the corresponding compact polynomial.
+
 ## Method in brief
 
 Work over $K=\mathbb Q[a]/(a^2-a+1)\simeq\mathbb Q(\sqrt{-3})$.
@@ -83,6 +101,24 @@ The general transfer theorem is a sufficient construction under its stated
 hypotheses; it does not settle rectification of arbitrary embeddings
 $\mathbb A^1_{\mathbb C}\hookrightarrow\mathbb A^3_{\mathbb C}$.
 
+## Independent verification
+
+The exact checks are provided in three computer algebra systems. The Python
+LaTeX audit additionally reads the actual twelve displayed components.
+
+```bash
+python -u verify.py
+python -u verify_printed_formulas.py
+gap -q --quitonbreak --norepl gap/verify_rectification.g
+M2 --script macaulay2/verify_rectification.m2
+```
+
+See [VERIFICATION.md](VERIFICATION.md) for the tested versions, successful
+run logs, negative controls and precise scope of the certificates; the
+[GAP guide](gap/README.md) and [Macaulay2 guide](macaulay2/README.md)
+give system-specific instructions. Neither CAS certificate substitutes
+for checking the printed LaTeX formulas.
+
 ## Literature
 
 - Original curves: [Shastri (1992), §3](https://doi.org/10.2748/tmj/1178227371); [Koseleff–Pecker (2011), Introduction](https://arxiv.org/abs/0909.3281).
@@ -94,3 +130,38 @@ $\mathbb A^1_{\mathbb C}\hookrightarrow\mathbb A^3_{\mathbb C}$.
 
 The paper contains the full bibliography and explains which result supplies
 each connection.
+
+
+## Chebyshev parametrizations
+
+Use the normalized Chebyshev polynomials $C_n(t)=2T_n(t/2)$, where $T_n(\cos\theta)=\cos(n\theta)$. Then
+
+$$
+C_3=t^3-3t,\quad C_4=t^4-4t^2+2,\quad
+C_5=t^5-5t^3+5t,\quad C_7=t^7-7t^5+14t^3-7t.
+$$
+
+The normalized Chebyshev trefoil $(C_3,C_4,C_5)$ is already covered by this repository: it is the image of the Shastri parametrization under the affine automorphism
+
+$$
+M(x,y,z)=(x,y+2,z-5x),\qquad M^{-1}(x,y,z)=(x,y-2,z+5x).
+$$
+
+Its rectifier is $\Psi=\Phi_T\circ M^{-1}$, with inverse $\Psi^{-1}=M\circ\Phi_T^{-1}$. Thus $\Psi(C_3(t),C_4(t),C_5(t))=(t,0,0)$ over $\mathbb Q(\sqrt{-3})$.
+
+The harmonic figure-eight treated here is exactly $(C_3,C_5,C_7)$. The identity
+
+$$
+C_3C_7-C_5^2+2=C_4
+$$
+
+explains the modification $(x,y,z)\mapsto(x,xz-y^2+2,y)$ used in its construction. The transfer argument verifies polynomiality in both directions, including the exceptional fibre $x=0$.
+
+For the real knot identifications $H(3,4,5)$ and $H(3,5,7)$, see Koseleff and Pecker, [*Chebyshev diagrams for two-bridge knots*](https://arxiv.org/abs/0909.3281), Introduction and Definition 1.2 ([journal DOI](https://doi.org/10.1007/s10711-010-9514-7)). The normalization above changes the parameter and ambient coordinates linearly.
+
+**Scope.** These cases do not prove rectifiability of all Chebyshev or harmonic parametrizations. Further applications must verify that the complex parametrization is a closed embedding, find a coordinate restricting to the parameter, and meet the transfer theorem's hypotheses. Determining which further Chebyshev models admit this construction remains open here. Their real knot classification alone does not establish polynomial equivalence over $\mathbb C$.
+
+
+## Acknowledgements
+
+The author expresses his sincere gratitude to Alexei Kanel-Belov and Alexander Frolov.
