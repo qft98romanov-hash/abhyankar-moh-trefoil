@@ -14,6 +14,10 @@ certificate is included.
 
 The paper is organized as **methods → trefoil → harmonic figure-eight**.
 
+## Acknowledgements
+
+The author expresses his sincere gratitude to Alexei Kanel-Belov and Alexander Frolov.
+
 ## Correction and literal-formula audit: 25 October 2026
 
 The previous coordinate-only TeX formulas contained 52 sign errors: 8 in the
@@ -34,36 +38,40 @@ differs from the corresponding compact polynomial.
 
 ## Method in brief
 
-Work over $K=\mathbb Q[a]/(a^2-a+1)\simeq\mathbb Q(\sqrt{-3})$.
+Work over
+
+```math
+K=\mathbb{Q}[a]/(a^2-a+1)\simeq\mathbb{Q}(\sqrt{-3}).
+```
 
 1. **Start with a verified relative automorphism**
-   $A=(x,H,W)$ and its explicit polynomial inverse.
+   $`A=(x,H,W)`$ and its explicit polynomial inverse.
 2. **Transfer the coordinate** through
-   $\beta(x,y,z)=(x,p(x,y)+m(x)z,y)$, where $m\ne0$.
-   Modulo $m$, require the centre $H(x,p(x,y),y)$ to have an invertible linear
+   $`\beta(x,y,z)=(x,p(x,y)+m(x)z,y)`$, where $`m\ne0`$.
+   Modulo $`m`$, require the centre $`H(x,p(x,y),y)`$ to have an invertible linear
    coefficient and nilpotent higher coefficients. Finite inversion of this
-   centre produces a polynomial correction $\varphi(x,T)$.
+   centre produces a polynomial correction $`\varphi(x,T)`$.
 3. **Correct and divide exactly:**
 
-   $$
+   ```math
    \mathcal A(x,y,z)=\left(
-   x,\ H\circ\beta,\
+   x,\ H\circ\beta,
    \frac{W\circ\beta-\varphi(x,H\circ\beta)}{m(x)}
    \right).
-   $$
+   ```
 
    Both this quotient and the corresponding inverse quotient are polynomial,
-   including when $m$ has repeated roots.
-4. **Pass from local to global identities.** After inverting $m$, the factors
+   including when $`m`$ has repeated roots.
+4. **Pass from local to global identities.** After inverting $`m`$, the factors
    are explicitly reversible. Polynomiality in both directions and injectivity
    of localization give a global polynomial automorphism, including the fibres
-   where $m=0$.
+   where $`m=0`$.
 5. **Straighten the curve.** If
-   $\mathcal A(\gamma(t))=(b(t),t,w(t))$, apply
-   $(x,T,Q)\mapsto(T,x-b(T),Q-w(T))$ to obtain $(t,0,0)$.
+   $`\mathcal A(\gamma(t))=(b(t),t,w(t))`$, apply
+   $`(x,T,Q)\mapsto(T,x-b(T),Q-w(T))`$ to obtain $`(t,0,0)`$.
 
 The trefoil supplies the explicit base construction. For the harmonic model,
-the transfer uses $m=x$ and $p=2-y^2$; the centre is $-y$ at $x=0$.
+the transfer uses $`m=x`$ and $`p=2-y^2`$; the centre is $`-y`$ at $`x=0`$.
 The full paper gives the formulas, both inverse maps, and the proof of each step.
 
 The general lifting principle has classical antecedents; no novelty claim is
@@ -72,17 +80,17 @@ propositions.
 
 ## The verified curves
 
-$$
+```math
 \gamma_T(t)=(t^3-3t,\ t^4-4t^2,\ t^5-10t),
-$$
+```
 
-$$
+```math
 \gamma_H(t)=(t^3-3t,\ t^5-5t^3+5t,\ t^7-7t^5+14t^3-7t).
-$$
+```
 
-The displayed rectifiers have component degrees $(5,15,24)$ and $(7,21,41)$,
-respectively; minimality is not asserted. The harmonic model has **$+5t$** in
-its second component. These are rectifications over $K$, hence over $\mathbb C$.
+The displayed rectifiers have component degrees $`(5,15,24)`$ and $`(7,21,41)`$,
+respectively; minimality is not asserted. The harmonic model has **$`+5t`$** in
+its second component. These are rectifications over $`K`$, hence over $`\mathbb C`$.
 
 ## Run the certificate
 
@@ -99,7 +107,7 @@ ends with `BOTH RECTIFICATIONS VERIFIED`.
 
 The general transfer theorem is a sufficient construction under its stated
 hypotheses; it does not settle rectification of arbitrary embeddings
-$\mathbb A^1_{\mathbb C}\hookrightarrow\mathbb A^3_{\mathbb C}$.
+$`\mathbb A^1_{\mathbb C}\hookrightarrow\mathbb A^3_{\mathbb C}`$.
 
 ## Independent verification
 
@@ -134,34 +142,36 @@ each connection.
 
 ## Chebyshev parametrizations
 
-Use the normalized Chebyshev polynomials $C_n(t)=2T_n(t/2)$, where $T_n(\cos\theta)=\cos(n\theta)$. Then
+Use the normalized Chebyshev polynomials $`C_n(t)=2T_n(t/2)`$, where $`T_n(\cos\theta)=\cos(n\theta)`$. Then
 
-$$
-C_3=t^3-3t,\quad C_4=t^4-4t^2+2,\quad
-C_5=t^5-5t^3+5t,\quad C_7=t^7-7t^5+14t^3-7t.
-$$
+```math
+\begin{aligned}
+C_3(t)&=t^3-3t,\\
+C_4(t)&=t^4-4t^2+2,\\
+C_5(t)&=t^5-5t^3+5t,\\
+C_7(t)&=t^7-7t^5+14t^3-7t.
+\end{aligned}
+```
 
-The normalized Chebyshev trefoil $(C_3,C_4,C_5)$ is already covered by this repository: it is the image of the Shastri parametrization under the affine automorphism
+The normalized Chebyshev trefoil $`(C_3,C_4,C_5)`$ is already covered by this repository: it is the image of the Shastri parametrization under the affine automorphism
 
-$$
-M(x,y,z)=(x,y+2,z-5x),\qquad M^{-1}(x,y,z)=(x,y-2,z+5x).
-$$
+```math
+\begin{aligned}
+M(x,y,z)&=(x,y+2,z-5x),\\
+M^{-1}(x,y,z)&=(x,y-2,z+5x).
+\end{aligned}
+```
 
-Its rectifier is $\Psi=\Phi_T\circ M^{-1}$, with inverse $\Psi^{-1}=M\circ\Phi_T^{-1}$. Thus $\Psi(C_3(t),C_4(t),C_5(t))=(t,0,0)$ over $\mathbb Q(\sqrt{-3})$.
+Its rectifier is $`\Psi=\Phi_T\circ M^{-1}`$, with inverse $`\Psi^{-1}=M\circ\Phi_T^{-1}`$. Thus $`\Psi(C_3(t),C_4(t),C_5(t))=(t,0,0)`$ over $`\mathbb Q(\sqrt{-3})`$.
 
-The harmonic figure-eight treated here is exactly $(C_3,C_5,C_7)$. The identity
+The harmonic figure-eight treated here is exactly $`(C_3,C_5,C_7)`$. The identity
 
-$$
+```math
 C_3C_7-C_5^2+2=C_4
-$$
+```
 
-explains the modification $(x,y,z)\mapsto(x,xz-y^2+2,y)$ used in its construction. The transfer argument verifies polynomiality in both directions, including the exceptional fibre $x=0$.
+explains the modification $`(x,y,z)\mapsto(x,xz-y^2+2,y)`$ used in its construction. The transfer argument verifies polynomiality in both directions, including the exceptional fibre $`x=0`$.
 
-For the real knot identifications $H(3,4,5)$ and $H(3,5,7)$, see Koseleff and Pecker, [*Chebyshev diagrams for two-bridge knots*](https://arxiv.org/abs/0909.3281), Introduction and Definition 1.2 ([journal DOI](https://doi.org/10.1007/s10711-010-9514-7)). The normalization above changes the parameter and ambient coordinates linearly.
+For the real knot identifications $`H(3,4,5)`$ and $`H(3,5,7)`$, see Koseleff and Pecker, [*Chebyshev diagrams for two-bridge knots*](https://arxiv.org/abs/0909.3281), Introduction and Definition 1.2 ([journal DOI](https://doi.org/10.1007/s10711-010-9514-7)). The normalization above changes the parameter and ambient coordinates linearly.
 
-**Scope.** These cases do not prove rectifiability of all Chebyshev or harmonic parametrizations. Further applications must verify that the complex parametrization is a closed embedding, find a coordinate restricting to the parameter, and meet the transfer theorem's hypotheses. Determining which further Chebyshev models admit this construction remains open here. Their real knot classification alone does not establish polynomial equivalence over $\mathbb C$.
-
-
-## Acknowledgements
-
-The author expresses his sincere gratitude to Alexei Kanel-Belov and Alexander Frolov.
+**Scope.** These cases do not prove rectifiability of all Chebyshev or harmonic parametrizations. Further applications must verify that the complex parametrization is a closed embedding, find a coordinate restricting to the parameter, and meet the transfer theorem's hypotheses. Determining which further Chebyshev models admit this construction remains open here. Their real knot classification alone does not establish polynomial equivalence over $`\mathbb C`$.
