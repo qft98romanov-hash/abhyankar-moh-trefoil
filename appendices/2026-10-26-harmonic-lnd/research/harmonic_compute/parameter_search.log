@@ -1,0 +1,6 @@
+(3, 4, 5) mindeg 3 freedim 4 H= x*y - x*z**2 + x + y**2*z - 2*z
+(3, 5, 7) mindeg 3 freedim 2 H= x**2*z - x*y**2 + 2*x - z
+(3, 7, 8) mindeg 4 freedim 2 H= x**3*z + x**3 - x**2*y*z - x*y**2 - 2*x*z - x + y**3 + 2*y*z - 2*y
+(3, 7, 11) mindeg 5 freedim 12 H= -x**2*y**3 + x**2*z**3 + 3*x*y**3*z - 3*x*y**2*z**2 + x*y**2 - 5*x*y*z + 6*x*z**2 - 2*x - 3*y**5 + 2*y**4*z + 13*y**3 - 8*y**2*z - 3*y*z**2 - 4*y + z**3 + 3*z
+(4, 5, 7) mindeg 3 freedim 0 H= x**2*z - y**3 + 3*y - 2*z
+(5, 6, 7) mindeg 5 freedim 20 H= -x*y**3 + 3*x*y + x*z**4 - 3*x*z**2 + x - y**2*z**3 + 2*y**2*z + y*z + 2*z**3 - 4*z

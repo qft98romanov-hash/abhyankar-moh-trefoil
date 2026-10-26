@@ -1,0 +1,14 @@
+{
+  "input_monomials": 462,
+  "output_monomials": 812,
+  "max_output_degree": 9,
+  "dual_support": 31,
+  "dual_value_on_one": "1",
+  "all_dual_values_on_images_zero": true,
+  "upper_slice_terms": 15,
+  "upper_slice_degree": 7,
+  "upper_derivative_is_one": true,
+  "minimal_total_degree": 7,
+  "valid_over": "Every characteristic-zero field, including C",
+  "witness_sha256": "b2134043b010f2dd7d65360e3964ed3fe611c4a70f84c15fdf361b76bf33841f"
+}

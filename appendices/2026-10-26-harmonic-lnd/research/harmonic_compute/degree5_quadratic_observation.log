@@ -1,0 +1,5 @@
+PASS: all parameters in the specified finite space are F+(a+b*x)G
+Rank-one condition on homogeneous quadratic part: -4*a**2 - 8*a*b*x - 4*b**2*x**2 - 1 =0
+Candidate a= I/2 has determinant -x**3/2 - I*x**2/2 + 3*x/2 + I of degree 3; thus exceptional roots over C
+Candidate a= -I/2 has determinant -x**3/2 + I*x**2/2 + 3*x/2 - I of degree 3; thus exceptional roots over C
+FINITE OBSERVATION VERIFIED; no relative coordinate in this restricted space.
