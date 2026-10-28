@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-28",
+  "arithmetic": "fractions.Fraction and exact modular rank lower bounds",
+  "prime": 1000003,
+  "degree_six": {
+    "degree_bound": 6,
+    "status": "EXACTLY_INFEASIBLE",
+    "dual_weights": 33,
+    "unknowns": 126,
+    "does_not_require_divergence_condition": true,
+    "all_characteristic_zero_extensions": true
+  },
+  "degree_seven": {
+    "degree": 7,
+    "status": "COMPLETE_AFFINE_FAMILY_VERIFIED",
+    "unknowns": 213,
+    "matrix_rank": 194,
+    "affine_dimension": 19,
+    "particular_field_terms": [
+      50,
+      50,
+      45
+    ],
+    "particular_axis_coefficients": {
+      "0": "12911598328718/1268512867265",
+      "1": "-4985975524251/1268512867265",
+      "2": "-14722421249024/1268512867265",
+      "3": "1717928962237/253702573453",
+      "4": "918783740772/1268512867265",
+      "5": "-1170155629239/1268512867265",
+      "6": "270025374879/1268512867265",
+      "7": "-11412975754/253702573453"
+    },
+    "particular_axis_degree": 7,
+    "particular_is_not_locally_finite": true,
+    "family_directions_not_preserving_axis": 11,
+    "scope": "The particular point is excluded; the remaining 19-parameter family is not classified."
+  },
+  "status": "PASS"
+}

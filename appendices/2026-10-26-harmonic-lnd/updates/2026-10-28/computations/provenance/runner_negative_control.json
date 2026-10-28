@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "control": "optimized_python_driver_rejected_before_checks",
+  "expected_exit_code": 2,
+  "message_observed": true,
+  "scope": "This infrastructure negative control does not add a mathematical theorem."
+}

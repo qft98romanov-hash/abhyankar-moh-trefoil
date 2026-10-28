@@ -1,0 +1,8 @@
+# Preserve the offline dependency and the exact verification logs in Git.
+!legacy_appendix/repo/
+!legacy_appendix/repo/**
+!**/*.log
+# Generated Python bytecode and optional repeated discovery copies are disposable.
+__pycache__/
+*.pyc
+full_search_runs/

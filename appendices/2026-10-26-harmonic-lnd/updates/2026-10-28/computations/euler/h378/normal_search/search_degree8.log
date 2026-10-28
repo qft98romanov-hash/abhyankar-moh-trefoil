@@ -1,0 +1,4 @@
+START degree 8
+ideal dimension 100 monomials 165
+linear shape (666, 300)
+FEASIBLE_NECESSARY_CONDITIONS_ONLY degree 8 rank 276 seconds 171.978

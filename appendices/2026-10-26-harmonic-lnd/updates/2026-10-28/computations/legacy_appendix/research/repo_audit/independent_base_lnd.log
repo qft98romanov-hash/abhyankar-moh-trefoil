@@ -1,0 +1,17 @@
+PASS: H = h0(x,z+a*x*y) - (1-a)*x^5*y
+PASS: f(h0(v)) = v modulo x^5
+PASS: h0(f(T)) = T modulo x^5
+PASS: D(x)=0
+PASS: D(H)=0
+PASS: D(v)=(1-a)*x^5
+PASS: D(y)=2*(1-a)*x*v+A
+PASS: D^3(y)=0
+PASS: D^3(z)=0
+PASS: slice numerator derivative is x^5
+PASS: slice numerator vanishes modulo x^5
+PASS: harmonic DH(x)=0
+PASS: harmonic DH(hH)=0
+PASS: harmonic DH^3(y)=0
+PASS: harmonic DH^5(z)=0
+PASS: harmonic nilpotency orders for y and z are exactly 3 and 5
+ALL INDEPENDENT BASE AND LND CERTIFICATES PASSED

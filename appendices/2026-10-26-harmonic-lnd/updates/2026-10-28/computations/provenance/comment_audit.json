@@ -1,0 +1,325 @@
+{
+  "status": "PASS",
+  "date": "2026-10-28",
+  "checked_code_files": 63,
+  "python_files": 56,
+  "other_code_files": 7,
+  "historical_input_files": 292,
+  "checks": [
+    {
+      "path": "baseline/gap/negative_division.g",
+      "method": "COMMENT_PREFIX_ONLY",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/gap/negative_identity.g",
+      "method": "COMMENT_PREFIX_ONLY",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/gap/verify_rectification.g",
+      "method": "COMMENT_PREFIX_ONLY",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/macaulay2/negative_division.m2",
+      "method": "COMMENT_PREFIX_ONLY",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/macaulay2/negative_identity.m2",
+      "method": "COMMENT_PREFIX_ONLY",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/macaulay2/verify_chebyshev.m2",
+      "method": "COMMENT_PREFIX_ONLY",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/macaulay2/verify_rectification.m2",
+      "method": "COMMENT_PREFIX_ONLY",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/verification/audit_harmonic.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/verification/audit_harmonic_independent.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/verification/audit_trefoil.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/verify.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "baseline/verify_printed_formulas.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_slice_search.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/embedding_lnd/verify_formal_frames.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/embedding_lnd/verify_h457_multiplicity.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/embedding_lnd/verify_jet_certificates.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/h378/search_constant_mixed_projection.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/h378/verify_iterated_review.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/h378/verify_linear_coordinate_obstruction.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/h378/verify_uniform_obstructions.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/h457/review_h378_checks.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/h457/verify_degree4.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/iterated_modifications/verify_iterated_filtration.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/literature/verify_image_ideal_audit.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/relative_lnd/verify_transfer_filtration.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/relative_ml/review_457_checks.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/relative_ml/review_jet_checks.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/relative_ml/verify_relative_ml.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "continuation/run_checks.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/h378/normal_search/enrich_affine_certificates.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/h378/normal_search/search_normal_fields.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/h378/normal_search/verify_degree8_axis_obstruction.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/h378/normal_search/verify_normal_certificates.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/h378/verify_naive_euler.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/h457/normal_search/search_normal_fields.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/h457/normal_search/verify_normal_family.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/h457/verify_euler_obstruction.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/run_checks.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/verify_divergence_controls.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "euler/verify_theory.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/bootstrap_source.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/repo/verification/audit_harmonic.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/repo/verification/audit_harmonic_independent.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/repo/verification/audit_trefoil.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/repo/verify.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/repo/verify_printed_formulas.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/cremona_lnd/verify_example.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/degree5_quadratic_observation.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/divisor_ansatz.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/matrix_probe.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/parameter_search.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz2.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/reduction_scan.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/verify_new_results.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_literature/periodic_shears.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/verify_harmonic_minimal_slice.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/verify_lnd.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/verify_minimal_slice.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/independent_base_lnd.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/review_harmonic_minimal_slice.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/review_minimal_slice.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    },
+    {
+      "path": "audit_checks/verify_original_slice.py",
+      "method": "AST_EQUAL_WITHOUT_DOCSTRINGS",
+      "status": "PASS"
+    }
+  ]
+}

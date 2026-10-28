@@ -1,0 +1,4 @@
+Working directory: /workspace/scratch/cc349d1d3dd2/research/continuation_20261026/h378
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -B verify_iterated_review.py
+
+{"status": "PASS", "cases": 5, "binary_and_product_identities": 730, "certificate": "/workspace/scratch/cc349d1d3dd2/research/continuation_20261026/h378/iterated_independent_checks.json"}

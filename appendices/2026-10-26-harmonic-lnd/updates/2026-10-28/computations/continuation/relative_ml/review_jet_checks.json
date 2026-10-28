@@ -1,0 +1,300 @@
+{
+  "status": "PASS",
+  "independence": "SymPy chebyshevt, substitution, and differentiation; no imports from searched or reviewed implementation",
+  "slices_checked": 27,
+  "results": [
+    {
+      "case": "H457_P3",
+      "parameter_degree": 3,
+      "profile": [
+        {
+          "mu": 1,
+          "degree": 12,
+          "terms": 29
+        },
+        {
+          "mu": 2,
+          "degree": 12,
+          "terms": 29
+        },
+        {
+          "mu": 3,
+          "degree": 12,
+          "terms": 29
+        },
+        {
+          "mu": 4,
+          "degree": 13,
+          "terms": 29
+        },
+        {
+          "mu": 5,
+          "degree": 14,
+          "terms": 29
+        },
+        {
+          "mu": 6,
+          "degree": 15,
+          "terms": 29
+        },
+        {
+          "mu": 7,
+          "degree": 17,
+          "terms": 29
+        },
+        {
+          "mu": 8,
+          "degree": 19,
+          "terms": 29
+        },
+        {
+          "mu": 9,
+          "degree": 21,
+          "terms": 29
+        }
+      ]
+    },
+    {
+      "case": "H378_P5",
+      "parameter_degree": 5,
+      "profile": [
+        {
+          "mu": 1,
+          "degree": 13,
+          "terms": 29
+        },
+        {
+          "mu": 2,
+          "degree": 13,
+          "terms": 29
+        },
+        {
+          "mu": 3,
+          "degree": 17,
+          "terms": 29
+        },
+        {
+          "mu": 4,
+          "degree": 21,
+          "terms": 29
+        },
+        {
+          "mu": 5,
+          "degree": 25,
+          "terms": 29
+        },
+        {
+          "mu": 6,
+          "degree": 29,
+          "terms": 29
+        },
+        {
+          "mu": 7,
+          "degree": 33,
+          "terms": 29
+        },
+        {
+          "mu": 8,
+          "degree": 37,
+          "terms": 29
+        },
+        {
+          "mu": 9,
+          "degree": 41,
+          "terms": 29
+        }
+      ]
+    },
+    {
+      "case": "H378_P4",
+      "parameter_degree": 4,
+      "profile": [
+        {
+          "mu": 1,
+          "degree": 19,
+          "terms": 73
+        },
+        {
+          "mu": 2,
+          "degree": 19,
+          "terms": 73
+        },
+        {
+          "mu": 3,
+          "degree": 20,
+          "terms": 73
+        },
+        {
+          "mu": 4,
+          "degree": 21,
+          "terms": 73
+        },
+        {
+          "mu": 5,
+          "degree": 22,
+          "terms": 73
+        },
+        {
+          "mu": 6,
+          "degree": 23,
+          "terms": 73
+        },
+        {
+          "mu": 7,
+          "degree": 25,
+          "terms": 73
+        },
+        {
+          "mu": 8,
+          "degree": 28,
+          "terms": 73
+        },
+        {
+          "mu": 9,
+          "degree": 31,
+          "terms": 73
+        }
+      ]
+    }
+  ],
+  "H457_unique_degree_three_parameter_certificate": {
+    "monomial_order": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ]
+    ],
+    "minor_u_degrees": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "determinant": "267386",
+    "degree_at_most_two_distinct_top_u_degrees": [
+      0,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14
+    ]
+  },
+  "H457_all_multiplicities_consequence": "m(mu)=max(12,mu+9,2*mu+3), mu>=1; proof in review_jet.md"
+}

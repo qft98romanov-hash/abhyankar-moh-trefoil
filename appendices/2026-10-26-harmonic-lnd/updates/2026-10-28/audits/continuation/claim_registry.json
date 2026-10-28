@@ -1,0 +1,754 @@
+{
+  "audit_date": "2026-10-28",
+  "scope": "Математический аудит продолжения26октября; не внешний peer review.",
+  "source_root": "research/continuation_20261026",
+  "source_edits": false,
+  "counting_note": "Записи реестра не считаются независимыми теоремами; следствия и перекрывающиеся сертификаты выделены для точного контроля границ.",
+  "excluded_from_this_audit": [
+    "Аудит новых Euler/LF результатов28октября выполняется отдельно.",
+    "Обзор именных гипотез выполняется отдельно."
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "title_ru": "Полнота критерия минимальной степени среза",
+      "status": "proved_general",
+      "assumptions": [
+        "char(k)=0",
+        "gamma=(f_1,...,f_n):A1->An is a closed embedding",
+        "mu>=1",
+        "A=k[t,u,X_1,...,X_n]",
+        "D_mu=t^mu*d_u+sum f_i_prime(u)*d_Xi"
+      ],
+      "statement": "Минимум обычной полной степени среди всех s с D_mu(s)=1 достигается на S=(u-P(gamma(u)-t^mu X))/t^mu, где P(gamma(u))=u. deg S=max_{alpha!=0}(deg_u((partial^alpha P)(gamma(u)))+(mu+1)|alpha|-mu). Для deg S<=d достаточно и необходимо решить конечную линейную систему для deg P<=floor((d+mu)/(mu+1)).",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 28
+        },
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 42
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/verify_jet_certificates.py",
+          "line": 46
+        },
+        {
+          "path": "research/continuation_20261026/embedding_lnd/verify_jet_certificates.py",
+          "line": 126
+        }
+      ],
+      "limitations": [
+        "Обычная степень зависит от выбранных координат и не является инвариантом полиномиального сопряжения.",
+        "Не каждый произвольный срез имеет каноническую форму; к ней сводится задача минимизации."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C02",
+      "title_ru": "Большая кратность и монотонность",
+      "status": "proved_general",
+      "assumptions": [
+        "Условия C01",
+        "M=max_i deg f_i",
+        "r_gamma=min{deg P:P(gamma)=u}"
+      ],
+      "statement": "m_gamma(mu) не убывает; при mu>=M-1 выполнено m_gamma(mu)=(mu+1)r_gamma-mu.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 86
+        }
+      ],
+      "computational_evidence": [],
+      "limitations": [
+        "Формула сама по себе не вычисляет r_gamma для произвольного вложения."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C03",
+      "title_ru": "Восемь точных минимумов при mu=1",
+      "status": "proved_with_exact_certificates",
+      "assumptions": [
+        "char(k)=0",
+        "C_j(u)=2*T_j(u/2)",
+        "gamma=(C_a,C_b,C_c)",
+        "mu=1"
+      ],
+      "statement": "m_345=7; m_357=11; m_457=12; m_378=13; m_(3,10,11)=19; m_(3,13,14)=25; m_(5,7,8)=11; m_(7,10,11)=15.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 151
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/verify_jet_certificates.py",
+          "line": 148
+        },
+        {
+          "path": "research/continuation_20261026/embedding_lnd/verified_results.json"
+        },
+        {
+          "path": "research/continuation_20261026/relative_ml/review_jet_checks.py"
+        }
+      ],
+      "limitations": [
+        "Нижние оценки удостоверены рациональными двойственными сертификатами; универсальность по всем срезам использует C01.",
+        "Это восемь моделей, а не классификация всех гармонических вложений."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются.",
+      "exact_values": {
+        "3,4,5": 7,
+        "3,5,7": 11,
+        "4,5,7": 12,
+        "3,7,8": 13,
+        "3,10,11": 19,
+        "3,13,14": 25,
+        "5,7,8": 11,
+        "7,10,11": 15
+      }
+    },
+    {
+      "id": "C04",
+      "title_ru": "Все кратности для H(3,7,8)",
+      "status": "proved_with_exact_certificates",
+      "assumptions": [
+        "char(k)=0",
+        "gamma=(C3,C7,C8)",
+        "mu>=1"
+      ],
+      "statement": "m(1)=m(2)=13; m(3)=17; m(4)=21; m(5)=22; m(6)=23; m(mu)=3mu+4 for mu>=7. r_gamma=4. Параметр P5=yz-C5(x) оптимален при mu<=4; P4=x^3z+x^3-x^2yz-xy^2-2xz-x+y^3+2yz-2y оптимален при mu>=5.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 198
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/verify_jet_certificates.py",
+          "line": 148
+        },
+        {
+          "path": "research/continuation_20261026/relative_ml/H378_P4_expanded_slice.txt"
+        },
+        {
+          "path": "research/continuation_20261026/relative_ml/H378_P5_expanded_slice.txt"
+        }
+      ],
+      "limitations": [
+        "Общая часть для mu>=7 использует доказательство C02, а не конечную экстраполяцию.",
+        "Параметр минимальной степени не всегда даёт срез минимальной степени: при mu=1 P4 даёт степень19, P5 степень13."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C05",
+      "title_ru": "Все кратности для H(4,5,7)",
+      "status": "proved_with_exact_certificates",
+      "assumptions": [
+        "char(k)=0",
+        "gamma=(C4,C5,C7)",
+        "mu>=1"
+      ],
+      "statement": "m_gamma(mu)=max(12,mu+9,2mu+3). P3=(x^2-2)z-y^3+3y — единственный полином степени<=3 с P3(gamma)=u; r_gamma=3.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 223
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/verify_h457_multiplicity.py",
+          "line": 16
+        },
+        {
+          "path": "research/continuation_20261026/embedding_lnd/h457_unique_cubic_parameter.json"
+        },
+        {
+          "path": "research/continuation_20261026/relative_ml/H457_P3_expanded_slice.txt"
+        }
+      ],
+      "limitations": [
+        "Скрипт проверяет определитель267386 и14 верхних срезов; доказательство всех mu использует уникальность, C02 и точный минимум12."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C06",
+      "title_ru": "Бесконечное семейство верхних оценок",
+      "status": "proved_general",
+      "assumptions": [
+        "char(k)=0",
+        "a,m odd and >=3",
+        "b=(ma-1)/2",
+        "c=(ma+1)/2",
+        "gamma=(C_a,C_b,C_c)"
+      ],
+      "statement": "P=yz-C_m(x) удовлетворяет P(gamma)=u; deg S=max(a(m-1)+1,(mu+1)m-mu). Для gamma_n=(C3,C_(3n+1),C_(3n+2)) получаем m_gamma_n(1)<=6n+1.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 245
+        }
+      ],
+      "computational_evidence": [],
+      "limitations": [
+        "Равенство для всех n не доказано; C03 покрывает n=1,2,3,4."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C07",
+      "title_ru": "Подъём автоморфизма окружающего пространства",
+      "status": "proved_general",
+      "assumptions": [
+        "Условия C01",
+        "F in Aut_k An",
+        "eta=F composed gamma"
+      ],
+      "statement": "Phi_F(t,u,X)=(t,u,(F(gamma(u))-F(gamma(u)-t^mu X))/t^mu) — полиномиальный автоморфизм, сопрягающий соответствующие D_gamma,mu и D_eta,mu.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 272
+        }
+      ],
+      "computational_evidence": [],
+      "limitations": [
+        "Весовая градуировка сохраняется, обычная полная степень в общем случае не сохраняется."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C08",
+      "title_ru": "Rees-описание ядра",
+      "status": "proved_general",
+      "assumptions": [
+        "Условия C01",
+        "I=ker(k[Y_1,...,Y_n]->k[u])",
+        "V=gamma(u)-t^mu X"
+      ],
+      "statement": "Дифференциальные степени J_q={F:partial^alpha F|gamma=0 for |alpha|<q} совпадают с I^q. B_mu=ker D_mu is isomorphic to k[Y][t,I/t^mu]. В весе j<0 имеем B_j=t^j I^ceil(-j/mu)(V); при j>=0 B_j=t^j k[V].",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 119
+        }
+      ],
+      "computational_evidence": [],
+      "limitations": [
+        "Не утверждается, что эта глобальная алгебра уже полиномиальна над k[t]."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C09",
+      "title_ru": "Все конечные утолщения и формальная тривиальность",
+      "status": "proved_general",
+      "assumptions": [
+        "Условия C01",
+        "N>=1"
+      ],
+      "statement": "B_mu/(t^N) is isomorphic to (k[t]/(t^N))[p,q_1,...,q_(n-1)] совместимо по N. t-адическое пополнение B_mu is isomorphic to k[p,q_1,...,q_(n-1)][[t]].",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 285
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/verify_formal_frames.py",
+          "line": 58
+        },
+        {
+          "path": "research/continuation_20261026/embedding_lnd/formal_frames.json"
+        }
+      ],
+      "limitations": [
+        "Пополнение k[p,q][[t]] не надо заменять на k[[t]][p,q].",
+        "Формальный обратный автоморфизм не обязан быть полиномиальным.",
+        "Закрывается только препятствие по абстрактному типу конечных t-адических утолщений; ограничения степени, градуировки и алгебраизации остаются."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C10",
+      "title_ru": "Два равномерных запрета линейного анзаца",
+      "status": "proved_general",
+      "assumptions": [
+        "k=C",
+        "n>=1",
+        "gamma_n=(C3,C_(3n+1),C_(3n+2))"
+      ],
+      "statement": "Не существует абсолютной координаты H с H(gamma_n)=u ни вида Q(x,y)+M(x)z, ни вида Q(x,z)+M(x)y, без ограничений степеней Q,M.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/uniform_obstructions.tex",
+          "line": 16
+        },
+        {
+          "path": "research/continuation_20261026/h378/uniform_obstructions.tex",
+          "line": 124
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/verify_uniform_obstructions.py",
+          "line": 19
+        },
+        {
+          "path": "research/continuation_20261026/h457/review_h378.md"
+        }
+      ],
+      "limitations": [
+        "Конечный скрипт проверяет n<=20; все n охвачены письменным доказательством.",
+        "Усиление от относительной до абсолютной координаты использует Proposition3.1 Edo–van den Essen–Maubach.",
+        "Это запрет двух форм, а не комплексная невыпрямляемость кривой."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются.",
+      "primary_reference": {
+        "url": "https://arxiv.org/pdf/0809.0767",
+        "locator": "Proposition 3.1, Section 3"
+      }
+    },
+    {
+      "id": "C11",
+      "title_ru": "Запрет аффинного центра естественной модификации",
+      "status": "proved_general",
+      "assumptions": [
+        "k=C",
+        "n>=1",
+        "beta_n=(x,C_n(x)z-y^2+2,y)",
+        "alpha is any root of C_n"
+      ],
+      "statement": "Для gamma_target=(C3,C2,C_(3n+1)) не существует полинома H с H(gamma_target)=u, у которого H(alpha,2-y^2,y) аффинен по y. При нечётном n target не вложение; при чётном n target имеет явно выписанную относительную координату, но это не устраняет запрет центра.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/uniform_obstructions.tex",
+          "line": 150
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/verify_uniform_obstructions.py",
+          "line": 19
+        }
+      ],
+      "limitations": [
+        "Это запрет конкретного модификационного центра; все возможные центры и цепочки не классифицированы."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C12",
+      "title_ru": "Смешанный анзац H378 до deg M=10",
+      "status": "proved_bounded_obstruction",
+      "assumptions": [
+        "k=C",
+        "gamma=(C3,C7,C8)",
+        "(L,N)=A*(y,z) for constant A in GL2(C)",
+        "deg M<=10",
+        "Q unrestricted"
+      ],
+      "statement": "Нет абсолютной координаты H=Q(x,L)+M(x)N с H(gamma)=u. После нормировки и исключения особых случаев все56 пар кратностей4<=e+f<=10 дают единичный gcd необходимых остаточных условий в Q(r).",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/constant_mixed_projection_search.md"
+        },
+        {
+          "path": "research/continuation_20261026/h457/review_h378.md"
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/constant_mixed_projection_search.json"
+        },
+        {
+          "path": "research/continuation_20261026/h457/review_h378_checks.py",
+          "line": 24
+        }
+      ],
+      "limitations": [
+        "deg M>10 не покрыта.",
+        "Смешивание с коэффициентами, зависящими от x, и нелинейные проекции не покрыты.",
+        "Поиск отдельно от проверяющего скрипта; общность ограниченного результата требует письменной редукции всех ветвей."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C13",
+      "title_ru": "Полное относительное препятствие степени4 для H457",
+      "status": "proved_bounded_obstruction",
+      "assumptions": [
+        "char(k)=0",
+        "gamma=(C4,C5,C7)",
+        "F(gamma)=u",
+        "total degree F<=4"
+      ],
+      "statement": "Из всех F только F0=(x^2-2)z-y^3+3y является координатой над k(x) в переменных(y,z); ни один F не координата над k(y) или k(z). F0 не координата над k[x]. Поэтому выпрямление, сохраняющее одну из исходных x,y,z, требует параметра степени>=5.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/h457/PROOF.md",
+          "line": 10
+        },
+        {
+          "path": "research/continuation_20261026/h457/PROOF.md",
+          "line": 46
+        },
+        {
+          "path": "research/continuation_20261026/h457/PROOF.md",
+          "line": 91
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/h457/verify_degree4.py",
+          "line": 35
+        },
+        {
+          "path": "research/continuation_20261026/h457/degree4_certificate.json"
+        },
+        {
+          "path": "research/continuation_20261026/relative_ml/review_457_checks.py"
+        }
+      ],
+      "limitations": [
+        "Не исключаются абсолютные координаты степени<=4 без сохранения одной из исходных проекций.",
+        "Не исключается сохранение новой аффинной или нелинейной координаты.",
+        "7-параметрическое семейство полное:35 мономов, ранг28; аргумент использует классификацию координат плоскости малой степени."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C14",
+      "title_ru": "Ядро, plinth и все образные идеалы одношагового переноса",
+      "status": "proved_general",
+      "assumptions": [
+        "char(k)=0",
+        "R=k[x], A=R[y,z]",
+        "(H,W) in Aut_R R[Y,Z]",
+        "p in R[y], 0!=m in R",
+        "h=H(p+mz,y), D=h_z*d_y-h_y*d_z",
+        "c=h(x,0,0); g=monic content of nonconstant (y,z)-part of h; h0=(h-c)/g; m1=m/g"
+      ],
+      "statement": "g divides m; ker D=B=R[h0]. For pi|m1 put E_pi=v_pi(m1), e_pi=deg_y(h0 mod pi)>=1. I_n=D^n(ker D^(n+1))=(g^n product_pi pi^(E_pi*(n-floor(n/e_pi)) ))B. pl(D)=I_1=(g product_(e_pi>=2) pi^E_pi)B. Фильтрация имеет согласованный B-базис.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/relative_lnd/PROOF.md",
+          "line": 10
+        },
+        {
+          "path": "research/continuation_20261026/relative_lnd/PROOF.md",
+          "line": 174
+        },
+        {
+          "path": "research/continuation_20261026/relative_lnd/PROOF.md",
+          "line": 237
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/relative_lnd/verify_transfer_filtration.py",
+          "line": 87
+        },
+        {
+          "path": "research/continuation_20261026/literature/verify_image_ideal_audit.py"
+        }
+      ],
+      "limitations": [
+        "g должен быть полным content, а не выбранным делителем.",
+        "Хорошие простые e_pi=1 невидимы в I_n примитивного поля; весь знаменатель по фильтрации не восстанавливается.",
+        "Это формула внутри указанного класса, не классификация всех LND."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C15",
+      "title_ru": "Извлекаемые параметры и конкретные одношаговые примеры",
+      "status": "proved_corollary",
+      "assumptions": [
+        "Условия C14"
+      ],
+      "statement": "Для плохих простых e_pi>=2 E_pi читается по I1 примитивного поля, e_pi — первое падение относительно линейного роста. Для D_(M,e)=x^M*d_y-e*y^(e-1)*d_z, M>=1,e>=2, I_n=(x^(M*(n-floor(n/e)))); различные пары(M,e) несопряжены. Для h457=(x^2-2)z-y^3+3y имеем ker D=k[x,h457], I_n=((x^2-2)^(n-floor(n/3))).",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/relative_lnd/PROOF.md",
+          "line": 327
+        },
+        {
+          "path": "research/continuation_20261026/relative_lnd/PROOF.md",
+          "line": 354
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/relative_lnd/certificates.json"
+        }
+      ],
+      "limitations": [
+        "Класс D_(M,e) классический; новизна семейства не заявляется.",
+        "Фильтрация конкретного якобианного LND не препятствует выпрямлению кривой другими координатами."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C16",
+      "title_ru": "Вся фильтрация последовательных квадратичных модификаций",
+      "status": "proved_general",
+      "assumptions": [
+        "char(k)=0",
+        "ell>=1",
+        "r_(-1)=z, r_0=y, r_j=x*r_(j-2)-r_(j-1)^2",
+        "p=r_ell, w=r_(ell-1)",
+        "D_ell=(-1)^ell*(p_y*d_z-p_z*d_y)"
+      ],
+      "statement": "D_ell irreducible, D_ell(w)=x^ell, ker D_ell=B=k[x,p]. I_n=(x^(ell*n-sum_(j=1)^ell floor(n/2^j)))B. Фильтрация обладает явным B-базисом двоичных нормальных мономов.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/iterated_modifications/PROOF.md",
+          "line": 1
+        },
+        {
+          "path": "research/continuation_20261026/iterated_modifications/PROOF.md",
+          "line": 29
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/iterated_modifications/verify_iterated_filtration.py"
+        },
+        {
+          "path": "research/continuation_20261026/h378/verify_iterated_review.py"
+        }
+      ],
+      "limitations": [
+        "Доказательство охватывает все ell,n; код проверяет конечные диапазоны ell<=3,n<=16 и дополнительные двоичные тождества ell<=5."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C17",
+      "title_ru": "Ассоциированное градуированное кольцо цепочки",
+      "status": "proved_general",
+      "assumptions": [
+        "Условия C16"
+      ],
+      "statement": "gr_D A = B[xi_0,...,xi_ell]/(xi_j^2-x*xi_(j+1):j<ell), deg xi_j=2^j. В gr/(x) нильрадикал N=(xi_0,...,xi_(ell-1)) имеет N^ell!=0,N^(ell+1)=0; N/N^2 свободен рангаell над k[p,xi_ell].",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/independent_review_iterated.md",
+          "line": 121
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/verify_iterated_review.py"
+        }
+      ],
+      "limitations": [
+        "Не доказано, что этот ранг ограничивает снизу сложность всех возможных модификационных факторизаций."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C18",
+      "title_ru": "Отделение от одношагового класса и нетриангулируемость",
+      "status": "proved_corollary",
+      "assumptions": [
+        "Условия C16",
+        "ell>=2"
+      ],
+      "statement": "D_ell не сопряжено неприводимому одношаговому переносу; в частности, не триангулируемо. Причина: показатели I1,I2 равны ell,2ell-1, тогда как в одношаговом классе второй показатель ell или2ell.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/independent_review_iterated.md",
+          "line": 185
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/verify_iterated_review.py"
+        }
+      ],
+      "limitations": [
+        "При ell=2 нетриангулируемость уже имеется в Example4.19 Dasgupta–Gaifullin.",
+        "Исключение одношагового класса не исключает всех двухшаговых факторизаций."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются.",
+      "primary_reference": {
+        "url": "https://doi.org/10.4213/sm10094e",
+        "locator": "Example 4.19; Theorem 4.12 and Question 4.21"
+      }
+    },
+    {
+      "id": "C19",
+      "title_ru": "Первые семь образных идеалов не определяют всю фильтрацию",
+      "status": "finite_exact_illustration",
+      "assumptions": [
+        "Условия C16",
+        "Сравниваются D3 и реплика xD2"
+      ],
+      "statement": "У D3 и xD2 совпадают показатели I_n при n<=7; I8(D3)=(x^17), I8(xD2)=(x^18).",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/independent_review_iterated.md",
+          "line": 157
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/h378/verify_iterated_review.py"
+        }
+      ],
+      "limitations": [
+        "Их несопряжённость уже следует из неприводимости D3 и приводимости xD2; не выдавать пример за решение новой задачи сопряжения."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C20",
+      "title_ru": "Тривиальность относительного ML при коразмерности>=2",
+      "status": "proved_general",
+      "assumptions": [
+        "char(k)=0",
+        "A=k[x_1,...,x_n], n>=2",
+        "I proper with dim(A/I)<=n-2",
+        "r>=1 fixed"
+      ],
+      "statement": "Для всех ненулевых LND с D(A) subset I^r пересечение ядер равно k, а алгебра, порождённая объединением ядер, равна A. Поэтому вариант с D(I) subset I также имеет относительный ML=k и относительный Derksen=A.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/relative_ml/relative_ml_obstruction.md",
+          "line": 5
+        },
+        {
+          "path": "research/continuation_20261026/relative_ml/relative_ml_obstruction.md",
+          "line": 30
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/relative_ml/verify_relative_ml.py",
+          "line": 26
+        }
+      ],
+      "limitations": [
+        "I не обязан быть радикальным или простым.",
+        "Для каждого фиксированного r строятся свои поля; не утверждается наличие одного ненулевого поля для всех r.",
+        "Наивный относительный ML не различает такие вложения; нужны более структурированные инварианты.",
+        "Поля, поточечно фиксирующие кривую, не имеют глобального среза, поскольку D(A) subset I."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "C21",
+      "title_ru": "Вещественная топология H378 и H457",
+      "status": "classical_background_applied",
+      "assumptions": [
+        "Коэффициенты автоморфизма должны быть вещественными",
+        "Рассматриваются именно гармонические модели в нормировке C_j"
+      ],
+      "statement": "H378 имеет тип T(2,5) с возможным зеркалом после перестановки координат; H457 имеет тип5_2. Вещественное полиномиальное выпрямление этих моделей невозможно.",
+      "proof_evidence": [],
+      "computational_evidence": [],
+      "limitations": [
+        "Никакого вывода о комплексной невыпрямляемости нет.",
+        "В частности, хороший нормальный LF-критерий может иметь только невещественные решения для этих моделей."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются.",
+      "primary_reference": {
+        "url": "https://arxiv.org/pdf/1203.4376",
+        "locator": "Introduction p.2; Figure3 p.4"
+      }
+    },
+    {
+      "id": "O01",
+      "title_ru": "Равенство m_gamma_n(1)=6n+1 для всех n",
+      "status": "open_in_this_work",
+      "assumptions": [
+        "gamma_n=(C3,C_(3n+1),C_(3n+2))",
+        "n>=1"
+      ],
+      "statement": "Доказана верхняя оценка6n+1 и равенство только для n=1,2,3,4.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 245
+        }
+      ],
+      "computational_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/verified_results.json"
+        }
+      ],
+      "limitations": [
+        "Нельзя экстраполировать конечные сертификаты на все n."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "O02",
+      "title_ru": "Комплексное выпрямление и алгебраизация",
+      "status": "open_in_this_work",
+      "assumptions": [
+        "k=C"
+      ],
+      "statement": "Общее выпрямление гармонических вложений, комплексное выпрямление H378/H457 и алгебраизация формальных координат остаются задачами; ограниченные запреты анзаца и относительной степени их не решают.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/embedding_lnd/PROOF.md",
+          "line": 285
+        },
+        {
+          "path": "research/continuation_20261026/h378/uniform_obstructions.tex"
+        },
+        {
+          "path": "research/continuation_20261026/h457/PROOF.md",
+          "line": 10
+        }
+      ],
+      "computational_evidence": [],
+      "limitations": [
+        "Не объявлять решёнными общие гипотезы Абъянкара–Моха/Сатьяе либо именную гипотезу ван ден Эссена без точной формулировки и отдельного доказательства."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются."
+    },
+    {
+      "id": "O03",
+      "title_ru": "Сложность трёхшаговой модификации",
+      "status": "open_in_this_work",
+      "assumptions": [
+        "Вопрос о минимальной сложности всех допустимых разложений"
+      ],
+      "statement": "Question4.21 Dasgupta–Gaifullin, c((beta theta)^3)=3, здесь не решён. Известны каноническая трёхшаговая запись и исключение одного шага; все двухшаговые факторизации не исключены.",
+      "proof_evidence": [
+        {
+          "path": "research/continuation_20261026/iterated_modifications/PROOF.md",
+          "line": 66
+        },
+        {
+          "path": "research/continuation_20261026/h378/independent_review_iterated.md",
+          "line": 185
+        }
+      ],
+      "computational_evidence": [],
+      "limitations": [
+        "Общая нижняя оценка сложности через нильрадикал gr/(pi) остаётся исследовательским направлением."
+      ],
+      "novelty": "Приоритет и внешнее рецензирование не утверждаются.",
+      "primary_reference": {
+        "url": "https://doi.org/10.4213/sm10094e",
+        "locator": "Theorem4.12; Remark4.20; Question4.21, p.478"
+      }
+    }
+  ]
+}

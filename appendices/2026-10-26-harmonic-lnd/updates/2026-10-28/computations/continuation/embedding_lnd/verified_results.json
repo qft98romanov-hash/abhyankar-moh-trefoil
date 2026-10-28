@@ -1,0 +1,6760 @@
+{
+  "arithmetic": "fractions.Fraction; no third-party packages",
+  "scope": "ALL polynomial slices over every characteristic-zero field, by the jet reduction theorem",
+  "results": [
+    {
+      "minimum_slice_degree": 7,
+      "lower": {
+        "triple": [
+          3,
+          4,
+          5
+        ],
+        "multiplicity": 1,
+        "excluded_slice_degree": 6,
+        "retraction_columns_checked": 20,
+        "dual_nonzero_weights": 11
+      },
+      "upper": {
+        "triple": [
+          3,
+          4,
+          5
+        ],
+        "multiplicity": 1,
+        "slice_degree": 7,
+        "slice_terms": 14,
+        "retraction_degree": 3,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-4"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-27"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "18"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-9"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 11,
+      "lower": {
+        "triple": [
+          3,
+          5,
+          7
+        ],
+        "multiplicity": 1,
+        "excluded_slice_degree": 10,
+        "retraction_columns_checked": 56,
+        "dual_nonzero_weights": 35
+      },
+      "upper": {
+        "triple": [
+          3,
+          5,
+          7
+        ],
+        "multiplicity": 1,
+        "slice_degree": 11,
+        "slice_terms": 27,
+        "retraction_degree": 3,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              1,
+              2,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "9"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "30"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "17"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-6"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-40"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-48"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "16"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "35"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-10"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "6"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "10"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-10"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-14"
+          },
+          {
+            "monomial": [
+              1,
+              5,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              1,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              1,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              1,
+              2,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 12,
+      "lower": {
+        "triple": [
+          4,
+          5,
+          7
+        ],
+        "multiplicity": 1,
+        "excluded_slice_degree": 11,
+        "retraction_columns_checked": 84,
+        "dual_nonzero_weights": 41
+      },
+      "upper": {
+        "triple": [
+          4,
+          5,
+          7
+        ],
+        "multiplicity": 1,
+        "slice_degree": 12,
+        "slice_terms": 29,
+        "retraction_degree": 3,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-28"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-16"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-75"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "112"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "20"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "150"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-154"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-105"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "88"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "30"
+          },
+          {
+            "monomial": [
+              0,
+              9,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-22"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "monomial": [
+              0,
+              11,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-4"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "15"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              1,
+              2,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "8"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "-15"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-14"
+          },
+          {
+            "monomial": [
+              1,
+              4,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              1,
+              5,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              1,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              1,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              0,
+              3,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 13,
+      "lower": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 1,
+        "excluded_slice_degree": 12,
+        "retraction_columns_checked": 84,
+        "dual_nonzero_weights": 41
+      },
+      "upper": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 1,
+        "slice_degree": 13,
+        "slice_terms": 29,
+        "retraction_degree": 5,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-16"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "135"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "14"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "20"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-495"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "555"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-270"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "60"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "45"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-285"
+          },
+          {
+            "monomial": [
+              1,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "270"
+          },
+          {
+            "monomial": [
+              1,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-90"
+          },
+          {
+            "monomial": [
+              1,
+              9,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "10"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              2,
+              2,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-90"
+          },
+          {
+            "monomial": [
+              2,
+              4,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "60"
+          },
+          {
+            "monomial": [
+              2,
+              6,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-10"
+          },
+          {
+            "monomial": [
+              3,
+              1,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-15"
+          },
+          {
+            "monomial": [
+              3,
+              3,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              4,
+              0,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 19,
+      "lower": {
+        "triple": [
+          3,
+          10,
+          11
+        ],
+        "multiplicity": 1,
+        "excluded_slice_degree": 18,
+        "retraction_columns_checked": 220,
+        "dual_nonzero_weights": 111
+      },
+      "upper": {
+        "triple": [
+          3,
+          10,
+          11
+        ],
+        "multiplicity": 1,
+        "slice_degree": 19,
+        "slice_terms": 50,
+        "retraction_degree": 7,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-14"
+          },
+          {
+            "monomial": [
+              5,
+              0,
+              0
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              7,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-11"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "25"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-378"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "55"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-50"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3087"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-77"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "35"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-8925"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "44"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-10"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "12096"
+          },
+          {
+            "monomial": [
+              0,
+              9,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-11"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-8925"
+          },
+          {
+            "monomial": [
+              0,
+              11,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3815"
+          },
+          {
+            "monomial": [
+              0,
+              14,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-945"
+          },
+          {
+            "monomial": [
+              0,
+              16,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "126"
+          },
+          {
+            "monomial": [
+              0,
+              18,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-126"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "1932"
+          },
+          {
+            "monomial": [
+              1,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-6993"
+          },
+          {
+            "monomial": [
+              1,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "9135"
+          },
+          {
+            "monomial": [
+              1,
+              9,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-5740"
+          },
+          {
+            "monomial": [
+              1,
+              11,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "1890"
+          },
+          {
+            "monomial": [
+              1,
+              13,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-315"
+          },
+          {
+            "monomial": [
+              1,
+              15,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "21"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-14"
+          },
+          {
+            "monomial": [
+              2,
+              2,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "630"
+          },
+          {
+            "monomial": [
+              2,
+              4,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-3255"
+          },
+          {
+            "monomial": [
+              2,
+              6,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "3850"
+          },
+          {
+            "monomial": [
+              2,
+              8,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-1890"
+          },
+          {
+            "monomial": [
+              2,
+              10,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "420"
+          },
+          {
+            "monomial": [
+              2,
+              12,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-35"
+          },
+          {
+            "monomial": [
+              3,
+              1,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "105"
+          },
+          {
+            "monomial": [
+              3,
+              3,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-980"
+          },
+          {
+            "monomial": [
+              3,
+              5,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "945"
+          },
+          {
+            "monomial": [
+              3,
+              7,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-315"
+          },
+          {
+            "monomial": [
+              3,
+              9,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "35"
+          },
+          {
+            "monomial": [
+              4,
+              0,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              4,
+              2,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-189"
+          },
+          {
+            "monomial": [
+              4,
+              4,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "126"
+          },
+          {
+            "monomial": [
+              4,
+              6,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-21"
+          },
+          {
+            "monomial": [
+              5,
+              1,
+              6,
+              0,
+              0
+            ],
+            "coefficient": "-21"
+          },
+          {
+            "monomial": [
+              5,
+              3,
+              6,
+              0,
+              0
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              6,
+              0,
+              7,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 25,
+      "lower": {
+        "triple": [
+          3,
+          13,
+          14
+        ],
+        "multiplicity": 1,
+        "excluded_slice_degree": 24,
+        "retraction_columns_checked": 455,
+        "dual_nonzero_weights": 225
+      },
+      "upper": {
+        "triple": [
+          3,
+          13,
+          14
+        ],
+        "multiplicity": 1,
+        "slice_degree": 25,
+        "slice_terms": 77,
+        "retraction_degree": 9,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-9"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "30"
+          },
+          {
+            "monomial": [
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-27"
+          },
+          {
+            "monomial": [
+              7,
+              0,
+              0
+            ],
+            "coefficient": "9"
+          },
+          {
+            "monomial": [
+              9,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-9"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "13"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "49"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "810"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-91"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-196"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-11475"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "182"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "294"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "60597"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-156"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-210"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-158193"
+          },
+          {
+            "monomial": [
+              0,
+              9,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "65"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "77"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "235629"
+          },
+          {
+            "monomial": [
+              0,
+              11,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-13"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-14"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-217863"
+          },
+          {
+            "monomial": [
+              0,
+              13,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              14,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              14,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "130977"
+          },
+          {
+            "monomial": [
+              0,
+              16,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-52164"
+          },
+          {
+            "monomial": [
+              0,
+              18,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "13671"
+          },
+          {
+            "monomial": [
+              0,
+              20,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-2268"
+          },
+          {
+            "monomial": [
+              0,
+              22,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "216"
+          },
+          {
+            "monomial": [
+              0,
+              24,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-9"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "270"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-7380"
+          },
+          {
+            "monomial": [
+              1,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "53217"
+          },
+          {
+            "monomial": [
+              1,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-157707"
+          },
+          {
+            "monomial": [
+              1,
+              9,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "235008"
+          },
+          {
+            "monomial": [
+              1,
+              11,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-200718"
+          },
+          {
+            "monomial": [
+              1,
+              13,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "104895"
+          },
+          {
+            "monomial": [
+              1,
+              15,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-34209"
+          },
+          {
+            "monomial": [
+              1,
+              17,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "6804"
+          },
+          {
+            "monomial": [
+              1,
+              19,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-756"
+          },
+          {
+            "monomial": [
+              1,
+              21,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "36"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "30"
+          },
+          {
+            "monomial": [
+              2,
+              2,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-2430"
+          },
+          {
+            "monomial": [
+              2,
+              4,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "27135"
+          },
+          {
+            "monomial": [
+              2,
+              6,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-95526"
+          },
+          {
+            "monomial": [
+              2,
+              8,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "139482"
+          },
+          {
+            "monomial": [
+              2,
+              10,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-105840"
+          },
+          {
+            "monomial": [
+              2,
+              12,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "45675"
+          },
+          {
+            "monomial": [
+              2,
+              14,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-11340"
+          },
+          {
+            "monomial": [
+              2,
+              16,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "1512"
+          },
+          {
+            "monomial": [
+              2,
+              18,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-84"
+          },
+          {
+            "monomial": [
+              3,
+              1,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-405"
+          },
+          {
+            "monomial": [
+              3,
+              3,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "8640"
+          },
+          {
+            "monomial": [
+              3,
+              5,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-39123"
+          },
+          {
+            "monomial": [
+              3,
+              7,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "53865"
+          },
+          {
+            "monomial": [
+              3,
+              9,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-34335"
+          },
+          {
+            "monomial": [
+              3,
+              11,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "11340"
+          },
+          {
+            "monomial": [
+              3,
+              13,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-1890"
+          },
+          {
+            "monomial": [
+              3,
+              15,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "126"
+          },
+          {
+            "monomial": [
+              4,
+              0,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-27"
+          },
+          {
+            "monomial": [
+              4,
+              2,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "1701"
+          },
+          {
+            "monomial": [
+              4,
+              4,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-11340"
+          },
+          {
+            "monomial": [
+              4,
+              6,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "13797"
+          },
+          {
+            "monomial": [
+              4,
+              8,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-6804"
+          },
+          {
+            "monomial": [
+              4,
+              10,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "1512"
+          },
+          {
+            "monomial": [
+              4,
+              12,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-126"
+          },
+          {
+            "monomial": [
+              5,
+              1,
+              6,
+              0,
+              0
+            ],
+            "coefficient": "189"
+          },
+          {
+            "monomial": [
+              5,
+              3,
+              6,
+              0,
+              0
+            ],
+            "coefficient": "-2331"
+          },
+          {
+            "monomial": [
+              5,
+              5,
+              6,
+              0,
+              0
+            ],
+            "coefficient": "2268"
+          },
+          {
+            "monomial": [
+              5,
+              7,
+              6,
+              0,
+              0
+            ],
+            "coefficient": "-756"
+          },
+          {
+            "monomial": [
+              5,
+              9,
+              6,
+              0,
+              0
+            ],
+            "coefficient": "84"
+          },
+          {
+            "monomial": [
+              6,
+              0,
+              7,
+              0,
+              0
+            ],
+            "coefficient": "9"
+          },
+          {
+            "monomial": [
+              6,
+              2,
+              7,
+              0,
+              0
+            ],
+            "coefficient": "-324"
+          },
+          {
+            "monomial": [
+              6,
+              4,
+              7,
+              0,
+              0
+            ],
+            "coefficient": "216"
+          },
+          {
+            "monomial": [
+              6,
+              6,
+              7,
+              0,
+              0
+            ],
+            "coefficient": "-36"
+          },
+          {
+            "monomial": [
+              7,
+              1,
+              8,
+              0,
+              0
+            ],
+            "coefficient": "-27"
+          },
+          {
+            "monomial": [
+              7,
+              3,
+              8,
+              0,
+              0
+            ],
+            "coefficient": "9"
+          },
+          {
+            "monomial": [
+              8,
+              0,
+              9,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 11,
+      "lower": {
+        "triple": [
+          5,
+          7,
+          8
+        ],
+        "multiplicity": 1,
+        "excluded_slice_degree": 10,
+        "retraction_columns_checked": 56,
+        "dual_nonzero_weights": 29
+      },
+      "upper": {
+        "triple": [
+          5,
+          7,
+          8
+        ],
+        "multiplicity": 1,
+        "slice_degree": 11,
+        "slice_terms": 20,
+        "retraction_degree": 3,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-16"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-75"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "14"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "20"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "150"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-105"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "30"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "15"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-15"
+          },
+          {
+            "monomial": [
+              1,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 15,
+      "lower": {
+        "triple": [
+          7,
+          10,
+          11
+        ],
+        "multiplicity": 1,
+        "excluded_slice_degree": 14,
+        "retraction_columns_checked": 120,
+        "dual_nonzero_weights": 61
+      },
+      "upper": {
+        "triple": [
+          7,
+          10,
+          11
+        ],
+        "multiplicity": 1,
+        "slice_degree": 15,
+        "slice_terms": 26,
+        "retraction_degree": 3,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-11"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "25"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-147"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "55"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-50"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "588"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-77"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "35"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-882"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "44"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-10"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "630"
+          },
+          {
+            "monomial": [
+              0,
+              9,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-11"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-231"
+          },
+          {
+            "monomial": [
+              0,
+              11,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "42"
+          },
+          {
+            "monomial": [
+              0,
+              14,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              1,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-21"
+          },
+          {
+            "monomial": [
+              1,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "42"
+          },
+          {
+            "monomial": [
+              1,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-21"
+          },
+          {
+            "monomial": [
+              1,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 13,
+      "lower": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 2,
+        "excluded_slice_degree": 12,
+        "retraction_columns_checked": 35,
+        "dual_nonzero_weights": 17
+      },
+      "upper": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 2,
+        "slice_degree": 13,
+        "slice_terms": 29,
+        "retraction_degree": 5,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-16"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "135"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "14"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "20"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-495"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "555"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-270"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "60"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              2,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              2,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "45"
+          },
+          {
+            "monomial": [
+              2,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-285"
+          },
+          {
+            "monomial": [
+              2,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "270"
+          },
+          {
+            "monomial": [
+              2,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-90"
+          },
+          {
+            "monomial": [
+              2,
+              9,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "10"
+          },
+          {
+            "monomial": [
+              4,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              4,
+              2,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-90"
+          },
+          {
+            "monomial": [
+              4,
+              4,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "60"
+          },
+          {
+            "monomial": [
+              4,
+              6,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-10"
+          },
+          {
+            "monomial": [
+              6,
+              1,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-15"
+          },
+          {
+            "monomial": [
+              6,
+              3,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              8,
+              0,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 17,
+      "lower": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 3,
+        "excluded_slice_degree": 16,
+        "retraction_columns_checked": 35,
+        "dual_nonzero_weights": 17
+      },
+      "upper": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 3,
+        "slice_degree": 17,
+        "slice_terms": 29,
+        "retraction_degree": 5,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-16"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "135"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "14"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "20"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-495"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "555"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-270"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "60"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              3,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "45"
+          },
+          {
+            "monomial": [
+              3,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-285"
+          },
+          {
+            "monomial": [
+              3,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "270"
+          },
+          {
+            "monomial": [
+              3,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-90"
+          },
+          {
+            "monomial": [
+              3,
+              9,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "10"
+          },
+          {
+            "monomial": [
+              6,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              6,
+              2,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-90"
+          },
+          {
+            "monomial": [
+              6,
+              4,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "60"
+          },
+          {
+            "monomial": [
+              6,
+              6,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-10"
+          },
+          {
+            "monomial": [
+              9,
+              1,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-15"
+          },
+          {
+            "monomial": [
+              9,
+              3,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              12,
+              0,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 21,
+      "lower": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 4,
+        "excluded_slice_degree": 20,
+        "retraction_columns_checked": 35,
+        "dual_nonzero_weights": 17
+      },
+      "upper": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 4,
+        "slice_degree": 21,
+        "slice_terms": 29,
+        "retraction_degree": 5,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-16"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "135"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "14"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "20"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-495"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-7"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "555"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-270"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "60"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              4,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              4,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "45"
+          },
+          {
+            "monomial": [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-285"
+          },
+          {
+            "monomial": [
+              4,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "270"
+          },
+          {
+            "monomial": [
+              4,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-90"
+          },
+          {
+            "monomial": [
+              4,
+              9,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "10"
+          },
+          {
+            "monomial": [
+              8,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              8,
+              2,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-90"
+          },
+          {
+            "monomial": [
+              8,
+              4,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "60"
+          },
+          {
+            "monomial": [
+              8,
+              6,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-10"
+          },
+          {
+            "monomial": [
+              12,
+              1,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "-15"
+          },
+          {
+            "monomial": [
+              12,
+              3,
+              4,
+              0,
+              0
+            ],
+            "coefficient": "5"
+          },
+          {
+            "monomial": [
+              16,
+              0,
+              5,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 22,
+      "lower": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 5,
+        "excluded_slice_degree": 21,
+        "retraction_columns_checked": 35,
+        "dual_nonzero_weights": 17
+      },
+      "upper": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 5,
+        "slice_degree": 22,
+        "slice_terms": 73,
+        "retraction_degree": 4,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              1,
+              2,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              2,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "55"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-20"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "62"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-294"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "538"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-155"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "518"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-1989"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "147"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-400"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3040"
+          },
+          {
+            "monomial": [
+              0,
+              9,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-64"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "152"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-2396"
+          },
+          {
+            "monomial": [
+              0,
+              11,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "13"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-28"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "1062"
+          },
+          {
+            "monomial": [
+              0,
+              13,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              0,
+              14,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              14,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-268"
+          },
+          {
+            "monomial": [
+              0,
+              16,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "36"
+          },
+          {
+            "monomial": [
+              0,
+              18,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              5,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              5,
+              0,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              5,
+              1,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "18"
+          },
+          {
+            "monomial": [
+              5,
+              1,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-26"
+          },
+          {
+            "monomial": [
+              5,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "13"
+          },
+          {
+            "monomial": [
+              5,
+              2,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "9"
+          },
+          {
+            "monomial": [
+              5,
+              2,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "15"
+          },
+          {
+            "monomial": [
+              5,
+              3,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "-41"
+          },
+          {
+            "monomial": [
+              5,
+              3,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "128"
+          },
+          {
+            "monomial": [
+              5,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-13"
+          },
+          {
+            "monomial": [
+              5,
+              4,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-6"
+          },
+          {
+            "monomial": [
+              5,
+              4,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-80"
+          },
+          {
+            "monomial": [
+              5,
+              5,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "21"
+          },
+          {
+            "monomial": [
+              5,
+              5,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-166"
+          },
+          {
+            "monomial": [
+              5,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-150"
+          },
+          {
+            "monomial": [
+              5,
+              6,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              5,
+              6,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "67"
+          },
+          {
+            "monomial": [
+              5,
+              7,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "monomial": [
+              5,
+              7,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "90"
+          },
+          {
+            "monomial": [
+              5,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "318"
+          },
+          {
+            "monomial": [
+              5,
+              8,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-20"
+          },
+          {
+            "monomial": [
+              5,
+              9,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-22"
+          },
+          {
+            "monomial": [
+              5,
+              9,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-242"
+          },
+          {
+            "monomial": [
+              5,
+              10,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              5,
+              11,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              5,
+              11,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "87"
+          },
+          {
+            "monomial": [
+              5,
+              13,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-15"
+          },
+          {
+            "monomial": [
+              5,
+              15,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              10,
+              0,
+              0,
+              3,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              10,
+              0,
+              1,
+              2,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              10,
+              0,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              10,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              10,
+              1,
+              1,
+              1,
+              1
+            ],
+            "coefficient": "6"
+          },
+          {
+            "monomial": [
+              10,
+              1,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              10,
+              2,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "16"
+          },
+          {
+            "monomial": [
+              10,
+              2,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-16"
+          },
+          {
+            "monomial": [
+              10,
+              3,
+              1,
+              1,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              10,
+              3,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "-11"
+          },
+          {
+            "monomial": [
+              10,
+              4,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "-20"
+          },
+          {
+            "monomial": [
+              10,
+              4,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "20"
+          },
+          {
+            "monomial": [
+              10,
+              5,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              10,
+              6,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "8"
+          },
+          {
+            "monomial": [
+              10,
+              6,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              10,
+              7,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              10,
+              8,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              10,
+              8,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              15,
+              0,
+              2,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              15,
+              0,
+              3,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 23,
+      "lower": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 6,
+        "excluded_slice_degree": 22,
+        "retraction_columns_checked": 35,
+        "dual_nonzero_weights": 17
+      },
+      "upper": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 6,
+        "slice_degree": 23,
+        "slice_terms": 73,
+        "retraction_degree": 4,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              1,
+              2,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              2,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "55"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-20"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "62"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-294"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "538"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-155"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "518"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-1989"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "147"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-400"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3040"
+          },
+          {
+            "monomial": [
+              0,
+              9,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-64"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "152"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-2396"
+          },
+          {
+            "monomial": [
+              0,
+              11,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "13"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-28"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "1062"
+          },
+          {
+            "monomial": [
+              0,
+              13,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              0,
+              14,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              14,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-268"
+          },
+          {
+            "monomial": [
+              0,
+              16,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "36"
+          },
+          {
+            "monomial": [
+              0,
+              18,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              6,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              6,
+              0,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              6,
+              1,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "18"
+          },
+          {
+            "monomial": [
+              6,
+              1,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-26"
+          },
+          {
+            "monomial": [
+              6,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "13"
+          },
+          {
+            "monomial": [
+              6,
+              2,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "9"
+          },
+          {
+            "monomial": [
+              6,
+              2,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "15"
+          },
+          {
+            "monomial": [
+              6,
+              3,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "-41"
+          },
+          {
+            "monomial": [
+              6,
+              3,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "128"
+          },
+          {
+            "monomial": [
+              6,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-13"
+          },
+          {
+            "monomial": [
+              6,
+              4,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-6"
+          },
+          {
+            "monomial": [
+              6,
+              4,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-80"
+          },
+          {
+            "monomial": [
+              6,
+              5,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "21"
+          },
+          {
+            "monomial": [
+              6,
+              5,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-166"
+          },
+          {
+            "monomial": [
+              6,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-150"
+          },
+          {
+            "monomial": [
+              6,
+              6,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              6,
+              6,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "67"
+          },
+          {
+            "monomial": [
+              6,
+              7,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "monomial": [
+              6,
+              7,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "90"
+          },
+          {
+            "monomial": [
+              6,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "318"
+          },
+          {
+            "monomial": [
+              6,
+              8,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-20"
+          },
+          {
+            "monomial": [
+              6,
+              9,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-22"
+          },
+          {
+            "monomial": [
+              6,
+              9,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-242"
+          },
+          {
+            "monomial": [
+              6,
+              10,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              6,
+              11,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              6,
+              11,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "87"
+          },
+          {
+            "monomial": [
+              6,
+              13,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-15"
+          },
+          {
+            "monomial": [
+              6,
+              15,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              12,
+              0,
+              0,
+              3,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              12,
+              0,
+              1,
+              2,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              12,
+              0,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              12,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              12,
+              1,
+              1,
+              1,
+              1
+            ],
+            "coefficient": "6"
+          },
+          {
+            "monomial": [
+              12,
+              1,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              12,
+              2,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "16"
+          },
+          {
+            "monomial": [
+              12,
+              2,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-16"
+          },
+          {
+            "monomial": [
+              12,
+              3,
+              1,
+              1,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              12,
+              3,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "-11"
+          },
+          {
+            "monomial": [
+              12,
+              4,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "-20"
+          },
+          {
+            "monomial": [
+              12,
+              4,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "20"
+          },
+          {
+            "monomial": [
+              12,
+              5,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              12,
+              6,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "8"
+          },
+          {
+            "monomial": [
+              12,
+              6,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              12,
+              7,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              12,
+              8,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              12,
+              8,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              18,
+              0,
+              2,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              18,
+              0,
+              3,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    },
+    {
+      "minimum_slice_degree": 25,
+      "lower": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 7,
+        "excluded_slice_degree": 24,
+        "retraction_columns_checked": 20,
+        "dual_nonzero_weights": 11
+      },
+      "upper": {
+        "triple": [
+          3,
+          7,
+          8
+        ],
+        "multiplicity": 7,
+        "slice_degree": 25,
+        "slice_terms": 73,
+        "retraction_degree": 4,
+        "retraction": [
+          {
+            "monomial": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              1,
+              2,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              2,
+              1,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              3,
+              0,
+              1
+            ],
+            "coefficient": "1"
+          }
+        ],
+        "slice": [
+          {
+            "monomial": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-5"
+          },
+          {
+            "monomial": [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "55"
+          },
+          {
+            "monomial": [
+              0,
+              2,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-20"
+          },
+          {
+            "monomial": [
+              0,
+              3,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "62"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-294"
+          },
+          {
+            "monomial": [
+              0,
+              4,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "538"
+          },
+          {
+            "monomial": [
+              0,
+              5,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-155"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "518"
+          },
+          {
+            "monomial": [
+              0,
+              6,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-1989"
+          },
+          {
+            "monomial": [
+              0,
+              7,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "147"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-400"
+          },
+          {
+            "monomial": [
+              0,
+              8,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "3040"
+          },
+          {
+            "monomial": [
+              0,
+              9,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-64"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "152"
+          },
+          {
+            "monomial": [
+              0,
+              10,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-2396"
+          },
+          {
+            "monomial": [
+              0,
+              11,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "13"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "-28"
+          },
+          {
+            "monomial": [
+              0,
+              12,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "1062"
+          },
+          {
+            "monomial": [
+              0,
+              13,
+              0,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              0,
+              14,
+              0,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              0,
+              14,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-268"
+          },
+          {
+            "monomial": [
+              0,
+              16,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "36"
+          },
+          {
+            "monomial": [
+              0,
+              18,
+              1,
+              0,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              7,
+              0,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              7,
+              0,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              7,
+              1,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "18"
+          },
+          {
+            "monomial": [
+              7,
+              1,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-26"
+          },
+          {
+            "monomial": [
+              7,
+              1,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "13"
+          },
+          {
+            "monomial": [
+              7,
+              2,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "9"
+          },
+          {
+            "monomial": [
+              7,
+              2,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "15"
+          },
+          {
+            "monomial": [
+              7,
+              3,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "-41"
+          },
+          {
+            "monomial": [
+              7,
+              3,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "128"
+          },
+          {
+            "monomial": [
+              7,
+              3,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-13"
+          },
+          {
+            "monomial": [
+              7,
+              4,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "-6"
+          },
+          {
+            "monomial": [
+              7,
+              4,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-80"
+          },
+          {
+            "monomial": [
+              7,
+              5,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "21"
+          },
+          {
+            "monomial": [
+              7,
+              5,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-166"
+          },
+          {
+            "monomial": [
+              7,
+              5,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-150"
+          },
+          {
+            "monomial": [
+              7,
+              6,
+              0,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              7,
+              6,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "67"
+          },
+          {
+            "monomial": [
+              7,
+              7,
+              0,
+              2,
+              0
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "monomial": [
+              7,
+              7,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "90"
+          },
+          {
+            "monomial": [
+              7,
+              7,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "318"
+          },
+          {
+            "monomial": [
+              7,
+              8,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "-20"
+          },
+          {
+            "monomial": [
+              7,
+              9,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "-22"
+          },
+          {
+            "monomial": [
+              7,
+              9,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-242"
+          },
+          {
+            "monomial": [
+              7,
+              10,
+              1,
+              0,
+              1
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              7,
+              11,
+              1,
+              1,
+              0
+            ],
+            "coefficient": "2"
+          },
+          {
+            "monomial": [
+              7,
+              11,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "87"
+          },
+          {
+            "monomial": [
+              7,
+              13,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "-15"
+          },
+          {
+            "monomial": [
+              7,
+              15,
+              2,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              14,
+              0,
+              0,
+              3,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              14,
+              0,
+              1,
+              2,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              14,
+              0,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              14,
+              0,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "3"
+          },
+          {
+            "monomial": [
+              14,
+              1,
+              1,
+              1,
+              1
+            ],
+            "coefficient": "6"
+          },
+          {
+            "monomial": [
+              14,
+              1,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              14,
+              2,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "16"
+          },
+          {
+            "monomial": [
+              14,
+              2,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-16"
+          },
+          {
+            "monomial": [
+              14,
+              3,
+              1,
+              1,
+              1
+            ],
+            "coefficient": "-2"
+          },
+          {
+            "monomial": [
+              14,
+              3,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "-11"
+          },
+          {
+            "monomial": [
+              14,
+              4,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "-20"
+          },
+          {
+            "monomial": [
+              14,
+              4,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "20"
+          },
+          {
+            "monomial": [
+              14,
+              5,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "7"
+          },
+          {
+            "monomial": [
+              14,
+              6,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "8"
+          },
+          {
+            "monomial": [
+              14,
+              6,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "-8"
+          },
+          {
+            "monomial": [
+              14,
+              7,
+              2,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              14,
+              8,
+              2,
+              1,
+              0
+            ],
+            "coefficient": "-1"
+          },
+          {
+            "monomial": [
+              14,
+              8,
+              3,
+              0,
+              0
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              21,
+              0,
+              2,
+              1,
+              1
+            ],
+            "coefficient": "1"
+          },
+          {
+            "monomial": [
+              21,
+              0,
+              3,
+              0,
+              1
+            ],
+            "coefficient": "-1"
+          }
+        ]
+      }
+    }
+  ]
+}

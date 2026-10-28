@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-28",
+  "model": [
+    3,
+    7,
+    8
+  ],
+  "degree_bound": 3,
+  "monomials": 20,
+  "restriction_rank": 20,
+  "ideal_dimension": 0,
+  "unknowns": 0,
+  "equations": 21,
+  "matrix_rank": 0,
+  "status": "INFEASIBLE",
+  "basis": [],
+  "scope": "No assertion of local nilpotence; no assertion of rectifiability or nonrectifiability.",
+  "dual": [
+    {
+      "row": [
+        "divergence",
+        0,
+        0,
+        0
+      ],
+      "weight": "1/2"
+    }
+  ],
+  "dual_nonzero": 1,
+  "seconds": 0.043,
+  "homogeneous_solution_dimension": 0
+}

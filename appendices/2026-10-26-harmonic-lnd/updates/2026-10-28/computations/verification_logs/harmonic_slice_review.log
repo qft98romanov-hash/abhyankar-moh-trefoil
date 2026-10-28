@@ -1,0 +1,20 @@
+Working directory (relative): legacy_appendix/research/repo_audit
+Scope: Separate implementation of the harmonic degree bound
+
+{
+  "input_monomials": 3003,
+  "weight_minus_one_input_monomials": 240,
+  "output_monomials": 6017,
+  "max_output_degree": 15,
+  "dual_support": 117,
+  "dual_value_on_one": "1",
+  "all_dual_values_on_images_zero": true,
+  "upper_slice_terms": 27,
+  "upper_slice_degree": 11,
+  "upper_derivative_is_one": true,
+  "minimal_total_degree": 11,
+  "valid_over": "Every characteristic-zero field, including C",
+  "witness_sha256": "9b23ac0289689e5eafc7707ca79c28fa37e49a2fd3a14c38b54805ed0c2b6ac1",
+  "upper_sha256": "20d8a07ae29276efc916299dcf847a6b4c6c84dda1b7df94747e82280c0fd464"
+}
+INDEPENDENT HARMONIC MINIMAL-SLICE CERTIFICATE REVIEW PASSED

@@ -1,0 +1,4 @@
+Working directory (relative): euler
+Scope: Divergence and fixed-ideal counterexamples
+
+PASS: divergence/normal jet; ten weak iterates, ten E iterates; six strong even iterates; fixed ideal (y,z). Saved divergence_controls.json.

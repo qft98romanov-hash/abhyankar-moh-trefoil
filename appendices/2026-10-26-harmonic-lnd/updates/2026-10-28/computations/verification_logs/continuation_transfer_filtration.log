@@ -1,0 +1,20 @@
+Working directory (relative): continuation/relative_lnd
+Scope: Sixteen finite kernel, plinth and image-ideal model cases
+
+quadratic_bad
+nilpotent_good
+scaled_bad
+scaled_good
+fully_scaled
+mixed_good_bad
+nonlinear_H_scaled_good
+nonlinear_H_bad
+two_shears_bad
+nonlinear_W_bad
+swapped_good
+scaled_mixed
+irreducible_good
+variable_residue_degree
+harmonic_457_parameter
+mixed_cubic_linear
+{"cases": 16, "all_verified": true}

@@ -1,0 +1,4 @@
+[3, 4, 5] divergence degree 13 PASS
+[3, 5, 7] divergence degree 20 PASS
+[4, 5, 7] divergence degree 20 PASS
+ALL EXACT EULER OBSTRUCTION CONTROLS PASSED

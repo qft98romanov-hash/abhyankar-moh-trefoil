@@ -1,0 +1,403 @@
+{
+  "status": "PASS",
+  "cases_checked": 56,
+  "mixed_identity": "verified before specializing a",
+  "leading_coefficient_h": "-a^3",
+  "a_zero": "covered by uniform theorem",
+  "a_plus_minus_one": "L vanishes on roots x^2-a*x-1, C8 has nonzero t^2 coefficient",
+  "M_zero": "degree(h)=7 > degree(v)=2 for a != 0",
+  "cases": [
+    {
+      "e": 0,
+      "f": 4,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 1,
+      "f": 3,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 2,
+      "f": 2,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 3,
+      "f": 1,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 4,
+      "f": 0,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 0,
+      "f": 5,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 1,
+      "f": 4,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 2,
+      "f": 3,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 3,
+      "f": 2,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 4,
+      "f": 1,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 5,
+      "f": 0,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 0,
+      "f": 6,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 1,
+      "f": 5,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 2,
+      "f": 4,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 3,
+      "f": 3,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 4,
+      "f": 2,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 5,
+      "f": 1,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 6,
+      "f": 0,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 0,
+      "f": 7,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 1,
+      "f": 6,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 2,
+      "f": 5,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 3,
+      "f": 4,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 4,
+      "f": 3,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 5,
+      "f": 2,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 6,
+      "f": 1,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 7,
+      "f": 0,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 0,
+      "f": 8,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 1,
+      "f": 7,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 2,
+      "f": 6,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 3,
+      "f": 5,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 4,
+      "f": 4,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 5,
+      "f": 3,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 6,
+      "f": 2,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 7,
+      "f": 1,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 8,
+      "f": 0,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 0,
+      "f": 9,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 1,
+      "f": 8,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 2,
+      "f": 7,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 3,
+      "f": 6,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 4,
+      "f": 5,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 5,
+      "f": 4,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 6,
+      "f": 3,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 7,
+      "f": 2,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 8,
+      "f": 1,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 9,
+      "f": 0,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 0,
+      "f": 10,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 1,
+      "f": 9,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 2,
+      "f": 8,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 3,
+      "f": 7,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 4,
+      "f": 6,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 5,
+      "f": 5,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 6,
+      "f": 4,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 7,
+      "f": 3,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 8,
+      "f": 2,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 9,
+      "f": 1,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    },
+    {
+      "e": 10,
+      "f": 0,
+      "gcd": "1",
+      "denominators_supported_at": "r=0,+1,-1 only",
+      "repeated_root_case": "excluded"
+    }
+  ]
+}

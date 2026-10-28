@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": [
+    "offline source dependency is not ignored by inherited repo/ rule",
+    "verification logs are not ignored by inherited *.log rule"
+  ],
+  "scope": "Packaging controls only, not mathematical results."
+}

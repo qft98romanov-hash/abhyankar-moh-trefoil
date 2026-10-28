@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-28",
+  "arithmetic": "exact rational",
+  "scope": "Three exact controls; the all-P theorem is proved in prose",
+  "cases": [
+    {
+      "triple": [
+        3,
+        4,
+        5
+      ],
+      "parameter": "-x**3 + 3*x + y*z",
+      "parameter_degree": 3,
+      "divergence_degree": 13,
+      "divergence_leading_form": "-5*x**12*y",
+      "divergence_on_curve": 2,
+      "normal_projector_check": "PASS",
+      "first_order_divergence_correction_check": "PASS",
+      "status": "NAIVE_E_NOT_LND_BY_THEOREM"
+    },
+    {
+      "triple": [
+        3,
+        5,
+        7
+      ],
+      "parameter": "-x*y**2 + 2*x + z*(x**2 - 1)",
+      "parameter_degree": 3,
+      "divergence_degree": 20,
+      "divergence_leading_form": "-7*x**8*(x*z - y**2)**6",
+      "divergence_on_curve": 2,
+      "normal_projector_check": "PASS",
+      "first_order_divergence_correction_check": "PASS",
+      "status": "NAIVE_E_NOT_LND_BY_THEOREM"
+    },
+    {
+      "triple": [
+        4,
+        5,
+        7
+      ],
+      "parameter": "-y**3 + 3*y + z*(x**2 - 2)",
+      "parameter_degree": 3,
+      "divergence_degree": 20,
+      "divergence_leading_form": "-7*x**2*(x**2*z - y**3)**6",
+      "divergence_on_curve": 2,
+      "normal_projector_check": "PASS",
+      "first_order_divergence_correction_check": "PASS",
+      "status": "NAIVE_E_NOT_LND_BY_THEOREM"
+    }
+  ],
+  "status": "PASS"
+}

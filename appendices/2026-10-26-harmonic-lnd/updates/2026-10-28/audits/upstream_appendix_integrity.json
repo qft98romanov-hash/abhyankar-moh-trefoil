@@ -1,0 +1,458 @@
+{
+  "commit": "b954f3609e900761fddc9c8ff03d8301e9604cab",
+  "date": "2026-10-28",
+  "status": "PASS",
+  "verified_files": 75,
+  "files": [
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/.gitattributes",
+      "expected_git_blob": "a240a1ac33f01d8f6a11b02d3a983d5fad667080",
+      "actual_git_blob": "a240a1ac33f01d8f6a11b02d3a983d5fad667080",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/.gitignore",
+      "expected_git_blob": "06ab7e9eb0c7522f5d3fa66637f22a08c8ec5f53",
+      "actual_git_blob": "06ab7e9eb0c7522f5d3fa66637f22a08c8ec5f53",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/PROVENANCE.md",
+      "expected_git_blob": "931440667d3b90ddd04d50ca5f29eb5413ab3184",
+      "actual_git_blob": "931440667d3b90ddd04d50ca5f29eb5413ab3184",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/README.md",
+      "expected_git_blob": "061ccf4d97eaa3a887822c58006acc2c8a2d3e82",
+      "actual_git_blob": "061ccf4d97eaa3a887822c58006acc2c8a2d3e82",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/README.txt",
+      "expected_git_blob": "ebbf8ba9fe038afd16de8c7825bf5bfb32e395bd",
+      "actual_git_blob": "ebbf8ba9fe038afd16de8c7825bf5bfb32e395bd",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/SHA256SUMS.txt",
+      "expected_git_blob": "82a1037fa90557c4807edcaec656aeeb41cd4527",
+      "actual_git_blob": "82a1037fa90557c4807edcaec656aeeb41cd4527",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/bootstrap_source.py",
+      "expected_git_blob": "691f4b4243fe766a1f1602ac372521428ff23886",
+      "actual_git_blob": "691f4b4243fe766a1f1602ac372521428ff23886",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/harmonic_knots_lnd_research_ru.pdf",
+      "expected_git_blob": "18abeb18f3a53eeab4da0af07c010dfef1c1deca",
+      "actual_git_blob": "18abeb18f3a53eeab4da0af07c010dfef1c1deca",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/latex/harmonic_knots_lnd_research_ru.tex",
+      "expected_git_blob": "6a851654bb9e84b5966baea72085db63f03c73ad",
+      "actual_git_blob": "6a851654bb9e84b5966baea72085db63f03c73ad",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/latex/sections/base_lnd.tex",
+      "expected_git_blob": "72bed9840a96223244adecaffbb55922773b0cc2",
+      "actual_git_blob": "72bed9840a96223244adecaffbb55922773b0cc2",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/latex/sections/computations.tex",
+      "expected_git_blob": "e43c3b7c75fe2560f3ec20e6a0ed803d05b592a9",
+      "actual_git_blob": "e43c3b7c75fe2560f3ec20e6a0ed803d05b592a9",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/latex/sections/consequences.tex",
+      "expected_git_blob": "91f083ee681dc6d64bcddf6874bcb97bf7c24239",
+      "actual_git_blob": "91f083ee681dc6d64bcddf6874bcb97bf7c24239",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/latex/sections/cremona.tex",
+      "expected_git_blob": "4d8ba92866eb58e7c981941311145c877e7e4008",
+      "actual_git_blob": "4d8ba92866eb58e7c981941311145c877e7e4008",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/latex/sections/harmonic.tex",
+      "expected_git_blob": "37f31cda8cf1d2eb7cbf473791a03e9b75e730e9",
+      "actual_git_blob": "37f31cda8cf1d2eb7cbf473791a03e9b75e730e9",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/latex/sections/harmonic_minimum_slice.tex",
+      "expected_git_blob": "385b8f9938c590b29ceca96bc34f1425fc773adb",
+      "actual_git_blob": "385b8f9938c590b29ceca96bc34f1425fc773adb",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/latex/sections/minimum_slice.tex",
+      "expected_git_blob": "adf44dbf1450f0c631449eda7a6aa09dc51260ab",
+      "actual_git_blob": "adf44dbf1450f0c631449eda7a6aa09dc51260ab",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/latex/sections/van_den_essen.tex",
+      "expected_git_blob": "43541547cc896b0b288da1976d9fc4512d99123e",
+      "actual_git_blob": "43541547cc896b0b288da1976d9fc4512d99123e",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/requirements.txt",
+      "expected_git_blob": "1ca5fd06160543f8bd736f1b51db6f42372c66f4",
+      "actual_git_blob": "1ca5fd06160543f8bd736f1b51db6f42372c66f4",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/cremona_lnd/results.tex",
+      "expected_git_blob": "4d8ba92866eb58e7c981941311145c877e7e4008",
+      "actual_git_blob": "4d8ba92866eb58e7c981941311145c877e7e4008",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/cremona_lnd/verify_example.py",
+      "expected_git_blob": "729f7514e43bfa91dd34a9b27801af90c48a9df7",
+      "actual_git_blob": "729f7514e43bfa91dd34a9b27801af90c48a9df7",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/degree5_quadratic_observation.log",
+      "expected_git_blob": "229debd38f14c3c1747a1652f9e354a5be42d931",
+      "actual_git_blob": "229debd38f14c3c1747a1652f9e354a5be42d931",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/degree5_quadratic_observation.py",
+      "expected_git_blob": "b795c358aa1223540a82aa235f91d33a3d574fb5",
+      "actual_git_blob": "b795c358aa1223540a82aa235f91d33a3d574fb5",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/divisor_ansatz.py",
+      "expected_git_blob": "91eb8f73d6e0d53a2073a4bad38e83bf3670be71",
+      "actual_git_blob": "91eb8f73d6e0d53a2073a4bad38e83bf3670be71",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/matrix_probe.py",
+      "expected_git_blob": "896b0eac337e12086f8f6b142d3c5961cd0fee1c",
+      "actual_git_blob": "896b0eac337e12086f8f6b142d3c5961cd0fee1c",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/parameter_search.log",
+      "expected_git_blob": "5d7d754892f33def6515ae0f8e4d49e992d7ca61",
+      "actual_git_blob": "5d7d754892f33def6515ae0f8e4d49e992d7ca61",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/parameter_search.py",
+      "expected_git_blob": "7b35c1f176c2e55cf23c0d5bdbee92ac57628b34",
+      "actual_git_blob": "7b35c1f176c2e55cf23c0d5bdbee92ac57628b34",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz.json",
+      "expected_git_blob": "4121bfab063e7a397f3cb985ac5c09daf30df746",
+      "actual_git_blob": "4121bfab063e7a397f3cb985ac5c09daf30df746",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz.log",
+      "expected_git_blob": "27da62b3b36309a42443f34b06c0154384a9445b",
+      "actual_git_blob": "27da62b3b36309a42443f34b06c0154384a9445b",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz.py",
+      "expected_git_blob": "7d009f1c1c7d5506fa0ae99a50f800f852bce5dc",
+      "actual_git_blob": "7d009f1c1c7d5506fa0ae99a50f800f852bce5dc",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz2.json",
+      "expected_git_blob": "a57f3112f13aad7003bb4741070b91dc20e251d6",
+      "actual_git_blob": "a57f3112f13aad7003bb4741070b91dc20e251d6",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz2.log",
+      "expected_git_blob": "39a7090f8a3928209c9307477ebf85f6725822a1",
+      "actual_git_blob": "39a7090f8a3928209c9307477ebf85f6725822a1",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz2.py",
+      "expected_git_blob": "2402677c550f09d083fe132d86ab1c6e5b89b3e7",
+      "actual_git_blob": "2402677c550f09d083fe132d86ab1c6e5b89b3e7",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/reduction_scan.json",
+      "expected_git_blob": "1a0d31120469310bdf7f98f810bebce99dbb8790",
+      "actual_git_blob": "1a0d31120469310bdf7f98f810bebce99dbb8790",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/reduction_scan.log",
+      "expected_git_blob": "958f3fafa805d40784245b89186a0d4e282f75b9",
+      "actual_git_blob": "958f3fafa805d40784245b89186a0d4e282f75b9",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/reduction_scan.py",
+      "expected_git_blob": "c5ee41d8c8a82799e69c7bb0a147e352254e42cf",
+      "actual_git_blob": "c5ee41d8c8a82799e69c7bb0a147e352254e42cf",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/results.tex",
+      "expected_git_blob": "e43c3b7c75fe2560f3ec20e6a0ed803d05b592a9",
+      "actual_git_blob": "e43c3b7c75fe2560f3ec20e6a0ed803d05b592a9",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/verification.json",
+      "expected_git_blob": "479f270bec8c07d5e807755f5d81e4a44c2f52aa",
+      "actual_git_blob": "479f270bec8c07d5e807755f5d81e4a44c2f52aa",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/verification.log",
+      "expected_git_blob": "5f620c0cf65895ae9d5a44ebd0000ca858e01724",
+      "actual_git_blob": "5f620c0cf65895ae9d5a44ebd0000ca858e01724",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/verify_new_results.py",
+      "expected_git_blob": "6856313a63aa1e946f87e13b9bfbf764de503a9d",
+      "actual_git_blob": "6856313a63aa1e946f87e13b9bfbf764de503a9d",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_literature/periodic_shears.py",
+      "expected_git_blob": "317ab8092ad3f9f07f5a62bbdd0430a0a1353d70",
+      "actual_git_blob": "317ab8092ad3f9f07f5a62bbdd0430a0a1353d70",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_literature/periodic_shears_results.json",
+      "expected_git_blob": "d8cc5af467da1ca7dc38af5fab21be1eb0d05387",
+      "actual_git_blob": "d8cc5af467da1ca7dc38af5fab21be1eb0d05387",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_literature/results.tex",
+      "expected_git_blob": "a46a45ea5d75e8669b0e6d2524dff24bccd72748",
+      "actual_git_blob": "a46a45ea5d75e8669b0e6d2524dff24bccd72748",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_literature/verification.log",
+      "expected_git_blob": "eb787d7a27f2373fc51ff5e5d1a169f4ff69819e",
+      "actual_git_blob": "eb787d7a27f2373fc51ff5e5d1a169f4ff69819e",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/PROOF.md",
+      "expected_git_blob": "7cc47c8cee0b318a57c628ec0ab1c2c667133236",
+      "actual_git_blob": "7cc47c8cee0b318a57c628ec0ab1c2c667133236",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/certificate_results.json",
+      "expected_git_blob": "63462645f135e5e0ea040201a1509733b12d3942",
+      "actual_git_blob": "63462645f135e5e0ea040201a1509733b12d3942",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/harmonic_minimal_slice_verification.log",
+      "expected_git_blob": "17c1b7050b43626e60d28bcfd9cea0bfd1377652",
+      "actual_git_blob": "17c1b7050b43626e60d28bcfd9cea0bfd1377652",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/harmonic_minimum_slice.tex",
+      "expected_git_blob": "385b8f9938c590b29ceca96bc34f1425fc773adb",
+      "actual_git_blob": "385b8f9938c590b29ceca96bc34f1425fc773adb",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/harmonic_slice_search.json",
+      "expected_git_blob": "8aa211703121128c7f9b3d3b2ae782d7083e6bf7",
+      "actual_git_blob": "8aa211703121128c7f9b3d3b2ae782d7083e6bf7",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/minimal_degree_slice.json",
+      "expected_git_blob": "2d22136e7cc6d26876f3ad6d5acaea66a662d934",
+      "actual_git_blob": "2d22136e7cc6d26876f3ad6d5acaea66a662d934",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/minimal_slice_verification.log",
+      "expected_git_blob": "a38efe193c48e641270a91a4125e2d94b0915719",
+      "actual_git_blob": "a38efe193c48e641270a91a4125e2d94b0915719",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/minimum_slice.tex",
+      "expected_git_blob": "adf44dbf1450f0c631449eda7a6aa09dc51260ab",
+      "actual_git_blob": "adf44dbf1450f0c631449eda7a6aa09dc51260ab",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/no_harmonic_slice_degree10_certificate.json",
+      "expected_git_blob": "c246145ffeb5d10a3c961bb6218acfd60751a427",
+      "actual_git_blob": "c246145ffeb5d10a3c961bb6218acfd60751a427",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/no_slice_degree6_certificate.json",
+      "expected_git_blob": "c8c4ead6fce7e12e72b0798913876e54bcd2ebb0",
+      "actual_git_blob": "c8c4ead6fce7e12e72b0798913876e54bcd2ebb0",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/verification.log",
+      "expected_git_blob": "4c9e4f65d85191e12bd904a29258104010331498",
+      "actual_git_blob": "4c9e4f65d85191e12bd904a29258104010331498",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/verify_harmonic_minimal_slice.py",
+      "expected_git_blob": "31edf1d10c8d2da2647cfbcee06a9256281f3849",
+      "actual_git_blob": "31edf1d10c8d2da2647cfbcee06a9256281f3849",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/verify_lnd.py",
+      "expected_git_blob": "bae0377d57964062d71c72dd7854e8db9472899c",
+      "actual_git_blob": "bae0377d57964062d71c72dd7854e8db9472899c",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/verify_minimal_slice.py",
+      "expected_git_blob": "67322cb03783a32cf36c11d2145baaa6db28f15e",
+      "actual_git_blob": "67322cb03783a32cf36c11d2145baaa6db28f15e",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/audit_summary.txt",
+      "expected_git_blob": "a657773360cb69bf9d9fa861bd3dbc37c0730e24",
+      "actual_git_blob": "a657773360cb69bf9d9fa861bd3dbc37c0730e24",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/cross_review.txt",
+      "expected_git_blob": "fa2f2cb71aef879bfd40994f635a33141f3347fe",
+      "actual_git_blob": "fa2f2cb71aef879bfd40994f635a33141f3347fe",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/exact_source_sha256.txt",
+      "expected_git_blob": "a5c04f862f01f49908b61231f6c6d67055588b30",
+      "actual_git_blob": "a5c04f862f01f49908b61231f6c6d67055588b30",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/independent_base_lnd.json",
+      "expected_git_blob": "d640c40c3851cd3d4405776942818534cb266aa2",
+      "actual_git_blob": "d640c40c3851cd3d4405776942818534cb266aa2",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/independent_base_lnd.log",
+      "expected_git_blob": "e2e733532ab238539e73500fb31b3afc1d86fa76",
+      "actual_git_blob": "e2e733532ab238539e73500fb31b3afc1d86fa76",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/independent_base_lnd.py",
+      "expected_git_blob": "19a815a64dda47637a1c32c2230fec3d40850af9",
+      "actual_git_blob": "19a815a64dda47637a1c32c2230fec3d40850af9",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/input_sha256.txt",
+      "expected_git_blob": "576c886e89c5ec3ff21b1e61176346839ea246bb",
+      "actual_git_blob": "576c886e89c5ec3ff21b1e61176346839ea246bb",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/proof.tex",
+      "expected_git_blob": "15e54908acbcac1277a9697ce180a80089453c50",
+      "actual_git_blob": "15e54908acbcac1277a9697ce180a80089453c50",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_harmonic_minimal_slice.json",
+      "expected_git_blob": "5bc8af897027cb3f373fe6748f29eaafe2dc1abc",
+      "actual_git_blob": "5bc8af897027cb3f373fe6748f29eaafe2dc1abc",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_harmonic_minimal_slice.log",
+      "expected_git_blob": "1df4f8c1f4263889cb7d2b9e59fe1b84452e37a9",
+      "actual_git_blob": "1df4f8c1f4263889cb7d2b9e59fe1b84452e37a9",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_harmonic_minimal_slice.py",
+      "expected_git_blob": "b05d463c79b1ad03256f14ebc2c0102d39e6d653",
+      "actual_git_blob": "b05d463c79b1ad03256f14ebc2c0102d39e6d653",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_minimal_slice.json",
+      "expected_git_blob": "467628f59a9bb1fe27d71066be6a2f9c2a7bf2fa",
+      "actual_git_blob": "467628f59a9bb1fe27d71066be6a2f9c2a7bf2fa",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_minimal_slice.log",
+      "expected_git_blob": "555dd791f17ce93ed39d57499a29ceb0e386b61b",
+      "actual_git_blob": "555dd791f17ce93ed39d57499a29ceb0e386b61b",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_minimal_slice.py",
+      "expected_git_blob": "3b15d787c45a0526063342e01441676a2cfa6250",
+      "actual_git_blob": "3b15d787c45a0526063342e01441676a2cfa6250",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/verify_current.log",
+      "expected_git_blob": "b99ee7243db001c4ec95c496531f92a39e09a565",
+      "actual_git_blob": "b99ee7243db001c4ec95c496531f92a39e09a565",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/verify_printed_current.log",
+      "expected_git_blob": "4a26a61713351098f72febf96148a0c0e94e6d61",
+      "actual_git_blob": "4a26a61713351098f72febf96148a0c0e94e6d61",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/source_manifest.json",
+      "expected_git_blob": "340caaca6a97ad232f6283f152da664ad7f0041d",
+      "actual_git_blob": "340caaca6a97ad232f6283f152da664ad7f0041d",
+      "match": true
+    },
+    {
+      "path": "appendices/2026-10-26-harmonic-lnd/research/van_den_essen/results.tex",
+      "expected_git_blob": "43541547cc896b0b288da1976d9fc4512d99123e",
+      "actual_git_blob": "43541547cc896b0b288da1976d9fc4512d99123e",
+      "match": true
+    }
+  ]
+}

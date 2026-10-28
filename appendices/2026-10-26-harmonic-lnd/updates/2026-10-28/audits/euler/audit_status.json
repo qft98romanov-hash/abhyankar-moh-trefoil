@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-28",
+  "status": "PASS",
+  "source_file_count_hashed": 46,
+  "prior_complete_run": "7/7 PASS; its exact inputs are hashed here",
+  "fresh_rechecks": [
+    {
+      "name": "h457",
+      "script": "verify_normal_family.py",
+      "status": "PASS"
+    },
+    {
+      "name": "h378",
+      "script": "verify_degree8_axis_obstruction.py",
+      "status": "PASS"
+    }
+  ],
+  "h378_full_dimension_recomputed_in_this_audit": false,
+  "scope": "Proof/code audit plus fresh inexpensive exact checks; not external peer review."
+}

@@ -1,0 +1,280 @@
+{
+  "date": "2026-10-28",
+  "scope": "Euler/normal-field part of the consolidated research appendix",
+  "review_status": "Internal proof and code audit; all statements remain submitted for external verification",
+  "literature_priority": "Not established; no novelty claim",
+  "claims": [
+    {
+      "id": "E01",
+      "category": "proved_criterion",
+      "title_ru": "Нормальное LF-поле, однородное LND и выпрямляющие координаты",
+      "conditions": [
+        "k is any field of characteristic zero",
+        "gamma:A1->An is a closed embedding",
+        "delta(R) subset I and (delta-id)(I) subset I^2"
+      ],
+      "statement_ru": "Для заданного нормального delta эквивалентны LF(delta), LND(partial_t+delta/t) на R[t,I/t] и существование координат p,q_j с I=(q_j), p gamma=u, delta=sum q_j partial_q_j.",
+      "proof": "REVIEW_RU.md §1; source theory.md §§2–3",
+      "limits": [
+        "Existence of a suitable delta is not proved for every embedding.",
+        "Rectifiability does not imply that every normal delta is LF."
+      ]
+    },
+    {
+      "id": "E02",
+      "category": "proved_constructive_certificate",
+      "title_ru": "Конечный сертификат локальной конечности",
+      "conditions": [
+        "Conditions of E01",
+        "V_N=span{1,delta^j X_i:0<=j<=N} is exactly delta-stable"
+      ],
+      "statement_ru": "Замкнутость V_N доказывает LF на всём кольце; спектральные проекторы восстанавливают выпрямитель и затем обратное отображение.",
+      "proof": "REVIEW_RU.md §2; source theory.md §4",
+      "evidence": [
+        "theory_checks.json"
+      ],
+      "limits": [
+        "No universal N is established.",
+        "A finite sequence of unsuccessful closure checks is not a non-LF proof."
+      ]
+    },
+    {
+      "id": "E03",
+      "category": "proved_necessary_conditions",
+      "title_ru": "Дивергенция и неподвижная схема",
+      "conditions": [
+        "delta satisfies E01 and is LF"
+      ],
+      "statement_ru": "div(delta)=n-1 and (delta X_1,...,delta X_n)=I.",
+      "proof": "REVIEW_RU.md §4; source theory.md §5",
+      "limits": [
+        "Not sufficient even jointly with the normal conditions.",
+        "Constant divergence of LF derivations is classical."
+      ]
+    },
+    {
+      "id": "E04",
+      "category": "proved_counterexample_to_sufficiency",
+      "title_ru": "Нормальные условия, дивергенция и неподвижная схема недостаточны",
+      "conditions": [
+        "R=k[x,y,z], char k=0, I=(y,z)"
+      ],
+      "statement_ru": "delta=yz partial_x+y partial_y+(z+y^2 x) partial_z passes these tests but is not LF; delta^(2m)x contains x y^(3m) with a positive coefficient.",
+      "proof": "REVIEW_RU.md §4; source theory.md §5",
+      "evidence": [
+        "divergence_controls.json",
+        "theory_checks.json"
+      ],
+      "limits": [
+        "All-iterations conclusion follows from the written induction, not merely finite samples."
+      ]
+    },
+    {
+      "id": "E05",
+      "category": "proved_classification_of_ansatz",
+      "title_ru": "Точная классификация наивного поля",
+      "conditions": [
+        "Closed embedding gamma:A1->An, char k=0",
+        "delta_P=sum(X_i-f_i(P)) partial_i with P gamma=u"
+      ],
+      "statement_ru": "Существует P с LF(delta_P) тогда и только тогда, когда существует аффинно-линейный L с L gamma=u.",
+      "proof": "REVIEW_RU.md §3; source theory.md §6.2",
+      "limits": [
+        "Existence of L does not say every polynomial parameter P works.",
+        "Does not classify arbitrary normal fields."
+      ]
+    },
+    {
+      "id": "E06",
+      "category": "proved_ansatz_obstruction",
+      "title_ru": "Запрет наивного поля для гармонических моделей",
+      "conditions": [
+        "gamma=(C_a,C_b,C_c) is a closed embedding",
+        "a,b,c are distinct integers >=2"
+      ],
+      "statement_ru": "Ни один параметр P, любой степени, не делает delta_P локально конечным или связанное E_P локально нильпотентным.",
+      "proof": "E05 and distinct degrees; source theory.md §6",
+      "evidence": [
+        "h378/naive_euler_certificates.json",
+        "h457/euler_obstruction_certificate.json"
+      ],
+      "limits": [
+        "Not an obstruction to rectification; H345 and H357 are controls."
+      ]
+    },
+    {
+      "id": "E07",
+      "category": "exact_complete_finite_computation",
+      "title_ru": "H378: минимум степени 8, полная семья размерности 24",
+      "conditions": [
+        "gamma=(C3,C7,C8)",
+        "All polynomial coefficient fields delta with normal conditions and global div(delta)=2"
+      ],
+      "statement_ru": "Степени <=7 несовместны; в степени <=8 полное аффинное пространство решений имеет размерность24 (300 неизвестных, ранг276).",
+      "proof": "h378/normal_search/PROOF.md and independently reconstructed coefficient matrix",
+      "evidence": [
+        "h378/normal_search/normal_degree_3.json",
+        "h378/normal_search/normal_degree_4.json",
+        "h378/normal_search/normal_degree_5.json",
+        "h378/normal_search/normal_degree_6.json",
+        "h378/normal_search/normal_degree_7.json",
+        "h378/normal_search/normal_degree_8.json",
+        "h378/normal_search/verification.json"
+      ],
+      "limits": [
+        "Ordinary degree of delta coefficients in the given coordinates.",
+        "No LF existence or rectification conclusion."
+      ]
+    },
+    {
+      "id": "E08",
+      "category": "exact_complete_finite_computation",
+      "title_ru": "H378: нормальные условия без дивергенции в степени 7",
+      "conditions": [
+        "gamma=(C3,C7,C8)",
+        "Only normal conditions; no global divergence equation"
+      ],
+      "statement_ru": "В степени <=7 имеется полная аффинная семья размерности11 (189 неизвестных, ранг178).",
+      "evidence": [
+        "h378/normal_search/normal_only_degree_7.json",
+        "h378/normal_search/verification.json"
+      ],
+      "limits": [
+        "Do not call degree8 the minimum of normal conditions alone."
+      ]
+    },
+    {
+      "id": "E09",
+      "category": "exact_complete_finite_computation",
+      "title_ru": "H457: минимум степени 7, полная семья размерности 19",
+      "conditions": [
+        "gamma=(C4,C5,C7)",
+        "All fields satisfying normal conditions and global div(delta)=2"
+      ],
+      "statement_ru": "Степени <=6 исключены уже нормальными условиями; в степени <=7 полная аффинная семья имеет размерность19 (213 неизвестных, ранг194).",
+      "evidence": [
+        "h457/normal_search/normal_degree6_div2.json",
+        "h457/normal_search/normal_degree7_div2.json",
+        "h457/normal_search/independent_verification.json"
+      ],
+      "limits": [
+        "Minimum concerns the linear necessary conditions, not LF or rectifier degree."
+      ]
+    },
+    {
+      "id": "E10",
+      "category": "proved_exclusion_of_two_particular_points",
+      "title_ru": "Оба выбранных рациональных представителя не LF",
+      "conditions": [
+        "The exact particular points in E07 and E09"
+      ],
+      "statement_ru": "Инвариантные оси индуцируют одномерные поля степеней6 и7, поэтому степени итераций растут как1+5m и1+6m; оба E не LND.",
+      "evidence": [
+        "h378/normal_search/degree8_axis_obstruction.json",
+        "h457/normal_search/independent_verification.json"
+      ],
+      "limits": [
+        "Excludes only those two points.",
+        "The full families do not preserve the chosen axes."
+      ]
+    },
+    {
+      "id": "E11",
+      "category": "proved_extension",
+      "title_ru": "Кратные исключительные параметры",
+      "conditions": [
+        "Integer mu>=1",
+        "delta R subset I and (delta-mu)I subset I^2",
+        "B_mu=R[t,I/t^mu]"
+      ],
+      "statement_ru": "Аналог E01 верен с delta=mu sum q_j partial_q_j и E=partial_t+delta/t.",
+      "proof": "REVIEW_RU.md §1; source theory.md §7",
+      "limits": [
+        "No noninteger power construction is asserted."
+      ]
+    },
+    {
+      "id": "E12",
+      "category": "proved_algebraic_corollary",
+      "title_ru": "Коммутирующие нормальные LF-поля совпадают",
+      "conditions": [
+        "Two normal LF fields for the same ideal I",
+        "They commute"
+      ],
+      "statement_ru": "Общая диагонализация и равенство веса I-адическому порядку дают delta1=delta2.",
+      "proof": "source descent_observation.md §3; REVIEW_RU.md §5",
+      "limits": [
+        "Does not assert that arbitrary normal LF fields commute."
+      ]
+    },
+    {
+      "id": "E13",
+      "category": "proved_conditional_corollary",
+      "title_ru": "Препятствие вещественному спуску",
+      "conditions": [
+        "gamma is defined over R",
+        "Its real one-point compactification is proved to be a nontrivial knot",
+        "delta is a complex normal LF field and E its associated homogeneous LND"
+      ],
+      "statement_ru": "delta не вещественно; [delta,bar delta] и [E,bar E] ненулевы. [E,bar E]=t^-2([delta,bar delta]+delta-bar delta).",
+      "proof": "source descent_observation.md §§1–4; REVIEW_RU.md §5",
+      "limits": [
+        "The two commutator equations differ.",
+        "The knot hypothesis for H378/H457 is not certified in the Euler materials."
+      ]
+    },
+    {
+      "id": "E14",
+      "category": "proved_dichotomy_with_open_applications",
+      "title_ru": "ML связанного кольца",
+      "conditions": [
+        "B_mu=R[t,I/t^mu], closed line embedding, char k=0"
+      ],
+      "statement_ru": "ML(B_mu) belongs to {k,k[t]}; a required homogeneous LND with slice t gives ML=k.",
+      "proof": "research/review_20261028/coordinate_bridge.md §7; REVIEW_RU.md §6",
+      "limits": [
+        "ML=k alone does not prove rectification by the present arguments.",
+        "Full ML of B for H378/H457 remains uncomputed."
+      ]
+    },
+    {
+      "id": "E15",
+      "category": "proved_failure_of_proposed_invariant",
+      "title_ru": "Относительный ML исходной пары тривиален",
+      "conditions": [
+        "Closed curve in affine three-space over char0",
+        "Intersect kernels of all LNDs preserving its ideal, even all replicas with image in a fixed I^r"
+      ],
+      "statement_ru": "Пересечение равно k, поэтому такой инвариант не различает рассматриваемые вложения.",
+      "proof": "REVIEW_RU.md §6; projection-annihilating replicas",
+      "limits": [
+        "Not a statement that all structured LND data of the embedding are trivial."
+      ]
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "O01",
+      "statement_ru": "Существует ли LF-поле в полной24-параметрической семье H378?"
+    },
+    {
+      "id": "O02",
+      "statement_ru": "Существует ли LF-поле в полной19-параметрической семье H457?"
+    },
+    {
+      "id": "O03",
+      "statement_ru": "Выпрямимость или невыпрямимость H378/H457; выпрямимость всех гармонических вложений."
+    },
+    {
+      "id": "O04",
+      "statement_ru": "Полный ML связанных колец для трудных моделей; переход от ML=k к выпрямлению."
+    },
+    {
+      "id": "O05",
+      "statement_ru": "Универсальные границы степени поля и числа итераций для завершающегося поиска."
+    }
+  ],
+  "source_root": "research/euler_20261028",
+  "source_sha256_manifest": "input_sha256.json",
+  "fresh_audit_result": "audit_status.json"
+}

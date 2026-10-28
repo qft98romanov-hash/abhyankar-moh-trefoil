@@ -1,0 +1,56 @@
+[
+  {
+    "degree_bound": 4,
+    "status": "INFEASIBLE",
+    "unknowns": 21,
+    "equations": 225,
+    "selected_equations": 22,
+    "affine_dimension": null,
+    "seconds": 0.177
+  },
+  {
+    "degree_bound": 5,
+    "status": "INFEASIBLE",
+    "unknowns": 63,
+    "equations": 303,
+    "selected_equations": 63,
+    "affine_dimension": null,
+    "seconds": 0.304
+  },
+  {
+    "degree_bound": 6,
+    "status": "INFEASIBLE",
+    "unknowns": 126,
+    "equations": 387,
+    "selected_equations": 99,
+    "affine_dimension": null,
+    "seconds": 0.624
+  },
+  {
+    "degree_bound": 7,
+    "status": "FEASIBLE_NOT_TESTED_FOR_LOCAL_NILPOTENCE",
+    "unknowns": 213,
+    "equations": 478,
+    "selected_equations": 194,
+    "affine_dimension": 19,
+    "seconds": 8.904
+  },
+  {
+    "degree_bound": 8,
+    "status": "FEASIBLE_NOT_TESTED_FOR_LOCAL_NILPOTENCE",
+    "unknowns": 327,
+    "equations": 577,
+    "selected_equations": 251,
+    "affine_dimension": null,
+    "seconds": 26.434
+  },
+  {
+    "degree_bound": 9,
+    "status": "FEASIBLE_NOT_TESTED_FOR_LOCAL_NILPOTENCE",
+    "unknowns": 471,
+    "equations": 685,
+    "selected_equations": 317,
+    "affine_dimension": null,
+    "seconds": 105.457
+  }
+]

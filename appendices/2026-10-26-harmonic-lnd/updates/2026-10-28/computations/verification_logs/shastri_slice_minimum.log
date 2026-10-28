@@ -1,0 +1,7 @@
+Working directory (relative): legacy_appendix/research/lnd_certificate
+Scope: Degree-six exclusion and degree-seven upper slice
+
+PASS: ell(D(m))=0 for every one of the 462 monomials of degree <= 6
+PASS: ell(1)=1; hence no polynomial slice of degree <= 6 exists
+PASS: the 15-monomial sigma has total degree 7 and D(sigma)=1
+CERTIFIED: minimum total degree of a slice is exactly 7

@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-26",
+  "status": "exact_checks_passed_universal_theorem_requires_proof",
+  "checks": [
+    {
+      "case": "content_and_repeated_prime",
+      "n": 0,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 1,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 2,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 3,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 4,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 5,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 7,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 8,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 9,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 10,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 11,
+      "passed": true
+    },
+    {
+      "case": "content_and_repeated_prime",
+      "n": 12,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 0,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 1,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 2,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 3,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 4,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 5,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 7,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 8,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 9,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 10,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 11,
+      "passed": true
+    },
+    {
+      "case": "monic_lift_with_nilpotent_terms",
+      "n": 12,
+      "passed": true
+    },
+    {
+      "case": "mixed_primes_global_preimage_n1",
+      "passed": true
+    },
+    {
+      "case": "mixed_primes_global_preimage_n2",
+      "passed": true
+    }
+  ],
+  "number_checks": 28,
+  "mixed_case_bezout": {
+    "A": "-4*x**3 + 15*x**2 - 20*x + 10",
+    "B": "4*x + 1"
+  }
+}

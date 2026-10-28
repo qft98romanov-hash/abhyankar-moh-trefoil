@@ -1,0 +1,90 @@
+Working directory: /workspace/scratch/cc349d1d3dd2/research/continuation_20261026/iterated_modifications
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -B verify_iterated_filtration.py
+
+{
+  "arithmetic": "exact rational",
+  "status": "PASS",
+  "cases": [
+    {
+      "l": 1,
+      "p": "x*z - y**2",
+      "w": "y",
+      "jacobian": "-x",
+      "plinth_generator": "x",
+      "exponents_n_0_to_16": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        8,
+        8
+      ],
+      "checks": "PASS"
+    },
+    {
+      "l": 2,
+      "p": "-x**2*z**2 + 2*x*y**2*z + x*y - y**4",
+      "w": "x*z - y**2",
+      "jacobian": "x**2",
+      "plinth_generator": "x**2",
+      "exponents_n_0_to_16": [
+        0,
+        2,
+        3,
+        5,
+        5,
+        7,
+        8,
+        10,
+        10,
+        12,
+        13,
+        15,
+        15,
+        17,
+        18,
+        20,
+        20
+      ],
+      "checks": "PASS"
+    },
+    {
+      "l": 3,
+      "p": "-x**4*z**4 + 4*x**3*y**2*z**3 + 2*x**3*y*z**2 - 6*x**2*y**4*z**2 - 4*x**2*y**3*z - x**2*y**2 + x**2*z + 4*x*y**6*z + 2*x*y**5 - x*y**2 - y**8",
+      "w": "-x**2*z**2 + 2*x*y**2*z + x*y - y**4",
+      "jacobian": "-x**3",
+      "plinth_generator": "x**3",
+      "exponents_n_0_to_16": [
+        0,
+        3,
+        5,
+        8,
+        9,
+        12,
+        14,
+        17,
+        17,
+        20,
+        22,
+        25,
+        26,
+        29,
+        31,
+        34,
+        34
+      ],
+      "checks": "PASS"
+    }
+  ]
+}

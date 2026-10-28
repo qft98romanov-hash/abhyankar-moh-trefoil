@@ -1,0 +1,41 @@
+{
+  "triple": [
+    3,
+    4,
+    5
+  ],
+  "slice_degree_bound": 7,
+  "parameter_degree_bound": 4,
+  "columns": 35,
+  "rows": 114,
+  "selected_rows": 35,
+  "status": "feasible",
+  "retraction": [
+    {
+      "monomial": [
+        1,
+        0,
+        0
+      ],
+      "coefficient": "3"
+    },
+    {
+      "monomial": [
+        0,
+        1,
+        1
+      ],
+      "coefficient": "1"
+    },
+    {
+      "monomial": [
+        3,
+        0,
+        0
+      ],
+      "coefficient": "-1"
+    }
+  ],
+  "retraction_text": "-x**3 + 3*x + y*z",
+  "seconds": 0.06641507148742676
+}

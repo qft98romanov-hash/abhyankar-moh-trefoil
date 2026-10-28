@@ -1,0 +1,4 @@
+Working directory: /workspace/scratch/cc349d1d3dd2/research/continuation_20261026/h457
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -B verify_degree4.py
+
+{"checks_passed": 35, "rank": 28, "kernel_dimension": 7, "certificate": "/workspace/scratch/cc349d1d3dd2/research/continuation_20261026/h457/degree4_certificate.json"}

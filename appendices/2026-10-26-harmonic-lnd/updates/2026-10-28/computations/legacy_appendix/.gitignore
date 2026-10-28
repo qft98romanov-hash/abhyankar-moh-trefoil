@@ -1,0 +1,10 @@
+# The offline source snapshot is intentionally versioned in this consolidated package.
+__pycache__/
+*.pyc
+latex/*.aux
+latex/*.log
+latex/*.out
+latex/*.toc
+latex/*.synctex.gz
+latex/*.pdf
+!research/**/*.log

@@ -1,0 +1,113 @@
+{
+  "started_utc": "2026-10-28T17:25:41+00:00",
+  "finished_utc": "2026-10-28T17:30:06+00:00",
+  "python_version": "3.12.14",
+  "sympy_version": "1.14.0",
+  "tested_environment": {
+    "python": "3.12",
+    "sympy": "1.14.0"
+  },
+  "scope": "Exact bundled checks; universal assertions require the written proofs.",
+  "checks": [
+    {
+      "name": "theory",
+      "script": "verify_theory.py",
+      "working_directory": ".",
+      "arguments": [],
+      "log": "check_logs/01_theory.log",
+      "expected_outputs": [
+        "theory_checks.json"
+      ],
+      "return_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 2.018
+    },
+    {
+      "name": "divergence_controls",
+      "script": "verify_divergence_controls.py",
+      "working_directory": ".",
+      "arguments": [],
+      "log": "check_logs/02_divergence_controls.log",
+      "expected_outputs": [
+        "divergence_controls.json"
+      ],
+      "return_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 0.55
+    },
+    {
+      "name": "h457_naive",
+      "script": "h457/verify_euler_obstruction.py",
+      "working_directory": "h457",
+      "arguments": [],
+      "log": "check_logs/03_h457_naive.log",
+      "expected_outputs": [
+        "h457/euler_obstruction_certificate.json"
+      ],
+      "return_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 20.046
+    },
+    {
+      "name": "h457_normal_family",
+      "script": "h457/normal_search/verify_normal_family.py",
+      "working_directory": "h457/normal_search",
+      "arguments": [],
+      "log": "check_logs/04_h457_normal_family.log",
+      "expected_outputs": [
+        "h457/normal_search/independent_verification.json"
+      ],
+      "return_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 1.317
+    },
+    {
+      "name": "h378_naive",
+      "script": "h378/verify_naive_euler.py",
+      "working_directory": "h378",
+      "arguments": [],
+      "log": "check_logs/05_h378_naive.log",
+      "expected_outputs": [
+        "h378/naive_euler_certificates.json"
+      ],
+      "return_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 4.87
+    },
+    {
+      "name": "h378_normal_family",
+      "script": "h378/normal_search/verify_normal_certificates.py",
+      "working_directory": "h378/normal_search",
+      "arguments": [
+        "normal_degree_3.json",
+        "normal_degree_4.json",
+        "normal_degree_5.json",
+        "normal_degree_6.json",
+        "normal_degree_7.json",
+        "normal_degree_8.json",
+        "normal_only_degree_7.json"
+      ],
+      "log": "check_logs/06_h378_normal_family.log",
+      "expected_outputs": [
+        "h378/normal_search/verification.json"
+      ],
+      "return_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 233.528
+    },
+    {
+      "name": "h378_axis_obstruction",
+      "script": "h378/normal_search/verify_degree8_axis_obstruction.py",
+      "working_directory": "h378/normal_search",
+      "arguments": [],
+      "log": "check_logs/07_h378_axis_obstruction.log",
+      "expected_outputs": [
+        "h378/normal_search/degree8_axis_obstruction.json"
+      ],
+      "return_code": 0,
+      "status": "PASS",
+      "elapsed_seconds": 2.376
+    }
+  ],
+  "status": "PASS"
+}

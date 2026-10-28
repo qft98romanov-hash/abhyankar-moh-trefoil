@@ -1,0 +1,4 @@
+Working directory: /workspace/scratch/cc349d1d3dd2/research/continuation_20261026/h378
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -B verify_linear_coordinate_obstruction.py
+
+{"passed": 13, "certificate": "/workspace/scratch/cc349d1d3dd2/research/continuation_20261026/h378/linear_coordinate_obstruction.json"}

@@ -1,0 +1,6 @@
+SYSTEM 4 div True I_basis 7 unknowns 21 rows 225
+RESULT 4 True INFEASIBLE dual 11 0.177 s
+SYSTEM 5 div True I_basis 21 unknowns 63 rows 303
+RESULT 5 True INFEASIBLE dual 32 0.304 s
+SYSTEM 6 div True I_basis 42 unknowns 126 rows 387
+RESULT 6 True INFEASIBLE dual 33 0.624 s

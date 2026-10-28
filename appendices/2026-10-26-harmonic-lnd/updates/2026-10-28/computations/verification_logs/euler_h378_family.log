@@ -1,0 +1,11 @@
+Working directory (relative): euler/h378/normal_search
+Scope: Exact degree bounds, full 24-dimensional family and the 11-dimensional normal-only control
+
+normal_degree_3.json INFEASIBILITY_CERTIFICATE_PASS
+normal_degree_4.json INFEASIBILITY_CERTIFICATE_PASS
+normal_degree_5.json INFEASIBILITY_CERTIFICATE_PASS
+normal_degree_6.json INFEASIBILITY_CERTIFICATE_PASS
+normal_degree_7.json INFEASIBILITY_CERTIFICATE_PASS
+normal_degree_8.json NECESSARY_CONDITIONS_CANDIDATE_PASS; EXACT_AFFINE_DIMENSION_24_PASS
+normal_only_degree_7.json NECESSARY_CONDITIONS_CANDIDATE_PASS; EXACT_AFFINE_DIMENSION_11_PASS
+ALL NORMAL-FIELD CERTIFICATES PASSED

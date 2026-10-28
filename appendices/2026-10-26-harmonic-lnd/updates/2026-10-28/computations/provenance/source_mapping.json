@@ -1,0 +1,2639 @@
+{
+  "date": "2026-10-28",
+  "source_snapshot_archive": "original_bundle_inputs.zip",
+  "upstream_commit": "b954f3609e900761fddc9c8ff03d8301e9604cab",
+  "historical_appendix_commit": "3cf41be3fb3b1108e1ec91dd23dff7bfcf59569e",
+  "historical_notice": "The archive preserves all supplied files before comments or fresh verification outputs were changed. Historical PASS logs are not fresh executions.",
+  "python_files": 56,
+  "other_code_files": 7,
+  "files": [
+    {
+      "path": "baseline/MECHANISM.md",
+      "original_sha256": "bf89bda070e1d250ac711e0cd72e6db9dcede9e9386de6458c0f107b4e367001",
+      "prepared_sha256": "bf89bda070e1d250ac711e0cd72e6db9dcede9e9386de6458c0f107b4e367001",
+      "original_bytes": 20051,
+      "prepared_bytes": 20051,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/README.md",
+      "original_sha256": "8668dbb9796217c579c64b2c8e9d3e09a566bf6baa90f977e9d1d3631ec6e2e2",
+      "prepared_sha256": "8668dbb9796217c579c64b2c8e9d3e09a566bf6baa90f977e9d1d3631ec6e2e2",
+      "original_bytes": 8369,
+      "prepared_bytes": 8369,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/gap/README.md",
+      "original_sha256": "7c43d674ebb798a870c6dfa7284edc8826f44704fd3dfad477582019d7780958",
+      "prepared_sha256": "7c43d674ebb798a870c6dfa7284edc8826f44704fd3dfad477582019d7780958",
+      "original_bytes": 5785,
+      "prepared_bytes": 5785,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/gap/audit_note.md",
+      "original_sha256": "95477764cf92091229afdc7c3fd6bf9969ab47c34884f78d9f55d2029992cb18",
+      "prepared_sha256": "95477764cf92091229afdc7c3fd6bf9969ab47c34884f78d9f55d2029992cb18",
+      "original_bytes": 1156,
+      "prepared_bytes": 1156,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/gap/gap_negative_division.log",
+      "original_sha256": "076fc6d204b78cfbd41222a75347b920891b52d98d51d6967f9d07384d99c079",
+      "prepared_sha256": "076fc6d204b78cfbd41222a75347b920891b52d98d51d6967f9d07384d99c079",
+      "original_bytes": 2634,
+      "prepared_bytes": 2634,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/gap/gap_negative_identity.log",
+      "original_sha256": "b41b9ff20efc0c51dbad74b007121a17293eceaa63f9fa031ea66b4259a1421f",
+      "prepared_sha256": "b41b9ff20efc0c51dbad74b007121a17293eceaa63f9fa031ea66b4259a1421f",
+      "original_bytes": 2644,
+      "prepared_bytes": 2644,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/gap/gap_run.log",
+      "original_sha256": "f93c8becaec554408a3936f2f15f3123bb3b5e5e9ad50103cf086e1860b0556f",
+      "prepared_sha256": "f93c8becaec554408a3936f2f15f3123bb3b5e5e9ad50103cf086e1860b0556f",
+      "original_bytes": 2556,
+      "prepared_bytes": 2556,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/gap/negative_checks.json",
+      "original_sha256": "055f60d7cea07d00255bbf91514699c43d64f9ab7ecd4b6d60b4ce4f4f62042f",
+      "prepared_sha256": "055f60d7cea07d00255bbf91514699c43d64f9ab7ecd4b6d60b4ce4f4f62042f",
+      "original_bytes": 1229,
+      "prepared_bytes": 1229,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/gap/negative_division.g",
+      "original_sha256": "c5b8c18d55782984fc119e65542c3de34b288dbeacd1a7f1763d5de154cb3e34",
+      "prepared_sha256": "644379031314bffde54457a13c975163dc4fa85b8dc0c22cff9c31ddf69d2c76",
+      "original_bytes": 318,
+      "prepared_bytes": 533,
+      "transformation": "English comment prefix only; remaining source bytes unchanged",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/gap/negative_identity.g",
+      "original_sha256": "d07b050ced3e6891401a8ced9c300003464ca64df5785dd04d0027fd91698392",
+      "prepared_sha256": "6e8c5e25fbadc619c83118b74e5b186bfafb89a5ecf1d8f7d249898b86ff9ed9",
+      "original_bytes": 323,
+      "prepared_bytes": 538,
+      "transformation": "English comment prefix only; remaining source bytes unchanged",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/gap/run_results.json",
+      "original_sha256": "896274ab89a0c774ae7608c19e30d51f9147726cc8792fb4fabce6430aeab501",
+      "prepared_sha256": "896274ab89a0c774ae7608c19e30d51f9147726cc8792fb4fabce6430aeab501",
+      "original_bytes": 2435,
+      "prepared_bytes": 2435,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/gap/verify_rectification.g",
+      "original_sha256": "29af5bb2886702046ae0fe7bef82e98e4ac6562d93de503bef1275bf61570ac3",
+      "prepared_sha256": "8ec12c215322eb2fa0f70601d90dff6395cb4c2c41fd35d3f58032fbaf1308d0",
+      "original_bytes": 11050,
+      "prepared_bytes": 11265,
+      "transformation": "English comment prefix only; remaining source bytes unchanged",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/macaulay2/README.md",
+      "original_sha256": "9b6ea734825715a4640133067ecef31188b5ebf7a114fe022659b39041d84bf4",
+      "prepared_sha256": "9b6ea734825715a4640133067ecef31188b5ebf7a114fe022659b39041d84bf4",
+      "original_bytes": 5487,
+      "prepared_bytes": 5487,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/macaulay2/audit_results.json",
+      "original_sha256": "97394a7bace184f2c66d2883a6d901f88d927cfd4885dd80f5245325d13f66fc",
+      "prepared_sha256": "97394a7bace184f2c66d2883a6d901f88d927cfd4885dd80f5245325d13f66fc",
+      "original_bytes": 3233,
+      "prepared_bytes": 3233,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/macaulay2/chebyshev_macaulay2.log",
+      "original_sha256": "16ca50591287d860d1d83ad17e57ce874209942cde1e752d1b327a6a03d17721",
+      "prepared_sha256": "16ca50591287d860d1d83ad17e57ce874209942cde1e752d1b327a6a03d17721",
+      "original_bytes": 1211,
+      "prepared_bytes": 1211,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/macaulay2/negative_division.log",
+      "original_sha256": "786edc2c5695cd2c19f12b90bcb04aa82c321ce618aaa62b87f5e3be99948522",
+      "prepared_sha256": "786edc2c5695cd2c19f12b90bcb04aa82c321ce618aaa62b87f5e3be99948522",
+      "original_bytes": 1673,
+      "prepared_bytes": 1673,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/macaulay2/negative_division.m2",
+      "original_sha256": "52b6d9bbbcee602a107a156f55964f0f8abeb07b927fdc4ec6df84f908e3a5f9",
+      "prepared_sha256": "bdbcfb864b42aecb7aabd7e7c27939434c9280f7dde19254ea479b2960ad3ea1",
+      "original_bytes": 297,
+      "prepared_bytes": 515,
+      "transformation": "English comment prefix only; remaining source bytes unchanged",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/macaulay2/negative_identity.log",
+      "original_sha256": "f2d6f8d837a680663c438bea65018569221449bc57da4c409b5914f43581aa8e",
+      "prepared_sha256": "f2d6f8d837a680663c438bea65018569221449bc57da4c409b5914f43581aa8e",
+      "original_bytes": 1609,
+      "prepared_bytes": 1609,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/macaulay2/negative_identity.m2",
+      "original_sha256": "39321a8697b841fd82ef3bc74dd3f102fa53dac16201a53877cc923c34713b92",
+      "prepared_sha256": "b27c38a887dd5b39d99b8af1c4aeb86dff9d1cdb8b6829c4b30f86f36fa42184",
+      "original_bytes": 352,
+      "prepared_bytes": 570,
+      "transformation": "English comment prefix only; remaining source bytes unchanged",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/macaulay2/verification_macaulay2.log",
+      "original_sha256": "076eba320e53847462e4c668c9e57be48745ebf8c5c8664d39b4e2e83d80d69f",
+      "prepared_sha256": "076eba320e53847462e4c668c9e57be48745ebf8c5c8664d39b4e2e83d80d69f",
+      "original_bytes": 1045,
+      "prepared_bytes": 1045,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/macaulay2/verify_chebyshev.m2",
+      "original_sha256": "c6836c08b4f693ebfb997fb800dea14c3d867d252c9a060fdc5b75c75617c259",
+      "prepared_sha256": "ec8e70e791270055d1704f934e5b007f19aae31876bf407ebd12bf1c643c4fd3",
+      "original_bytes": 659,
+      "prepared_bytes": 877,
+      "transformation": "English comment prefix only; remaining source bytes unchanged",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/macaulay2/verify_rectification.m2",
+      "original_sha256": "d2010cd42cbbd180339fb0518c4a97775b27df8f3044568cc1fd0f3cb884abc9",
+      "prepared_sha256": "8c58ef82a4de68bd4a69d5825f18bf3b1ebbd85bbf3353ad17e9801fcfaf026d",
+      "original_bytes": 5468,
+      "prepared_bytes": 5686,
+      "transformation": "English comment prefix only; remaining source bytes unchanged",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/paper/harmonic_explicit.tex",
+      "original_sha256": "ef28dea738f08d6a022e39a1597c0dd23f117d39f964b2a3db27ed164a055585",
+      "prepared_sha256": "ef28dea738f08d6a022e39a1597c0dd23f117d39f964b2a3db27ed164a055585",
+      "original_bytes": 31896,
+      "prepared_bytes": 31896,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/paper/main.tex",
+      "original_sha256": "c138b1531135e6d52b979b0037155da73f9d5fe532548a9f15af5b209f921b92",
+      "prepared_sha256": "c138b1531135e6d52b979b0037155da73f9d5fe532548a9f15af5b209f921b92",
+      "original_bytes": 21253,
+      "prepared_bytes": 21253,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/paper/references.tex",
+      "original_sha256": "382494c22b1df9a8e8c4e8840e14cd2cd94fb1afb59cee62a415a5a87e606f6a",
+      "prepared_sha256": "382494c22b1df9a8e8c4e8840e14cd2cd94fb1afb59cee62a415a5a87e606f6a",
+      "original_bytes": 3834,
+      "prepared_bytes": 3834,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/paper/trefoil_explicit.tex",
+      "original_sha256": "a9a1ed9987fe2aaaa37c998de34626f53bc015d854b57e6d9c7ab1e65d7466d5",
+      "prepared_sha256": "a9a1ed9987fe2aaaa37c998de34626f53bc015d854b57e6d9c7ab1e65d7466d5",
+      "original_bytes": 20736,
+      "prepared_bytes": 20736,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "baseline/verification/audit_harmonic.py",
+      "original_sha256": "a22d93c7e2d281e265ff8413c7b55c61757bd7809eda660164a0e2d165c505c0",
+      "prepared_sha256": "fbffe722f4e564fe4330c67038fcf18b1d0085d7b2494975ccebc25ed93a0000",
+      "original_bytes": 7240,
+      "prepared_bytes": 7608,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "baseline/verification/audit_harmonic_independent.py",
+      "original_sha256": "42fc2b057e3c35cf9e8be2433997c78201d655cca330cdb09882899ad8a65ba9",
+      "prepared_sha256": "327d449408df4154c1d63f0490fd5d4d3c3746b2e037f131af88af7429baddd5",
+      "original_bytes": 9361,
+      "prepared_bytes": 9741,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "baseline/verification/audit_trefoil.py",
+      "original_sha256": "3ba807de2ca3db97dbf0644d75d5512f9a221542d272c9fa75cebb9e0b0bf916",
+      "prepared_sha256": "77df0f7b10e364dd4dafd7e6002056de71e0055366da07af9d840025159964c0",
+      "original_bytes": 11099,
+      "prepared_bytes": 11466,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "baseline/verify.py",
+      "original_sha256": "73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef",
+      "prepared_sha256": "3f4d4faaaa41bf403a06e81b915077272354ac4db9dda157628d6742b8e35350",
+      "original_bytes": 8883,
+      "prepared_bytes": 9262,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "baseline/verify_printed_formulas.py",
+      "original_sha256": "b201fd83da9a6acece6ebb0f3c266bce66b55cd426a8e239a8fff5aa8c52757d",
+      "prepared_sha256": "b8017fda56918581602f51209e822295695777febcff8933f5b4bf47bc170f14",
+      "original_bytes": 1270,
+      "prepared_bytes": 1646,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/README.md",
+      "original_sha256": "887d19babfe4b252384a79f530aa4c0525060f5560d268f1a8f5208900bd71db",
+      "prepared_sha256": "24bf3726db1cb9b211fb1dfaa379eaaac3e275cb33ae1427d6fe93872dda7dd6",
+      "original_bytes": 5765,
+      "prepared_bytes": 6041,
+      "transformation": "Documentation-only consolidation-path note prepended; original retained in provenance archive",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/README_REPRODUCE.md",
+      "original_sha256": "e5ecbde6a52c1e919e3e2c814e66f370c3fdf091047d815ef56ff6570775e128",
+      "prepared_sha256": "d152dae77d191296a991fc1f76eaed7d77333bcd3721823c20ed99431d077385",
+      "original_bytes": 11233,
+      "prepared_bytes": 11438,
+      "transformation": "Documentation-only consolidation-path note prepended; original retained in provenance archive",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/aggregate_checks.json",
+      "original_sha256": "2b9f0792e94d15b389d4c39d63385a0e489469d5734dbc133e34d7ee0e09dd49",
+      "prepared_sha256": "2b9f0792e94d15b389d4c39d63385a0e489469d5734dbc133e34d7ee0e09dd49",
+      "original_bytes": 7250,
+      "prepared_bytes": 7250,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/document_validation.json",
+      "original_sha256": "dfbe8e666b38eb61efca6bed359c9d2e59f1345e5cec9cefc02b1d528e6236ef",
+      "prepared_sha256": "dfbe8e666b38eb61efca6bed359c9d2e59f1345e5cec9cefc02b1d528e6236ef",
+      "original_bytes": 173,
+      "prepared_bytes": 173,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/PROOF.md",
+      "original_sha256": "40ac278c214a0cd197c2a14e0f0bfdab4d9bb07cddd1f9c94402f440eeadacdb",
+      "prepared_sha256": "40ac278c214a0cd197c2a14e0f0bfdab4d9bb07cddd1f9c94402f440eeadacdb",
+      "original_bytes": 28933,
+      "prepared_bytes": 28933,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/README.md",
+      "original_sha256": "76080c7cae5f1f212a6029d163c5a6f626c825ae0a83afc6fff2cddfbcca1ad7",
+      "prepared_sha256": "76080c7cae5f1f212a6029d163c5a6f626c825ae0a83afc6fff2cddfbcca1ad7",
+      "original_bytes": 3060,
+      "prepared_bytes": 3060,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/formal_frames.json",
+      "original_sha256": "167c65b27e2f8cbb9037ffbcd8640b7a7ec582b903867b977c29230de18fa1d8",
+      "prepared_sha256": "167c65b27e2f8cbb9037ffbcd8640b7a7ec582b903867b977c29230de18fa1d8",
+      "original_bytes": 13695,
+      "prepared_bytes": 13695,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/h457_unique_cubic_parameter.json",
+      "original_sha256": "0c38d2f6d1ddb74ecc2f0c47f17d2bdc3d8e80146b4ca839db02d317163ff382",
+      "prepared_sha256": "0c38d2f6d1ddb74ecc2f0c47f17d2bdc3d8e80146b4ca839db02d317163ff382",
+      "original_bytes": 5281,
+      "prepared_bytes": 5281,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_31011_d18.json",
+      "original_sha256": "bdb05ef9de7220a1eb4513ba25da4a28cdc1d1fffe36fa2ef35d619902074180",
+      "prepared_sha256": "bdb05ef9de7220a1eb4513ba25da4a28cdc1d1fffe36fa2ef35d619902074180",
+      "original_bytes": 15759,
+      "prepared_bytes": 15759,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_31314_d24.json",
+      "original_sha256": "306582fcf7ba81179a0016984ae75549e2c3bac75ba682a8206129f872745a6e",
+      "prepared_sha256": "306582fcf7ba81179a0016984ae75549e2c3bac75ba682a8206129f872745a6e",
+      "original_bytes": 36172,
+      "prepared_bytes": 36172,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_345_d6.json",
+      "original_sha256": "a8df0eee607b488fea431bbec2d340a2684ca7c3a559db3629939c4ec27020a3",
+      "prepared_sha256": "a8df0eee607b488fea431bbec2d340a2684ca7c3a559db3629939c4ec27020a3",
+      "original_bytes": 1503,
+      "prepared_bytes": 1503,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_345_d7.json",
+      "original_sha256": "d8e4a2083d817b8f76cd1b3644f53bf93f55afa04fc0012bd0aa403209b3785a",
+      "prepared_sha256": "d8e4a2083d817b8f76cd1b3644f53bf93f55afa04fc0012bd0aa403209b3785a",
+      "original_bytes": 575,
+      "prepared_bytes": 575,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_357_d10.json",
+      "original_sha256": "ca2ff95efe07d0c728472a9f840d5ab9632c3f767fab48b2012140c025a0cb75",
+      "prepared_sha256": "ca2ff95efe07d0c728472a9f840d5ab9632c3f767fab48b2012140c025a0cb75",
+      "original_bytes": 4443,
+      "prepared_bytes": 4443,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_357_d11.json",
+      "original_sha256": "f5c10224dbcdcd220e60cf78ee6c05aadd59903d52d7847d4b4f03b430544813",
+      "prepared_sha256": "f5c10224dbcdcd220e60cf78ee6c05aadd59903d52d7847d4b4f03b430544813",
+      "original_bytes": 684,
+      "prepared_bytes": 684,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_d12.json",
+      "original_sha256": "9fff6d05c0fc8276f6064bb91c4c66e2f5d95fbe7f7e06873d2c51af5189677e",
+      "prepared_sha256": "9fff6d05c0fc8276f6064bb91c4c66e2f5d95fbe7f7e06873d2c51af5189677e",
+      "original_bytes": 5311,
+      "prepared_bytes": 5311,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_d13.json",
+      "original_sha256": "e0d54d55dfe62b3bd1e51d5c863eed346d2583c9513a8b25cc475d6e89a77cd4",
+      "prepared_sha256": "e0d54d55dfe62b3bd1e51d5c863eed346d2583c9513a8b25cc475d6e89a77cd4",
+      "original_bytes": 687,
+      "prepared_bytes": 687,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_d18.json",
+      "original_sha256": "ee203dc5f0e362b0ff3c40e6dbdc96ed7c05ef40d71896952dcd97e004e0a149",
+      "prepared_sha256": "ee203dc5f0e362b0ff3c40e6dbdc96ed7c05ef40d71896952dcd97e004e0a149",
+      "original_bytes": 687,
+      "prepared_bytes": 687,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_d19.json",
+      "original_sha256": "7cd6fa51cbf4c721322c35a7a78e86bd95031e5f7016d6a99c6a93d1632d686a",
+      "prepared_sha256": "7cd6fa51cbf4c721322c35a7a78e86bd95031e5f7016d6a99c6a93d1632d686a",
+      "original_bytes": 1225,
+      "prepared_bytes": 1225,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu2_d12.json",
+      "original_sha256": "54bc728da8ca7f078e209c30431dc5af5def689e9bd1b6453d9b5027e133bdd3",
+      "prepared_sha256": "54bc728da8ca7f078e209c30431dc5af5def689e9bd1b6453d9b5027e133bdd3",
+      "original_bytes": 2282,
+      "prepared_bytes": 2282,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu3_d16.json",
+      "original_sha256": "9681ecb26c4e6709dd3a75ef96dfa5e94b048c4d61022c1376ab594fc041276f",
+      "prepared_sha256": "9681ecb26c4e6709dd3a75ef96dfa5e94b048c4d61022c1376ab594fc041276f",
+      "original_bytes": 2264,
+      "prepared_bytes": 2264,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu4_d20.json",
+      "original_sha256": "cea6cd2b82b37440f242c85efb6e74ab7462c68eb17f1aa972baad2dd30b6986",
+      "prepared_sha256": "cea6cd2b82b37440f242c85efb6e74ab7462c68eb17f1aa972baad2dd30b6986",
+      "original_bytes": 2245,
+      "prepared_bytes": 2245,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu4_d21.json",
+      "original_sha256": "34c5bed92840a14b731498a11f5ce944633114a37911e7425f0c295c22f86871",
+      "prepared_sha256": "34c5bed92840a14b731498a11f5ce944633114a37911e7425f0c295c22f86871",
+      "original_bytes": 1244,
+      "prepared_bytes": 1244,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu5_d21.json",
+      "original_sha256": "ad3d65245e2ba6b8794f2b7d6147cd1a76e54b133e507ea331f6a33c07c1b483",
+      "prepared_sha256": "ad3d65245e2ba6b8794f2b7d6147cd1a76e54b133e507ea331f6a33c07c1b483",
+      "original_bytes": 2245,
+      "prepared_bytes": 2245,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu5_d22.json",
+      "original_sha256": "e58724227f3b9b2469463905095591f014a3b073616d4e96be23dbf61ea5aa2b",
+      "prepared_sha256": "e58724227f3b9b2469463905095591f014a3b073616d4e96be23dbf61ea5aa2b",
+      "original_bytes": 1243,
+      "prepared_bytes": 1243,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu5_d23.json",
+      "original_sha256": "1e4b7ad915f5d8ce97641c3b3ba4a41849c8d103c717531c8a85f012bea153a1",
+      "prepared_sha256": "1e4b7ad915f5d8ce97641c3b3ba4a41849c8d103c717531c8a85f012bea153a1",
+      "original_bytes": 1243,
+      "prepared_bytes": 1243,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu6_d22.json",
+      "original_sha256": "84cde8dcc1c580bb245f8c3247f5b5b276cbcdb885fcc66cfbdb7adc69d17a8b",
+      "prepared_sha256": "84cde8dcc1c580bb245f8c3247f5b5b276cbcdb885fcc66cfbdb7adc69d17a8b",
+      "original_bytes": 2258,
+      "prepared_bytes": 2258,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu6_d23.json",
+      "original_sha256": "d8c643070ccb000d0c885d471d3a9167a5cbd0672000a263b0e9b7b98c997d97",
+      "prepared_sha256": "d8c643070ccb000d0c885d471d3a9167a5cbd0672000a263b0e9b7b98c997d97",
+      "original_bytes": 1243,
+      "prepared_bytes": 1243,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu6_d24.json",
+      "original_sha256": "0cbb1c034c98153bf40ded136d8d21a5b6824ff367c5216711066a3aad826bdb",
+      "prepared_sha256": "0cbb1c034c98153bf40ded136d8d21a5b6824ff367c5216711066a3aad826bdb",
+      "original_bytes": 1243,
+      "prepared_bytes": 1243,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_378_mu7_d24.json",
+      "original_sha256": "0c07758f307d5e88dd01c9daf5416d401e49bd9188022bf332bc1040e3869845",
+      "prepared_sha256": "0c07758f307d5e88dd01c9daf5416d401e49bd9188022bf332bc1040e3869845",
+      "original_bytes": 1543,
+      "prepared_bytes": 1543,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_457_d11.json",
+      "original_sha256": "13f86931a9beebf48cb0d0bb91644e229470edf5da19c05c0f95ecfaa31f80f6",
+      "prepared_sha256": "13f86931a9beebf48cb0d0bb91644e229470edf5da19c05c0f95ecfaa31f80f6",
+      "original_bytes": 5234,
+      "prepared_bytes": 5234,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_457_d12.json",
+      "original_sha256": "f1cfbf26229b5afdc22d412e3fcb74175bd037ae1cbe747697912d28c0252653",
+      "prepared_sha256": "f1cfbf26229b5afdc22d412e3fcb74175bd037ae1cbe747697912d28c0252653",
+      "original_bytes": 684,
+      "prepared_bytes": 684,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_578_d10.json",
+      "original_sha256": "85d5ab59856f5be9ebab453c6ab874f716b77326b4819de0490fec08afb8ae13",
+      "prepared_sha256": "85d5ab59856f5be9ebab453c6ab874f716b77326b4819de0490fec08afb8ae13",
+      "original_bytes": 3793,
+      "prepared_bytes": 3793,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_71011_d14.json",
+      "original_sha256": "718df32a324f30ad0c7b33740810c870c90c2befe2a0cd2abdb329c18b96a46e",
+      "prepared_sha256": "718df32a324f30ad0c7b33740810c870c90c2befe2a0cd2abdb329c18b96a46e",
+      "original_bytes": 8510,
+      "prepared_bytes": 8510,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/jet_slice_search.py",
+      "original_sha256": "87b75f94153f726df76c53bcf910b74ebe9c702d85c343c0dad29e4276084a5b",
+      "prepared_sha256": "6dee449ba5d9e207f1c2ed44f2032f477475fd9be35547c04bc0be0cf5f0693f",
+      "original_bytes": 5050,
+      "prepared_bytes": 5458,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/embedding_lnd/verification.log",
+      "original_sha256": "b14e81e39e6d70bbcd4042e1bc9279fb4566e66ef8bf7ffdac24275551b48840",
+      "prepared_sha256": "b14e81e39e6d70bbcd4042e1bc9279fb4566e66ef8bf7ffdac24275551b48840",
+      "original_bytes": 1275,
+      "prepared_bytes": 1275,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/verified_results.json",
+      "original_sha256": "a0f5c582a9b3136701cfefa8a67338e3e2eb2bb13d190e15e205b7f3136ee360",
+      "prepared_sha256": "a0f5c582a9b3136701cfefa8a67338e3e2eb2bb13d190e15e205b7f3136ee360",
+      "original_bytes": 124122,
+      "prepared_bytes": 124122,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/embedding_lnd/verify_formal_frames.py",
+      "original_sha256": "f3698bfceae38ab3a4dcb5a443812ae3876a7cacee8c80253b5b6e8e5f20db46",
+      "prepared_sha256": "3a376ee9473d5569edcbab4aceca3a3aee91a38a31d308d996ccf1a63201c135",
+      "original_bytes": 2917,
+      "prepared_bytes": 3317,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/embedding_lnd/verify_h457_multiplicity.py",
+      "original_sha256": "401bfb2975312cc73a372912ca094e04aee7d1030dd132359ffda4496e939faf",
+      "prepared_sha256": "5a0363501a641480d46fb631731afb27cced37c2df62da04116f1890ae691a68",
+      "original_bytes": 1817,
+      "prepared_bytes": 2208,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/embedding_lnd/verify_jet_certificates.py",
+      "original_sha256": "c51038ed6c4cd8d9e3c92aab6d9cb2465b388af8d111d21358e81aa51e8de744",
+      "prepared_sha256": "457fe1ae0216055043c4c17235796755fcc9e40aac67c554e0fbe20452f34ded",
+      "original_bytes": 6905,
+      "prepared_bytes": 7303,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/h378/constant_mixed_projection_search.json",
+      "original_sha256": "7571477b4ec4f3ea6de5ab6a801b4c50f87071a87f96da73640631498a09fe5e",
+      "prepared_sha256": "7571477b4ec4f3ea6de5ab6a801b4c50f87071a87f96da73640631498a09fe5e",
+      "original_bytes": 5885,
+      "prepared_bytes": 5885,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h378/constant_mixed_projection_search.log",
+      "original_sha256": "9f52061043fb666d7b09511a3aec656a73d6563d80eb4c2f920cbe0b3ddd941d",
+      "prepared_sha256": "9f52061043fb666d7b09511a3aec656a73d6563d80eb4c2f920cbe0b3ddd941d",
+      "original_bytes": 4594,
+      "prepared_bytes": 4594,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h378/constant_mixed_projection_search.md",
+      "original_sha256": "56f54dab6cc3afb87966efa5fd8eff8984345f70806931dc89a926612c4f46a8",
+      "prepared_sha256": "56f54dab6cc3afb87966efa5fd8eff8984345f70806931dc89a926612c4f46a8",
+      "original_bytes": 5013,
+      "prepared_bytes": 5013,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h378/independent_review_iterated.md",
+      "original_sha256": "566833a1f0d91a7274c12109a9f5f41d395b2d994cb88dd0f973953c26c6b4fd",
+      "prepared_sha256": "566833a1f0d91a7274c12109a9f5f41d395b2d994cb88dd0f973953c26c6b4fd",
+      "original_bytes": 14718,
+      "prepared_bytes": 14718,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h378/iterated_independent_checks.json",
+      "original_sha256": "49ac5262106e929dba940da3ae8343d434d19b0a6a2dfebc66328fe7d0d66ea6",
+      "prepared_sha256": "49ac5262106e929dba940da3ae8343d434d19b0a6a2dfebc66328fe7d0d66ea6",
+      "original_bytes": 1644,
+      "prepared_bytes": 1644,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h378/linear_coordinate_obstruction.json",
+      "original_sha256": "724e866c8a9c66c8171b027782f26f988ce614f0aa99847b70af2c278f9c360e",
+      "prepared_sha256": "724e866c8a9c66c8171b027782f26f988ce614f0aa99847b70af2c278f9c360e",
+      "original_bytes": 1161,
+      "prepared_bytes": 1161,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h378/linear_coordinate_obstruction.md",
+      "original_sha256": "0c598c8eec5f7060da4bfc919447515403deabf44ed2c1ed447a192fa8be02f0",
+      "prepared_sha256": "0c598c8eec5f7060da4bfc919447515403deabf44ed2c1ed447a192fa8be02f0",
+      "original_bytes": 8858,
+      "prepared_bytes": 8858,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h378/search_constant_mixed_projection.py",
+      "original_sha256": "d5dbe70b729b9b2aa7f1acaec874b58c3f2383f00959b10de75a80cce4611a80",
+      "prepared_sha256": "feb9be3e2912b427508aa5f13f7a11da936b55c80cb38a1c1bd6c05db290b5ce",
+      "original_bytes": 2059,
+      "prepared_bytes": 2483,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/h378/uniform_obstructions.json",
+      "original_sha256": "268871fb4715414b34a53aa973e36463508920b4b6a6dcd56a2eadb5bd509835",
+      "prepared_sha256": "268871fb4715414b34a53aa973e36463508920b4b6a6dcd56a2eadb5bd509835",
+      "original_bytes": 3233,
+      "prepared_bytes": 3233,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h378/uniform_obstructions.tex",
+      "original_sha256": "2430ea6ebe8158167d3cd15c897f7bb5ababd434db45910270bf69214cbf1828",
+      "prepared_sha256": "2430ea6ebe8158167d3cd15c897f7bb5ababd434db45910270bf69214cbf1828",
+      "original_bytes": 11488,
+      "prepared_bytes": 11488,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h378/verify_iterated_review.py",
+      "original_sha256": "6c37589ee8eebdbf2f8ab4e7d8a113a71e4bca1abf25618745c7df84b3a28a66",
+      "prepared_sha256": "dcffc07832b8b4c31c2d92d18a9d13735cc9a6a6f4d21ae83c45712addb4cf5d",
+      "original_bytes": 1904,
+      "prepared_bytes": 2307,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/h378/verify_linear_coordinate_obstruction.py",
+      "original_sha256": "12a960c56ce00b37a53f5102d2fe5eab6af4a6d5276b5c122cbad24c78979cf1",
+      "prepared_sha256": "f7225dcb8d43b1733b49aa3ec536edc1cb58b871a26b6050f42a70e7ffe33397",
+      "original_bytes": 3305,
+      "prepared_bytes": 3680,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/h378/verify_uniform_obstructions.py",
+      "original_sha256": "a989c2d8e0f5acb4384ae2deb140518748e50742cb42b32ba3df571e0aa49afd",
+      "prepared_sha256": "efc7ef2e39aa63120e3aaa3cf94467db6fbc4a7f29931481f062698493309c51",
+      "original_bytes": 2472,
+      "prepared_bytes": 2862,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/h457/PROOF.md",
+      "original_sha256": "9ef212668c75257d83c1f7fd982b42c8a88351cb93ccde6cfa1070cfe0d7aee9",
+      "prepared_sha256": "9ef212668c75257d83c1f7fd982b42c8a88351cb93ccde6cfa1070cfe0d7aee9",
+      "original_bytes": 11647,
+      "prepared_bytes": 11647,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h457/degree4_certificate.json",
+      "original_sha256": "edda661b8e586856ba35ccec633ff5e05f8e48be9001917bad8a1f5bd4a9e10e",
+      "prepared_sha256": "edda661b8e586856ba35ccec633ff5e05f8e48be9001917bad8a1f5bd4a9e10e",
+      "original_bytes": 3067,
+      "prepared_bytes": 3067,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h457/degree4_kernel.txt",
+      "original_sha256": "9d3d1cee4f4b16d9290afa0625bfc3705a73839d853e878871e5cfc7bd606b08",
+      "prepared_sha256": "9d3d1cee4f4b16d9290afa0625bfc3705a73839d853e878871e5cfc7bd606b08",
+      "original_bytes": 429,
+      "prepared_bytes": 429,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h457/review_h378.md",
+      "original_sha256": "deef87ae813557f6bbe55caced0aaf2434f36e490da487df77f25ae59d3fcff4",
+      "prepared_sha256": "deef87ae813557f6bbe55caced0aaf2434f36e490da487df77f25ae59d3fcff4",
+      "original_bytes": 13259,
+      "prepared_bytes": 13259,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h457/review_h378_checks.json",
+      "original_sha256": "421e6a4dbc0793647c308158af780ee8cc4a6c826f22903b3c067d85616d64d7",
+      "prepared_sha256": "421e6a4dbc0793647c308158af780ee8cc4a6c826f22903b3c067d85616d64d7",
+      "original_bytes": 8790,
+      "prepared_bytes": 8790,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h457/review_h378_checks.log",
+      "original_sha256": "f462e677442ba1d050ade7109295f80d180a177031352bdc22d7c30c736a5944",
+      "prepared_sha256": "f462e677442ba1d050ade7109295f80d180a177031352bdc22d7c30c736a5944",
+      "original_bytes": 515,
+      "prepared_bytes": 515,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/h457/review_h378_checks.py",
+      "original_sha256": "b1111df89a31ff24e8cd7597e18f620ee23fc038f179b654d4e1cbe238f9d2cb",
+      "prepared_sha256": "a086ed86078f92f75b4fdb52aa4ff43155acb8ff7f81ef5feee69496b1e2c413",
+      "original_bytes": 2953,
+      "prepared_bytes": 3343,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/h457/verify_degree4.py",
+      "original_sha256": "09507dc7f62af6d10adf3f2924b441b1f18b84f2b971fc4b996ff0ae8a19593d",
+      "prepared_sha256": "b5b35b162faebd14eac7cd8f0ee5bd9d7db61fcdd8f25266680c0346512029eb",
+      "original_bytes": 6764,
+      "prepared_bytes": 7145,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/h457/z_quartic_expansion.txt",
+      "original_sha256": "a5692e424abbaf6bddd907ea63a9b3aa5bca19c39bd2632a936cd81ef31b152b",
+      "prepared_sha256": "a5692e424abbaf6bddd907ea63a9b3aa5bca19c39bd2632a936cd81ef31b152b",
+      "original_bytes": 844,
+      "prepared_bytes": 844,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/iterated_modifications/PROOF.md",
+      "original_sha256": "e1ac4fc579a3eccbc668a34b5f6d772af6b75622b97c82cd4605ea1f3cbc46fa",
+      "prepared_sha256": "e1ac4fc579a3eccbc668a34b5f6d772af6b75622b97c82cd4605ea1f3cbc46fa",
+      "original_bytes": 4255,
+      "prepared_bytes": 4255,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/iterated_modifications/verification.json",
+      "original_sha256": "dd95d38768b558e74e135ad5f6c69a36c831b6b51c33c893039951bc7ba36b25",
+      "prepared_sha256": "dd95d38768b558e74e135ad5f6c69a36c831b6b51c33c893039951bc7ba36b25",
+      "original_bytes": 1424,
+      "prepared_bytes": 1424,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/iterated_modifications/verification.log",
+      "original_sha256": "dd95d38768b558e74e135ad5f6c69a36c831b6b51c33c893039951bc7ba36b25",
+      "prepared_sha256": "dd95d38768b558e74e135ad5f6c69a36c831b6b51c33c893039951bc7ba36b25",
+      "original_bytes": 1424,
+      "prepared_bytes": 1424,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/iterated_modifications/verify_iterated_filtration.py",
+      "original_sha256": "9716603f23c5641d8523e71f830aa89d1aad40e0b95937fcc3c21d7b7de73c4a",
+      "prepared_sha256": "c7ee7ce0ac78e63be6990f32c4ab4696db2abd079306b6c3c5d80190b0cf716e",
+      "original_bytes": 1845,
+      "prepared_bytes": 2221,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/literature/audit_primary_sources.md",
+      "original_sha256": "bf66fc2a6e7d40d74847d427b755af2ed28dc12ad5c47d62f70f83fb027648eb",
+      "prepared_sha256": "bf66fc2a6e7d40d74847d427b755af2ed28dc12ad5c47d62f70f83fb027648eb",
+      "original_bytes": 13245,
+      "prepared_bytes": 13245,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/literature/descent_and_obstruction.md",
+      "original_sha256": "4c7d1783b955209caf00bd0ca4b85758007f6a8ebd1a8a7c453331d0b242f95e",
+      "prepared_sha256": "4c7d1783b955209caf00bd0ca4b85758007f6a8ebd1a8a7c453331d0b242f95e",
+      "original_bytes": 7829,
+      "prepared_bytes": 7829,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/literature/image_ideal_audit_checks.json",
+      "original_sha256": "7c3b4bd47449ef9ef978c8fcd08431aa88a5ffd2a9f9a1941bc8f5d59f2c44f3",
+      "prepared_sha256": "7c3b4bd47449ef9ef978c8fcd08431aa88a5ffd2a9f9a1941bc8f5d59f2c44f3",
+      "original_bytes": 2856,
+      "prepared_bytes": 2856,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/literature/independent_image_ideal_review.md",
+      "original_sha256": "77bc7d5d1ebbbc50dc816def3711245db1573ccc9ecaf7cb24417ffa7c528c07",
+      "prepared_sha256": "77bc7d5d1ebbbc50dc816def3711245db1573ccc9ecaf7cb24417ffa7c528c07",
+      "original_bytes": 18321,
+      "prepared_bytes": 18321,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/literature/verify_image_ideal_audit.py",
+      "original_sha256": "047e8160ac466a093e3d061d1cfd576554c6edc41775c81d4aefd849d1e362a8",
+      "prepared_sha256": "e85a35167d8e0907a897b9b3c13df71f4222534617ebe4168f78cfb446c39c2c",
+      "original_bytes": 2500,
+      "prepared_bytes": 2874,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/logs/formal_frames.log",
+      "original_sha256": "35b50ab26571ac0e57bce3e68383aae446af1c1be9eb6f59fef0a700d068020d",
+      "prepared_sha256": "35b50ab26571ac0e57bce3e68383aae446af1c1be9eb6f59fef0a700d068020d",
+      "original_bytes": 615,
+      "prepared_bytes": 615,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/h378_linear.log",
+      "original_sha256": "aa554937ea9e3bb8ad169cc086413334839e25c7a33bd3c594a3b61aa7180ac4",
+      "prepared_sha256": "aa554937ea9e3bb8ad169cc086413334839e25c7a33bd3c594a3b61aa7180ac4",
+      "original_bytes": 349,
+      "prepared_bytes": 349,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/h378_uniform.log",
+      "original_sha256": "08daa9189f4753d4f4cb92e33d5ba4053d94922be14c6b51d99a9757ca2a4adb",
+      "prepared_sha256": "08daa9189f4753d4f4cb92e33d5ba4053d94922be14c6b51d99a9757ca2a4adb",
+      "original_bytes": 346,
+      "prepared_bytes": 346,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/h457_degree4.log",
+      "original_sha256": "6368c78faef209dedcf07dd58c32432079ecfd4b72628cad8709cf3d96f8f4fa",
+      "prepared_sha256": "6368c78faef209dedcf07dd58c32432079ecfd4b72628cad8709cf3d96f8f4fa",
+      "original_bytes": 359,
+      "prepared_bytes": 359,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/h457_independent.log",
+      "original_sha256": "799ea28b1afc4dfd2943dc108fc78121b809b02beceae4c7266b4291e66c4c74",
+      "prepared_sha256": "799ea28b1afc4dfd2943dc108fc78121b809b02beceae4c7266b4291e66c4c74",
+      "original_bytes": 1089,
+      "prepared_bytes": 1089,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/h457_multiplicity.log",
+      "original_sha256": "febe5519502a46f56eb033eb01ef749f89fa66698a80e51142de6c3c95fb47ef",
+      "prepared_sha256": "febe5519502a46f56eb033eb01ef749f89fa66698a80e51142de6c3c95fb47ef",
+      "original_bytes": 795,
+      "prepared_bytes": 795,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/image_ideal_audit.log",
+      "original_sha256": "7c51481ac150a06e46861c00908486bc4d17dc78bbd2fd0d0daf6d3d037db0a1",
+      "prepared_sha256": "7c51481ac150a06e46861c00908486bc4d17dc78bbd2fd0d0daf6d3d037db0a1",
+      "original_bytes": 339,
+      "prepared_bytes": 339,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/iterated.log",
+      "original_sha256": "10a0b5721ee1ca82dbaf909ca4a07734f218b35f42f76f7108643320fce9bc77",
+      "prepared_sha256": "10a0b5721ee1ca82dbaf909ca4a07734f218b35f42f76f7108643320fce9bc77",
+      "original_bytes": 1645,
+      "prepared_bytes": 1645,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/iterated_independent.log",
+      "original_sha256": "0743bbe8c56f7a50886239b783761a5e94a76e59379aa715ca198f66d1575576",
+      "prepared_sha256": "0743bbe8c56f7a50886239b783761a5e94a76e59379aa715ca198f66d1575576",
+      "original_bytes": 387,
+      "prepared_bytes": 387,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/jet.log",
+      "original_sha256": "17f6ef01bb2835263340e6c7fe893fc845d0ddbf6abe75875379eddb67c86b06",
+      "prepared_sha256": "17f6ef01bb2835263340e6c7fe893fc845d0ddbf6abe75875379eddb67c86b06",
+      "original_bytes": 1484,
+      "prepared_bytes": 1484,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/jet_independent.log",
+      "original_sha256": "644f6140312c79c68bb4d77d33b57e4d20f9a0aa6f1882f69b1c3cf332a81d1c",
+      "prepared_sha256": "644f6140312c79c68bb4d77d33b57e4d20f9a0aa6f1882f69b1c3cf332a81d1c",
+      "original_bytes": 304,
+      "prepared_bytes": 304,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/mixed_projection_audit.log",
+      "original_sha256": "cb9b1ae1b8efbbd561e16813ac2fa66c7d829fafcf213efcad65881a7f384ca9",
+      "prepared_sha256": "cb9b1ae1b8efbbd561e16813ac2fa66c7d829fafcf213efcad65881a7f384ca9",
+      "original_bytes": 710,
+      "prepared_bytes": 710,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/relative_ml.log",
+      "original_sha256": "d8bb3af33855897348b31599f1565b02f44ae070da062c9fd0b3548bba3d127c",
+      "prepared_sha256": "d8bb3af33855897348b31599f1565b02f44ae070da062c9fd0b3548bba3d127c",
+      "original_bytes": 367,
+      "prepared_bytes": 367,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/logs/transfer.log",
+      "original_sha256": "f6713712e84428848ed53de0c03bd226a0987fd136e3eb1da5f3350fcd92ccb2",
+      "prepared_sha256": "f6713712e84428848ed53de0c03bd226a0987fd136e3eb1da5f3350fcd92ccb2",
+      "original_bytes": 507,
+      "prepared_bytes": 507,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_lnd/PROOF.md",
+      "original_sha256": "8be5c569db08a6067dd9c6ceece040bb13447b6f071b8b19502e66ff99e72480",
+      "prepared_sha256": "8be5c569db08a6067dd9c6ceece040bb13447b6f071b8b19502e66ff99e72480",
+      "original_bytes": 16260,
+      "prepared_bytes": 16260,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_lnd/certificates.json",
+      "original_sha256": "074e80a7ae6ef16c23c8ad3f440a8a6299b91b44ecf6affa8524253f7271b629",
+      "prepared_sha256": "074e80a7ae6ef16c23c8ad3f440a8a6299b91b44ecf6affa8524253f7271b629",
+      "original_bytes": 32939,
+      "prepared_bytes": 32939,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_lnd/verify_transfer_filtration.py",
+      "original_sha256": "5043006a7747b676842106a767d8218d83e81ab831f1f0d5342847d15ed6eed6",
+      "prepared_sha256": "53248d432e0f179073475d76dfed8cd215bdc58492107d1965eafef54e65a851",
+      "original_bytes": 7050,
+      "prepared_bytes": 7439,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/relative_ml/H378_P4_expanded_slice.txt",
+      "original_sha256": "22cc58402428871577388b48e6f7b8c86c4f96a637fc44038333182a8130c8f3",
+      "prepared_sha256": "22cc58402428871577388b48e6f7b8c86c4f96a637fc44038333182a8130c8f3",
+      "original_bytes": 1105,
+      "prepared_bytes": 1105,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_ml/H378_P5_expanded_slice.txt",
+      "original_sha256": "b51f6fdc703001ab6f7de5781b360c6053b0016bf2cf69c5f276667c2cbb9e96",
+      "prepared_sha256": "b51f6fdc703001ab6f7de5781b360c6053b0016bf2cf69c5f276667c2cbb9e96",
+      "original_bytes": 386,
+      "prepared_bytes": 386,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_ml/H457_P3_expanded_slice.txt",
+      "original_sha256": "1fac6a563b843ab5787fceea2db24d59d82d25d07b258771e0c80634e0d8d6f7",
+      "prepared_sha256": "1fac6a563b843ab5787fceea2db24d59d82d25d07b258771e0c80634e0d8d6f7",
+      "original_bytes": 360,
+      "prepared_bytes": 360,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_ml/relative_ml_obstruction.md",
+      "original_sha256": "ed7eb4459cde6a8986eab9ad11ad203c58087de6faf70cad3d3dcef7b0612156",
+      "prepared_sha256": "ed7eb4459cde6a8986eab9ad11ad203c58087de6faf70cad3d3dcef7b0612156",
+      "original_bytes": 10641,
+      "prepared_bytes": 10641,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_ml/relative_ml_verification.json",
+      "original_sha256": "b24266228270b8b2a2363a42d1e8205bef7ca683f8b161badd8b14d7d5a4abd7",
+      "prepared_sha256": "b24266228270b8b2a2363a42d1e8205bef7ca683f8b161badd8b14d7d5a4abd7",
+      "original_bytes": 13765,
+      "prepared_bytes": 13765,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_ml/review_457.md",
+      "original_sha256": "6347c6bbe9c2c95e985a822442581c8eca5d650d5132210caa2175f64c644fff",
+      "prepared_sha256": "6347c6bbe9c2c95e985a822442581c8eca5d650d5132210caa2175f64c644fff",
+      "original_bytes": 12525,
+      "prepared_bytes": 12525,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_ml/review_457_checks.json",
+      "original_sha256": "503c5c0426f0ff93f1799d7641bbdc0a1062a4e44afdc3c71b74c0ecf54fbbc3",
+      "prepared_sha256": "503c5c0426f0ff93f1799d7641bbdc0a1062a4e44afdc3c71b74c0ecf54fbbc3",
+      "original_bytes": 1356,
+      "prepared_bytes": 1356,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_ml/review_457_checks.py",
+      "original_sha256": "6faaa83278f3af12dcec9d2718c6a1426c3e9f0f31bf9c05eae1e62498713f46",
+      "prepared_sha256": "5b1b523c776852783e497e8d8c3bc511b4513130a651755c5b811516709c2406",
+      "original_bytes": 3472,
+      "prepared_bytes": 3865,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/relative_ml/review_jet.md",
+      "original_sha256": "adf5739dafc1fdb6a4a8946c6bab1815f3790b2f4a6fdb060d4045c5011e9995",
+      "prepared_sha256": "adf5739dafc1fdb6a4a8946c6bab1815f3790b2f4a6fdb060d4045c5011e9995",
+      "original_bytes": 22324,
+      "prepared_bytes": 22324,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_ml/review_jet_checks.json",
+      "original_sha256": "870bef3b172489427ab7be2cd6d4e3b44fea8810ab1fd6fb5a071cd76ed7f9e0",
+      "prepared_sha256": "870bef3b172489427ab7be2cd6d4e3b44fea8810ab1fd6fb5a071cd76ed7f9e0",
+      "original_bytes": 4363,
+      "prepared_bytes": 4363,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/relative_ml/review_jet_checks.py",
+      "original_sha256": "77cfcc4aee521cdcb9ac3d0378a56367e0b6fe42a0e0ed6cb9bd55cb8e2f8b5b",
+      "prepared_sha256": "21b8241d22bd2e0db113183f9d6209618620c2e04c5e9254022f74c406744ba2",
+      "original_bytes": 4689,
+      "prepared_bytes": 5071,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/relative_ml/verify_relative_ml.py",
+      "original_sha256": "2ec7c0968d25176906492561bfd27bf4f8c23e5baf0cbc8f4a173641bc04c07d",
+      "prepared_sha256": "e80682896679ca2e6b9996aafa2363543d5bcaa098cf4331de52c0a61847207e",
+      "original_bytes": 3071,
+      "prepared_bytes": 3475,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "continuation/requirements.txt",
+      "original_sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc",
+      "prepared_sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc",
+      "original_bytes": 14,
+      "prepared_bytes": 14,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "continuation/run_checks.py",
+      "original_sha256": "563aeea295100fab515f90831081d169b467f61edbf5e5d6e943382835d65a35",
+      "prepared_sha256": "ff416ddb6c230a9642aeea2ddb98dc36f0eda5b51435b956c74359cd3bb3d6d2",
+      "original_bytes": 7354,
+      "prepared_bytes": 7737,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/README_RU.md",
+      "original_sha256": "35557f2b67279b205caff5581ad3e12ca852cb3ef5269321aeb43eb21c7d6845",
+      "prepared_sha256": "ea0cf57670f5a8f3169f0b2c7fcfd3951ffbcc30657fb72f0615620844ece850",
+      "original_bytes": 11408,
+      "prepared_bytes": 11895,
+      "transformation": "Documentation-only consolidation-path note prepended; original retained in provenance archive",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/aggregate_checks.json",
+      "original_sha256": "b56f77ebde7e301d9c7617e3bafb27552c37886eba535fbe830b29118a1aa509",
+      "prepared_sha256": "b56f77ebde7e301d9c7617e3bafb27552c37886eba535fbe830b29118a1aa509",
+      "original_bytes": 3220,
+      "prepared_bytes": 3220,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/aggregate_checks.log",
+      "original_sha256": "b8f41c20010e8fccbf42b6f30f2b50d179281f3717df245b88bdf3fd17a0a388",
+      "prepared_sha256": "b8f41c20010e8fccbf42b6f30f2b50d179281f3717df245b88bdf3fd17a0a388",
+      "original_bytes": 1627,
+      "prepared_bytes": 1627,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/check_logs/01_theory.log",
+      "original_sha256": "7d50d28fee532e40245998e4386b6022a160967cfc8e99be52219834f5add458",
+      "prepared_sha256": "7d50d28fee532e40245998e4386b6022a160967cfc8e99be52219834f5add458",
+      "original_bytes": 79,
+      "prepared_bytes": 79,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/check_logs/02_divergence_controls.log",
+      "original_sha256": "33f69d0f98ab67c4c79fb4f172f72eb4705a9a86d7b9c6c1ac39a6c7bbc6e4c1",
+      "prepared_sha256": "33f69d0f98ab67c4c79fb4f172f72eb4705a9a86d7b9c6c1ac39a6c7bbc6e4c1",
+      "original_bytes": 141,
+      "prepared_bytes": 141,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/check_logs/03_h457_naive.log",
+      "original_sha256": "a7d30efa8925b1b52d1815a1cb6ac8e262a1330afbee1dd10c5c4ac46e966dc0",
+      "prepared_sha256": "a7d30efa8925b1b52d1815a1cb6ac8e262a1330afbee1dd10c5c4ac46e966dc0",
+      "original_bytes": 152,
+      "prepared_bytes": 152,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/check_logs/04_h457_normal_family.log",
+      "original_sha256": "08bb97b56b0f191a2436e87226f9730bb8082d632eb4ead53fe6046fb4c71e32",
+      "prepared_sha256": "08bb97b56b0f191a2436e87226f9730bb8082d632eb4ead53fe6046fb4c71e32",
+      "original_bytes": 143,
+      "prepared_bytes": 143,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/check_logs/05_h378_naive.log",
+      "original_sha256": "c4d5cd86b209b157fc4671f857d9cf2a82e7a02f80d5367b0bebd7636faba32a",
+      "prepared_sha256": "c4d5cd86b209b157fc4671f857d9cf2a82e7a02f80d5367b0bebd7636faba32a",
+      "original_bytes": 182,
+      "prepared_bytes": 182,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/check_logs/06_h378_normal_family.log",
+      "original_sha256": "93b02df96dfde7c650b5750de63f95f2dc1960dee1b179ad39ce10345d9c4009",
+      "prepared_sha256": "93b02df96dfde7c650b5750de63f95f2dc1960dee1b179ad39ce10345d9c4009",
+      "original_bytes": 480,
+      "prepared_bytes": 480,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/check_logs/07_h378_axis_obstruction.log",
+      "original_sha256": "de8efe58211c9667a6533618c41448fe5b3ceca45e247e60011b3769399115d3",
+      "prepared_sha256": "de8efe58211c9667a6533618c41448fe5b3ceca45e247e60011b3769399115d3",
+      "original_bytes": 187,
+      "prepared_bytes": 187,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/descent_observation.md",
+      "original_sha256": "dcc0c6b5ca07fc27d55bc19805b4fd2f666d9cb948d33742ac42788bbf84839c",
+      "prepared_sha256": "dcc0c6b5ca07fc27d55bc19805b4fd2f666d9cb948d33742ac42788bbf84839c",
+      "original_bytes": 13506,
+      "prepared_bytes": 13506,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/divergence_controls.json",
+      "original_sha256": "4dddc4e668e1dbd1da5b72f35f5d56684cf7373a197f108249445d5b2517e168",
+      "prepared_sha256": "4dddc4e668e1dbd1da5b72f35f5d56684cf7373a197f108249445d5b2517e168",
+      "original_bytes": 2791,
+      "prepared_bytes": 2791,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/PROOF.md",
+      "original_sha256": "8d82ce1319933fa9f3301ab55d704c212718dc5b50a7c55cfacf3df39ac2a3a8",
+      "prepared_sha256": "8d82ce1319933fa9f3301ab55d704c212718dc5b50a7c55cfacf3df39ac2a3a8",
+      "original_bytes": 6270,
+      "prepared_bytes": 6270,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/naive_euler_certificates.json",
+      "original_sha256": "9487715076604dcd5f8cad9035f516bd033aad8f1d3c9353903296f06db9c2ef",
+      "prepared_sha256": "9487715076604dcd5f8cad9035f516bd033aad8f1d3c9353903296f06db9c2ef",
+      "original_bytes": 2369,
+      "prepared_bytes": 2369,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/PROOF.md",
+      "original_sha256": "1f9947f422e2d412060e10b7689d2d682cf1f313c6a6de7ea06abe39a57528c0",
+      "prepared_sha256": "1f9947f422e2d412060e10b7689d2d682cf1f313c6a6de7ea06abe39a57528c0",
+      "original_bytes": 10428,
+      "prepared_bytes": 10428,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/axis_obstruction_verification.log",
+      "original_sha256": "de8efe58211c9667a6533618c41448fe5b3ceca45e247e60011b3769399115d3",
+      "prepared_sha256": "de8efe58211c9667a6533618c41448fe5b3ceca45e247e60011b3769399115d3",
+      "original_bytes": 187,
+      "prepared_bytes": 187,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/degree8_axis_obstruction.json",
+      "original_sha256": "d10ea62bca03a2edc3f8b8d0f1d900240c51d1f6585d7e92087cde15986aaf37",
+      "prepared_sha256": "d10ea62bca03a2edc3f8b8d0f1d900240c51d1f6585d7e92087cde15986aaf37",
+      "original_bytes": 832,
+      "prepared_bytes": 832,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/degree8_family_axis_test.json",
+      "original_sha256": "5cc6e0b5af0e2db2934c95a996dd9e66698df3023724941069a55205969ae33d",
+      "prepared_sha256": "5cc6e0b5af0e2db2934c95a996dd9e66698df3023724941069a55205969ae33d",
+      "original_bytes": 858,
+      "prepared_bytes": 858,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/enrich_affine.log",
+      "original_sha256": "0d6f99167fea1d90b2acdb2d61b89d0edb946556da4c95666fc2e8d6ca9ac5c9",
+      "prepared_sha256": "0d6f99167fea1d90b2acdb2d61b89d0edb946556da4c95666fc2e8d6ca9ac5c9",
+      "original_bytes": 238,
+      "prepared_bytes": 238,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/enrich_affine_certificates.py",
+      "original_sha256": "04113ef2879585a244b659e168e4d59ee20096bd90165d0f26df5e2fb519bc47",
+      "prepared_sha256": "36564eb6c3397fd82172a3b4d35323b401c82c78ba894c757926c131cae9e2f5",
+      "original_bytes": 1823,
+      "prepared_bytes": 2217,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/h378/normal_search/normal_degree_3.json",
+      "original_sha256": "6378ee819f8d425a765e74a58bebe0dafc9edbb7f992c38717875a30934aa47d",
+      "prepared_sha256": "6378ee819f8d425a765e74a58bebe0dafc9edbb7f992c38717875a30934aa47d",
+      "original_bytes": 562,
+      "prepared_bytes": 562,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/normal_degree_4.json",
+      "original_sha256": "ce1fd06594d1d6c982532e64e45bba71c5dfee917cd85c92246a9eae3dc64a54",
+      "prepared_sha256": "ce1fd06594d1d6c982532e64e45bba71c5dfee917cd85c92246a9eae3dc64a54",
+      "original_bytes": 2915,
+      "prepared_bytes": 2915,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/normal_degree_5.json",
+      "original_sha256": "8151d5bc9acebe95ecb9fe269e433d1cfe33bb3bff4bd4399bbcf7e9cb22dcfd",
+      "prepared_sha256": "8151d5bc9acebe95ecb9fe269e433d1cfe33bb3bff4bd4399bbcf7e9cb22dcfd",
+      "original_bytes": 26078,
+      "prepared_bytes": 26078,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/normal_degree_6.json",
+      "original_sha256": "0bbcc8b6fc2a1aa27ce16c23df882e876413d5dd1adca6e8dbfaa7ee18cff952",
+      "prepared_sha256": "0bbcc8b6fc2a1aa27ce16c23df882e876413d5dd1adca6e8dbfaa7ee18cff952",
+      "original_bytes": 78736,
+      "prepared_bytes": 78736,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/normal_degree_7.json",
+      "original_sha256": "a5854c41f3651c42a7ca6dbd852d4f89c92d45db4daf67be38dfc1bd4b698600",
+      "prepared_sha256": "a5854c41f3651c42a7ca6dbd852d4f89c92d45db4daf67be38dfc1bd4b698600",
+      "original_bytes": 156190,
+      "prepared_bytes": 156190,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/normal_degree_8.json",
+      "original_sha256": "55fc44b4643e021cc0ab8384b3406042cb60f910ad72ddc1893bd71bc78aadc2",
+      "prepared_sha256": "55fc44b4643e021cc0ab8384b3406042cb60f910ad72ddc1893bd71bc78aadc2",
+      "original_bytes": 560668,
+      "prepared_bytes": 560668,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/normal_only_degree_7.json",
+      "original_sha256": "c6688ba6f12d11ded023ee08aa5d3a4d4d5bb4b6d475ee3711b275d4ab8cd1ed",
+      "prepared_sha256": "c6688ba6f12d11ded023ee08aa5d3a4d4d5bb4b6d475ee3711b275d4ab8cd1ed",
+      "original_bytes": 213431,
+      "prepared_bytes": 213431,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/search.log",
+      "original_sha256": "9ac24a799e8cfab7e3e232f76ad8d2f046099b32375905f8f56a14971a78087a",
+      "prepared_sha256": "9ac24a799e8cfab7e3e232f76ad8d2f046099b32375905f8f56a14971a78087a",
+      "original_bytes": 444,
+      "prepared_bytes": 444,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/search_degree7.log",
+      "original_sha256": "a80f272192a4ae0b6c736f9914a0d0f9aa5b22e2b2c60b494c813ef99dc7a526",
+      "prepared_sha256": "a80f272192a4ae0b6c736f9914a0d0f9aa5b22e2b2c60b494c813ef99dc7a526",
+      "original_bytes": 116,
+      "prepared_bytes": 116,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/search_degree8.log",
+      "original_sha256": "65aa094a4aaa28e73af9cfd85e667e9e86658502808d7b514161dcd8bda6921c",
+      "prepared_sha256": "65aa094a4aaa28e73af9cfd85e667e9e86658502808d7b514161dcd8bda6921c",
+      "original_bytes": 142,
+      "prepared_bytes": 142,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/search_normal_fields.py",
+      "original_sha256": "83c1c9dd66f1ab6b3cae9e3222ef2ff6ce0a102cf754d02bab5c4bc36fc8ee18",
+      "prepared_sha256": "0cfce4568465ec90f6645699ab2d2faf27ea672d999f6378d6b94fa3a8d5e38f",
+      "original_bytes": 6701,
+      "prepared_bytes": 7113,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/h378/normal_search/search_normal_only_degree7.log",
+      "original_sha256": "29a9e8b8deb89c8e8d8fc38b8eec4843812401d0b430c9c44124ad345e476d9c",
+      "prepared_sha256": "29a9e8b8deb89c8e8d8fc38b8eec4843812401d0b430c9c44124ad345e476d9c",
+      "original_bytes": 139,
+      "prepared_bytes": 139,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/verification.json",
+      "original_sha256": "ac72f43ca1aa9ed7e1f8e2572f1e312da075d64ab1799a0fee5e777bc2912e35",
+      "prepared_sha256": "ac72f43ca1aa9ed7e1f8e2572f1e312da075d64ab1799a0fee5e777bc2912e35",
+      "original_bytes": 919,
+      "prepared_bytes": 919,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/verification.log",
+      "original_sha256": "12caaed5ef5dfd51ab9b1dd030d0f24157318c92218da77e7dfbc6b2fba1a55a",
+      "prepared_sha256": "12caaed5ef5dfd51ab9b1dd030d0f24157318c92218da77e7dfbc6b2fba1a55a",
+      "original_bytes": 297,
+      "prepared_bytes": 297,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/verification_degree8.log",
+      "original_sha256": "26ac526347805ece7d12133d5b9e315a0cea542cee8149a0a57cca567436279b",
+      "prepared_sha256": "26ac526347805ece7d12133d5b9e315a0cea542cee8149a0a57cca567436279b",
+      "original_bytes": 126,
+      "prepared_bytes": 126,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/verification_normal_only_degree7.log",
+      "original_sha256": "8c9e9e0a71c37d1a75b5c2f606203ba9cf24995083a52fb10905981586e95ae4",
+      "prepared_sha256": "8c9e9e0a71c37d1a75b5c2f606203ba9cf24995083a52fb10905981586e95ae4",
+      "original_bytes": 131,
+      "prepared_bytes": 131,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/normal_search/verify_degree8_axis_obstruction.py",
+      "original_sha256": "c4adc80c87cfb563bb121c4828ab5b3c426cfb29fcb70a7d4db39e273b0adff6",
+      "prepared_sha256": "771dc5ed66997945cef7207b9bd3f4fd7bb0c5f0673207e6acd65274fbdce886",
+      "original_bytes": 3165,
+      "prepared_bytes": 3551,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/h378/normal_search/verify_normal_certificates.py",
+      "original_sha256": "51a666ba7e03323d0843a2506f45759e6dedfdf32a73f256f9b430d05ec6c1cf",
+      "prepared_sha256": "6d4c3bf58d464dda6215b221e3452ba7b0507689161bb0dc0aac5df4c76bc988",
+      "original_bytes": 6275,
+      "prepared_bytes": 6677,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/h378/verification.log",
+      "original_sha256": "c4d5cd86b209b157fc4671f857d9cf2a82e7a02f80d5367b0bebd7636faba32a",
+      "prepared_sha256": "c4d5cd86b209b157fc4671f857d9cf2a82e7a02f80d5367b0bebd7636faba32a",
+      "original_bytes": 182,
+      "prepared_bytes": 182,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h378/verify_naive_euler.py",
+      "original_sha256": "bc61a4d8eacb637ddad1e0c6413c4ff4470db14d7bb0163276605a697f7e57a1",
+      "prepared_sha256": "c2cb490c6d249eb74d87d6898711e2c1d3f34ef44c5735edb0caaf768a53a2ff",
+      "original_bytes": 2615,
+      "prepared_bytes": 3006,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/h457/PROOF.md",
+      "original_sha256": "718447d44caffacdac47dd565e3aad58695908d5fbba8c6a4f674aabf11ec034",
+      "prepared_sha256": "718447d44caffacdac47dd565e3aad58695908d5fbba8c6a4f674aabf11ec034",
+      "original_bytes": 10383,
+      "prepared_bytes": 10383,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/euler_obstruction_certificate.json",
+      "original_sha256": "fd3a070045b9c8f36292515d6119238fe139aeb276cd80816c2b1d03c541cf75",
+      "prepared_sha256": "fd3a070045b9c8f36292515d6119238fe139aeb276cd80816c2b1d03c541cf75",
+      "original_bytes": 1399,
+      "prepared_bytes": 1399,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/RESULTS.md",
+      "original_sha256": "983c2d097bd7598f5fc16eeabbcbbf5d1d30d56dd7b29db4dd9d61bc15935fce",
+      "prepared_sha256": "983c2d097bd7598f5fc16eeabbcbbf5d1d30d56dd7b29db4dd9d61bc15935fce",
+      "original_bytes": 9317,
+      "prepared_bytes": 9317,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/degree7_family.log",
+      "original_sha256": "e3a2c2d880aa24318f79eb9419d2563a84b50d6bbacdc09f9195fbd55ee430bc",
+      "prepared_sha256": "e3a2c2d880aa24318f79eb9419d2563a84b50d6bbacdc09f9195fbd55ee430bc",
+      "original_bytes": 168,
+      "prepared_bytes": 168,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/family_axis_test.json",
+      "original_sha256": "9fac13c042892612fd183e6cd82c4ffd3e27383c9a2b2fa89dc5fadc77527b9a",
+      "prepared_sha256": "9fac13c042892612fd183e6cd82c4ffd3e27383c9a2b2fa89dc5fadc77527b9a",
+      "original_bytes": 11505,
+      "prepared_bytes": 11505,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/independent_verification.json",
+      "original_sha256": "08aab167339f663abb081fcd5710bccfebbe8e68ac03ad37971953b6ced3da06",
+      "prepared_sha256": "08aab167339f663abb081fcd5710bccfebbe8e68ac03ad37971953b6ced3da06",
+      "original_bytes": 1208,
+      "prepared_bytes": 1208,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/independent_verification.log",
+      "original_sha256": "08bb97b56b0f191a2436e87226f9730bb8082d632eb4ead53fe6046fb4c71e32",
+      "prepared_sha256": "08bb97b56b0f191a2436e87226f9730bb8082d632eb4ead53fe6046fb4c71e32",
+      "original_bytes": 143,
+      "prepared_bytes": 143,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/jet_only.log",
+      "original_sha256": "5f60552ae5bb549c815f847fb9b2212f6c8fbeacbad7d5e03cf36b3b30423d46",
+      "prepared_sha256": "5f60552ae5bb549c815f847fb9b2212f6c8fbeacbad7d5e03cf36b3b30423d46",
+      "original_bytes": 278,
+      "prepared_bytes": 278,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/normal_degree4_div2.json",
+      "original_sha256": "3b6e6dc6ee2109ac14fe25951b83ff020adaa4fac2e9f91d994439daa050426e",
+      "prepared_sha256": "3b6e6dc6ee2109ac14fe25951b83ff020adaa4fac2e9f91d994439daa050426e",
+      "original_bytes": 5567,
+      "prepared_bytes": 5567,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/normal_degree4_jet_only.json",
+      "original_sha256": "7be1549889b7d6870cd2b88af05d8911e579d34e8c28a86dedbd67bbc0d7d81d",
+      "prepared_sha256": "7be1549889b7d6870cd2b88af05d8911e579d34e8c28a86dedbd67bbc0d7d81d",
+      "original_bytes": 5567,
+      "prepared_bytes": 5567,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/normal_degree5_div2.json",
+      "original_sha256": "9f797ffa0d9e320d169e22777119972b126407308323d3d56fe498712ca9924f",
+      "prepared_sha256": "9f797ffa0d9e320d169e22777119972b126407308323d3d56fe498712ca9924f",
+      "original_bytes": 17993,
+      "prepared_bytes": 17993,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/normal_degree5_jet_only.json",
+      "original_sha256": "4035ac32e551c01ac074edde0b47e7c0aadf291ebf4200bb382204b0cd29b7c1",
+      "prepared_sha256": "4035ac32e551c01ac074edde0b47e7c0aadf291ebf4200bb382204b0cd29b7c1",
+      "original_bytes": 17994,
+      "prepared_bytes": 17994,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/normal_degree6_div2.json",
+      "original_sha256": "1827380a64f203fb0337f38b79a01f48fddfcd1ecbd53f3c184ea5ffb3cbe6ec",
+      "prepared_sha256": "1827380a64f203fb0337f38b79a01f48fddfcd1ecbd53f3c184ea5ffb3cbe6ec",
+      "original_bytes": 40686,
+      "prepared_bytes": 40686,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/normal_degree6_jet_only.json",
+      "original_sha256": "52347f4d852411295eaad6041d2a9a690236c7a4eb9f7ca68dafa60489e63a55",
+      "prepared_sha256": "52347f4d852411295eaad6041d2a9a690236c7a4eb9f7ca68dafa60489e63a55",
+      "original_bytes": 40687,
+      "prepared_bytes": 40687,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/normal_degree7_div2.json",
+      "original_sha256": "6e284c4dc91cb20ab1566853ee156659d96656b74262de8e94a3e339c234eddf",
+      "prepared_sha256": "6e284c4dc91cb20ab1566853ee156659d96656b74262de8e94a3e339c234eddf",
+      "original_bytes": 170836,
+      "prepared_bytes": 170836,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/normal_degree8_div2.json",
+      "original_sha256": "f26d9a6f2f0a6b40f6152f2a1d20f9da915291826dadfec7909fb8d34050372b",
+      "prepared_sha256": "f26d9a6f2f0a6b40f6152f2a1d20f9da915291826dadfec7909fb8d34050372b",
+      "original_bytes": 187977,
+      "prepared_bytes": 187977,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/normal_degree9_div2.json",
+      "original_sha256": "680a033bd945e036f90d33eeda6aa81f34715b50988b87adad56e21c3270f42f",
+      "prepared_sha256": "680a033bd945e036f90d33eeda6aa81f34715b50988b87adad56e21c3270f42f",
+      "original_bytes": 342133,
+      "prepared_bytes": 342133,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/search.log",
+      "original_sha256": "c53b714953e037c6fd2a6c6bdc2cd3acc6af8ac6e0a52ef146103ccc1337e377",
+      "prepared_sha256": "c53b714953e037c6fd2a6c6bdc2cd3acc6af8ac6e0a52ef146103ccc1337e377",
+      "original_bytes": 273,
+      "prepared_bytes": 273,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/search_7_9.log",
+      "original_sha256": "01bf24d91c01f2aa53ddbf0dfd3bfed5b1289c9324598c38ba60b7640e3db596",
+      "prepared_sha256": "01bf24d91c01f2aa53ddbf0dfd3bfed5b1289c9324598c38ba60b7640e3db596",
+      "original_bytes": 24806,
+      "prepared_bytes": 24806,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/search_normal_fields.py",
+      "original_sha256": "4a11f6f5b763b3dc7db34e79e1a84172f10f8d0adbbaf5d54c945c61427965a5",
+      "prepared_sha256": "2a404b53147d94de4df6e9c86c4020b03d092ca68da72eab8009758647826746",
+      "original_bytes": 6026,
+      "prepared_bytes": 6438,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/h457/normal_search/search_summary.json",
+      "original_sha256": "e28afb56a669985aebb5d6bf12495256cba9ed38a4855170a98076c63cc89eb0",
+      "prepared_sha256": "e28afb56a669985aebb5d6bf12495256cba9ed38a4855170a98076c63cc89eb0",
+      "original_bytes": 1199,
+      "prepared_bytes": 1199,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/normal_search/verify_normal_family.py",
+      "original_sha256": "06952782c85ad0d1429c1e2f4b322d6f167361a2eb419358d93225e1238c8d25",
+      "prepared_sha256": "d810efc41147f06a85827fd47f5993b1616e1180971563405ddfa9fe7bce6570",
+      "original_bytes": 8511,
+      "prepared_bytes": 8911,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/h457/verification.log",
+      "original_sha256": "a7d30efa8925b1b52d1815a1cb6ac8e262a1330afbee1dd10c5c4ac46e966dc0",
+      "prepared_sha256": "a7d30efa8925b1b52d1815a1cb6ac8e262a1330afbee1dd10c5c4ac46e966dc0",
+      "original_bytes": 152,
+      "prepared_bytes": 152,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/h457/verify_euler_obstruction.py",
+      "original_sha256": "03a0d1541da1a54023df8f6060a89797abb2f9134b4cc008d668cba9f72a81e2",
+      "prepared_sha256": "9819e0433d1ef3fea8144dc1c42a48a69d5f02f16dd56a1413a1bfa7d799605b",
+      "original_bytes": 3775,
+      "prepared_bytes": 4153,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/literature.md",
+      "original_sha256": "c0d67f6c830f4a52964866f4011c744c9af4e3f5bcf4a5933adff13e96e67b71",
+      "prepared_sha256": "c0d67f6c830f4a52964866f4011c744c9af4e3f5bcf4a5933adff13e96e67b71",
+      "original_bytes": 27597,
+      "prepared_bytes": 27597,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/requirements.txt",
+      "original_sha256": "8b22dc31e45fd6dc0fa9ab87bda7684a7c2ac09344b3eae663128ba2abf321ed",
+      "prepared_sha256": "8b22dc31e45fd6dc0fa9ab87bda7684a7c2ac09344b3eae663128ba2abf321ed",
+      "original_bytes": 41,
+      "prepared_bytes": 41,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/run_checks.py",
+      "original_sha256": "f117634c985c523bc17eff2484fdaf34aad3282098bb7ee592c4bb34b3812f7a",
+      "prepared_sha256": "4dc8c5233a2d5eed9fa8aa6c6071a5c51c30054dc9b4f2a7eb1d692ca0338cdb",
+      "original_bytes": 7504,
+      "prepared_bytes": 7887,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/theory.md",
+      "original_sha256": "920e41ff73c0949a6224d4d0ac168f328e0ad97b91c7291e349da2be4144229a",
+      "prepared_sha256": "920e41ff73c0949a6224d4d0ac168f328e0ad97b91c7291e349da2be4144229a",
+      "original_bytes": 21072,
+      "prepared_bytes": 21072,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/theory_checks.json",
+      "original_sha256": "db6d2405014c019f29040daa0eb15aad1fdc9cf5724092f530fae8cd175b90f9",
+      "prepared_sha256": "db6d2405014c019f29040daa0eb15aad1fdc9cf5724092f530fae8cd175b90f9",
+      "original_bytes": 2434,
+      "prepared_bytes": 2434,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "euler/verify_divergence_controls.py",
+      "original_sha256": "dc5d4e8cb5794f206ec9710ecd55bbfb7eee90c5edbf3944f24637b43aec7115",
+      "prepared_sha256": "f7a7238d72e10b6ee0009ef89ad84aa8d64fec2e7472ffa5bd74d7b7225f9261",
+      "original_bytes": 2360,
+      "prepared_bytes": 2755,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "euler/verify_theory.py",
+      "original_sha256": "ac64e69d98cf1512498010c5723e80b1cf11ef89107e7c2aa6670d304a60f910",
+      "prepared_sha256": "a1170589665cac18fc1b31c31da3b9279275b8903c0441a1489f4efd4b7a0e04",
+      "original_bytes": 4269,
+      "prepared_bytes": 4663,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/.gitattributes",
+      "original_sha256": "a9fcfd5fca89dcd711ccba807a6d4615b4da7ee02c9486217cef6302775e7032",
+      "prepared_sha256": "a9fcfd5fca89dcd711ccba807a6d4615b4da7ee02c9486217cef6302775e7032",
+      "original_bytes": 31,
+      "prepared_bytes": 31,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/.gitignore",
+      "original_sha256": "bf95049b062fb0e0f4ab4bb5f3ab3034500bc7a5af1a45d7a7fe0e5dc2a5eb02",
+      "prepared_sha256": "59a0763faf30dec657b60065114767ec476c8204531891610bb34d23235894fe",
+      "original_bytes": 123,
+      "prepared_bytes": 204,
+      "transformation": "Packaging-only ignore rule: retain the offline dependency in version control",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/PROVENANCE.md",
+      "original_sha256": "a6ec00a6554bb5ec9a83de71c30c34d86e1e970ab9e7291db70ac5ff57e2890d",
+      "prepared_sha256": "a6ec00a6554bb5ec9a83de71c30c34d86e1e970ab9e7291db70ac5ff57e2890d",
+      "original_bytes": 2181,
+      "prepared_bytes": 2181,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/README.md",
+      "original_sha256": "1496d04fba8b1b572656fe2135cc4abe72f15645b893dba345bda4a7b1d9c1ba",
+      "prepared_sha256": "7d5e8260404880f3474e46351d0fd798a7b5cfe880c5837b64fe60ecbb896633",
+      "original_bytes": 7214,
+      "prepared_bytes": 7604,
+      "transformation": "Documentation-only consolidation-path note prepended; original retained in provenance archive",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/README.txt",
+      "original_sha256": "ea643f715853407c751c4e282623362bc9cf62939f1f9bbdf08694411b375e16",
+      "prepared_sha256": "ea643f715853407c751c4e282623362bc9cf62939f1f9bbdf08694411b375e16",
+      "original_bytes": 5400,
+      "prepared_bytes": 5400,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/SHA256SUMS.txt",
+      "original_sha256": "429e7d87476b88a92816c74ffb1fc82657a243a73816a1601317fbabf36ddd3c",
+      "prepared_sha256": "429e7d87476b88a92816c74ffb1fc82657a243a73816a1601317fbabf36ddd3c",
+      "original_bytes": 7957,
+      "prepared_bytes": 7957,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/bootstrap_source.py",
+      "original_sha256": "c35b4029a86ede4b920ff2ca98ae471ba53369333db26fa17274f4590a344756",
+      "prepared_sha256": "22b27117fb0a65141285f31a5ae206742fa1edacb2d8501b045ff4ca2916ae67",
+      "original_bytes": 2037,
+      "prepared_bytes": 2284,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/latex/harmonic_knots_lnd_research_ru.log",
+      "original_sha256": "51ca311f21afe8bf71562d1fc8f9ff08a733ac4c484758d04a148939978ef340",
+      "prepared_sha256": "51ca311f21afe8bf71562d1fc8f9ff08a733ac4c484758d04a148939978ef340",
+      "original_bytes": 43673,
+      "prepared_bytes": 43673,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/latex/harmonic_knots_lnd_research_ru.tex",
+      "original_sha256": "b99490d3f236e85eca93057845b967388ced073644483d8b57fefdbd009bcb84",
+      "prepared_sha256": "b99490d3f236e85eca93057845b967388ced073644483d8b57fefdbd009bcb84",
+      "original_bytes": 7448,
+      "prepared_bytes": 7448,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/latex/sections/base_lnd.tex",
+      "original_sha256": "93fbcebd29e661f89385b58aeb382b381ba3e097d550c71ec4efb9cee940071d",
+      "prepared_sha256": "93fbcebd29e661f89385b58aeb382b381ba3e097d550c71ec4efb9cee940071d",
+      "original_bytes": 3504,
+      "prepared_bytes": 3504,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/latex/sections/computations.tex",
+      "original_sha256": "04aecda5cf3a168c61569c125a428798c5b479de9480923ab864a779afea4a83",
+      "prepared_sha256": "04aecda5cf3a168c61569c125a428798c5b479de9480923ab864a779afea4a83",
+      "original_bytes": 9694,
+      "prepared_bytes": 9694,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/latex/sections/consequences.tex",
+      "original_sha256": "42f938d273cfd8fa7a8b6d8deb3a56da95964d330f1136896b8ed34a966f0f19",
+      "prepared_sha256": "42f938d273cfd8fa7a8b6d8deb3a56da95964d330f1136896b8ed34a966f0f19",
+      "original_bytes": 8657,
+      "prepared_bytes": 8657,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/latex/sections/cremona.tex",
+      "original_sha256": "2e7f4dc8a0714f8ff0acc19a063601ad7fc226b92042899c39d6627008f024ad",
+      "prepared_sha256": "2e7f4dc8a0714f8ff0acc19a063601ad7fc226b92042899c39d6627008f024ad",
+      "original_bytes": 19637,
+      "prepared_bytes": 19637,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/latex/sections/harmonic.tex",
+      "original_sha256": "cbb548500fac829f19742240ddef87481c218bf64f6e1cb5d107aafbb63d291b",
+      "prepared_sha256": "cbb548500fac829f19742240ddef87481c218bf64f6e1cb5d107aafbb63d291b",
+      "original_bytes": 18726,
+      "prepared_bytes": 18726,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/latex/sections/harmonic_minimum_slice.tex",
+      "original_sha256": "decbb570fe25d688789063194f9fdf83b6deb1f99bb1df125cfc785cf550ed49",
+      "prepared_sha256": "decbb570fe25d688789063194f9fdf83b6deb1f99bb1df125cfc785cf550ed49",
+      "original_bytes": 7454,
+      "prepared_bytes": 7454,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/latex/sections/minimum_slice.tex",
+      "original_sha256": "aff3b6355ee5a1944f6efc61f6548f1585529242f74dd962c779bb351020df89",
+      "prepared_sha256": "aff3b6355ee5a1944f6efc61f6548f1585529242f74dd962c779bb351020df89",
+      "original_bytes": 9274,
+      "prepared_bytes": 9274,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/latex/sections/van_den_essen.tex",
+      "original_sha256": "9ae84c875decdc7f1c82934e4e55fb781831a8c2d4814fd47ba5ade454657084",
+      "prepared_sha256": "9ae84c875decdc7f1c82934e4e55fb781831a8c2d4814fd47ba5ade454657084",
+      "original_bytes": 16334,
+      "prepared_bytes": 16334,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/repo/MECHANISM.md",
+      "original_sha256": "bf89bda070e1d250ac711e0cd72e6db9dcede9e9386de6458c0f107b4e367001",
+      "prepared_sha256": "bf89bda070e1d250ac711e0cd72e6db9dcede9e9386de6458c0f107b4e367001",
+      "original_bytes": 20051,
+      "prepared_bytes": 20051,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/repo/README.md",
+      "original_sha256": "8668dbb9796217c579c64b2c8e9d3e09a566bf6baa90f977e9d1d3631ec6e2e2",
+      "prepared_sha256": "8668dbb9796217c579c64b2c8e9d3e09a566bf6baa90f977e9d1d3631ec6e2e2",
+      "original_bytes": 8369,
+      "prepared_bytes": 8369,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/repo/paper/harmonic_explicit.tex",
+      "original_sha256": "ef28dea738f08d6a022e39a1597c0dd23f117d39f964b2a3db27ed164a055585",
+      "prepared_sha256": "ef28dea738f08d6a022e39a1597c0dd23f117d39f964b2a3db27ed164a055585",
+      "original_bytes": 31896,
+      "prepared_bytes": 31896,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/repo/paper/main.tex",
+      "original_sha256": "c138b1531135e6d52b979b0037155da73f9d5fe532548a9f15af5b209f921b92",
+      "prepared_sha256": "c138b1531135e6d52b979b0037155da73f9d5fe532548a9f15af5b209f921b92",
+      "original_bytes": 21253,
+      "prepared_bytes": 21253,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/repo/paper/references.tex",
+      "original_sha256": "382494c22b1df9a8e8c4e8840e14cd2cd94fb1afb59cee62a415a5a87e606f6a",
+      "prepared_sha256": "382494c22b1df9a8e8c4e8840e14cd2cd94fb1afb59cee62a415a5a87e606f6a",
+      "original_bytes": 3834,
+      "prepared_bytes": 3834,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/repo/paper/trefoil_explicit.tex",
+      "original_sha256": "a9a1ed9987fe2aaaa37c998de34626f53bc015d854b57e6d9c7ab1e65d7466d5",
+      "prepared_sha256": "a9a1ed9987fe2aaaa37c998de34626f53bc015d854b57e6d9c7ab1e65d7466d5",
+      "original_bytes": 20736,
+      "prepared_bytes": 20736,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/repo/verification/audit_harmonic.py",
+      "original_sha256": "a22d93c7e2d281e265ff8413c7b55c61757bd7809eda660164a0e2d165c505c0",
+      "prepared_sha256": "fbffe722f4e564fe4330c67038fcf18b1d0085d7b2494975ccebc25ed93a0000",
+      "original_bytes": 7240,
+      "prepared_bytes": 7608,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/repo/verification/audit_harmonic_independent.py",
+      "original_sha256": "42fc2b057e3c35cf9e8be2433997c78201d655cca330cdb09882899ad8a65ba9",
+      "prepared_sha256": "327d449408df4154c1d63f0490fd5d4d3c3746b2e037f131af88af7429baddd5",
+      "original_bytes": 9361,
+      "prepared_bytes": 9741,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/repo/verification/audit_trefoil.py",
+      "original_sha256": "3ba807de2ca3db97dbf0644d75d5512f9a221542d272c9fa75cebb9e0b0bf916",
+      "prepared_sha256": "77df0f7b10e364dd4dafd7e6002056de71e0055366da07af9d840025159964c0",
+      "original_bytes": 11099,
+      "prepared_bytes": 11466,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/repo/verify.py",
+      "original_sha256": "73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef",
+      "prepared_sha256": "3f4d4faaaa41bf403a06e81b915077272354ac4db9dda157628d6742b8e35350",
+      "original_bytes": 8883,
+      "prepared_bytes": 9262,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/repo/verify_printed_formulas.py",
+      "original_sha256": "b201fd83da9a6acece6ebb0f3c266bce66b55cd426a8e239a8fff5aa8c52757d",
+      "prepared_sha256": "b8017fda56918581602f51209e822295695777febcff8933f5b4bf47bc170f14",
+      "original_bytes": 1270,
+      "prepared_bytes": 1646,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/requirements.txt",
+      "original_sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc",
+      "prepared_sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc",
+      "original_bytes": 14,
+      "prepared_bytes": 14,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/cremona_lnd/results.tex",
+      "original_sha256": "2e7f4dc8a0714f8ff0acc19a063601ad7fc226b92042899c39d6627008f024ad",
+      "prepared_sha256": "2e7f4dc8a0714f8ff0acc19a063601ad7fc226b92042899c39d6627008f024ad",
+      "original_bytes": 19637,
+      "prepared_bytes": 19637,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/cremona_lnd/verify_example.py",
+      "original_sha256": "6517bd125db0e03b5a6610448f0261ed1160def27b9eb39258f874605185a613",
+      "prepared_sha256": "e906a01c8c77f99ec21c6868dcf86f096c09e0e815307bb00c3bd83bb85639cb",
+      "original_bytes": 1047,
+      "prepared_bytes": 1379,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/degree5_quadratic_observation.log",
+      "original_sha256": "f5cdb5c3c4b734a523251711d346ca32f66fd0556022f09a64c18ae30ff5d918",
+      "prepared_sha256": "f5cdb5c3c4b734a523251711d346ca32f66fd0556022f09a64c18ae30ff5d918",
+      "original_bytes": 448,
+      "prepared_bytes": 448,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/degree5_quadratic_observation.py",
+      "original_sha256": "a889c310f56021f35e81b30e7ddca7558ae9cb8c05755cc69d08f2f44a3e97b5",
+      "prepared_sha256": "8a92e98a9f458ad4403d12f2d4916a820f246e15a3f43fbab31edf5b72c6f8be",
+      "original_bytes": 1659,
+      "prepared_bytes": 2080,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/divisor_ansatz.py",
+      "original_sha256": "3fe9055b7f8bbcce3a44313087d9fb5deee0bf2dd464177cfe522c1c2529b972",
+      "prepared_sha256": "80760d5438837a8ae8d3710c4f2303e7072421b37c07d88185d6cfa2dcfc83dc",
+      "original_bytes": 1081,
+      "prepared_bytes": 1487,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/matrix_probe.py",
+      "original_sha256": "27d3fa4ff5afac518c0988d30e39b602af2abf5d772bf7cb5f93078d0ef8e90d",
+      "prepared_sha256": "22839fd1fae5120e26acb09c8a8d1983e7ba33469b5751cc4ea2850cdb9f4375",
+      "original_bytes": 466,
+      "prepared_bytes": 870,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/parameter_search.log",
+      "original_sha256": "d70ee14f9f81b034d93547bbf32e8634ba8ba69b32eba4b9c12a205ff7cb88c8",
+      "prepared_sha256": "d70ee14f9f81b034d93547bbf32e8634ba8ba69b32eba4b9c12a205ff7cb88c8",
+      "original_bytes": 589,
+      "prepared_bytes": 589,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/parameter_search.py",
+      "original_sha256": "2792f78d51ea9565bd4719e0c0a6ae0c50bce3d1f11a521d445d9dd3e654ca78",
+      "prepared_sha256": "081be86aef2c81f079356ac42d0b45f960cc240f01de8d7bf8eb5af401698879",
+      "original_bytes": 1007,
+      "prepared_bytes": 1415,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz.json",
+      "original_sha256": "2ff8cb78870aef758e8071c45c481367556d61fd75c33887e55ff4c764f00163",
+      "prepared_sha256": "2ff8cb78870aef758e8071c45c481367556d61fd75c33887e55ff4c764f00163",
+      "original_bytes": 2456,
+      "prepared_bytes": 2456,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz.log",
+      "original_sha256": "2ea963289c1b56708aa17faf59f2e3d2366601e4cd7e0c6f5487eb171f2b8830",
+      "prepared_sha256": "2ea963289c1b56708aa17faf59f2e3d2366601e4cd7e0c6f5487eb171f2b8830",
+      "original_bytes": 2110,
+      "prepared_bytes": 2110,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz.py",
+      "original_sha256": "a39df4bb5722c08574769e59e235125abfb97a3195d0c642c68fc1ad54f647a6",
+      "prepared_sha256": "b6a764c04eb14eaba99947280ea99fb30ad1c1f92f2e1db8ec7492b409768371",
+      "original_bytes": 851,
+      "prepared_bytes": 1259,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz2.json",
+      "original_sha256": "17fd6e42d8845838fe37c2163eaee1c344dae4c2706a9c9d6abf20a995f10cb7",
+      "prepared_sha256": "17fd6e42d8845838fe37c2163eaee1c344dae4c2706a9c9d6abf20a995f10cb7",
+      "original_bytes": 824,
+      "prepared_bytes": 824,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz2.log",
+      "original_sha256": "8654c4f3ef7ba911077a09721cd71c94d3542b8804771b003c56ac9d1b33ed06",
+      "prepared_sha256": "8654c4f3ef7ba911077a09721cd71c94d3542b8804771b003c56ac9d1b33ed06",
+      "original_bytes": 282,
+      "prepared_bytes": 282,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz2.py",
+      "original_sha256": "84b2695d552b91302f620de00a202aee2fc2e327d4d9cdd0b1b118e061e2617d",
+      "prepared_sha256": "6537f4bc471758098606701eebc5a5bb7126746b47811f5f850ecda4da021fdb",
+      "original_bytes": 935,
+      "prepared_bytes": 1344,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/reduction_scan.json",
+      "original_sha256": "bf6a811983395f069b79fbd994fbc57511a50988c48e090359c70cea67cf3463",
+      "prepared_sha256": "bf6a811983395f069b79fbd994fbc57511a50988c48e090359c70cea67cf3463",
+      "original_bytes": 5146,
+      "prepared_bytes": 5146,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/reduction_scan.log",
+      "original_sha256": "15e5a17f5eed992db9647303b8ed20bcd6fefea66522779e64f41ae7fec31f8e",
+      "prepared_sha256": "15e5a17f5eed992db9647303b8ed20bcd6fefea66522779e64f41ae7fec31f8e",
+      "original_bytes": 1604,
+      "prepared_bytes": 1604,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/reduction_scan.py",
+      "original_sha256": "a016da9268c44b165d9813a7d8f88500c82b4909668b9cb57d1bfc7d2ad95fe6",
+      "prepared_sha256": "077f9e67f3876c0c84ffe8d3f78f6c420a9973d6f78de6e7903d8a3821dbe1d0",
+      "original_bytes": 1546,
+      "prepared_bytes": 1941,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/results.tex",
+      "original_sha256": "04aecda5cf3a168c61569c125a428798c5b479de9480923ab864a779afea4a83",
+      "prepared_sha256": "04aecda5cf3a168c61569c125a428798c5b479de9480923ab864a779afea4a83",
+      "original_bytes": 9694,
+      "prepared_bytes": 9694,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/verification.json",
+      "original_sha256": "9bcee2c48ba2e33845c90dde708ab88892a06cf1a8dd9302a9cdd686291187fd",
+      "prepared_sha256": "9bcee2c48ba2e33845c90dde708ab88892a06cf1a8dd9302a9cdd686291187fd",
+      "original_bytes": 1652,
+      "prepared_bytes": 1652,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/verification.log",
+      "original_sha256": "8c040f4d90a020b10d4bf24fb00e7c2816238cbd4a0772c7f6cc219f5089c0f8",
+      "prepared_sha256": "8c040f4d90a020b10d4bf24fb00e7c2816238cbd4a0772c7f6cc219f5089c0f8",
+      "original_bytes": 1568,
+      "prepared_bytes": 1568,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_compute/verify_new_results.py",
+      "original_sha256": "316a951e6fc392e389aa8f7b05f00d0d136337b659ea387900cd3c1f5f25cd29",
+      "prepared_sha256": "d876058be15be4dd2b640ce9488b9b19bd35a2475071e079254f9b2906b0250c",
+      "original_bytes": 3052,
+      "prepared_bytes": 3455,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_literature/periodic_shears.py",
+      "original_sha256": "59708f690bc49ffdda32336049cc1c191072b35bec08dd45b50d6223f7bb94ca",
+      "prepared_sha256": "a511b1724247aec6f619577efc0655881d8c62d2912c5780b4151126c7f4686a",
+      "original_bytes": 3392,
+      "prepared_bytes": 3784,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_literature/periodic_shears_results.json",
+      "original_sha256": "b0eb2398852dc412ac464e320c5ebb0b49ece7b447f0d20faad35ee8cad0171d",
+      "prepared_sha256": "b0eb2398852dc412ac464e320c5ebb0b49ece7b447f0d20faad35ee8cad0171d",
+      "original_bytes": 2280,
+      "prepared_bytes": 2280,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_literature/results.tex",
+      "original_sha256": "e6c08415bf5e92efe13dcbeba500854c13cef71b03162276931adfcd5040f5a5",
+      "prepared_sha256": "e6c08415bf5e92efe13dcbeba500854c13cef71b03162276931adfcd5040f5a5",
+      "original_bytes": 21003,
+      "prepared_bytes": 21003,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/harmonic_literature/verification.log",
+      "original_sha256": "2a5b4311b3eecc199ea376615077295421b0261d83e2a24fe9433ba02ccac427",
+      "prepared_sha256": "2a5b4311b3eecc199ea376615077295421b0261d83e2a24fe9433ba02ccac427",
+      "original_bytes": 2281,
+      "prepared_bytes": 2281,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/PROOF.md",
+      "original_sha256": "ed3140f8fb59e87c90f4754387fc33a0159df51d54f9210500ae673813012ce9",
+      "prepared_sha256": "ed3140f8fb59e87c90f4754387fc33a0159df51d54f9210500ae673813012ce9",
+      "original_bytes": 8071,
+      "prepared_bytes": 8071,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/certificate_results.json",
+      "original_sha256": "70a6ad15470eb72a3507194054d6b44beab2f1c2171c7791d369361ef51b04c8",
+      "prepared_sha256": "70a6ad15470eb72a3507194054d6b44beab2f1c2171c7791d369361ef51b04c8",
+      "original_bytes": 7333,
+      "prepared_bytes": 7333,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/harmonic_minimal_slice_verification.log",
+      "original_sha256": "38c08e7af3813e3999b44db5df83ebd2d53a83512f7faccfa01adbd28557acfa",
+      "prepared_sha256": "38c08e7af3813e3999b44db5df83ebd2d53a83512f7faccfa01adbd28557acfa",
+      "original_bytes": 354,
+      "prepared_bytes": 354,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/harmonic_minimum_slice.tex",
+      "original_sha256": "decbb570fe25d688789063194f9fdf83b6deb1f99bb1df125cfc785cf550ed49",
+      "prepared_sha256": "decbb570fe25d688789063194f9fdf83b6deb1f99bb1df125cfc785cf550ed49",
+      "original_bytes": 7454,
+      "prepared_bytes": 7454,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/harmonic_slice_search.json",
+      "original_sha256": "20d8a07ae29276efc916299dcf847a6b4c6c84dda1b7df94747e82280c0fd464",
+      "prepared_sha256": "20d8a07ae29276efc916299dcf847a6b4c6c84dda1b7df94747e82280c0fd464",
+      "original_bytes": 3807,
+      "prepared_bytes": 3807,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/minimal_degree_slice.json",
+      "original_sha256": "c4276c3a0ffd6cc34db8f78c7101d0a5b99c765aebec1cf48fa30b1f1ce1ad86",
+      "prepared_sha256": "c4276c3a0ffd6cc34db8f78c7101d0a5b99c765aebec1cf48fa30b1f1ce1ad86",
+      "original_bytes": 504,
+      "prepared_bytes": 504,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/minimal_slice_verification.log",
+      "original_sha256": "2e45e5e32cab2cf51c2c76827d80f9ee3396130ccf3a293702f1d23eaf57a48b",
+      "prepared_sha256": "2e45e5e32cab2cf51c2c76827d80f9ee3396130ccf3a293702f1d23eaf57a48b",
+      "original_bytes": 250,
+      "prepared_bytes": 250,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/minimum_slice.tex",
+      "original_sha256": "aff3b6355ee5a1944f6efc61f6548f1585529242f74dd962c779bb351020df89",
+      "prepared_sha256": "aff3b6355ee5a1944f6efc61f6548f1585529242f74dd962c779bb351020df89",
+      "original_bytes": 9274,
+      "prepared_bytes": 9274,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/no_harmonic_slice_degree10_certificate.json",
+      "original_sha256": "9b23ac0289689e5eafc7707ca79c28fa37e49a2fd3a14c38b54805ed0c2b6ac1",
+      "prepared_sha256": "9b23ac0289689e5eafc7707ca79c28fa37e49a2fd3a14c38b54805ed0c2b6ac1",
+      "original_bytes": 15755,
+      "prepared_bytes": 15755,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/no_slice_degree6_certificate.json",
+      "original_sha256": "b2134043b010f2dd7d65360e3964ed3fe611c4a70f84c15fdf361b76bf33841f",
+      "prepared_sha256": "b2134043b010f2dd7d65360e3964ed3fe611c4a70f84c15fdf361b76bf33841f",
+      "original_bytes": 4076,
+      "prepared_bytes": 4076,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/verification.log",
+      "original_sha256": "d35d5d6269141ee94e9bdcb3a6900fad1710ca842025102be55466374c719a64",
+      "prepared_sha256": "d35d5d6269141ee94e9bdcb3a6900fad1710ca842025102be55466374c719a64",
+      "original_bytes": 1860,
+      "prepared_bytes": 1860,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/verify_harmonic_minimal_slice.py",
+      "original_sha256": "f86ac7353bc83539cd87aa1cc903183dc84e5653d0e9387f254c5eb96ac780df",
+      "prepared_sha256": "056981528a03e075eb8fae9309832cc90a2dbcbca9975b881d1acdcdafdc32c3",
+      "original_bytes": 3501,
+      "prepared_bytes": 3879,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/verify_lnd.py",
+      "original_sha256": "b0be2a563d75f2d419d1c1833a492b1aed387512e2b87f4f8bf0bf4cabfd9df4",
+      "prepared_sha256": "a0f20516a090815365964cab793085fdc60f07d27591e2ec8bb53dd0e1502d3f",
+      "original_bytes": 7339,
+      "prepared_bytes": 7729,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/lnd_certificate/verify_minimal_slice.py",
+      "original_sha256": "cf8289d6f4032085f8ac89ca350aac7322ac10e15250e2c01d1b9297966289da",
+      "prepared_sha256": "9e0fd92f866a15d36c37cedc0b466d8034ecc01332541262790170e8bc0082c1",
+      "original_bytes": 2613,
+      "prepared_bytes": 2981,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/audit_summary.txt",
+      "original_sha256": "42e51fe986dc387e9cbaca3663e49701264c63f94980396c70cd604850cd9de9",
+      "prepared_sha256": "42e51fe986dc387e9cbaca3663e49701264c63f94980396c70cd604850cd9de9",
+      "original_bytes": 3551,
+      "prepared_bytes": 3551,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/cross_review.txt",
+      "original_sha256": "0d4462e99dd013ee08dbff51e444863597cfc853f925c04328ad4b44282115cf",
+      "prepared_sha256": "0d4462e99dd013ee08dbff51e444863597cfc853f925c04328ad4b44282115cf",
+      "original_bytes": 7006,
+      "prepared_bytes": 7006,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/exact_source_sha256.txt",
+      "original_sha256": "99c8dbcb41aae924ff34b2a19e59dc80f91e87b784e2ec286aa5849622516db1",
+      "prepared_sha256": "99c8dbcb41aae924ff34b2a19e59dc80f91e87b784e2ec286aa5849622516db1",
+      "original_bytes": 1036,
+      "prepared_bytes": 1036,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/independent_base_lnd.json",
+      "original_sha256": "98ea63fe6f7a9e21d1d5445f972a3da8a94914694ffca9567e4c0c5824ebd1a8",
+      "prepared_sha256": "98ea63fe6f7a9e21d1d5445f972a3da8a94914694ffca9567e4c0c5824ebd1a8",
+      "original_bytes": 495,
+      "prepared_bytes": 495,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/independent_base_lnd.log",
+      "original_sha256": "c86c07816c32bcf0921fc204fa145c955483fff939d48cb90f247ff3f5d58e22",
+      "prepared_sha256": "c86c07816c32bcf0921fc204fa145c955483fff939d48cb90f247ff3f5d58e22",
+      "original_bytes": 493,
+      "prepared_bytes": 493,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/independent_base_lnd.py",
+      "original_sha256": "b838578c2b0f3d3622a1d7e1044c95307afde4a6252e1b0ae89cd99239c58bc6",
+      "prepared_sha256": "24bd90fc8c2b41aaa6ce630c8cb128cfa27cbce6dc7bdde20098f31d960d12dd",
+      "original_bytes": 2574,
+      "prepared_bytes": 2959,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/input_sha256.txt",
+      "original_sha256": "88ef2e724a750b12db8d9cd0be3df3f00cfbb23c77f20c8c6621aa7d65c4b80d",
+      "prepared_sha256": "88ef2e724a750b12db8d9cd0be3df3f00cfbb23c77f20c8c6621aa7d65c4b80d",
+      "original_bytes": 364,
+      "prepared_bytes": 364,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/proof.tex",
+      "original_sha256": "fe40bf76cc95ed038d30e467d2a4ff6a681d8409b6e535c9532323ad0af52994",
+      "prepared_sha256": "fe40bf76cc95ed038d30e467d2a4ff6a681d8409b6e535c9532323ad0af52994",
+      "original_bytes": 3502,
+      "prepared_bytes": 3502,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/review_harmonic_minimal_slice.json",
+      "original_sha256": "b4f233a2d738863f7bea9c9d716b7fc026e11ca906f7906f3f956118d623464e",
+      "prepared_sha256": "b4f233a2d738863f7bea9c9d716b7fc026e11ca906f7906f3f956118d623464e",
+      "original_bytes": 578,
+      "prepared_bytes": 578,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/review_harmonic_minimal_slice.log",
+      "original_sha256": "9d98f6606c6253cef75c5aa403de40936d6e3646ab505d084c617bf764d882fd",
+      "prepared_sha256": "9d98f6606c6253cef75c5aa403de40936d6e3646ab505d084c617bf764d882fd",
+      "original_bytes": 640,
+      "prepared_bytes": 640,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/review_harmonic_minimal_slice.py",
+      "original_sha256": "02b007cea04be998394def3a8a8fc3dfe81eb19723085d97c6de0b84e448e800",
+      "prepared_sha256": "17b3f9195fbe63d50a4ee45c479b0f59d54f9b11239bff9d8494c3f01b9d1452",
+      "original_bytes": 3410,
+      "prepared_bytes": 3794,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/review_minimal_slice.json",
+      "original_sha256": "75f293009a923157aa97391cb16103d88b9c2939bdf1add4304c4297e2a6dc6c",
+      "prepared_sha256": "75f293009a923157aa97391cb16103d88b9c2939bdf1add4304c4297e2a6dc6c",
+      "original_bytes": 443,
+      "prepared_bytes": 443,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/review_minimal_slice.log",
+      "original_sha256": "329b902212b1d1d3236bd73684eb8697497afb38c06d87c5a6368a6cd7b09426",
+      "prepared_sha256": "329b902212b1d1d3236bd73684eb8697497afb38c06d87c5a6368a6cd7b09426",
+      "original_bytes": 496,
+      "prepared_bytes": 496,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/review_minimal_slice.py",
+      "original_sha256": "a8f2677dfeb233fdd4fb60387079ef04fe921764ed60c0ae326a905bffc83743",
+      "prepared_sha256": "ade4a5f434dee44fbb25fc93021d1800c2ea64da1eb6d55304ced109d8912470",
+      "original_bytes": 3114,
+      "prepared_bytes": 3489,
+      "transformation": "English comments/docstrings only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/verify_current.log",
+      "original_sha256": "67a3b755f107d2cb0302ff751092b23033e417d8debbf998e42d1f35af88773f",
+      "prepared_sha256": "67a3b755f107d2cb0302ff751092b23033e417d8debbf998e42d1f35af88773f",
+      "original_bytes": 1064,
+      "prepared_bytes": 1064,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/repo_audit/verify_printed_current.log",
+      "original_sha256": "b54a051102d674ea2f1a4a6e617c508e9e37640ddbf845dc2d96f8c9e4cdfe17",
+      "prepared_sha256": "b54a051102d674ea2f1a4a6e617c508e9e37640ddbf845dc2d96f8c9e4cdfe17",
+      "original_bytes": 4759,
+      "prepared_bytes": 4759,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/source_manifest.json",
+      "original_sha256": "98494b9c834cb18decc108dae87fd10cccf2951b9c83e27ba9ee8a81b927f64e",
+      "prepared_sha256": "98494b9c834cb18decc108dae87fd10cccf2951b9c83e27ba9ee8a81b927f64e",
+      "original_bytes": 1502,
+      "prepared_bytes": 1502,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "legacy_appendix/research/van_den_essen/results.tex",
+      "original_sha256": "9ae84c875decdc7f1c82934e4e55fb781831a8c2d4814fd47ba5ade454657084",
+      "prepared_sha256": "9ae84c875decdc7f1c82934e4e55fb781831a8c2d4814fd47ba5ade454657084",
+      "original_bytes": 16334,
+      "prepared_bytes": 16334,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "audit_checks/verify_original_slice.py",
+      "original_sha256": "8983d781949502b8e797b205f22720f5bef6ec6ce1912108d493afc530707f0a",
+      "prepared_sha256": "676aaa52d7deff1e8fba634ee5747abd7387e2095ebe2e09dafa76dfc5756fcb",
+      "original_bytes": 3309,
+      "prepared_bytes": 3471,
+      "transformation": "English comments only; executable AST unchanged",
+      "python_ast_equal": true
+    },
+    {
+      "path": "audit_checks/original_slice_verification.json",
+      "original_sha256": "4411e2c54c69857747addb08d0e50a87071a9e1058dbca27f0dc94dc8e8a0cfb",
+      "prepared_sha256": "4411e2c54c69857747addb08d0e50a87071a9e1058dbca27f0dc94dc8e8a0cfb",
+      "original_bytes": 779,
+      "prepared_bytes": 779,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    },
+    {
+      "path": "audit_checks/AUDIT_RU.md",
+      "original_sha256": "7c46f0861c96ec9d7244c6a57bcf08d2276f200d26618661b6ac11fc101df5ec",
+      "prepared_sha256": "7c46f0861c96ec9d7244c6a57bcf08d2276f200d26618661b6ac11fc101df5ec",
+      "original_bytes": 19020,
+      "prepared_bytes": 19020,
+      "transformation": "unchanged input or historical result",
+      "python_ast_equal": null
+    }
+  ]
+}

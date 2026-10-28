@@ -1,0 +1,4 @@
+Working directory: /workspace/scratch/cc349d1d3dd2/research/continuation_20261026/relative_ml
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -B verify_relative_ml.py
+
+{"status": "PASS", "triples": 6, "shears": 54, "output": "/workspace/scratch/cc349d1d3dd2/research/continuation_20261026/relative_ml/relative_ml_verification.json"}

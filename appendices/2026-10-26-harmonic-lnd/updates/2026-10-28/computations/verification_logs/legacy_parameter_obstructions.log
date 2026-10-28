@@ -1,0 +1,47 @@
+Working directory (relative): legacy_appendix/research/harmonic_compute
+Scope: Specified finite parameter and relative-coordinate calculations
+
+PASS: Chebyshev product for H378 transfer
+PASS: target H(3,2,7) parameter
+PASS: C7 on x^2=2 fibres
+PASS: centre relation on same fibres
+PASS: linear centre would force alpha=1 and alpha*r=0
+PASS: parameter F for H457
+H457 degree 1 columns 4 rank 4 augmented 5
+PASS: H457 parameter degree 1
+H457 degree 2 columns 10 rank 10 augmented 11
+PASS: H457 parameter degree 2
+H457 degree 3 columns 20 rank 20 augmented 20
+PASS: H457 parameter degree 3
+PASS: F457 has critical points
+PASS: H378 degree <=4 solution space has dimension 2
+PASS: H378 every degree <=4 parameter has relative critical point (0,0,1)
+PASS: relative obstruction is not a full gradient obstruction
+PASS: matrix representation n=1
+PASS: matrix representation n=2
+PASS: matrix representation n=4
+PASS: matrix representation n=5
+PASS: matrix representation n=7
+PASS: matrix representation n=8
+PASS: matrix representation n=10
+PASS: matrix representation n=11
+PASS: matrix representation n=13
+PASS: matrix representation n=14
+PASS: matrix representation n=16
+PASS: matrix representation n=17
+PASS: matrix representation n=19
+PASS: matrix representation n=20
+PASS: matrix representation n=22
+PASS: matrix representation n=23
+PASS: matrix representation n=25
+PASS: matrix representation n=26
+PASS: matrix representation n=28
+PASS: matrix representation n=29
+PASS: matrix representation n=31
+PASS: matrix representation n=32
+PASS: matrix representation n=34
+PASS: matrix representation n=35
+PASS: matrix representation n=37
+PASS: matrix representation n=38
+PASS: matrix representation n=40
+ALL 40 CHECKS PASSED

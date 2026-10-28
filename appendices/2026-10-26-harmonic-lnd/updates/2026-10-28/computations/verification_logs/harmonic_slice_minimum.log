@@ -1,0 +1,8 @@
+Working directory (relative): legacy_appendix/research/lnd_certificate
+Scope: Degree-ten exclusion and degree-eleven upper slice
+
+PASS: ell(D(m))=0 on all 3003 monomials of total degree <=10
+PASS: ell(1)=1; no slice of total degree <=10 exists over any char-zero field
+PASS: R_H(gamma(u))=u for R_H=x^2*z-x*y^2+2*x-z
+PASS: compact sigma_H matches all 27 recorded coefficients, has degree 11, and D(sigma_H)=1
+CERTIFIED: minimum total degree of a harmonic H(3,5,7) slice is exactly 11

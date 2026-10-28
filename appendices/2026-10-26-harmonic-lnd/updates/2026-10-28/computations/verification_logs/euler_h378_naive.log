@@ -1,0 +1,14 @@
+Working directory (relative): euler/h378
+Scope: Parameter and leading-degree controls for the naive-field obstruction
+
+H378_P5 PASS
+H378_P4 PASS
+uniform 1 PASS
+uniform 2 PASS
+uniform 3 PASS
+uniform 4 PASS
+uniform 5 PASS
+uniform 6 PASS
+uniform 7 PASS
+uniform 8 PASS
+ALL EXACT NAIVE-EULER CHECKS PASSED

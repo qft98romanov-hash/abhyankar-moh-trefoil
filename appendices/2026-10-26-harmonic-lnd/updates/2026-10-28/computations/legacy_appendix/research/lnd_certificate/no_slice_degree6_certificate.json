@@ -1,0 +1,324 @@
+{
+  "input_degree_bound": 6,
+  "input_monomial_count": 462,
+  "output_monomial_count": 812,
+  "variables": [
+    "B",
+    "u",
+    "x",
+    "y",
+    "z"
+  ],
+  "dual_witness": [
+    {
+      "monomial": [
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "2"
+    },
+    {
+      "monomial": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "monomial": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "monomial": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": "-50/7"
+    },
+    {
+      "monomial": [
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "34/7"
+    },
+    {
+      "monomial": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "-3/2"
+    },
+    {
+      "monomial": [
+        1,
+        2,
+        0,
+        1,
+        0
+      ],
+      "coefficient": "-8/7"
+    },
+    {
+      "monomial": [
+        1,
+        3,
+        0,
+        0,
+        1
+      ],
+      "coefficient": "-100/9"
+    },
+    {
+      "monomial": [
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "coefficient": "116/9"
+    },
+    {
+      "monomial": [
+        1,
+        3,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "-15/7"
+    },
+    {
+      "monomial": [
+        1,
+        4,
+        0,
+        1,
+        0
+      ],
+      "coefficient": "-160/63"
+    },
+    {
+      "monomial": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "coefficient": "13375/126"
+    },
+    {
+      "monomial": [
+        1,
+        5,
+        0,
+        0,
+        1
+      ],
+      "coefficient": "-6275/252"
+    },
+    {
+      "monomial": [
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "coefficient": "128/63"
+    },
+    {
+      "monomial": [
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": "725/42"
+    },
+    {
+      "monomial": [
+        1,
+        5,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "-57/14"
+    },
+    {
+      "monomial": [
+        2,
+        0,
+        2,
+        0,
+        0
+      ],
+      "coefficient": "27/7"
+    },
+    {
+      "monomial": [
+        2,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": "50/9"
+    },
+    {
+      "monomial": [
+        1,
+        6,
+        0,
+        1,
+        0
+      ],
+      "coefficient": "-149/63"
+    },
+    {
+      "monomial": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": "5/3"
+    },
+    {
+      "monomial": [
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "coefficient": "3875/42"
+    },
+    {
+      "monomial": [
+        1,
+        7,
+        0,
+        0,
+        1
+      ],
+      "coefficient": "-12575/252"
+    },
+    {
+      "monomial": [
+        2,
+        2,
+        0,
+        2,
+        0
+      ],
+      "coefficient": "-152/21"
+    },
+    {
+      "monomial": [
+        2,
+        2,
+        1,
+        0,
+        1
+      ],
+      "coefficient": "995/42"
+    },
+    {
+      "monomial": [
+        1,
+        7,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "-859/84"
+    },
+    {
+      "monomial": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "coefficient": "27/7"
+    },
+    {
+      "monomial": [
+        2,
+        4,
+        0,
+        0,
+        2
+      ],
+      "coefficient": "13375/63"
+    },
+    {
+      "monomial": [
+        2,
+        3,
+        0,
+        1,
+        1
+      ],
+      "coefficient": "1430/63"
+    },
+    {
+      "monomial": [
+        2,
+        4,
+        0,
+        2,
+        0
+      ],
+      "coefficient": "-304/21"
+    },
+    {
+      "monomial": [
+        2,
+        4,
+        1,
+        0,
+        1
+      ],
+      "coefficient": "1625/42"
+    },
+    {
+      "monomial": [
+        2,
+        3,
+        1,
+        1,
+        0
+      ],
+      "coefficient": "143/21"
+    }
+  ]
+}

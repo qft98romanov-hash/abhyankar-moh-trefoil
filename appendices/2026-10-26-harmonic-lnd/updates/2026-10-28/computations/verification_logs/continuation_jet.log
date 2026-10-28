@@ -1,0 +1,18 @@
+Working directory (relative): continuation/embedding_lnd
+Scope: 14 paired certificates, including eight models at multiplicity one
+
+CERTIFIED (3, 4, 5) minimum slice degree 7 dual weights 11 monomials 20 slice terms 14
+CERTIFIED (3, 5, 7) minimum slice degree 11 dual weights 35 monomials 56 slice terms 27
+CERTIFIED (4, 5, 7) minimum slice degree 12 dual weights 41 monomials 84 slice terms 29
+CERTIFIED (3, 7, 8) minimum slice degree 13 dual weights 41 monomials 84 slice terms 29
+CERTIFIED (3, 10, 11) minimum slice degree 19 dual weights 111 monomials 220 slice terms 50
+CERTIFIED (3, 13, 14) minimum slice degree 25 dual weights 225 monomials 455 slice terms 77
+CERTIFIED (5, 7, 8) minimum slice degree 11 dual weights 29 monomials 56 slice terms 20
+CERTIFIED (7, 10, 11) minimum slice degree 15 dual weights 61 monomials 120 slice terms 26
+CERTIFIED (3, 7, 8) multiplicity 2 minimum slice degree 13 dual weights 17 monomials 35
+CERTIFIED (3, 7, 8) multiplicity 3 minimum slice degree 17 dual weights 17 monomials 35
+CERTIFIED (3, 7, 8) multiplicity 4 minimum slice degree 21 dual weights 17 monomials 35
+CERTIFIED (3, 7, 8) multiplicity 5 minimum slice degree 22 dual weights 17 monomials 35
+CERTIFIED (3, 7, 8) multiplicity 6 minimum slice degree 23 dual weights 17 monomials 35
+CERTIFIED (3, 7, 8) multiplicity 7 minimum slice degree 25 dual weights 11 monomials 20
+ALL 14 EXACT CERTIFICATES PASSED

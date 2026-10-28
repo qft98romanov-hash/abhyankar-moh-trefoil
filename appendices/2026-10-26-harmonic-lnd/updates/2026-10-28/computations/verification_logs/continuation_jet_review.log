@@ -1,0 +1,4 @@
+Working directory (relative): continuation/relative_ml
+Scope: Twenty-seven explicit slices and a uniqueness minor
+
+PASS: 27 exact slices; DS=1, Taylor jet degree, and explicit H457/H378 formulas independently checked.

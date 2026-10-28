@@ -1,0 +1,36 @@
+{
+  "model": [
+    3,
+    7,
+    8
+  ],
+  "normalization": "C_n(t)=2*T_n(t/2)",
+  "field": "C (hence any characteristic-zero subfield)",
+  "checks": {
+    "C7_module_expression": true,
+    "C8_module_expression": true,
+    "C7_square": true,
+    "C8_square": true,
+    "C7_projection_relation": true,
+    "C8_projection_relation": true,
+    "first_elimination_coefficient": true,
+    "second_elimination_coefficient": true,
+    "E6_factorization": true,
+    "positive_delta_factor": true,
+    "negative_delta_factor": true,
+    "second_projection_value_sqrt2": true,
+    "second_projection_value_sqrt_2_plus_sqrt2": true
+  },
+  "first_projection_sign_certificate": {
+    "f_plus_value_at_1": -1,
+    "f_plus_value_at_2": 1,
+    "f_minus_value_at_1": -1,
+    "f_minus_value_at_2": 7
+  },
+  "identities": {
+    "first": "U_6(x/2)*A(x) + U_4(x/2)*M(x) = x",
+    "second": "U_7(x/2)*A(x) + U_4(x/2)*M(x) = x^2-1"
+  },
+  "conclusion": "No k[x]-coordinate lifting t has either form Q(x,y)+M(x)z or Q(x,z)+M(x)y, with arbitrary polynomial Q,M.",
+  "limitation": "Does not exclude nonlinear dependence on both y,z, changing x, or arbitrary polynomial rectification."
+}

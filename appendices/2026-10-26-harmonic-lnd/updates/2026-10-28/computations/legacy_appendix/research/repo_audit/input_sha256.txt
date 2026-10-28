@@ -1,0 +1,4 @@
+352f33e3a79c51ecf8b92fa457cf22298b6085f717cb8b5dd5d37dd8b0882d20  repo/verify.py
+d3264c03229d9178ca9088b3d82b41a7e0f80d8af3085d609488a05c40a0a176  repo/paper/main.tex
+1573f4632f12f2bd20d8b1d52f0c72b3f72c055c594874af9ceebaeec029400d  repo/paper/trefoil_explicit.tex
+214c66a663d2a9ae8178cb0dbe2735df0a13ea330c161ccc3208c9a12cc94466  repo/paper/harmonic_explicit.tex

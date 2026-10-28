@@ -1,0 +1,16 @@
+START degree 3
+ideal dimension 0 monomials 20
+linear shape (21, 0)
+INFEASIBLE degree 3 rank 0 seconds 0.043
+START degree 4
+ideal dimension 2 monomials 35
+linear shape (206, 6)
+INFEASIBLE degree 4 rank 6 seconds 0.237
+START degree 5
+ideal dimension 15 monomials 56
+linear shape (357, 45)
+INFEASIBLE degree 5 rank 45 seconds 2.991
+START degree 6
+ideal dimension 35 monomials 84
+linear shape (457, 105)
+INFEASIBLE degree 6 rank 105 seconds 15.424

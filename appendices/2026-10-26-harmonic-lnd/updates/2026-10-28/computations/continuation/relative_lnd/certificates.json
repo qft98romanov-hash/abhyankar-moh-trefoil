@@ -1,0 +1,1292 @@
+{
+  "coefficient_field": "QQ",
+  "sympy_version": "1.14.0",
+  "case_count": 16,
+  "all_verified": true,
+  "scope": "Exact examples; general proof in PROOF.md. No novelty claim.",
+  "cases": [
+    {
+      "name": "quadratic_bad",
+      "H": "Y",
+      "W": "Z",
+      "p": "y**2",
+      "m": "x",
+      "h": "x*z + y**2",
+      "w": "y",
+      "c": "0",
+      "g": "1",
+      "h0": "x*z + y**2",
+      "m1": "x",
+      "boundary": [
+        {
+          "prime": "x",
+          "multiplicity": 1,
+          "degree": 2,
+          "G": "y**2"
+        }
+      ],
+      "plinth_generator": "x",
+      "minimal_preslice": "y",
+      "D_preslice": "x",
+      "good_part": "1",
+      "inverse_mod_good_part": "None",
+      "local_relations": [
+        {
+          "prime": "x",
+          "exponent": 1,
+          "P": "-T + V**2",
+          "v": "-z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x",
+              "valuation_predicted": 1
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "2*x",
+              "valuation_predicted": 1
+            },
+            {
+              "n": 3,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "6*x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "24*x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 5,
+              "i": 1,
+              "j": 2,
+              "D0_n_basis": "120*x**3",
+              "valuation_predicted": 3
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "nilpotent_good",
+      "H": "Y",
+      "W": "Z",
+      "p": "x*y**2 + y",
+      "m": "x**2",
+      "h": "x**2*z + x*y**2 + y",
+      "w": "y",
+      "c": "0",
+      "g": "1",
+      "h0": "x**2*z + x*y**2 + y",
+      "m1": "x**2",
+      "boundary": [
+        {
+          "prime": "x",
+          "multiplicity": 2,
+          "degree": 1,
+          "G": "y"
+        }
+      ],
+      "plinth_generator": "1",
+      "minimal_preslice": "x**3*z**2 + 2*x**2*y**2*z + x*y**4 + 2*x*y*z + 2*y**3 - z",
+      "D_preslice": "1",
+      "good_part": "x**2",
+      "inverse_mod_good_part": "-T**2*x + T",
+      "local_relations": [
+        {
+          "prime": "x",
+          "exponent": 2,
+          "P": "T**2*x - T + V",
+          "v": "x**3*z**2 + 2*x**2*y**2*z + x*y**4 + 2*x*y*z + 2*y**3 - z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "1",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "2",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 3,
+              "D0_n_basis": "6",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 4,
+              "D0_n_basis": "24",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 5,
+              "i": 0,
+              "j": 5,
+              "D0_n_basis": "120",
+              "valuation_predicted": 0
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "scaled_bad",
+      "H": "Y",
+      "W": "Z",
+      "p": "x*y**2",
+      "m": "x**2",
+      "h": "x**2*z + x*y**2",
+      "w": "y",
+      "c": "0",
+      "g": "x",
+      "h0": "x*z + y**2",
+      "m1": "x",
+      "boundary": [
+        {
+          "prime": "x",
+          "multiplicity": 1,
+          "degree": 2,
+          "G": "y**2"
+        }
+      ],
+      "plinth_generator": "x**2",
+      "minimal_preslice": "y",
+      "D_preslice": "x**2",
+      "good_part": "1",
+      "inverse_mod_good_part": "None",
+      "local_relations": [
+        {
+          "prime": "x",
+          "exponent": 1,
+          "P": "-T + V**2",
+          "v": "-z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x",
+              "valuation_predicted": 1
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "2*x",
+              "valuation_predicted": 1
+            },
+            {
+              "n": 3,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "6*x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "24*x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 5,
+              "i": 1,
+              "j": 2,
+              "D0_n_basis": "120*x**3",
+              "valuation_predicted": 3
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "scaled_good",
+      "H": "Y",
+      "W": "Z",
+      "p": "x*y",
+      "m": "x**2",
+      "h": "x**2*z + x*y",
+      "w": "y",
+      "c": "0",
+      "g": "x",
+      "h0": "x*z + y",
+      "m1": "x",
+      "boundary": [
+        {
+          "prime": "x",
+          "multiplicity": 1,
+          "degree": 1,
+          "G": "y"
+        }
+      ],
+      "plinth_generator": "x",
+      "minimal_preslice": "-z",
+      "D_preslice": "x",
+      "good_part": "x",
+      "inverse_mod_good_part": "T",
+      "local_relations": [
+        {
+          "prime": "x",
+          "exponent": 1,
+          "P": "-T + V",
+          "v": "-z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "1",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "2",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 3,
+              "D0_n_basis": "6",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 4,
+              "D0_n_basis": "24",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 5,
+              "i": 0,
+              "j": 5,
+              "D0_n_basis": "120",
+              "valuation_predicted": 0
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "fully_scaled",
+      "H": "Y",
+      "W": "Z",
+      "p": "x**2*y**2",
+      "m": "x**2",
+      "h": "x**2*y**2 + x**2*z",
+      "w": "y",
+      "c": "0",
+      "g": "x**2",
+      "h0": "y**2 + z",
+      "m1": "1",
+      "boundary": [],
+      "plinth_generator": "x**2",
+      "minimal_preslice": "y",
+      "D_preslice": "x**2",
+      "good_part": "1",
+      "inverse_mod_good_part": "None",
+      "local_relations": [],
+      "verified": true
+    },
+    {
+      "name": "mixed_good_bad",
+      "H": "Y",
+      "W": "Z",
+      "p": "x*y**2 + y",
+      "m": "x**2*(x - 1)**2",
+      "h": "x**4*z - 2*x**3*z + x**2*z + x*y**2 + y",
+      "w": "y",
+      "c": "0",
+      "g": "1",
+      "h0": "x**4*z - 2*x**3*z + x**2*z + x*y**2 + y",
+      "m1": "x**4 - 2*x**3 + x**2",
+      "boundary": [
+        {
+          "prime": "x - 1",
+          "multiplicity": 2,
+          "degree": 2,
+          "G": "y**2 + y"
+        },
+        {
+          "prime": "x",
+          "multiplicity": 2,
+          "degree": 1,
+          "G": "y"
+        }
+      ],
+      "plinth_generator": "x**2 - 2*x + 1",
+      "minimal_preslice": "x**7*z**2 - 4*x**6*z**2 + 6*x**5*z**2 + 2*x**4*y**2*z - 4*x**4*z**2 - 4*x**3*y**2*z + 2*x**3*y*z + x**3*z**2 + 2*x**2*y**2*z - 4*x**2*y*z - x**2*z + x*y**4 + 2*x*y*z + 2*x*z + 2*y**3 - z",
+      "D_preslice": "x**2 - 2*x + 1",
+      "good_part": "x**2",
+      "inverse_mod_good_part": "-T**2*x + T",
+      "local_relations": [
+        {
+          "prime": "x - 1",
+          "exponent": 2,
+          "P": "T*x - 2*T + V**2 - V*x + 2*V",
+          "v": "x**3*z - 2*x**2*z + y**2",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x**4 - 2*x**3 + x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "2*x**6 - 4*x**5 + 2*x**4",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 3,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "6*x**10 - 24*x**9 + 36*x**8 - 24*x**7 + 6*x**6",
+              "valuation_predicted": 4
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "24*x**12 - 96*x**11 + 144*x**10 - 96*x**9 + 24*x**8",
+              "valuation_predicted": 4
+            },
+            {
+              "n": 5,
+              "i": 1,
+              "j": 2,
+              "D0_n_basis": "120*x**16 - 720*x**15 + 1800*x**14 - 2400*x**13 + 1800*x**12 - 720*x**11 + 120*x**10",
+              "valuation_predicted": 6
+            }
+          ]
+        },
+        {
+          "prime": "x",
+          "exponent": 2,
+          "P": "T**2*x - T + V",
+          "v": "x**7*z**2 - 4*x**6*z**2 + 6*x**5*z**2 + 2*x**4*y**2*z - 4*x**4*z**2 - 4*x**3*y**2*z + 2*x**3*y*z + x**3*z**2 + 2*x**2*y**2*z - 4*x**2*y*z - x**2*z + x*y**4 + 2*x*y*z + 2*x*z + 2*y**3 - z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "x**2 - 2*x + 1",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "2*x**4 - 8*x**3 + 12*x**2 - 8*x + 2",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 3,
+              "D0_n_basis": "6*x**6 - 36*x**5 + 90*x**4 - 120*x**3 + 90*x**2 - 36*x + 6",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 4,
+              "D0_n_basis": "24*x**8 - 192*x**7 + 672*x**6 - 1344*x**5 + 1680*x**4 - 1344*x**3 + 672*x**2 - 192*x + 24",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 5,
+              "i": 0,
+              "j": 5,
+              "D0_n_basis": "120*x**10 - 1200*x**9 + 5400*x**8 - 14400*x**7 + 25200*x**6 - 30240*x**5 + 25200*x**4 - 14400*x**3 + 5400*x**2 - 1200*x + 120",
+              "valuation_predicted": 0
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "nonlinear_H_scaled_good",
+      "H": "Y + Z**2",
+      "W": "Z",
+      "p": "x**2*y**3 + x*y - y**2",
+      "m": "x**3",
+      "h": "x**3*z + x**2*y**3 + x*y",
+      "w": "y",
+      "c": "0",
+      "g": "x",
+      "h0": "x**2*z + x*y**3 + y",
+      "m1": "x**2",
+      "boundary": [
+        {
+          "prime": "x",
+          "multiplicity": 2,
+          "degree": 1,
+          "G": "y"
+        }
+      ],
+      "plinth_generator": "x",
+      "minimal_preslice": "x**5*z**3 + 3*x**4*y**3*z**2 + 3*x**3*y**6*z + 3*x**3*y*z**2 + x**2*y**9 + 6*x**2*y**4*z + 3*x*y**7 + 3*x*y**2*z + 3*y**5 - z",
+      "D_preslice": "x",
+      "good_part": "x**2",
+      "inverse_mod_good_part": "-T**3*x + T",
+      "local_relations": [
+        {
+          "prime": "x",
+          "exponent": 2,
+          "P": "T**3*x - T + V",
+          "v": "x**5*z**3 + 3*x**4*y**3*z**2 + 3*x**3*y**6*z + 3*x**3*y*z**2 + x**2*y**9 + 6*x**2*y**4*z + 3*x*y**7 + 3*x*y**2*z + 3*y**5 - z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "1",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "2",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 3,
+              "D0_n_basis": "6",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 4,
+              "D0_n_basis": "24",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 5,
+              "i": 0,
+              "j": 5,
+              "D0_n_basis": "120",
+              "valuation_predicted": 0
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "nonlinear_H_bad",
+      "H": "Y + Z**2",
+      "W": "Z",
+      "p": "0",
+      "m": "x**2",
+      "h": "x**2*z + y**2",
+      "w": "y",
+      "c": "0",
+      "g": "1",
+      "h0": "x**2*z + y**2",
+      "m1": "x**2",
+      "boundary": [
+        {
+          "prime": "x",
+          "multiplicity": 2,
+          "degree": 2,
+          "G": "y**2"
+        }
+      ],
+      "plinth_generator": "x**2",
+      "minimal_preslice": "y",
+      "D_preslice": "x**2",
+      "good_part": "1",
+      "inverse_mod_good_part": "None",
+      "local_relations": [
+        {
+          "prime": "x",
+          "exponent": 2,
+          "P": "-T + V**2",
+          "v": "-z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "2*x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 3,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "6*x**4",
+              "valuation_predicted": 4
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "24*x**4",
+              "valuation_predicted": 4
+            },
+            {
+              "n": 5,
+              "i": 1,
+              "j": 2,
+              "D0_n_basis": "120*x**6",
+              "valuation_predicted": 6
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "two_shears_bad",
+      "H": "Y + (Y**2 + Z)**2",
+      "W": "Y**2 + Z",
+      "p": "0",
+      "m": "x**2",
+      "h": "x**8*z**4 + 2*x**4*y*z**2 + x**2*z + y**2",
+      "w": "x**4*z**2 + y",
+      "c": "0",
+      "g": "1",
+      "h0": "x**8*z**4 + 2*x**4*y*z**2 + x**2*z + y**2",
+      "m1": "x**2",
+      "boundary": [
+        {
+          "prime": "x",
+          "multiplicity": 2,
+          "degree": 2,
+          "G": "y**2"
+        }
+      ],
+      "plinth_generator": "x**2",
+      "minimal_preslice": "x**4*z**2 + y",
+      "D_preslice": "x**2",
+      "good_part": "1",
+      "inverse_mod_good_part": "None",
+      "local_relations": [
+        {
+          "prime": "x",
+          "exponent": 2,
+          "P": "-T + V**2",
+          "v": "-z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "2*x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 3,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "6*x**4",
+              "valuation_predicted": 4
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "nonlinear_W_bad",
+      "H": "Y + Z**2",
+      "W": "Z + (Y + Z**2)**2",
+      "p": "0",
+      "m": "x**2",
+      "h": "x**2*z + y**2",
+      "w": "x**4*z**2 + 2*x**2*y**2*z + y**4 + y",
+      "c": "0",
+      "g": "1",
+      "h0": "x**2*z + y**2",
+      "m1": "x**2",
+      "boundary": [
+        {
+          "prime": "x",
+          "multiplicity": 2,
+          "degree": 2,
+          "G": "y**2"
+        }
+      ],
+      "plinth_generator": "x**2",
+      "minimal_preslice": "x**4*z**2 + 2*x**2*y**2*z + y**4 + y",
+      "D_preslice": "x**2",
+      "good_part": "1",
+      "inverse_mod_good_part": "None",
+      "local_relations": [
+        {
+          "prime": "x",
+          "exponent": 2,
+          "P": "T**4 - 2*T**2*V - T + V**2",
+          "v": "-z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "2*x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 3,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "6*x**4",
+              "valuation_predicted": 4
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "24*x**4",
+              "valuation_predicted": 4
+            },
+            {
+              "n": 5,
+              "i": 1,
+              "j": 2,
+              "D0_n_basis": "120*x**6",
+              "valuation_predicted": 6
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "swapped_good",
+      "H": "Z",
+      "W": "-Y",
+      "p": "y**2",
+      "m": "x**2",
+      "h": "y",
+      "w": "-x**2*z - y**2",
+      "c": "0",
+      "g": "1",
+      "h0": "y",
+      "m1": "x**2",
+      "boundary": [
+        {
+          "prime": "x",
+          "multiplicity": 2,
+          "degree": 1,
+          "G": "y"
+        }
+      ],
+      "plinth_generator": "1",
+      "minimal_preslice": "-z",
+      "D_preslice": "1",
+      "good_part": "x**2",
+      "inverse_mod_good_part": "T",
+      "local_relations": [
+        {
+          "prime": "x",
+          "exponent": 2,
+          "P": "T**2 + V",
+          "v": "-z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "1",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "2",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 3,
+              "D0_n_basis": "6",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 4,
+              "D0_n_basis": "24",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 5,
+              "i": 0,
+              "j": 5,
+              "D0_n_basis": "120",
+              "valuation_predicted": 0
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "scaled_mixed",
+      "H": "Y",
+      "W": "Z",
+      "p": "x*(x*y**2 + y)",
+      "m": "x**3*(x - 1)**2",
+      "h": "x**5*z - 2*x**4*z + x**3*z + x**2*y**2 + x*y",
+      "w": "y",
+      "c": "0",
+      "g": "x",
+      "h0": "x**4*z - 2*x**3*z + x**2*z + x*y**2 + y",
+      "m1": "x**4 - 2*x**3 + x**2",
+      "boundary": [
+        {
+          "prime": "x - 1",
+          "multiplicity": 2,
+          "degree": 2,
+          "G": "y**2 + y"
+        },
+        {
+          "prime": "x",
+          "multiplicity": 2,
+          "degree": 1,
+          "G": "y"
+        }
+      ],
+      "plinth_generator": "x**3 - 2*x**2 + x",
+      "minimal_preslice": "x**7*z**2 - 4*x**6*z**2 + 6*x**5*z**2 + 2*x**4*y**2*z - 4*x**4*z**2 - 4*x**3*y**2*z + 2*x**3*y*z + x**3*z**2 + 2*x**2*y**2*z - 4*x**2*y*z - x**2*z + x*y**4 + 2*x*y*z + 2*x*z + 2*y**3 - z",
+      "D_preslice": "x**3 - 2*x**2 + x",
+      "good_part": "x**2",
+      "inverse_mod_good_part": "-T**2*x + T",
+      "local_relations": [
+        {
+          "prime": "x - 1",
+          "exponent": 2,
+          "P": "T*x - 2*T + V**2 - V*x + 2*V",
+          "v": "x**3*z - 2*x**2*z + y**2",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x**4 - 2*x**3 + x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "2*x**6 - 4*x**5 + 2*x**4",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 3,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "6*x**10 - 24*x**9 + 36*x**8 - 24*x**7 + 6*x**6",
+              "valuation_predicted": 4
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "24*x**12 - 96*x**11 + 144*x**10 - 96*x**9 + 24*x**8",
+              "valuation_predicted": 4
+            },
+            {
+              "n": 5,
+              "i": 1,
+              "j": 2,
+              "D0_n_basis": "120*x**16 - 720*x**15 + 1800*x**14 - 2400*x**13 + 1800*x**12 - 720*x**11 + 120*x**10",
+              "valuation_predicted": 6
+            }
+          ]
+        },
+        {
+          "prime": "x",
+          "exponent": 2,
+          "P": "T**2*x - T + V",
+          "v": "x**7*z**2 - 4*x**6*z**2 + 6*x**5*z**2 + 2*x**4*y**2*z - 4*x**4*z**2 - 4*x**3*y**2*z + 2*x**3*y*z + x**3*z**2 + 2*x**2*y**2*z - 4*x**2*y*z - x**2*z + x*y**4 + 2*x*y*z + 2*x*z + 2*y**3 - z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "x**2 - 2*x + 1",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "2*x**4 - 8*x**3 + 12*x**2 - 8*x + 2",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 3,
+              "D0_n_basis": "6*x**6 - 36*x**5 + 90*x**4 - 120*x**3 + 90*x**2 - 36*x + 6",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 4,
+              "D0_n_basis": "24*x**8 - 192*x**7 + 672*x**6 - 1344*x**5 + 1680*x**4 - 1344*x**3 + 672*x**2 - 192*x + 24",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 5,
+              "i": 0,
+              "j": 5,
+              "D0_n_basis": "120*x**10 - 1200*x**9 + 5400*x**8 - 14400*x**7 + 25200*x**6 - 30240*x**5 + 25200*x**4 - 14400*x**3 + 5400*x**2 - 1200*x + 120",
+              "valuation_predicted": 0
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "irreducible_good",
+      "H": "Y",
+      "W": "Z",
+      "p": "y**2*(x**2 + 1) + y",
+      "m": "(x**2 + 1)**2",
+      "h": "x**4*z + x**2*y**2 + 2*x**2*z + y**2 + y + z",
+      "w": "y",
+      "c": "0",
+      "g": "1",
+      "h0": "x**4*z + x**2*y**2 + 2*x**2*z + y**2 + y + z",
+      "m1": "x**4 + 2*x**2 + 1",
+      "boundary": [
+        {
+          "prime": "x**2 + 1",
+          "multiplicity": 2,
+          "degree": 1,
+          "G": "y"
+        }
+      ],
+      "plinth_generator": "1",
+      "minimal_preslice": "x**6*z**2 + 2*x**4*y**2*z + 3*x**4*z**2 + x**2*y**4 + 4*x**2*y**2*z + 2*x**2*y*z + 3*x**2*z**2 + y**4 + 2*y**3 + 2*y**2*z + 2*y*z + z**2 - z",
+      "D_preslice": "1",
+      "good_part": "x**4 + 2*x**2 + 1",
+      "inverse_mod_good_part": "-T**2*x**2 - T**2 + T",
+      "local_relations": [
+        {
+          "prime": "x**2 + 1",
+          "exponent": 2,
+          "P": "T**2*x**2 + T**2 - T + V",
+          "v": "x**6*z**2 + 2*x**4*y**2*z + 3*x**4*z**2 + x**2*y**4 + 4*x**2*y**2*z + 2*x**2*y*z + 3*x**2*z**2 + y**4 + 2*y**3 + 2*y**2*z + 2*y*z + z**2 - z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "1",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "2",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 3,
+              "D0_n_basis": "6",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 4,
+              "D0_n_basis": "24",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 5,
+              "i": 0,
+              "j": 5,
+              "D0_n_basis": "120",
+              "valuation_predicted": 0
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "variable_residue_degree",
+      "H": "Y",
+      "W": "Z",
+      "p": "x*y**3 + y**2",
+      "m": "x**2*(x - 1)",
+      "h": "x**3*z - x**2*z + x*y**3 + y**2",
+      "w": "y",
+      "c": "0",
+      "g": "1",
+      "h0": "x**3*z - x**2*z + x*y**3 + y**2",
+      "m1": "x**3 - x**2",
+      "boundary": [
+        {
+          "prime": "x - 1",
+          "multiplicity": 1,
+          "degree": 3,
+          "G": "y**3 + y**2"
+        },
+        {
+          "prime": "x",
+          "multiplicity": 2,
+          "degree": 2,
+          "G": "y**2"
+        }
+      ],
+      "plinth_generator": "x**3 - x**2",
+      "minimal_preslice": "y",
+      "D_preslice": "x**3 - x**2",
+      "good_part": "1",
+      "inverse_mod_good_part": "None",
+      "local_relations": [
+        {
+          "prime": "x - 1",
+          "exponent": 1,
+          "P": "-T + V**3 + V**2",
+          "v": "-x**2*z - y**3",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x**3 - x**2",
+              "valuation_predicted": 1
+            },
+            {
+              "n": 2,
+              "i": 2,
+              "j": 0,
+              "D0_n_basis": "2*x**6 - 4*x**5 + 2*x**4",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "6*x**8 - 12*x**7 + 6*x**6",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 4,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "24*x**11 - 72*x**10 + 72*x**9 - 24*x**8",
+              "valuation_predicted": 3
+            },
+            {
+              "n": 5,
+              "i": 2,
+              "j": 1,
+              "D0_n_basis": "120*x**14 - 480*x**13 + 720*x**12 - 480*x**11 + 120*x**10",
+              "valuation_predicted": 4
+            }
+          ]
+        },
+        {
+          "prime": "x",
+          "exponent": 2,
+          "P": "T*V*x - T + V**2",
+          "v": "x**2*y*z - x*y*z - x*z + y**4 + z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x**3 - x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "2*x**4 - 4*x**3 + 2*x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 3,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "6*x**7 - 18*x**6 + 18*x**5 - 6*x**4",
+              "valuation_predicted": 4
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "24*x**8 - 96*x**7 + 144*x**6 - 96*x**5 + 24*x**4",
+              "valuation_predicted": 4
+            },
+            {
+              "n": 5,
+              "i": 1,
+              "j": 2,
+              "D0_n_basis": "120*x**11 - 600*x**10 + 1200*x**9 - 1200*x**8 + 600*x**7 - 120*x**6",
+              "valuation_predicted": 6
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "harmonic_457_parameter",
+      "H": "Y",
+      "W": "Z",
+      "p": "-y**3 + 3*y",
+      "m": "x**2 - 2",
+      "h": "x**2*z - y**3 + 3*y - 2*z",
+      "w": "y",
+      "c": "0",
+      "g": "1",
+      "h0": "x**2*z - y**3 + 3*y - 2*z",
+      "m1": "x**2 - 2",
+      "boundary": [
+        {
+          "prime": "x**2 - 2",
+          "multiplicity": 1,
+          "degree": 3,
+          "G": "-y**3 + 3*y"
+        }
+      ],
+      "plinth_generator": "x**2 - 2",
+      "minimal_preslice": "y",
+      "D_preslice": "x**2 - 2",
+      "good_part": "1",
+      "inverse_mod_good_part": "None",
+      "local_relations": [
+        {
+          "prime": "x**2 - 2",
+          "exponent": 1,
+          "P": "T + V**3 - 3*V",
+          "v": "z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x**2 - 2",
+              "valuation_predicted": 1
+            },
+            {
+              "n": 2,
+              "i": 2,
+              "j": 0,
+              "D0_n_basis": "2*x**4 - 8*x**2 + 8",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "6*x**4 - 24*x**2 + 24",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 4,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "24*x**6 - 144*x**4 + 288*x**2 - 192",
+              "valuation_predicted": 3
+            },
+            {
+              "n": 5,
+              "i": 2,
+              "j": 1,
+              "D0_n_basis": "120*x**8 - 960*x**6 + 2880*x**4 - 3840*x**2 + 1920",
+              "valuation_predicted": 4
+            }
+          ]
+        }
+      ],
+      "verified": true
+    },
+    {
+      "name": "mixed_cubic_linear",
+      "H": "Y",
+      "W": "Z",
+      "p": "-x*y**3 - y*(1 - x)",
+      "m": "x*(x - 1)",
+      "h": "x**2*z - x*y**3 + x*y - x*z - y",
+      "w": "y",
+      "c": "0",
+      "g": "1",
+      "h0": "x**2*z - x*y**3 + x*y - x*z - y",
+      "m1": "x**2 - x",
+      "boundary": [
+        {
+          "prime": "x - 1",
+          "multiplicity": 1,
+          "degree": 3,
+          "G": "-y**3"
+        },
+        {
+          "prime": "x",
+          "multiplicity": 1,
+          "degree": 1,
+          "G": "-y"
+        }
+      ],
+      "plinth_generator": "x - 1",
+      "minimal_preslice": "x*z - y**3 + y - z",
+      "D_preslice": "x - 1",
+      "good_part": "x",
+      "inverse_mod_good_part": "-T",
+      "local_relations": [
+        {
+          "prime": "x - 1",
+          "exponent": 1,
+          "P": "T + V**3",
+          "v": "x*z - y**3 + y",
+          "tests": [
+            {
+              "n": 1,
+              "i": 1,
+              "j": 0,
+              "D0_n_basis": "x**2 - x",
+              "valuation_predicted": 1
+            },
+            {
+              "n": 2,
+              "i": 2,
+              "j": 0,
+              "D0_n_basis": "2*x**4 - 4*x**3 + 2*x**2",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "6*x**5 - 12*x**4 + 6*x**3",
+              "valuation_predicted": 2
+            },
+            {
+              "n": 4,
+              "i": 1,
+              "j": 1,
+              "D0_n_basis": "24*x**7 - 72*x**6 + 72*x**5 - 24*x**4",
+              "valuation_predicted": 3
+            },
+            {
+              "n": 5,
+              "i": 2,
+              "j": 1,
+              "D0_n_basis": "120*x**9 - 480*x**8 + 720*x**7 - 480*x**6 + 120*x**5",
+              "valuation_predicted": 4
+            }
+          ]
+        },
+        {
+          "prime": "x",
+          "exponent": 1,
+          "P": "T + V",
+          "v": "x*z - y**3 + y - z",
+          "tests": [
+            {
+              "n": 1,
+              "i": 0,
+              "j": 1,
+              "D0_n_basis": "x - 1",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 2,
+              "i": 0,
+              "j": 2,
+              "D0_n_basis": "2*x**2 - 4*x + 2",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 3,
+              "i": 0,
+              "j": 3,
+              "D0_n_basis": "6*x**3 - 18*x**2 + 18*x - 6",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 4,
+              "i": 0,
+              "j": 4,
+              "D0_n_basis": "24*x**4 - 96*x**3 + 144*x**2 - 96*x + 24",
+              "valuation_predicted": 0
+            },
+            {
+              "n": 5,
+              "i": 0,
+              "j": 5,
+              "D0_n_basis": "120*x**5 - 600*x**4 + 1200*x**3 - 1200*x**2 + 600*x - 120",
+              "valuation_predicted": 0
+            }
+          ]
+        }
+      ],
+      "verified": true
+    }
+  ]
+}

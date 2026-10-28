@@ -1,0 +1,19 @@
+Working directory (relative): continuation/embedding_lnd
+Scope: Determinant witness and fourteen upper slices supporting the all-multiplicity argument
+
+CERTIFIED H457: degree <=3 restriction minor determinant = 267386
+UPPER VERIFIED mu = 1 degree = 12
+UPPER VERIFIED mu = 2 degree = 12
+UPPER VERIFIED mu = 3 degree = 12
+UPPER VERIFIED mu = 4 degree = 13
+UPPER VERIFIED mu = 5 degree = 14
+UPPER VERIFIED mu = 6 degree = 15
+UPPER VERIFIED mu = 7 degree = 17
+UPPER VERIFIED mu = 8 degree = 19
+UPPER VERIFIED mu = 9 degree = 21
+UPPER VERIFIED mu = 10 degree = 23
+UPPER VERIFIED mu = 11 degree = 25
+UPPER VERIFIED mu = 12 degree = 27
+UPPER VERIFIED mu = 25 degree = 53
+UPPER VERIFIED mu = 100 degree = 203
+ALL H457 MULTIPLICITY CHECKS PASSED

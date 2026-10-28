@@ -1,0 +1,170 @@
+{
+  "triple": [
+    3,
+    7,
+    8
+  ],
+  "multiplicity": 6,
+  "slice_degree_bound": 22,
+  "parameter_degree_bound": 4,
+  "columns": 35,
+  "rows": 64,
+  "selected_rows": 34,
+  "status": "infeasible",
+  "dual_witness": [
+    {
+      "alpha": [
+        0,
+        1,
+        2
+      ],
+      "u_degree": 8,
+      "weight": "26989004648/3"
+    },
+    {
+      "alpha": [
+        0,
+        3,
+        0
+      ],
+      "u_degree": 8,
+      "weight": "-6423111109/6"
+    },
+    {
+      "alpha": [
+        1,
+        0,
+        2
+      ],
+      "u_degree": 8,
+      "weight": "88640670"
+    },
+    {
+      "alpha": [
+        1,
+        2,
+        0
+      ],
+      "u_degree": 8,
+      "weight": "-23034731/2"
+    },
+    {
+      "alpha": [
+        2,
+        1,
+        0
+      ],
+      "u_degree": 8,
+      "weight": "5"
+    },
+    {
+      "alpha": [
+        3,
+        0,
+        0
+      ],
+      "u_degree": 8,
+      "weight": "3/2"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 23,
+      "weight": "-5870313"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 21,
+      "weight": "-1488088"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 19,
+      "weight": "-374071"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 17,
+      "weight": "-92813"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 15,
+      "weight": "-22561"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 13,
+      "weight": "-5305"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 11,
+      "weight": "-1178"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 9,
+      "weight": "-234"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 7,
+      "weight": "-35"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 3,
+      "weight": "3"
+    },
+    {
+      "alpha": [
+        0,
+        0,
+        0
+      ],
+      "u_degree": 1,
+      "weight": "1"
+    }
+  ],
+  "seconds": 0.006955146789550781
+}

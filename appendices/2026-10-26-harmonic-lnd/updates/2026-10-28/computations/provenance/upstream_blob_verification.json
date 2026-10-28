@@ -1,0 +1,821 @@
+{
+  "date": "2026-10-28",
+  "upstream_commit": "b954f3609e900761fddc9c8ff03d8301e9604cab",
+  "scope": "Original archived bytes, before the English documentation-only edits.",
+  "status": "PASS",
+  "checked_files": 116,
+  "checks": [
+    {
+      "archived_path": "baseline/MECHANISM.md",
+      "upstream_path": "MECHANISM.md",
+      "git_blob_sha1": "69c8ca7660aab30d2761d958fdb30eafbab4fa86",
+      "bytes": 20051,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/README.md",
+      "upstream_path": "README.md",
+      "git_blob_sha1": "b065ab8cb19c56b60d81b1b035a294c7789379bc",
+      "bytes": 8369,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/gap/README.md",
+      "upstream_path": "gap/README.md",
+      "git_blob_sha1": "ce5859a863f69dfe586f985eb991f137798841f7",
+      "bytes": 5785,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/gap/audit_note.md",
+      "upstream_path": "gap/audit_note.md",
+      "git_blob_sha1": "158ada07820d8b1c43e2bc1d9e83a4cd3c56cd4e",
+      "bytes": 1156,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/gap/gap_negative_division.log",
+      "upstream_path": "gap/gap_negative_division.log",
+      "git_blob_sha1": "11501af19b44a25bd9da5f840bc1ee0a1f6a002d",
+      "bytes": 2634,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/gap/gap_negative_identity.log",
+      "upstream_path": "gap/gap_negative_identity.log",
+      "git_blob_sha1": "7f0a5ad88ddea659e82e6c309dcbab68ed2a6c5d",
+      "bytes": 2644,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/gap/gap_run.log",
+      "upstream_path": "gap/gap_run.log",
+      "git_blob_sha1": "06ce870882acf6050cd70d36c5141f43df218212",
+      "bytes": 2556,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/gap/negative_checks.json",
+      "upstream_path": "gap/negative_checks.json",
+      "git_blob_sha1": "b92c9d2d1ad1f5e98ea613f32442e87c85df4d01",
+      "bytes": 1229,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/gap/negative_division.g",
+      "upstream_path": "gap/negative_division.g",
+      "git_blob_sha1": "aef1c9fec7840caa6b346f059ece61dfd0c17d29",
+      "bytes": 318,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/gap/negative_identity.g",
+      "upstream_path": "gap/negative_identity.g",
+      "git_blob_sha1": "17b039e6259a000f9ff004fa4784b8bb3b57ccd8",
+      "bytes": 323,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/gap/run_results.json",
+      "upstream_path": "gap/run_results.json",
+      "git_blob_sha1": "282706ddc054d81e794235ee6bee119e2ab6f618",
+      "bytes": 2435,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/gap/verify_rectification.g",
+      "upstream_path": "gap/verify_rectification.g",
+      "git_blob_sha1": "7b5e58941f8c5aada990a7ae7909acd3017c9359",
+      "bytes": 11050,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/macaulay2/README.md",
+      "upstream_path": "macaulay2/README.md",
+      "git_blob_sha1": "6c45594fb827cb738de3adde0ce36b5c50f8fe17",
+      "bytes": 5487,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/macaulay2/audit_results.json",
+      "upstream_path": "macaulay2/audit_results.json",
+      "git_blob_sha1": "7c78f7dc8a97f68adbf8b4dd92ba8bb3e37100bd",
+      "bytes": 3233,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/macaulay2/chebyshev_macaulay2.log",
+      "upstream_path": "macaulay2/chebyshev_macaulay2.log",
+      "git_blob_sha1": "70bbfa9f2b075c928c97fc75a9275bfdb819d9c4",
+      "bytes": 1211,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/macaulay2/negative_division.log",
+      "upstream_path": "macaulay2/negative_division.log",
+      "git_blob_sha1": "b402445a9ec9063c1824766eeeccf49116c97a2b",
+      "bytes": 1673,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/macaulay2/negative_division.m2",
+      "upstream_path": "macaulay2/negative_division.m2",
+      "git_blob_sha1": "5533ff1bd4ec5b3b21bf763111812d118a69f69c",
+      "bytes": 297,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/macaulay2/negative_identity.log",
+      "upstream_path": "macaulay2/negative_identity.log",
+      "git_blob_sha1": "a8748ced8e27e7e02936facbfea0435b676a14fb",
+      "bytes": 1609,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/macaulay2/negative_identity.m2",
+      "upstream_path": "macaulay2/negative_identity.m2",
+      "git_blob_sha1": "ff5228a51bda84ad5394501770578f64c0c8c912",
+      "bytes": 352,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/macaulay2/verification_macaulay2.log",
+      "upstream_path": "macaulay2/verification_macaulay2.log",
+      "git_blob_sha1": "766f6633e1df7f3ba3061a797cc963baf8257fcd",
+      "bytes": 1045,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/macaulay2/verify_chebyshev.m2",
+      "upstream_path": "macaulay2/verify_chebyshev.m2",
+      "git_blob_sha1": "ea471b84c0db3de989fa4b1f80ff03508bba13d2",
+      "bytes": 659,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/macaulay2/verify_rectification.m2",
+      "upstream_path": "macaulay2/verify_rectification.m2",
+      "git_blob_sha1": "3548a48a12b982c0e6d61bc00a4e2b8fbc5e2152",
+      "bytes": 5468,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/paper/harmonic_explicit.tex",
+      "upstream_path": "paper/harmonic_explicit.tex",
+      "git_blob_sha1": "ca0a3b360ade90ebb261d464c2b69ecf76c6fa84",
+      "bytes": 31896,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/paper/main.tex",
+      "upstream_path": "paper/main.tex",
+      "git_blob_sha1": "4ceda543bdf65c11c61ded3f1de433c4624337c5",
+      "bytes": 21253,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/paper/references.tex",
+      "upstream_path": "paper/references.tex",
+      "git_blob_sha1": "791dcae89a8ad1664d46a727d7dff6abd875c6f9",
+      "bytes": 3834,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/paper/trefoil_explicit.tex",
+      "upstream_path": "paper/trefoil_explicit.tex",
+      "git_blob_sha1": "4ffac92ba368530c9c9a08516fe6bdc4388f68c8",
+      "bytes": 20736,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/verification/audit_harmonic.py",
+      "upstream_path": "verification/audit_harmonic.py",
+      "git_blob_sha1": "229e330a67dfb0abb9d7fdc29b28836cacab2b5e",
+      "bytes": 7240,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/verification/audit_harmonic_independent.py",
+      "upstream_path": "verification/audit_harmonic_independent.py",
+      "git_blob_sha1": "c8477ab095b5922dd910f756f8272b8704869705",
+      "bytes": 9361,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/verification/audit_trefoil.py",
+      "upstream_path": "verification/audit_trefoil.py",
+      "git_blob_sha1": "5b6d4d10d638f7335ad2c659d846c41091b9601d",
+      "bytes": 11099,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/verify.py",
+      "upstream_path": "verify.py",
+      "git_blob_sha1": "3063e1cfcb719832f8566d03e05a87d1a7687941",
+      "bytes": 8883,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "baseline/verify_printed_formulas.py",
+      "upstream_path": "verify_printed_formulas.py",
+      "git_blob_sha1": "eb3584a050332fea207729a0083d43c36c08909a",
+      "bytes": 1270,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/.gitattributes",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/.gitattributes",
+      "git_blob_sha1": "a240a1ac33f01d8f6a11b02d3a983d5fad667080",
+      "bytes": 31,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/.gitignore",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/.gitignore",
+      "git_blob_sha1": "06ab7e9eb0c7522f5d3fa66637f22a08c8ec5f53",
+      "bytes": 123,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/PROVENANCE.md",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/PROVENANCE.md",
+      "git_blob_sha1": "931440667d3b90ddd04d50ca5f29eb5413ab3184",
+      "bytes": 2181,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/README.md",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/README.md",
+      "git_blob_sha1": "061ccf4d97eaa3a887822c58006acc2c8a2d3e82",
+      "bytes": 7214,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/README.txt",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/README.txt",
+      "git_blob_sha1": "ebbf8ba9fe038afd16de8c7825bf5bfb32e395bd",
+      "bytes": 5400,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/SHA256SUMS.txt",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/SHA256SUMS.txt",
+      "git_blob_sha1": "82a1037fa90557c4807edcaec656aeeb41cd4527",
+      "bytes": 7957,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/bootstrap_source.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/bootstrap_source.py",
+      "git_blob_sha1": "691f4b4243fe766a1f1602ac372521428ff23886",
+      "bytes": 2037,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/latex/harmonic_knots_lnd_research_ru.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/latex/harmonic_knots_lnd_research_ru.tex",
+      "git_blob_sha1": "6a851654bb9e84b5966baea72085db63f03c73ad",
+      "bytes": 7448,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/latex/sections/base_lnd.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/latex/sections/base_lnd.tex",
+      "git_blob_sha1": "72bed9840a96223244adecaffbb55922773b0cc2",
+      "bytes": 3504,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/latex/sections/computations.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/latex/sections/computations.tex",
+      "git_blob_sha1": "e43c3b7c75fe2560f3ec20e6a0ed803d05b592a9",
+      "bytes": 9694,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/latex/sections/consequences.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/latex/sections/consequences.tex",
+      "git_blob_sha1": "91f083ee681dc6d64bcddf6874bcb97bf7c24239",
+      "bytes": 8657,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/latex/sections/cremona.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/latex/sections/cremona.tex",
+      "git_blob_sha1": "4d8ba92866eb58e7c981941311145c877e7e4008",
+      "bytes": 19637,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/latex/sections/harmonic.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/latex/sections/harmonic.tex",
+      "git_blob_sha1": "37f31cda8cf1d2eb7cbf473791a03e9b75e730e9",
+      "bytes": 18726,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/latex/sections/harmonic_minimum_slice.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/latex/sections/harmonic_minimum_slice.tex",
+      "git_blob_sha1": "385b8f9938c590b29ceca96bc34f1425fc773adb",
+      "bytes": 7454,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/latex/sections/minimum_slice.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/latex/sections/minimum_slice.tex",
+      "git_blob_sha1": "adf44dbf1450f0c631449eda7a6aa09dc51260ab",
+      "bytes": 9274,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/latex/sections/van_den_essen.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/latex/sections/van_den_essen.tex",
+      "git_blob_sha1": "43541547cc896b0b288da1976d9fc4512d99123e",
+      "bytes": 16334,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/MECHANISM.md",
+      "upstream_path": "MECHANISM.md",
+      "git_blob_sha1": "69c8ca7660aab30d2761d958fdb30eafbab4fa86",
+      "bytes": 20051,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/README.md",
+      "upstream_path": "README.md",
+      "git_blob_sha1": "b065ab8cb19c56b60d81b1b035a294c7789379bc",
+      "bytes": 8369,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/paper/harmonic_explicit.tex",
+      "upstream_path": "paper/harmonic_explicit.tex",
+      "git_blob_sha1": "ca0a3b360ade90ebb261d464c2b69ecf76c6fa84",
+      "bytes": 31896,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/paper/main.tex",
+      "upstream_path": "paper/main.tex",
+      "git_blob_sha1": "4ceda543bdf65c11c61ded3f1de433c4624337c5",
+      "bytes": 21253,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/paper/references.tex",
+      "upstream_path": "paper/references.tex",
+      "git_blob_sha1": "791dcae89a8ad1664d46a727d7dff6abd875c6f9",
+      "bytes": 3834,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/paper/trefoil_explicit.tex",
+      "upstream_path": "paper/trefoil_explicit.tex",
+      "git_blob_sha1": "4ffac92ba368530c9c9a08516fe6bdc4388f68c8",
+      "bytes": 20736,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/verification/audit_harmonic.py",
+      "upstream_path": "verification/audit_harmonic.py",
+      "git_blob_sha1": "229e330a67dfb0abb9d7fdc29b28836cacab2b5e",
+      "bytes": 7240,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/verification/audit_harmonic_independent.py",
+      "upstream_path": "verification/audit_harmonic_independent.py",
+      "git_blob_sha1": "c8477ab095b5922dd910f756f8272b8704869705",
+      "bytes": 9361,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/verification/audit_trefoil.py",
+      "upstream_path": "verification/audit_trefoil.py",
+      "git_blob_sha1": "5b6d4d10d638f7335ad2c659d846c41091b9601d",
+      "bytes": 11099,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/verify.py",
+      "upstream_path": "verify.py",
+      "git_blob_sha1": "3063e1cfcb719832f8566d03e05a87d1a7687941",
+      "bytes": 8883,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/repo/verify_printed_formulas.py",
+      "upstream_path": "verify_printed_formulas.py",
+      "git_blob_sha1": "eb3584a050332fea207729a0083d43c36c08909a",
+      "bytes": 1270,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/requirements.txt",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/requirements.txt",
+      "git_blob_sha1": "1ca5fd06160543f8bd736f1b51db6f42372c66f4",
+      "bytes": 14,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/cremona_lnd/results.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/cremona_lnd/results.tex",
+      "git_blob_sha1": "4d8ba92866eb58e7c981941311145c877e7e4008",
+      "bytes": 19637,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/cremona_lnd/verify_example.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/cremona_lnd/verify_example.py",
+      "git_blob_sha1": "729f7514e43bfa91dd34a9b27801af90c48a9df7",
+      "bytes": 1047,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/degree5_quadratic_observation.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/degree5_quadratic_observation.log",
+      "git_blob_sha1": "229debd38f14c3c1747a1652f9e354a5be42d931",
+      "bytes": 448,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/degree5_quadratic_observation.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/degree5_quadratic_observation.py",
+      "git_blob_sha1": "b795c358aa1223540a82aa235f91d33a3d574fb5",
+      "bytes": 1659,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/divisor_ansatz.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/divisor_ansatz.py",
+      "git_blob_sha1": "91eb8f73d6e0d53a2073a4bad38e83bf3670be71",
+      "bytes": 1081,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/matrix_probe.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/matrix_probe.py",
+      "git_blob_sha1": "896b0eac337e12086f8f6b142d3c5961cd0fee1c",
+      "bytes": 466,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/parameter_search.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/parameter_search.log",
+      "git_blob_sha1": "5d7d754892f33def6515ae0f8e4d49e992d7ca61",
+      "bytes": 589,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/parameter_search.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/parameter_search.py",
+      "git_blob_sha1": "7b35c1f176c2e55cf23c0d5bdbee92ac57628b34",
+      "bytes": 1007,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz.json",
+      "git_blob_sha1": "4121bfab063e7a397f3cb985ac5c09daf30df746",
+      "bytes": 2456,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz.log",
+      "git_blob_sha1": "27da62b3b36309a42443f34b06c0154384a9445b",
+      "bytes": 2110,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz.py",
+      "git_blob_sha1": "7d009f1c1c7d5506fa0ae99a50f800f852bce5dc",
+      "bytes": 851,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz2.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz2.json",
+      "git_blob_sha1": "a57f3112f13aad7003bb4741070b91dc20e251d6",
+      "bytes": 824,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz2.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz2.log",
+      "git_blob_sha1": "39a7090f8a3928209c9307477ebf85f6725822a1",
+      "bytes": 282,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/quadratic_ansatz2.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/quadratic_ansatz2.py",
+      "git_blob_sha1": "2402677c550f09d083fe132d86ab1c6e5b89b3e7",
+      "bytes": 935,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/reduction_scan.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/reduction_scan.json",
+      "git_blob_sha1": "1a0d31120469310bdf7f98f810bebce99dbb8790",
+      "bytes": 5146,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/reduction_scan.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/reduction_scan.log",
+      "git_blob_sha1": "958f3fafa805d40784245b89186a0d4e282f75b9",
+      "bytes": 1604,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/reduction_scan.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/reduction_scan.py",
+      "git_blob_sha1": "c5ee41d8c8a82799e69c7bb0a147e352254e42cf",
+      "bytes": 1546,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/results.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/results.tex",
+      "git_blob_sha1": "e43c3b7c75fe2560f3ec20e6a0ed803d05b592a9",
+      "bytes": 9694,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/verification.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/verification.json",
+      "git_blob_sha1": "479f270bec8c07d5e807755f5d81e4a44c2f52aa",
+      "bytes": 1652,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/verification.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/verification.log",
+      "git_blob_sha1": "5f620c0cf65895ae9d5a44ebd0000ca858e01724",
+      "bytes": 1568,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_compute/verify_new_results.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_compute/verify_new_results.py",
+      "git_blob_sha1": "6856313a63aa1e946f87e13b9bfbf764de503a9d",
+      "bytes": 3052,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_literature/periodic_shears.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_literature/periodic_shears.py",
+      "git_blob_sha1": "317ab8092ad3f9f07f5a62bbdd0430a0a1353d70",
+      "bytes": 3392,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_literature/periodic_shears_results.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_literature/periodic_shears_results.json",
+      "git_blob_sha1": "d8cc5af467da1ca7dc38af5fab21be1eb0d05387",
+      "bytes": 2280,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_literature/results.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_literature/results.tex",
+      "git_blob_sha1": "a46a45ea5d75e8669b0e6d2524dff24bccd72748",
+      "bytes": 21003,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/harmonic_literature/verification.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/harmonic_literature/verification.log",
+      "git_blob_sha1": "eb787d7a27f2373fc51ff5e5d1a169f4ff69819e",
+      "bytes": 2281,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/PROOF.md",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/PROOF.md",
+      "git_blob_sha1": "7cc47c8cee0b318a57c628ec0ab1c2c667133236",
+      "bytes": 8071,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/certificate_results.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/certificate_results.json",
+      "git_blob_sha1": "63462645f135e5e0ea040201a1509733b12d3942",
+      "bytes": 7333,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/harmonic_minimal_slice_verification.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/harmonic_minimal_slice_verification.log",
+      "git_blob_sha1": "17c1b7050b43626e60d28bcfd9cea0bfd1377652",
+      "bytes": 354,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/harmonic_minimum_slice.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/harmonic_minimum_slice.tex",
+      "git_blob_sha1": "385b8f9938c590b29ceca96bc34f1425fc773adb",
+      "bytes": 7454,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/harmonic_slice_search.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/harmonic_slice_search.json",
+      "git_blob_sha1": "8aa211703121128c7f9b3d3b2ae782d7083e6bf7",
+      "bytes": 3807,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/minimal_degree_slice.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/minimal_degree_slice.json",
+      "git_blob_sha1": "2d22136e7cc6d26876f3ad6d5acaea66a662d934",
+      "bytes": 504,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/minimal_slice_verification.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/minimal_slice_verification.log",
+      "git_blob_sha1": "a38efe193c48e641270a91a4125e2d94b0915719",
+      "bytes": 250,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/minimum_slice.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/minimum_slice.tex",
+      "git_blob_sha1": "adf44dbf1450f0c631449eda7a6aa09dc51260ab",
+      "bytes": 9274,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/no_harmonic_slice_degree10_certificate.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/no_harmonic_slice_degree10_certificate.json",
+      "git_blob_sha1": "c246145ffeb5d10a3c961bb6218acfd60751a427",
+      "bytes": 15755,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/no_slice_degree6_certificate.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/no_slice_degree6_certificate.json",
+      "git_blob_sha1": "c8c4ead6fce7e12e72b0798913876e54bcd2ebb0",
+      "bytes": 4076,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/verification.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/verification.log",
+      "git_blob_sha1": "4c9e4f65d85191e12bd904a29258104010331498",
+      "bytes": 1860,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/verify_harmonic_minimal_slice.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/verify_harmonic_minimal_slice.py",
+      "git_blob_sha1": "31edf1d10c8d2da2647cfbcee06a9256281f3849",
+      "bytes": 3501,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/verify_lnd.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/verify_lnd.py",
+      "git_blob_sha1": "bae0377d57964062d71c72dd7854e8db9472899c",
+      "bytes": 7339,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/lnd_certificate/verify_minimal_slice.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/lnd_certificate/verify_minimal_slice.py",
+      "git_blob_sha1": "67322cb03783a32cf36c11d2145baaa6db28f15e",
+      "bytes": 2613,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/audit_summary.txt",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/audit_summary.txt",
+      "git_blob_sha1": "a657773360cb69bf9d9fa861bd3dbc37c0730e24",
+      "bytes": 3551,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/cross_review.txt",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/cross_review.txt",
+      "git_blob_sha1": "fa2f2cb71aef879bfd40994f635a33141f3347fe",
+      "bytes": 7006,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/exact_source_sha256.txt",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/exact_source_sha256.txt",
+      "git_blob_sha1": "a5c04f862f01f49908b61231f6c6d67055588b30",
+      "bytes": 1036,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/independent_base_lnd.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/independent_base_lnd.json",
+      "git_blob_sha1": "d640c40c3851cd3d4405776942818534cb266aa2",
+      "bytes": 495,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/independent_base_lnd.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/independent_base_lnd.log",
+      "git_blob_sha1": "e2e733532ab238539e73500fb31b3afc1d86fa76",
+      "bytes": 493,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/independent_base_lnd.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/independent_base_lnd.py",
+      "git_blob_sha1": "19a815a64dda47637a1c32c2230fec3d40850af9",
+      "bytes": 2574,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/input_sha256.txt",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/input_sha256.txt",
+      "git_blob_sha1": "576c886e89c5ec3ff21b1e61176346839ea246bb",
+      "bytes": 364,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/proof.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/proof.tex",
+      "git_blob_sha1": "15e54908acbcac1277a9697ce180a80089453c50",
+      "bytes": 3502,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/review_harmonic_minimal_slice.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_harmonic_minimal_slice.json",
+      "git_blob_sha1": "5bc8af897027cb3f373fe6748f29eaafe2dc1abc",
+      "bytes": 578,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/review_harmonic_minimal_slice.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_harmonic_minimal_slice.log",
+      "git_blob_sha1": "1df4f8c1f4263889cb7d2b9e59fe1b84452e37a9",
+      "bytes": 640,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/review_harmonic_minimal_slice.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_harmonic_minimal_slice.py",
+      "git_blob_sha1": "b05d463c79b1ad03256f14ebc2c0102d39e6d653",
+      "bytes": 3410,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/review_minimal_slice.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_minimal_slice.json",
+      "git_blob_sha1": "467628f59a9bb1fe27d71066be6a2f9c2a7bf2fa",
+      "bytes": 443,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/review_minimal_slice.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_minimal_slice.log",
+      "git_blob_sha1": "555dd791f17ce93ed39d57499a29ceb0e386b61b",
+      "bytes": 496,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/review_minimal_slice.py",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/review_minimal_slice.py",
+      "git_blob_sha1": "3b15d787c45a0526063342e01441676a2cfa6250",
+      "bytes": 3114,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/verify_current.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/verify_current.log",
+      "git_blob_sha1": "b99ee7243db001c4ec95c496531f92a39e09a565",
+      "bytes": 1064,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/repo_audit/verify_printed_current.log",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/repo_audit/verify_printed_current.log",
+      "git_blob_sha1": "4a26a61713351098f72febf96148a0c0e94e6d61",
+      "bytes": 4759,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/source_manifest.json",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/source_manifest.json",
+      "git_blob_sha1": "340caaca6a97ad232f6283f152da664ad7f0041d",
+      "bytes": 1502,
+      "status": "PASS"
+    },
+    {
+      "archived_path": "legacy_appendix/research/van_den_essen/results.tex",
+      "upstream_path": "appendices/2026-10-26-harmonic-lnd/research/van_den_essen/results.tex",
+      "git_blob_sha1": "43541547cc896b0b288da1976d9fc4512d99123e",
+      "bytes": 16334,
+      "status": "PASS"
+    }
+  ]
+}

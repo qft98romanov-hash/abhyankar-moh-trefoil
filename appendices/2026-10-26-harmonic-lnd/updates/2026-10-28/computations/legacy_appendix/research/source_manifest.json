@@ -1,0 +1,60 @@
+{
+  "commit": "3cf41be3fb3b1108e1ec91dd23dff7bfcf59569e",
+  "files": [
+    {
+      "path": "MECHANISM.md",
+      "sha": "69c8ca7660aab30d2761d958fdb30eafbab4fa86",
+      "size": 20051
+    },
+    {
+      "path": "README.md",
+      "sha": "b065ab8cb19c56b60d81b1b035a294c7789379bc",
+      "size": 8369
+    },
+    {
+      "path": "paper/harmonic_explicit.tex",
+      "sha": "ca0a3b360ade90ebb261d464c2b69ecf76c6fa84",
+      "size": 31896
+    },
+    {
+      "path": "paper/main.tex",
+      "sha": "4ceda543bdf65c11c61ded3f1de433c4624337c5",
+      "size": 21253
+    },
+    {
+      "path": "paper/references.tex",
+      "sha": "791dcae89a8ad1664d46a727d7dff6abd875c6f9",
+      "size": 3834
+    },
+    {
+      "path": "paper/trefoil_explicit.tex",
+      "sha": "4ffac92ba368530c9c9a08516fe6bdc4388f68c8",
+      "size": 20736
+    },
+    {
+      "path": "verification/audit_harmonic.py",
+      "sha": "229e330a67dfb0abb9d7fdc29b28836cacab2b5e",
+      "size": 7240
+    },
+    {
+      "path": "verification/audit_harmonic_independent.py",
+      "sha": "c8477ab095b5922dd910f756f8272b8704869705",
+      "size": 9361
+    },
+    {
+      "path": "verification/audit_trefoil.py",
+      "sha": "5b6d4d10d638f7335ad2c659d846c41091b9601d",
+      "size": 11099
+    },
+    {
+      "path": "verify.py",
+      "sha": "3063e1cfcb719832f8566d03e05a87d1a7687941",
+      "size": 8883
+    },
+    {
+      "path": "verify_printed_formulas.py",
+      "sha": "eb3584a050332fea207729a0083d43c36c08909a",
+      "size": 1270
+    }
+  ]
+}

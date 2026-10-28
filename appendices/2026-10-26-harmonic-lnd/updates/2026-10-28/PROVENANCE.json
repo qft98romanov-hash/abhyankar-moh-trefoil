@@ -1,0 +1,23 @@
+{
+  "author": "Ivan Dorofeev",
+  "date": "2026-10-28",
+  "status": "RESEARCH_UNDER_VERIFICATION",
+  "repository": "https://github.com/qft98romanov-hash/abhyankar-moh-trefoil",
+  "baseline_commit": "b954f3609e900761fddc9c8ff03d8301e9604cab",
+  "unchanged_upstream_appendix_files": 75,
+  "fresh_default_programs_passed": 35,
+  "fresh_default_programs_total": 35,
+  "fresh_optional_interpreters": {
+    "GAP": "NOT_RUN",
+    "Macaulay2": "NOT_RUN"
+  },
+  "full_discovery_mode": "NOT_RUN",
+  "external_peer_review": false,
+  "priority_claim": false,
+  "prohibited_methods_used": false,
+  "notes": [
+    "Executable certificate outputs are finite checks, not replacements for the general written proofs.",
+    "No complex rectifier for H(3,7,8) or H(4,5,7) is asserted.",
+    "The update adds repository paths without overwriting the old appendix."
+  ]
+}

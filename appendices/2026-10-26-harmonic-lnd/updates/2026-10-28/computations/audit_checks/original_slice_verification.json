@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-28",
+  "status": "PASS",
+  "arithmetic": "exact rational",
+  "sympy_version": "1.14.0",
+  "checks": [
+    "parameter_restricts_to_u",
+    "invariant_1",
+    "invariant_2",
+    "invariant_3",
+    "slice_division_is_exact",
+    "original_slice_derivative_is_one",
+    "critical_point_1",
+    "critical_point_2",
+    "figure_eight_middle_components_differ_by_u"
+  ],
+  "original_parameter": "-x**3 - 5*x*y - 7*x + y*z + 2*z",
+  "original_slice": "-t**2*x**3 + 3*t*u**3*x**2 - 9*t*u*x**2 + 5*t*x*y - t*y*z - 3*u**6*x + u**5*y + 13*u**4*x + u**4*z - 5*u**3*y - 7*u**2*x - 4*u**2*z + 5*u*y - 7*x + 2*z",
+  "slice_total_degree": 7,
+  "scope": "Candidate identification and exact slice identities only; kernel polynomiality requires the complete rectifier proof."
+}

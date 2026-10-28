@@ -1,0 +1,12 @@
+Working directory (relative): continuation/embedding_lnd
+Scope: Eight explicit normal frames; universal formal triviality requires the proof
+
+FORMAL FRAME CERTIFIED (3, 4, 5) determinant 1
+FORMAL FRAME CERTIFIED (3, 5, 7) determinant 1
+FORMAL FRAME CERTIFIED (4, 5, 7) determinant 1
+FORMAL FRAME CERTIFIED (3, 7, 8) determinant 1
+FORMAL FRAME CERTIFIED (3, 10, 11) determinant 1
+FORMAL FRAME CERTIFIED (3, 13, 14) determinant 1
+FORMAL FRAME CERTIFIED (5, 7, 8) determinant 1
+FORMAL FRAME CERTIFIED (7, 10, 11) determinant 1
+ALL 8 NORMAL FRAMES PASSED

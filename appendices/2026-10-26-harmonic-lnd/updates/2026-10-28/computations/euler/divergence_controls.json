@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-28",
+  "arithmetic": "exact over Q",
+  "scope": "finite verification; all-n non-local-finiteness is proved separately in literature.md",
+  "checks": [
+    {
+      "field": "weak",
+      "divergence": "2",
+      "normal_jet_verified": true
+    },
+    {
+      "field": "strong",
+      "divergence": "2",
+      "normal_jet_verified": true
+    },
+    {
+      "n": 1,
+      "weak_iterate_degree": 2,
+      "weak_leading_coefficient": "1",
+      "E_iterate_formula_verified": true
+    },
+    {
+      "n": 2,
+      "weak_iterate_degree": 3,
+      "weak_leading_coefficient": "2",
+      "E_iterate_formula_verified": true
+    },
+    {
+      "n": 3,
+      "weak_iterate_degree": 4,
+      "weak_leading_coefficient": "6",
+      "E_iterate_formula_verified": true
+    },
+    {
+      "n": 4,
+      "weak_iterate_degree": 5,
+      "weak_leading_coefficient": "24",
+      "E_iterate_formula_verified": true
+    },
+    {
+      "n": 5,
+      "weak_iterate_degree": 6,
+      "weak_leading_coefficient": "120",
+      "E_iterate_formula_verified": true
+    },
+    {
+      "n": 6,
+      "weak_iterate_degree": 7,
+      "weak_leading_coefficient": "720",
+      "E_iterate_formula_verified": true
+    },
+    {
+      "n": 7,
+      "weak_iterate_degree": 8,
+      "weak_leading_coefficient": "5040",
+      "E_iterate_formula_verified": true
+    },
+    {
+      "n": 8,
+      "weak_iterate_degree": 9,
+      "weak_leading_coefficient": "40320",
+      "E_iterate_formula_verified": true
+    },
+    {
+      "n": 9,
+      "weak_iterate_degree": 10,
+      "weak_leading_coefficient": "362880",
+      "E_iterate_formula_verified": true
+    },
+    {
+      "n": 10,
+      "weak_iterate_degree": 11,
+      "weak_leading_coefficient": "3628800",
+      "E_iterate_formula_verified": true
+    }
+  ],
+  "strong_counterexample": {
+    "field": [
+      "y*z",
+      "y",
+      "x*y**2 + z"
+    ],
+    "coefficient_ideal_reduced_groebner_basis": [
+      "y",
+      "z"
+    ],
+    "even_iterates": [
+      {
+        "iteration": 2,
+        "witness": "x*y**3",
+        "witness_coefficient": "1",
+        "total_degree": 4
+      },
+      {
+        "iteration": 4,
+        "witness": "x*y**6",
+        "witness_coefficient": "1",
+        "total_degree": 7
+      },
+      {
+        "iteration": 6,
+        "witness": "x*y**9",
+        "witness_coefficient": "1",
+        "total_degree": 10
+      },
+      {
+        "iteration": 8,
+        "witness": "x*y**12",
+        "witness_coefficient": "1",
+        "total_degree": 13
+      },
+      {
+        "iteration": 10,
+        "witness": "x*y**15",
+        "witness_coefficient": "1",
+        "total_degree": 16
+      },
+      {
+        "iteration": 12,
+        "witness": "x*y**18",
+        "witness_coefficient": "1",
+        "total_degree": 19
+      }
+    ]
+  }
+}

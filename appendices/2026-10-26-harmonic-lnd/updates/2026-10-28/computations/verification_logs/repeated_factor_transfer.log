@@ -1,0 +1,8 @@
+Working directory (relative): legacy_appendix/research/cremona_lnd
+Scope: Exact transfer across the repeated factor x squared
+
+h = x**2*z + x*y**2 + y
+q = x**3*z**2 + 2*x**2*y**2*z + x*y**4 + 2*x*y*z + 2*y**3 - z
+inverse y = Q*x**2 - T**2*x + T
+inverse z = -Q**2*x**3 + 2*Q*T**2*x**2 - 2*Q*T*x - Q - T**4*x + 2*T**3
+D(h)=0; D(q)=1; det=-1; both inverse compositions: VERIFIED

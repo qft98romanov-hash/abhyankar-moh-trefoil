@@ -1,0 +1,4 @@
+Working directory: /workspace/scratch/cc349d1d3dd2/research/continuation_20261026/literature
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -B verify_image_ideal_audit.py
+
+{"passed": 28, "output": "/workspace/scratch/cc349d1d3dd2/research/continuation_20261026/literature/image_ideal_audit_checks.json"}

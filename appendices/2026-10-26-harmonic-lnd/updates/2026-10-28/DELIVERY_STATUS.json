@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-28",
+  "pdf_pages": 28,
+  "pdf_visual_review": "All 28 pages rendered and inspected; changed pages rechecked.",
+  "latex_compiler": "XeLaTeX",
+  "unresolved_references": 0,
+  "overfull_boxes": 0,
+  "missing_characters": 0,
+  "bibliography_entries": 15,
+  "new_certificates_status": "35/35 PASS",
+  "old_appendix_unchanged": "75/75 Git blobs matched",
+  "delivery_layout": "Repository-relative additions only"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "date": "2026-10-28",
+  "default_programs_passed": 35,
+  "default_programs_selected": 35,
+  "fresh_optional_interpreters": {
+    "GAP": "NOT_RUN; executable unavailable",
+    "Macaulay2": "NOT_RUN; executable unavailable"
+  },
+  "python_comment_only_programs": 56,
+  "other_comment_prefix_programs": 7,
+  "archived_original_inputs": 292,
+  "upstream_git_blobs_verified": 116,
+  "full_discovery_mode": "NOT_RUN; executable code supplied separately",
+  "scope": "All finite certificates in the default consolidated suite passed; universal results still require their written proofs."
+}

@@ -1,0 +1,41 @@
+{
+  "arithmetic": "exact rational",
+  "results": [
+    {
+      "degree": 3,
+      "status": "INFEASIBILITY_CERTIFICATE_PASS",
+      "ideal_dimension": 0
+    },
+    {
+      "degree": 4,
+      "status": "INFEASIBILITY_CERTIFICATE_PASS",
+      "ideal_dimension": 2
+    },
+    {
+      "degree": 5,
+      "status": "INFEASIBILITY_CERTIFICATE_PASS",
+      "ideal_dimension": 15
+    },
+    {
+      "degree": 6,
+      "status": "INFEASIBILITY_CERTIFICATE_PASS",
+      "ideal_dimension": 35
+    },
+    {
+      "degree": 7,
+      "status": "INFEASIBILITY_CERTIFICATE_PASS",
+      "ideal_dimension": 63
+    },
+    {
+      "degree": 8,
+      "status": "NECESSARY_CONDITIONS_CANDIDATE_PASS; EXACT_AFFINE_DIMENSION_24_PASS",
+      "ideal_dimension": 100
+    },
+    {
+      "degree": 7,
+      "status": "NECESSARY_CONDITIONS_CANDIDATE_PASS; EXACT_AFFINE_DIMENSION_11_PASS",
+      "ideal_dimension": 63
+    }
+  ],
+  "status": "PASS"
+}

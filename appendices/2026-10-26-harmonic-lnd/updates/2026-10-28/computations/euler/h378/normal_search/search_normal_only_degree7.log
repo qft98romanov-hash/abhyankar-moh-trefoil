@@ -1,0 +1,4 @@
+START degree 7
+ideal dimension 63 monomials 120
+linear shape (474, 189)
+FEASIBLE_NECESSARY_CONDITIONS_ONLY degree 7 rank 178 seconds 73.76

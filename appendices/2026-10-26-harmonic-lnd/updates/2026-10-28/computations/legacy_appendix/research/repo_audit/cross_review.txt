@@ -1,0 +1,111 @@
+Independent cross-review of new arguments (2026-10-26)
+
+1. research/lnd_certificate/PROOF.md
+The universal B construction is correct. Numerators are divisible by B
+as polynomials because their specializations at B=0 vanish identically.
+The stated inverse is polynomial for the same reason. The two polynomial
+maps compose to the identity after localization and hence everywhere.
+The derivative identities D(p)=D(q)=D(r)=0,D(s)=1 then show D=partial_s
+in a polynomial coordinate system and kerD=K[B,p,q,r] in characteristic 0.
+Base change B to arbitrary b(t), even b=0, is valid because it specializes
+already polynomial formulas and identities. The special-fibre matrix has
+rows -grad Q,-grad R,grad P, so its determinant is indeed det(JF).
+The critical points of F0 are correct and show that the easy retraction
+is not an ambient coordinate. No gap found.
+
+2. research/harmonic_literature/results.tex
+The nodal-projection membership proof is correct. The monic relation
+C_a(C_b)=C_b(C_a) makes C_a^r C_b^s, r>=0,0<=s<a, a spanning set.
+Their leading degrees ra+sb are distinct, so it is a basis, and quotient
+codimension equals the number of numerical-semigroup gaps. The node
+conditions are independent by interpolation at the distinct normalization
+preimages, giving the reverse inclusion. The signed congruences multiply
+node jumps by epsilon_a*epsilon_b. Rational descent follows from exact
+leading-degree reduction. The count of compatible residues is
+2*phi(a)*phi(b), and the four-sign action is free for a,b>=2,
+gcd(a,b)=1,gcd(c,ab)=1. Therefore phi(a)*phi(b)/2 representatives suffice.
+All residues in the H(3,4,c) mod24 and H(3,5,c) mod30 tables were checked.
+The reduction to the three base types 1,2,H345,H357 is valid. Consequently
+the two full infinite families are rectifiable over K, conditional only
+on the already rerun exact base certificates. Rational shears do not claim
+real rectifiers for the nontrivial real knot types; the final use of K is
+essential. The assertion for index1 is correctly separated from the
+pairwise-coprime criterion with all indices at least2. No gap found.
+
+3. Strengthened relative-transfer criterion
+Let h=H(x,p(x,y)+m(x)z,y), where (x,H,W) is a relative automorphism.
+Then delta_h=h_z partial_y-h_y partial_z is polynomial and locally nilpotent:
+after localization it is -m times the conjugate of the original Hamiltonian
+LND, and local nilpotence restricts to the stable polynomial subring.
+On an exceptional fibre x=alpha, it becomes -G_alpha'(y) partial_z,
+where G_alpha(y)=H(alpha,p(alpha,y),y). In characteristic0, absence of
+geometric zeros is equivalent to every G_alpha being nonconstant affine.
+This is exactly the repository's centre criterion. It implies a relative
+coordinate and a slice by the transfer theorem. Conversely a relative
+coordinate implies a slice via its companion, and a slice implies no zeros.
+Hence all four properties are equivalent within this ansatz. Over a
+nonalgebraically-closed field, fixed-point-free must mean geometrically
+fixed-point-free, equivalently unit ideal of derivation coefficients;
+mere absence of rational zeros is insufficient. No assertion of absolute
+coordinate equivalence or arbitrary-embedding rectifiability follows.
+
+4. Minimum total degree of a Shastri slice is exactly7
+The independently implemented stdlib/Fraction verifier review_minimal_slice.py
+checks all462=binomial(11,5) source monomials of total degree<=6. Their full
+derivation-image support has812 monomials and maximum totaldegree9; no output
+degree truncation is used. The supplied31-weight rational functional takes
+value0 on every image and value1 on the constant polynomial. It extends
+linearly over every characteristic-zero field, so the contradiction applies
+to slices with arbitrary complex coefficients. The15-term upper slice has
+degree7 and derivative exactly1. Thus minimal totaldegree=7 is proved.
+
+The later elementary proof was also checked in full:
+Weights w(B)=1,w(u)=0,w(x)=w(y)=w(z)=-1 make D homogeneous of weight1.
+Any slice of totaldegree<=6 has a weight(-1) component which is also a slice.
+Write it as s0+B*s1+B^2*s2, where si is homogeneous of Xdegree i+1 and has
+udegree<=5-2i. Coefficient comparison gives partial_u s2=0 and then the u4,u3
+coefficients of D0s2 force s2=c*x^3. Integration yields
+s1=-3*c*(u^3-3*u)*x^2+K2(X). The u5 coefficient -18*c*x in D0s1 forces c=0.
+Consequently s1=K2 and s0=L1(X)-gamma(u) dot grad(K2)(X).
+For the constant symmetric Hessian M of K2, grad(K2)(X)=M*X, and
+D0[gamma dot grad(K2)(X)]=gamma^T*M*gamma'=d(K2(gamma))/du.
+There is no extraneous factor2. Thus D0s0=1 gives
+L1(gamma)-K2(gamma)=u, with zero integration constant since gamma(0)=0.
+The odd part of any degree<=2 polynomial in (f,g,h) lies in the span
+of f,h,fg,gh. Their distinct leading degrees3,5,7,9 force all four
+coefficients to vanish if their sum has degree1. Contradiction.
+This elementary lower-bound argument is correct independently of the dual
+certificate. Minimal degree is with respect to the stated original variables,
+not an invariant under arbitrary polynomial coordinate changes.
+
+5. Harmonic Shastri-type derivation: minimum slice degree exactly11
+For gamma=(C3,C5,C7), an independent stdlib/Fraction verifier checks all
+3003=binomial(15,5) monomials of totaldegree<=10. Their image support contains
+6017 monomials and reaches totaldegree15. All117 supplied functional weights
+annihilate every image, and the functional value on1 is1. The supplied
+27-term slice has degree11 and derivative1. Files:
+review_harmonic_minimal_slice.py/.json/.log. This is valid over every
+characteristic-zero field, allowing arbitrary complex coefficients.
+
+An elementary lower-bound proof was independently derived here and by the
+lnd_certificate agent, and the two derivations agree:
+Use weight(-1) s=sum_{i=0}^4 B^i si, with homogeneous Xdegree(i+1) and
+udegree<=9-2i. Write D0=gamma' dot partial_X, f=C3,g=C5,h=C7.
+Coefficient equations are D0s0=1, partial_u(si)+D0(s_{i+1})=0,
+and partial_u(s4)=0. The u6 andu4 coefficients of D0s4 imply s4=c*x5.
+Then s3=-5*c*f*x4+K4. The u6 andu5 coefficients of D0s3 force
+K4_z=0,c=0. Integration gives s2=-f*K4_x-g*K4_y+K3.
+Since partial_u(s1) has udegree<=6, the u9 andu7 terms of D0s2 imply
+K4_yy=K4_xy=0; hence K4=a*x4. Thus s2=-4*a*f*x3+K3 and
+s1=6*a*f^2*x2-gamma dot grad(K3)+K2.
+Since partial_u(s0) has udegree<=8, the u13,u11,u9 coefficients imply
+K3_zz=K3_yz=0, K3_yy=-2*K3_xz. Therefore
+K3=d*x3+e*x2*y+k*(x2*z-2*x*y2).
+Integration gives s0=-4*a*f3*x+(1/2)*Hess(K3)(X)[gamma,gamma]
+-gamma dot grad(K2)+K1. The symmetry of the constant cubic tensor gives
+D0s0=d_u[-a*f4+K3(gamma)-K2(gamma)+K1(gamma)]=1.
+All gamma coordinates are odd, so the odd part of this retraction lies in
+span{f,g,h,f3,f2*g,f2*h-2*f*g2}. These have distinct leading degrees
+3,5,7,9,11,13, with nonzero leading coefficients (the last is -1).
+They cannot combine to u. This proves no slice of degree<=10, independently
+of the finite dual certificate. The upper slice of degree11 completes it.

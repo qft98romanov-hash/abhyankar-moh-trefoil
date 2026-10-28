@@ -1,0 +1,21 @@
+{
+  "passed": [
+    "H = h0(x,z+a*x*y) - (1-a)*x^5*y",
+    "f(h0(v)) = v modulo x^5",
+    "h0(f(T)) = T modulo x^5",
+    "D(x)=0",
+    "D(H)=0",
+    "D(v)=(1-a)*x^5",
+    "D(y)=2*(1-a)*x*v+A",
+    "D^3(y)=0",
+    "D^3(z)=0",
+    "slice numerator derivative is x^5",
+    "slice numerator vanishes modulo x^5",
+    "harmonic DH(x)=0",
+    "harmonic DH(hH)=0",
+    "harmonic DH^3(y)=0",
+    "harmonic DH^5(z)=0",
+    "harmonic nilpotency orders for y and z are exactly 3 and 5"
+  ],
+  "count": 16
+}

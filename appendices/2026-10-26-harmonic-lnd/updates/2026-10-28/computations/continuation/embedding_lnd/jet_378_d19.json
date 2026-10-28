@@ -1,0 +1,89 @@
+{
+  "triple": [
+    3,
+    7,
+    8
+  ],
+  "slice_degree_bound": 19,
+  "parameter_degree_bound": 10,
+  "columns": 286,
+  "rows": 4311,
+  "selected_rows": 280,
+  "status": "feasible",
+  "retraction": [
+    {
+      "monomial": [
+        0,
+        1,
+        0
+      ],
+      "coefficient": "-2"
+    },
+    {
+      "monomial": [
+        1,
+        0,
+        0
+      ],
+      "coefficient": "-1"
+    },
+    {
+      "monomial": [
+        0,
+        1,
+        1
+      ],
+      "coefficient": "2"
+    },
+    {
+      "monomial": [
+        1,
+        0,
+        1
+      ],
+      "coefficient": "-2"
+    },
+    {
+      "monomial": [
+        0,
+        3,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "monomial": [
+        1,
+        2,
+        0
+      ],
+      "coefficient": "-1"
+    },
+    {
+      "monomial": [
+        3,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "monomial": [
+        2,
+        1,
+        1
+      ],
+      "coefficient": "-1"
+    },
+    {
+      "monomial": [
+        3,
+        0,
+        1
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "retraction_text": "x**3*z + x**3 - x**2*y*z - x*y**2 - 2*x*z - x + y**3 + 2*y*z - 2*y",
+  "seconds": 4.938245534896851
+}

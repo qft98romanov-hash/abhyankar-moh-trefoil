@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational",
+  "sympy": "1.14.0",
+  "checks": [
+    "positive_delta_p_zero",
+    "positive_delta_q_weight_one",
+    "positive_delta_r_weight_one",
+    "positive_divergence_two",
+    "positive_parameter",
+    "positive_normal_q",
+    "positive_normal_r",
+    "positive_exact_finite_closure",
+    "positive_projector_recovers_p",
+    "positive_projector_recovers_q",
+    "positive_projector_recovers_r",
+    "positive_inverse",
+    "negative_divergence_two",
+    "negative_normal_y",
+    "negative_normal_z",
+    "negative_fixed_ideal_exact",
+    "negative_nonzero_growth_1",
+    "negative_nonzero_growth_2",
+    "negative_nonzero_growth_3",
+    "negative_nonzero_growth_4",
+    "negative_nonzero_growth_5",
+    "negative_nonzero_growth_6",
+    "naive_parameter_(3, 4, 5)",
+    "naive_nonconstant_divergence_(3, 4, 5)",
+    "naive_parameter_(3, 7, 8)",
+    "naive_nonconstant_divergence_(3, 7, 8)",
+    "naive_parameter_(4, 5, 7)",
+    "naive_nonconstant_divergence_(4, 5, 7)"
+  ],
+  "positive_closure_dimension": 9,
+  "negative_growth": [
+    {
+      "n": 1,
+      "iterations": 2,
+      "degree": 4,
+      "witness_monomial": "x*y**3",
+      "witness_coefficient": "1"
+    },
+    {
+      "n": 2,
+      "iterations": 4,
+      "degree": 7,
+      "witness_monomial": "x*y**6",
+      "witness_coefficient": "1"
+    },
+    {
+      "n": 3,
+      "iterations": 6,
+      "degree": 10,
+      "witness_monomial": "x*y**9",
+      "witness_coefficient": "1"
+    },
+    {
+      "n": 4,
+      "iterations": 8,
+      "degree": 13,
+      "witness_monomial": "x*y**12",
+      "witness_coefficient": "1"
+    },
+    {
+      "n": 5,
+      "iterations": 10,
+      "degree": 16,
+      "witness_monomial": "x*y**15",
+      "witness_coefficient": "1"
+    },
+    {
+      "n": 6,
+      "iterations": 12,
+      "degree": 19,
+      "witness_monomial": "x*y**18",
+      "witness_coefficient": "1"
+    }
+  ],
+  "naive_divergence": [
+    {
+      "indices": [
+        3,
+        4,
+        5
+      ],
+      "parameter_degree": 3,
+      "divergence_degree": 13
+    },
+    {
+      "indices": [
+        3,
+        7,
+        8
+      ],
+      "parameter_degree": 5,
+      "divergence_degree": 36
+    },
+    {
+      "indices": [
+        4,
+        5,
+        7
+      ],
+      "parameter_degree": 3,
+      "divergence_degree": 20
+    }
+  ],
+  "scope": "Finite examples verify formulas. Universal statements require theory.md."
+}

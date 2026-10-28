@@ -1,0 +1,17 @@
+{
+  "status": "EXACT_INVARIANT_AXIS_OBSTRUCTION_PASS",
+  "field_certificate": "normal_degree_8.json",
+  "invariant_ideal": [
+    "x",
+    "y"
+  ],
+  "quotient_field": "(z - 2)*(45905817159760872246*z**5 - 140935040683788236791*z**4 - 572355095166133777602*z**3 + 2000548921478826323580*z**2 - 796426044734268047456*z - 672739632810674816857)/371788700478760284951",
+  "degree": 6,
+  "leading_coefficient": "15301939053253624082/123929566826253428317",
+  "all_iteration_formula": {
+    "degree_Dn_z": "1+5*n",
+    "leading_coefficient_Dn_z": "leading_coefficient**n * product(1+5*j, j=0..n-1)"
+  },
+  "conclusion": "The displayed particular field is not locally finite; its homogeneous E is not locally nilpotent.",
+  "scope": "No conclusion about other fields in the 24-dimensional affine solution space or about rectifiability."
+}

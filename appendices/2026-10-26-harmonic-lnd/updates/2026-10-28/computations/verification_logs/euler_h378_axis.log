@@ -1,0 +1,6 @@
+Working directory (relative): euler/h378/normal_search
+Scope: Particular-point non-LF certificate and limits of the axis argument
+
+EXACT_INVARIANT_AXIS_OBSTRUCTION_PASS
+deg(D^n z)=1+5n for every integer n>=0; hence not locally finite.
+EXACT_AXIS_FAMILY_TEST_PASS: 13 of 24 displayed directions fail to preserve (x,y).

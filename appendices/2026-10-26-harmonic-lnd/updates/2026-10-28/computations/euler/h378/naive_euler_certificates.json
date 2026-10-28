@@ -1,0 +1,123 @@
+{
+  "arithmetic": "exact rational",
+  "status": "PASS",
+  "H378": [
+    {
+      "case": "H378_P5",
+      "P": "-x**5 + 5*x**3 - 5*x + y*z",
+      "summand_degrees": [
+        14,
+        31,
+        36
+      ],
+      "degree_S": 36,
+      "leading_S": "-8*x**35*y",
+      "minimum_additive_correction_degree": 37,
+      "status": "PASS"
+    },
+    {
+      "case": "H378_P4",
+      "P": "x**3*z + x**3 - x**2*y*z - x*y**2 - 2*x*z - x + y**3 + 2*y*z - 2*y",
+      "summand_degrees": [
+        11,
+        27,
+        31
+      ],
+      "degree_S": 31,
+      "leading_S": "8*x**24*z**7 - 64*x**23*y*z**7 + 224*x**22*y**2*z**7 - 448*x**21*y**3*z**7 + 560*x**20*y**4*z**7 - 448*x**19*y**5*z**7 + 224*x**18*y**6*z**7 - 64*x**17*y**7*z**7 + 8*x**16*y**8*z**7",
+      "minimum_additive_correction_degree": 32,
+      "status": "PASS"
+    }
+  ],
+  "uniform_cases": [
+    {
+      "n": 1,
+      "summand_degrees": [
+        8,
+        10,
+        13
+      ],
+      "degree_S": 13,
+      "leading_S": "5*x**12*y",
+      "status": "PASS"
+    },
+    {
+      "n": 2,
+      "summand_degrees": [
+        14,
+        31,
+        36
+      ],
+      "degree_S": 36,
+      "leading_S": "-8*x**35*y",
+      "status": "PASS"
+    },
+    {
+      "n": 3,
+      "summand_degrees": [
+        20,
+        64,
+        71
+      ],
+      "degree_S": 71,
+      "leading_S": "11*x**70*y",
+      "status": "PASS"
+    },
+    {
+      "n": 4,
+      "summand_degrees": [
+        26,
+        109,
+        118
+      ],
+      "degree_S": 118,
+      "leading_S": "-14*x**117*y",
+      "status": "PASS"
+    },
+    {
+      "n": 5,
+      "summand_degrees": [
+        32,
+        166,
+        177
+      ],
+      "degree_S": 177,
+      "leading_S": "17*x**176*y",
+      "status": "PASS"
+    },
+    {
+      "n": 6,
+      "summand_degrees": [
+        38,
+        235,
+        248
+      ],
+      "degree_S": 248,
+      "leading_S": "-20*x**247*y",
+      "status": "PASS"
+    },
+    {
+      "n": 7,
+      "summand_degrees": [
+        44,
+        316,
+        331
+      ],
+      "degree_S": 331,
+      "leading_S": "23*x**330*y",
+      "status": "PASS"
+    },
+    {
+      "n": 8,
+      "summand_degrees": [
+        50,
+        409,
+        426
+      ],
+      "degree_S": 426,
+      "leading_S": "-26*x**425*y",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Finite audits only; unbounded statements are proved in PROOF.md."
+}

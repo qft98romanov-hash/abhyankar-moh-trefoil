@@ -1,0 +1,4 @@
+Working directory: /workspace/scratch/cc349d1d3dd2/research/continuation_20261026/relative_ml
+Command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -B review_jet_checks.py
+
+PASS: 27 exact slices; DS=1, Taylor jet degree, and explicit H457/H378 formulas independently checked.

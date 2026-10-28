@@ -1,0 +1,49 @@
+{
+  "triple": [
+    3,
+    7,
+    8
+  ],
+  "slice_degree_bound": 13,
+  "parameter_degree_bound": 7,
+  "columns": 120,
+  "rows": 1275,
+  "selected_rows": 120,
+  "status": "feasible",
+  "retraction": [
+    {
+      "monomial": [
+        1,
+        0,
+        0
+      ],
+      "coefficient": "-5"
+    },
+    {
+      "monomial": [
+        0,
+        1,
+        1
+      ],
+      "coefficient": "1"
+    },
+    {
+      "monomial": [
+        3,
+        0,
+        0
+      ],
+      "coefficient": "5"
+    },
+    {
+      "monomial": [
+        5,
+        0,
+        0
+      ],
+      "coefficient": "-1"
+    }
+  ],
+  "retraction_text": "-x**5 + 5*x**3 - 5*x + y*z",
+  "seconds": 0.1912853717803955
+}

@@ -1,0 +1,531 @@
+{
+  "field": "Q",
+  "normalization": "C_n(t)=2T_n(t/2)",
+  "triples": [
+    {
+      "triple": [
+        3,
+        4,
+        5
+      ],
+      "coefficients": [
+        "y**5 - 5*y**3 + 5*y - z**4 + 4*z**2 - 2",
+        "x**5 - 5*x**3 + 5*x - z**3 + 3*z",
+        "x**4 - 4*x**2 - y**3 + 3*y + 2"
+      ],
+      "checks": [
+        {
+          "axis": "x",
+          "r": 1,
+          "degree_coefficient": 5,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 2,
+          "degree_coefficient": 10,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 3,
+          "degree_coefficient": 15,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 1,
+          "degree_coefficient": 5,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 2,
+          "degree_coefficient": 10,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 3,
+          "degree_coefficient": 15,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 1,
+          "degree_coefficient": 4,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 2,
+          "degree_coefficient": 8,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 3,
+          "degree_coefficient": 12,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        }
+      ],
+      "exact": true
+    },
+    {
+      "triple": [
+        3,
+        5,
+        7
+      ],
+      "coefficients": [
+        "y**7 - 7*y**5 + 14*y**3 - 7*y - z**5 + 5*z**3 - 5*z",
+        "x**7 - 7*x**5 + 14*x**3 - 7*x - z**3 + 3*z",
+        "x**5 - 5*x**3 + 5*x - y**3 + 3*y"
+      ],
+      "checks": [
+        {
+          "axis": "x",
+          "r": 1,
+          "degree_coefficient": 7,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 2,
+          "degree_coefficient": 14,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 3,
+          "degree_coefficient": 21,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 1,
+          "degree_coefficient": 7,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 2,
+          "degree_coefficient": 14,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 3,
+          "degree_coefficient": 21,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 1,
+          "degree_coefficient": 5,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 2,
+          "degree_coefficient": 10,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 3,
+          "degree_coefficient": 15,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        }
+      ],
+      "exact": true
+    },
+    {
+      "triple": [
+        3,
+        7,
+        8
+      ],
+      "coefficients": [
+        "y**8 - 8*y**6 + 20*y**4 - 16*y**2 - z**7 + 7*z**5 - 14*z**3 + 7*z + 2",
+        "x**8 - 8*x**6 + 20*x**4 - 16*x**2 - z**3 + 3*z + 2",
+        "x**7 - 7*x**5 + 14*x**3 - 7*x - y**3 + 3*y"
+      ],
+      "checks": [
+        {
+          "axis": "x",
+          "r": 1,
+          "degree_coefficient": 8,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 2,
+          "degree_coefficient": 16,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 3,
+          "degree_coefficient": 24,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 1,
+          "degree_coefficient": 8,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 2,
+          "degree_coefficient": 16,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 3,
+          "degree_coefficient": 24,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 1,
+          "degree_coefficient": 7,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 2,
+          "degree_coefficient": 14,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 3,
+          "degree_coefficient": 21,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        }
+      ],
+      "exact": true
+    },
+    {
+      "triple": [
+        4,
+        5,
+        7
+      ],
+      "coefficients": [
+        "y**7 - 7*y**5 + 14*y**3 - 7*y - z**5 + 5*z**3 - 5*z",
+        "x**7 - 7*x**5 + 14*x**3 - 7*x - z**4 + 4*z**2 - 2",
+        "x**5 - 5*x**3 + 5*x - y**4 + 4*y**2 - 2"
+      ],
+      "checks": [
+        {
+          "axis": "x",
+          "r": 1,
+          "degree_coefficient": 7,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 2,
+          "degree_coefficient": 14,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 3,
+          "degree_coefficient": 21,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 1,
+          "degree_coefficient": 7,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 2,
+          "degree_coefficient": 14,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 3,
+          "degree_coefficient": 21,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 1,
+          "degree_coefficient": 5,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 2,
+          "degree_coefficient": 10,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 3,
+          "degree_coefficient": 15,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        }
+      ],
+      "exact": true
+    },
+    {
+      "triple": [
+        5,
+        6,
+        7
+      ],
+      "coefficients": [
+        "y**7 - 7*y**5 + 14*y**3 - 7*y - z**6 + 6*z**4 - 9*z**2 + 2",
+        "x**7 - 7*x**5 + 14*x**3 - 7*x - z**5 + 5*z**3 - 5*z",
+        "x**6 - 6*x**4 + 9*x**2 - y**5 + 5*y**3 - 5*y - 2"
+      ],
+      "checks": [
+        {
+          "axis": "x",
+          "r": 1,
+          "degree_coefficient": 7,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 2,
+          "degree_coefficient": 14,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 3,
+          "degree_coefficient": 21,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 1,
+          "degree_coefficient": 7,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 2,
+          "degree_coefficient": 14,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 3,
+          "degree_coefficient": 21,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 1,
+          "degree_coefficient": 6,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 2,
+          "degree_coefficient": 12,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 3,
+          "degree_coefficient": 18,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        }
+      ],
+      "exact": true
+    },
+    {
+      "triple": [
+        7,
+        9,
+        11
+      ],
+      "coefficients": [
+        "y**11 - 11*y**9 + 44*y**7 - 77*y**5 + 55*y**3 - 11*y - z**9 + 9*z**7 - 27*z**5 + 30*z**3 - 9*z",
+        "x**11 - 11*x**9 + 44*x**7 - 77*x**5 + 55*x**3 - 11*x - z**7 + 7*z**5 - 14*z**3 + 7*z",
+        "x**9 - 9*x**7 + 27*x**5 - 30*x**3 + 9*x - y**7 + 7*y**5 - 14*y**3 + 7*y"
+      ],
+      "checks": [
+        {
+          "axis": "x",
+          "r": 1,
+          "degree_coefficient": 11,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 2,
+          "degree_coefficient": 22,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "x",
+          "r": 3,
+          "degree_coefficient": 33,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 1,
+          "degree_coefficient": 11,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 2,
+          "degree_coefficient": 22,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "y",
+          "r": 3,
+          "degree_coefficient": 33,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 1,
+          "degree_coefficient": 9,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 2,
+          "degree_coefficient": 18,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        },
+        {
+          "axis": "z",
+          "r": 3,
+          "degree_coefficient": 27,
+          "inverse_checked": true,
+          "fixes_curve": true,
+          "D_squared_on_generator_zero": true
+        }
+      ],
+      "exact": true
+    }
+  ],
+  "num_shears_checked": 54,
+  "general_result": "For every ideal I with dim(A/I)<=n-2 and every r>=1, intersection ker D over nonzero LND with D(A) subset I^r is k; the generated kernel algebra is A.",
+  "scope": "Finite computations validate witnesses; the all-ideals theorem has an independent elementary proof."
+}

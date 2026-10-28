@@ -1,0 +1,156 @@
+{
+  "audit_utc": "2026-10-28T17:55:34.732159+00:00",
+  "audit_type": "read_only_source_hash_and_proof_review",
+  "aggregate_log": "research/continuation_20261026/aggregate_checks.json",
+  "aggregate_status": "PASS",
+  "original_run_started_utc": "2026-10-26T20:32:17.605181+00:00",
+  "original_run_finished_utc": "2026-10-26T20:33:09.952421+00:00",
+  "python_version_in_retained_run": "3.12.14",
+  "sympy_version_in_retained_run": "1.14.0",
+  "scripts_checked": 14,
+  "scripts_matching": 14,
+  "certificate_suite_rerun_by_this_audit": false,
+  "source_edits": false,
+  "records": [
+    {
+      "id": "jet",
+      "script": "research/continuation_20261026/embedding_lnd/verify_jet_certificates.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "c51038ed6c4cd8d9e3c92aab6d9cb2465b388af8d111d21358e81aa51e8de744",
+      "current_sha256": "c51038ed6c4cd8d9e3c92aab6d9cb2465b388af8d111d21358e81aa51e8de744",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/jet.log",
+      "counting_unit": "14 paired lower/upper certificates: 8 models at mu=1 and 6 further multiplicities for H378"
+    },
+    {
+      "id": "formal_frames",
+      "script": "research/continuation_20261026/embedding_lnd/verify_formal_frames.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "f3698bfceae38ab3a4dcb5a443812ae3876a7cacee8c80253b5b6e8e5f20db46",
+      "current_sha256": "f3698bfceae38ab3a4dcb5a443812ae3876a7cacee8c80253b5b6e8e5f20db46",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/formal_frames.log",
+      "counting_unit": "8 explicit normal frames; universal formal-triviality theorem is proved in prose"
+    },
+    {
+      "id": "h457_multiplicity",
+      "script": "research/continuation_20261026/embedding_lnd/verify_h457_multiplicity.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "401bfb2975312cc73a372912ca094e04aee7d1030dd132359ffda4496e939faf",
+      "current_sha256": "401bfb2975312cc73a372912ca094e04aee7d1030dd132359ffda4496e939faf",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/h457_multiplicity.log",
+      "counting_unit": "1 determinant certificate and 14 upper slices; all-mu minimality uses the written proof"
+    },
+    {
+      "id": "h378_linear",
+      "script": "research/continuation_20261026/h378/verify_linear_coordinate_obstruction.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "12a960c56ce00b37a53f5102d2fe5eab6af4a6d5276b5c122cbad24c78979cf1",
+      "current_sha256": "12a960c56ce00b37a53f5102d2fe5eab6af4a6d5276b5c122cbad24c78979cf1",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/h378_linear.log",
+      "counting_unit": "13 named algebraic identities, plus sign values; not 13 independent nonexistence theorems"
+    },
+    {
+      "id": "h378_uniform",
+      "script": "research/continuation_20261026/h378/verify_uniform_obstructions.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "a989c2d8e0f5acb4384ae2deb140518748e50742cb42b32ba3df571e0aa49afd",
+      "current_sha256": "a989c2d8e0f5acb4384ae2deb140518748e50742cb42b32ba3df571e0aa49afd",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/h378_uniform.log",
+      "counting_unit": "20 model indices and 160 polynomial checks; the universal statement needs its proof"
+    },
+    {
+      "id": "h457_degree4",
+      "script": "research/continuation_20261026/h457/verify_degree4.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "09507dc7f62af6d10adf3f2924b441b1f18b84f2b971fc4b996ff0ae8a19593d",
+      "current_sha256": "09507dc7f62af6d10adf3f2924b441b1f18b84f2b971fc4b996ff0ae8a19593d",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/h457_degree4.log",
+      "counting_unit": "35 named exact assertions for one degree-four obstruction"
+    },
+    {
+      "id": "h457_independent",
+      "script": "research/continuation_20261026/relative_ml/review_457_checks.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "6faaa83278f3af12dcec9d2718c6a1426c3e9f0f31bf9c05eae1e62498713f46",
+      "current_sha256": "6faaa83278f3af12dcec9d2718c6a1426c3e9f0f31bf9c05eae1e62498713f46",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/h457_independent.log",
+      "counting_unit": "Independent rank minors, elimination, resultant and Bezout check; overlaps h457_degree4"
+    },
+    {
+      "id": "jet_independent",
+      "script": "research/continuation_20261026/relative_ml/review_jet_checks.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "77cfcc4aee521cdcb9ac3d0378a56367e0b6fe42a0e0ed6cb9bd55cb8e2f8b5b",
+      "current_sha256": "77cfcc4aee521cdcb9ac3d0378a56367e0b6fe42a0e0ed6cb9bd55cb8e2f8b5b",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/jet_independent.log",
+      "counting_unit": "27 explicit slices plus 1 uniqueness minor; overlaps the jet certificates"
+    },
+    {
+      "id": "relative_ml",
+      "script": "research/continuation_20261026/relative_ml/verify_relative_ml.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "2ec7c0968d25176906492561bfd27bf4f8c23e5baf0cbc8f4a173641bc04c07d",
+      "current_sha256": "2ec7c0968d25176906492561bfd27bf4f8c23e5baf0cbc8f4a173641bc04c07d",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/relative_ml.log",
+      "counting_unit": "54 shears = 6 triples x 3 axes x 3 powers; general theorem is proved separately"
+    },
+    {
+      "id": "transfer",
+      "script": "research/continuation_20261026/relative_lnd/verify_transfer_filtration.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "5043006a7747b676842106a767d8218d83e81ab831f1f0d5342847d15ed6eed6",
+      "current_sha256": "5043006a7747b676842106a767d8218d83e81ab831f1f0d5342847d15ed6eed6",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/transfer.log",
+      "counting_unit": "16 finite model cases with several identities per case; not a universal computer proof"
+    },
+    {
+      "id": "image_ideal_audit",
+      "script": "research/continuation_20261026/literature/verify_image_ideal_audit.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "047e8160ac466a093e3d061d1cfd576554c6edc41775c81d4aefd849d1e362a8",
+      "current_sha256": "047e8160ac466a093e3d061d1cfd576554c6edc41775c81d4aefd849d1e362a8",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/image_ideal_audit.log",
+      "counting_unit": "28 selected explicit preimage checks; does not alone prove the general image-ideal formula"
+    },
+    {
+      "id": "iterated",
+      "script": "research/continuation_20261026/iterated_modifications/verify_iterated_filtration.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "9716603f23c5641d8523e71f830aa89d1aad40e0b95937fcc3c21d7b7de73c4a",
+      "current_sha256": "9716603f23c5641d8523e71f830aa89d1aad40e0b95937fcc3c21d7b7de73c4a",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/iterated.log",
+      "counting_unit": "3 modification lengths, each with n=0,...,16; universal result uses the written proof"
+    },
+    {
+      "id": "iterated_independent",
+      "script": "research/continuation_20261026/h378/verify_iterated_review.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "6c37589ee8eebdbf2f8ab4e7d8a113a71e4bca1abf25618745c7df84b3a28a66",
+      "current_sha256": "6c37589ee8eebdbf2f8ab4e7d8a113a71e4bca1abf25618745c7df84b3a28a66",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/iterated_independent.log",
+      "counting_unit": "5 lengths, 65 binary identities and 81 product identities each, plus Groebner checks"
+    },
+    {
+      "id": "mixed_projection_audit",
+      "script": "research/continuation_20261026/h457/review_h378_checks.py",
+      "recorded_status": "PASS",
+      "recorded_sha256": "b1111df89a31ff24e8cd7597e18f620ee23fc038f179b654d4e1cbe238f9d2cb",
+      "current_sha256": "b1111df89a31ff24e8cd7597e18f620ee23fc038f179b654d4e1cbe238f9d2cb",
+      "hash_match": true,
+      "retained_log": "research/continuation_20261026/logs/mixed_projection_audit.log",
+      "counting_unit": "56 bounded multiplicity pairs and exceptional-parameter checks; not an unbounded search"
+    }
+  ]
+}
