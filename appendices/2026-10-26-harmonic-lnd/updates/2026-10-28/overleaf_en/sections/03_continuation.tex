@@ -1,0 +1,409 @@
+% Full English translation of the consolidated continuation proofs.
+\section{The minimum slice degree theorem}\label{sec:jets}
+Set $V=\gamma(u)-t^\mu X$. For every $P\circ\gamma=u$, there is a polynomial slice
+\[
+S_{P,\mu}=\frac{u-P(V)}{t^\mu},\qquad D_\mu(S_{P,\mu})=1.
+\]
+Polynomiality follows from exact divisibility of the numerator; the displayed denominator does not make this a nonpolynomial rational function. This classical construction goes back to van den Essen--van Rossum \cite{vdER}. The calculations below refine the degree-minimization problem.
+
+\subsection*{Theorem 3.1. Completeness of the reduction}
+The minimum degree among all polynomial slices equals the minimum of $\deg S_{P,\mu}$ over all parameter polynomials $P$.
+
+\textit{Proof.} Introduce the weights
+$\wt(t)=1$, $\wt(u)=0$, $\wt(X_i)=-\mu$. The derivation raises weight by $\mu$. If $D_\mu(s)=1$, the component $s_{-\mu}$ of weight $-\mu$ is also a slice; its ordinary degree is no greater than that of $s$.
+After inverting $t$,
+\[
+A_t=k[t,t^{-1},u,V],\qquad D_\mu=t^\mu\partial_u.
+\]
+The element $t^\mu s_{-\mu}-u$ is invariant and has weight zero. Since all $V_i$ have weight zero, it equals $-P(V)$ for a unique $P\in k[V]$. Reducing the exact polynomial identity modulo $t$ gives $P\circ\gamma=u$.\hfill$\square$
+
+\subsection*{Theorem 3.2. Exact formula and finite criterion}
+With the convention $\deg0=-\infty$, we have
+\[
+\boxed{\deg S_{P,\mu}=\max_{\alpha\ne0}
+\bigl\{\deg_u((\partial^\alpha P)\circ\gamma)
++(\mu+1)|\alpha|-\mu\bigr\}.}
+\]
+Indeed, Taylor's formula gives
+\[
+S_{P,\mu}=\sum_{\alpha\ne0}\frac{(-1)^{|\alpha|+1}}{\alpha!}
+t^{\mu(|\alpha|-1)}X^\alpha(\partial^\alpha P)(\gamma(u)).
+\]
+Distinct $\alpha$ correspond to distinct monomials in $X$, so they cannot cancel one another. A nonzero derivative of order $\deg P=r$ gives the lower bound $(\mu+1)r-\mu$.
+
+Consequently, a slice of degree $\le d$ exists if and only if the following finite linear system is solvable:
+\[
+\begin{gathered}
+\deg P\le\floor{\frac{d+\mu}{\mu+1}},\qquad P\circ\gamma=u,\\
+[u^j](\partial^\alpha P)(\gamma(u))=0\quad
+\text{for }j>d-(\mu+1)|\alpha|+\mu,\quad\alpha\ne0.
+\end{gathered}
+\]
+It is linear in the coefficients of $P$. For $n=3$, the number of unknowns is at most
+$\binom{\lfloor(d+\mu)/(\mu+1)\rfloor+3}{3}$.
+This is a complete criterion, rather than a search restricted to a chosen form of slice.
+
+\subsection*{Theorem 3.3. All sufficiently large multiplicities}
+Let
+\[
+M=\max_i\deg f_i,\qquad
+r_\gamma=\min\{\deg P:P\circ\gamma=u\},\qquad
+m_\gamma(\mu)=\min_{D_\mu(s)=1}\deg s.
+\]
+Then
+\[
+\boxed{m_\gamma(\mu)=(\mu+1)r_\gamma-\mu\quad\text{for }\mu\ge M-1.}
+\]
+For a nonconstant $P$ of degree $r$, a derivative of order $q$ has degree at most $M(r-q)$ after substitution. When $\mu+1\ge M$,
+\[
+M(r-q)+(\mu+1)q-\mu\le(\mu+1)r-\mu.
+\]
+A nonzero derivative of order $r$ attains this bound. Minimizing over $P$ completes the proof. Moreover, $m_\gamma(\mu)$ is nondecreasing: every expression in the maximum has nonnegative slope $|\alpha|-1$.
+
+This degree measure depends on the original coordinates. It is not an invariant of conjugacy of LNDs and, without a further argument, cannot serve as an obstruction to polynomiality of the kernel.
+
+\section{Exact calculations for harmonic models}\label{sec:computed}
+For $\mu=1$, the following results were obtained. The lower bounds are certified by rational dual certificates, and the upper bounds by explicit slices.
+
+\begin{center}\small\renewcommand{\arraystretch}{1.22}
+\begin{tabular}{@{}lrrr@{}}\toprule
+Model & $m_\gamma(1)$ & Unknowns & Nonzero weights\\\midrule
+$H(3,4,5)$ &7&20&11\\
+$H(3,5,7)$ &11&56&35\\
+$H(4,5,7)$ &12&84&41\\
+$H(3,7,8)$ &13&84&41\\
+$H(3,10,11)$ &19&220&111\\
+$H(3,13,14)$ &25&455&225\\
+$H(5,7,8)$ &11&56&29\\
+$H(7,10,11)$ &15&120&61\\\bottomrule
+\end{tabular}\end{center}
+The last two columns refer to the system excluding degree one below the minimum. The first two rows reproduce earlier results with more compact certificates.
+
+If the system is written as $A c=b$, a lower-bound certificate is a rational vector $\lambda$ satisfying $\lambda^{\mathsf T}A=0$ and $\lambda^{\mathsf T}b=1$. This rules out a solution over every field of characteristic zero, not only over $\Q$. A separate verification script rebuilds the columns and performs the calculations using \file{Fraction}; no symbolic solver is needed for verification.
+
+\subsection*{$H(3,7,8)$: a lower-degree retraction is not always better}
+The Chebyshev identities give
+\[
+C_7C_8=C_{15}+C_1,\qquad C_5(C_3)=C_{15},\qquad
+P_5=yz-C_5(x)=yz-x^5+5x^3-5x.
+\]
+The resulting slice of degree $13$ is optimal for $\mu=1$. However, the minimum degree of the parameter polynomial itself is $4$; one may take
+\[
+\begin{split}
+P_4={}&x^3z+x^3-x^2yz-xy^2-2xz-x\\
+&+y^3+2yz-2y.
+\end{split}
+\]
+For $\mu=1$, this $P_4$ yields a slice of degree $19$. Thus minimizing $\deg P$ and minimizing $\deg S_P$ are different problems.
+
+The full dependence on multiplicity is
+\[
+\boxed{\begin{aligned}
+m_{378}(1)&=m_{378}(2)=13,\quad m_{378}(3)=17,\quad m_{378}(4)=21,\\
+m_{378}(5)&=22,\quad m_{378}(6)=23,\quad
+m_{378}(\mu)=3\mu+4\quad(\mu\ge7).
+\end{aligned}}
+\]
+For $\mu\le4$, $P_5$ suffices; from $\mu=5$ onward, $P_4$ suffices. The lower bounds for $1\le\mu\le7$ have been checked exactly; the last test also excludes $\deg P\le3$. Theorem 3.3 applies thereafter.
+
+\subsection*{$H(4,5,7)$: a formula for all multiplicities}
+Here
+\[
+P_3=(x^2-2)z-y^3+3y,\qquad
+\boxed{m_{457}(\mu)=\max\{12,\mu+9,2\mu+3\}.}
+\]
+The first, second, and third derivatives of $P_3$ along the curve have maximum degrees $11$, $7$, and $0$. This gives the upper bound. For $\mu=1,2,3$, the lower bound $12$ follows from the certificate at $\mu=1$ and monotonicity.
+
+Restriction to the curve is injective on polynomials of degree $\le3$: the corresponding $20\times20$ minor has determinant $267386$. Therefore $P_3$ is unique in this degree range. For $\mu=4,5$, every $P$ of degree $\ge4$ gives a slice of degree at least $3\mu+4>\mu+9$. For $\mu\ge6$, the general theorem applies with $M=7$, $r_\gamma=3$.
+
+\subsection*{An infinite family of upper bounds}
+For odd $a,m\ge3$, set $b=(ma-1)/2$, $c=(ma+1)/2$. The indices are pairwise coprime, and $P=yz-C_m(x)$ recovers the parameter. The exact degree of its slice is
+\[
+\deg S_{P,\mu}=\max\{a(m-1)+1,(\mu+1)m-\mu\}.
+\]
+For $(a,b,c)=(3,3n+1,3n+2)$, this gives $m_\gamma(1)\le6n+1$. Equality is certified for $n=1,2,3,4$; the general lower bound has not yet been proved.
+
+\section{The kernel and formal triviality}\label{sec:formal}
+Let $I=\ker(k[Y_1,\ldots,Y_n]\to k[u])$ be the ideal of the embedding, and let $B_\mu=\ker D_\mu$. Taylor expansion yields the following description, classical in nature:
+\[
+\boxed{B_\mu=k[t,V,I(V)/t^\mu]\simeq k[Y][t,I/t^\mu].}
+\]
+For $\mu=1$, the corresponding construction is described in \cite[Proposition 5.4, Corollary 5.5]{vdER}. It does not assert polynomiality of $B_\mu$.
+
+The elementary key is this: if all derivatives of $F$ of orders $<q$ vanish along $\gamma$, then $F\in I^q$. To prove this, choose $P\circ\gamma=u$ and put $g_i=Y_i-f_i(P(Y))$. Taylor expansion about $\gamma(P(Y))$ first shows that $I=(g_1,\ldots,g_n)$, and then gives the required membership. The converse follows from the Leibniz rule. For $j<0$, a weight component $t^jF(V)$ is polynomial exactly when $F\in I^{\lceil-j/\mu\rceil}$; this gives the kernel formula.
+
+\subsection*{Theorem 5.1. All finite thickenings are trivial}
+For every embedding, every $\mu\ge1$, and every $N\ge1$,
+\[
+\boxed{B_\mu/(t^N)\simeq(k[t]/(t^N))^{[n]}.}
+\]
+The isomorphisms can be chosen compatibly in $N$, so
+\[
+\boxed{\widehat B_\mu^{\,(t)}\simeq k[p,q_1,\ldots,q_{n-1}][[t]].}
+\]
+The right-hand side consists of power series in $t$ with polynomial coefficients. The degrees of these coefficients in $p,q$ may grow. This is not a claim about the ordinary polynomial ring $k[[t]][p,q]$.
+
+\textit{Proof.} Set $a(u)=\nabla P(\gamma(u))$, $v(u)=\gamma'(u)$. The chain rule gives $a v=1$. Over the PID $k[u]$, the module of rows annihilating $v$ is free of rank $n-1$; choose a basis $\ell_1,\ldots,\ell_{n-1}$. Together with $a$, these rows form an invertible matrix over $k[u]$.
+
+A row $\ell$ can be lifted explicitly to the ideal of the curve:
+\[
+F_\ell(Y)=\sum_i\ell_i(P(Y))\bigl(Y_i-f_i(P(Y))\bigr).
+\]
+We have $F_\ell\in I$ and $\nabla F_\ell(\gamma)=\ell-(\ell v)a=\ell$. Define
+\[
+p=P(V),\qquad q_j=-F_{\ell_j}(V)/t^\mu,\qquad s=(u-P(V))/t^\mu.
+\]
+These are polynomials; $p,q_j$ are invariant, and $D_\mu(s)=1$. At $t=0$, the change $(u,X)\mapsto(p,q,s)$ is
+\[
+(u,X)\longmapsto(u,\ell_1(u)X,\ldots,\ell_{n-1}(u)X,a(u)X)
+\]
+and is invertible.
+
+After composing with its polynomial inverse at $t=0$, we obtain an endomorphism $\Phi\equiv\mathrm{id}\pmod{t^\mu}$. On $A/(t^N)$, the operator $E=\mathrm{id}-\Phi$ raises $t$-adic order by $\mu$, so $E^L=0$ for $L=\lceil N/\mu\rceil$. The inverse map is the finite sum $\sum_{j=0}^{L-1}E^j$. It is the inverse of a ring homomorphism as an additive map and is therefore automatically multiplicative.
+
+Thus
+\[
+A/(t^N)=(k[t]/(t^N))[p,q_1,\ldots,q_{n-1},s],\qquad\overline D_\mu=\partial_s.
+\]
+The global slice theorem gives $A=B_\mu[s]$. Consequently, the kernel of the reduced derivation is $B_\mu/(t^N)$. The same polynomials $p,q$ work for every $N$, ensuring compatibility.\hfill$\square$
+
+\textbf{Consequence for the strategy.} The abstract type of any one finite thickening of the fiber $t=0$ cannot distinguish these kernels from a polynomial kernel. One must control global algebraization, degrees of the inverse map, or additional structures. Finite certificates for degree restrictions remain useful: they retain the original coordinates, which are absent from the abstract thickening ring.
+
+\section{A restriction on coordinates for the cubic family}\label{sec:uniform}
+Let $\gamma_n=(C_3,C_{3n+1},C_{3n+2})$, $n\ge1$. Over $\C$, there is no polynomial coordinate $H$ satisfying $H\circ\gamma_n=u$ of either form
+\[
+\boxed{H=Q(x,y)+M(x)z\quad\text{or}\quad H=Q(x,z)+M(x)y.}
+\]
+The degrees of $Q$ and $M$ are unrestricted. The exclusion also applies to an absolute coordinate: the full automorphism is not required to preserve $x$.
+
+\subsection*{Proof of the relative statement}
+Write $U_j=U_j(x/2)$ for the Chebyshev polynomials of the second kind. In the free module with basis $1,u,u^2-2$ over $\C[x]$, where $u^3-3u=x$, we have
+\[
+y=U_nu-U_{n-1}(u^2-2),\qquad
+z=-U_{n-1}u+U_n(u^2-2).
+\]
+For the first form, reduce $Q$ modulo the monic relation
+$y^3-3y-C_{3n+1}(x)=0$ to $Ay^2+By+C$. Comparing coefficients gives
+\[
+U_{3n}A+U_{2n}M=U_{n-1}.\tag{6.1}
+\]
+When $M=0$, this equality is impossible by degree. If $(x,H,W)$ is an automorphism and $M(\alpha)=0$, the polynomial $Q(\alpha,y)$ must be affine-linear in $y$. Hence $A(\alpha)=0$ and $U_{n-1}(\alpha)=0$.
+
+All roots of $M$ belong to the real roots of $U_{n-1}$. The two largest roots of $U_{3n}$,
+$x_j=2\cos(j\pi/(3n+1))$, $j=1,2$, lie to the right of all these roots. For $n=1$, $U_0$ has no roots at all. Substitution in (6.1), together with the sine formula, gives
+$M(x_1)=1$, $M(x_2)=-1$.
+But for $M=c\prod(x-\alpha)^{e_\alpha}$, the ratio $M(x_1)/M(x_2)$ is positive, even when $c$ is complex. This is a contradiction.
+
+For the second form, one similarly obtains
+\[
+U_{3n+1}A+U_{2n}M=U_n.
+\]
+The two largest roots of $U_{3n+1}$ lie to the right of the roots of $U_n$ and again force opposite values of $M$. This completes the relative proof.
+
+\subsection*{Passage to an absolute coordinate}
+For $M\ne0$, the polynomial $H$ is a coordinate over $\C(x)$. If it were an absolute coordinate, Proposition 3.1 of Edo--van den Essen--Maubach \cite{EVM} would make it a coordinate over $\C[x]$. This contradicts what has just been proved.
+
+For $n=1$, this exclusion is compatible with the project's complex constructions for $H(3,4,5)$: the parameter component must depend nonlinearly on both transverse variables. This restricts the form of a rectifier; it does not prove that no rectifier exists.
+
+\subsection*{The natural modification also fails}
+Consider
+\[
+\beta_n=(x,C_n(x)z-y^2+2,y),\qquad
+\beta_n\circ\gamma_n=(C_3,C_2,C_{3n+1}).
+\]
+At every root $\alpha$ of $C_n$, the center $H(\alpha,2-y^2,y)$ cannot be affine-linear in $y$ if $H$ recovers the parameter of the target triple. Otherwise, in the quotient by $u^3-3u-\alpha$, we obtain
+\[
+u=\lambda\bigl(U_n(\alpha/2)u-U_{n-1}(\alpha/2)(u^2-2)\bigr)+\nu.
+\]
+Here $U_{n-1}(\alpha/2)\ne0$, because
+$C_n(x)^2+(4-x^2)U_{n-1}(x/2)^2=4$. Comparing coefficients first gives $\lambda=0$ and then a contradiction. This proof imposes no bound on the degree of $H$.
+
+For odd $n$, the target triple is not an embedding: $u=\pm\sqrt3$ have the same image. For even $n=2m$, the target has an explicit relative coordinate. If
+$C_{6m+1}(u)=uP_m(u^2-2)$, $\varepsilon=P_m(1)=(-1)^m$, then
+\[
+A_m(Y)=\frac{1-\varepsilon P_m(Y)}{Y-1},\qquad
+H_0=xA_m(Y)+\varepsilon Z
+\]
+recovers the parameter. Thus even rectifiability of the target does not repair the bad center of this particular transfer.
+
+\subsection*{An additional finite result for $H(3,7,8)$}
+Coordinates $Q(x,L)+M(x)N$ are excluded when $(L,N)$ is any invertible constant linear change of $(y,z)$, $\deg M\le10$, and the degree of $Q$ is arbitrary. After normalizing $L=y+az$, the problem reduces to 56 exact conditions on the multiplicities of the roots of $M$. In every case, the gcd of the necessary polynomial conditions is $1$; repeated roots at $a=\pm i/2$ are checked separately. This is a \textbf{bounded result}: the case $\deg M>10$ is not excluded here.
+
+\section{H(4,5,7): the degree-four barrier in the relative class}\label{sec:h457}
+Suppose that $F\circ(C_4,C_5,C_7)=u$ and $\deg F\le4$. Then:
+\begin{itemize}
+\item the unique such $F$ that is a coordinate of $k(x)[y,z]$ is $F_0=(x^2-2)z-y^3+3y$;
+\item no such $F$ is a coordinate of $k(y)[x,z]$ or $k(z)[x,y]$;
+\item $F_0$ is not a coordinate over $k[x]$: its derivatives with respect to $y,z$ vanish simultaneously at $x^2=2$, $y^2=1$.
+\end{itemize}
+Consequently, any method that completes one of the pairs $(x,F)$, $(y,F)$, or $(z,F)$ to an automorphism necessarily requires $\deg F\ge5$.
+
+The proof exhausts the entire space of polynomials of degree $\le4$. The restriction matrix for the 35 monomials has rank 28. All parameter polynomials form the affine space $F_0+\langle K_0,\ldots,K_6\rangle$. The archive lists all seven $K_i$ explicitly; completeness is verified by nonzero minors.
+
+The Jung--van der Kulk theorem is then applied: a plane coordinate of degree 3 has the form $P_3(L)+cM$, and one of degree 4 has either the form $P_4(L)+cM$ or $A(M+Q_2(L))^2+bL+c$, with the appropriate nonzero coefficients. Successive coefficient comparisons in all three projections exclude the possibilities. In the final branch, the nonzero resultant $6561301239$ is computed; an explicit B\'ezout identity with constant $729033471$ is also supplied.
+
+The verifier checks 35 exact conditions, and a separate audit repeats the ranks, boundary cases, and parameter eliminations. The structural source of the normal forms is the classical theorem and its degree-divisibility lemma; a convenient primary account is given in \cite{Chau}.
+
+\textbf{Scope of the assertion.} It does not exclude an absolute coordinate of degree 4 whose completion changes all three original coordinates, nor does it exclude relative coordinates of degree $\ge5$.
+
+\section{The complete filtration of a one-step transfer}\label{sec:transfer}
+Let $R=k[x]$, $A=R[y,z]$, $(H,W)\in\Aut_R R[Y,Z]$, and
+\[
+d=H_YW_Z-H_ZW_Y\in k^*,\qquad
+\beta=(p(y)+mz,y),\quad p\in R[y],\ 0\ne m\in R.
+\]
+Set $h=H\circ\beta$, $w=W\circ\beta$, and $D=h_z\partial_y-h_y\partial_z$.
+Extract the content of the nonconstant monomials:
+\[
+c=h(x,0,0),\qquad h=c+g h_0,
+\]
+where $g\in R$ is the monic gcd of the coefficients of all monomials of $h$ that are nonconstant in $y,z$.
+
+\subsection*{Theorem 8.1}
+We have $g\mid m$ and $B=\ker D=k[x,h_0]$. For every irreducible $\pi\mid m_1=m/g$, define
+\[
+E_\pi=v_\pi(m_1),\qquad e_\pi=\deg_y(h_0\bmod\pi)\ge1.
+\]
+The reduction of $h_0$ here is independent of $z$. For $\mathcal F_n=\ker D^{n+1}$,
+\[
+\boxed{D^n(\mathcal F_n)=
+\left(g^n\prod_{\pi\mid m_1}\pi^{E_\pi(n-\lfloor n/e_\pi\rfloor)}\right)B.}
+\]
+In particular,
+\[
+\boxed{\pl(D)=D(A)\cap B=
+\left(g\prod_{e_\pi\ge2}\pi^{E_\pi}\right)B.}
+\]
+All multiplicities of the exceptional divisor are retained. Good components with $e_\pi=1$ disappear from the plinth ideal of the primitive derivation; the factor $g$ is accounted for separately.
+
+\subsection*{Main steps of the proof}
+\textit{1. Kernel and normalization.} Over $k(x)$, the pair $(h,w)$ is a coordinate system, and $D(w)=dm$. It follows that $g\mid m$, and the kernel over this field is $k(x)[h_0]$. The reduction of $h_0$ modulo every prime $\pi\in R$ is nonconstant; hence $R[h_0]$ is $\pi$-saturated in $A$. Successive cancellation of denominators gives $A\cap k(x)[h_0]=R[h_0]$.
+
+\textit{2. An exact equation for the modification.} Let $(\mathcal Y,\mathcal Z)$ be the inverse of $(H,W)$. The polynomial
+\[
+N(T,V)=\frac{\mathcal Y(c+gT,V)-p(\mathcal Z(c+gT,V))}{g}
+\]
+does belong to $R[T,V]$, and $\gcd(N,m_1)=1$; this is proved by reduction modulo $g$ and invertibility of the center over the finite quotient ring. Then
+\[
+A\simeq R[T,V,z]/(m_1z-N(T,V)),\qquad T=h_0,\quad V=w.
+\]
+Polynomiality of $N$ is essential: formal division without checking it would leave a gap.
+
+\textit{3. A monic model at each prime.} Localize only $R$: let $O=R_{(\pi)}$, with coefficient ring $O[T]$. Over $O/(\pi^{E_\pi})$, the center has the form $(G(y),J(y))$ and generates the entire polynomial ring in $y$. This ring is free of rank $e_\pi$ over the ring in $G$; the proof repeats ordinary division and uses a finite lifting process through powers of $\pi$.
+The characteristic polynomial of multiplication by $J$ gives a monic $P_\pi(T,V)$ of degree $e_\pi$ in $V$. The equations of the center and $P_\pi$ generate the same ideal modulo $\pi^{E_\pi}$, leading to the exact model
+\[
+P_\pi(h_0,w)=\pi^{E_\pi}v.
+\]
+Conditions depending on $T$ are retained here: replacing $O[T]$ by its rational function field in $T$ would not suffice.
+
+\textit{4. Basis and leading coefficient.} The monomials $w^iv^j$, $0\le i<e_\pi$, form a basis over $O[h_0]$. Their $D$-degrees are $i+e_\pi j$ and are pairwise distinct. Thus leading terms cannot cancel. When $n=i+e_\pi j$, we obtain exponent $E_\pi(n-j)$. Intersecting the local conditions over all primes of $R$, and using the Chinese remainder theorem to construct preimages, gives the global formula.
+
+The full algebraic proof, including divisibility, monic lifting, and gluing, is provided in \file{relative_lnd/PROOF.md}; a separate audit is in \file{literature/independent_image_ideal_review.md}. In addition, 16 examples and 28 separate exact conditions were checked.
+
+\subsection*{An example with a repeated divisor and a nonlinear lift}
+Let
+\[
+h=y^2+xy^3+x^2z,\qquad D=x^2\partial_y-(2y+3xy^2)\partial_z.
+\]
+Here $E=2$ and $e=2$. For $v=y^4+xyz-z$,
+\[
+Dv=2y+xh,\qquad D^2v=2x^2,\qquad
+z=-(1+xy)v+hy^2.
+\]
+The sequence of image ideals has exponents $0,2,2,4,4,6,6,\ldots$. Finding a single image element yields only an inclusion; equality of the entire ideal follows from the theorem.
+
+\subsection*{Consequences for the theory of LNDs}
+For $D_{M,e}=x^M\partial_y-e y^{e-1}\partial_z$, $M\ge1$, $e\ge2$,
+\[
+I_n(D_{M,e})=(x^{M(n-\lfloor n/e\rfloor)}).
+\]
+The exponent $M$ is recovered from the multiplicity of the prime divisor of the plinth ideal, and $e$ is recovered as the first $n$ for which $I_n\supsetneq I_1^n$. Thus distinct pairs $(M,e)$ give nonconjugate LNDs. The family itself is classical; no priority is claimed for this formulation of the consequence.
+
+For $h=(x^2-2)z-y^3+3y$, which arises for $H(4,5,7)$,
+\[
+\ker D=k[x,h],\qquad I_n(D)=(x^2-2)^{n-\lfloor n/3\rfloor}k[x,h].
+\]
+This is exact information about this particular LND, not an obstruction to every possible rectifier of the curve.
+
+\section{Iterated modifications and Cremona groups}\label{sec:iterated}
+Define
+\[
+r_{-1}=z,\quad r_0=y,\quad r_j=xr_{j-2}-r_{j-1}^2,\qquad j\ge1.
+\]
+For a fixed $\ell\ge1$, set $p=r_\ell$, $w=r_{\ell-1}$, and
+\[
+D_\ell=(-1)^\ell\bigl(p_y\partial_z-p_z\partial_y\bigr).
+\]
+Then $D_\ell(w)=x^\ell$ and $\ker D_\ell=B=k[x,p]$. The derivation is irreducible: a common divisor of its components must divide $x^\ell$, while $p\bmod x=-y^{2^\ell}$ has nonzero derivative with respect to $y$.
+
+On the open set $x\ne0$, every operation is invertible; denominators appear when extending across $x=0$. This gives a concrete connection with Cremona transformations: birational invertibility is straightforward, whereas polynomiality and factorization length are controlled by the exceptional divisor.
+
+\subsection*{Theorem 9.1. The entire filtration}
+For $I_n(D)=D^n(\ker D^{n+1})$,
+\[
+\boxed{I_n(D_\ell)=x^{a_\ell(n)}B,\qquad
+a_\ell(n)=\ell n-\sum_{j=1}^{\ell}\floor{\frac n{2^j}}.}
+\]
+The proof gives an explicit basis. Set $v_j=r_{\ell-1-j}$ for $0\le j\le\ell$, and $v_{-1}=p$. Then
+\[
+v_j^2=xv_{j+1}-v_{j-1}\quad(0\le j<\ell),\qquad \deg_{D_\ell}v_j=2^j.
+\]
+By the monic relations, the normal monomials have the form
+\[
+s_n=\prod_{j=0}^{\ell-1}v_j^{\varepsilon_j}\,v_\ell^q,
+\qquad n=\sum_{j=0}^{\ell-1}\varepsilon_j2^j+q2^\ell,
+\quad\varepsilon_j\in\{0,1\}.
+\]
+They form a $B$-basis and have pairwise distinct $D$-degrees. When expressed in terms of $w$, the leading coefficient of $v_j$ is $x^{-(2^j-1)}$. Applying $D_\ell^n$ and using the binary expansion of $n$ gives the stated sum of floor functions; the factor $n!$ is a unit in $k$.
+
+For $\ell=3$, the exponents for $0\le n\le8$ are
+\[
+0,\ 3,\ 5,\ 8,\ 9,\ 12,\ 14,\ 17,\ 17.
+\]
+For $\ell\ge2$, the derivation $D_\ell$ is not conjugate to any irreducible one-step transfer of Theorem 8.1, even after changing the base coordinate. Indeed, the unique prime divisor of the plinth ideal and its multiplicity $\ell$ are preserved by every conjugacy. For the one-step class, the exponent of $I_2$ at this prime would be $\ell$ when $e=2$, or $2\ell$ when $e>2$, whereas here it equals $2\ell-1$.
+
+In particular, $D_\ell$ is \textbf{not triangularizable} for $\ell\ge2$. If, in some coordinates, it had the form $a(X)\partial_Y+b(X,Y)\partial_Z$ with $a\ne0$, it would belong to the one-step class with $h=a(X)Z-\int b(X,Y)\,dY$. If the derivative of the first coordinate is a nonzero constant, the plinth ideal equals the entire kernel; when $a=0$, irreducibility likewise gives a constant translation. Both cases are incompatible with our plinth ideal. The existence of such nontriangularizable examples is not claimed as new; the point here is an explicit way to detect them using two ideals.
+
+\subsection*{The associated graded ring}
+The same monic relations give a fuller description:
+\[
+\boxed{\gr_{D_\ell}A\simeq
+B[\xi_0,\ldots,\xi_\ell]/(\xi_j^2-x\xi_{j+1}:j<\ell),\quad
+\deg\xi_j=2^j.}
+\]
+After reduction modulo $x$, the nilradical $N=(\xi_0,\ldots,\xi_{\ell-1})$ satisfies $N^\ell\ne0$, $N^{\ell+1}=0$, and $N/N^2$ is free of rank $\ell$ over $k[p,\xi_\ell]$.
+
+An illustrative example is given by $D_3$ and $xD_2$: they have the same plinth ideal $(x^3)$, and the exponents of $I_n$ agree for $n\le7$. At $n=8$, they are $17$ and $18$, respectively. The full filtration detects a difference that the first seven ideals do not.
+
+This illustrates the additional information in the filtration, rather than a newly solved difficult conjugacy problem: the fields are already distinguished by irreducibility.
+For $\ell=2$, nontriangularizability is also known from
+\cite[Example 4.19]{DG}; the novelty of the general family and formulas is not established here.
+
+\subsection*{Connection with the current question on complexity}
+In the journal article by Dasgupta--Gaifullin \cite[Theorem 4.12]{DG}, universal level is related to the complexity of a birational representation by $\operatorname{ulev}(D)=c(\alpha)+1$. Their Question 4.21 concerns a candidate constructed by three alternating modifications and permutations.
+
+Our recurrence allows this type of construction to be studied through its exact filtration. \textbf{However, the equality $c(\varphi)=3$ is not proved here}: it requires excluding every shorter admissible factorization, not merely the canonical one-step class. Extracting such a lower bound from $\gr_DA$ is a substantive next problem.
+
+\section{Why relative ML does not distinguish our curves}\label{sec:relativeML}
+Let $A=k[x_1,\ldots,x_n]$, $I\subsetneq A$, and $\dim(A/I)\le n-2$. For every $r\ge1$,
+\[
+\boxed{\bigcap_{\substack{0\ne D\in\operatorname{LND}(A)\\D(A)\subset I^r}}\ker D=k.}
+\]
+Moreover, the algebra generated by the union of these kernels is $A$.
+
+For each $i$, there exists a nonzero $f_i\in I\cap k[x_1,\ldots,\widehat{x_i},\ldots,x_n]$: otherwise, $n-1$ coordinate images would be algebraically independent in a ring of dimension $\le n-2$. Take
+\[
+D_i=f_i^r\partial_{x_i},\qquad
+\ker D_i=k[x_1,\ldots,\widehat{x_i},\ldots,x_n].
+\]
+These LNDs satisfy $D_i(A)\subset I^r$; the intersection of their kernels is $k$, and their union contains every coordinate. This proves both assertions.
+
+Consequently, the candidate with the weaker condition $D(I)\subset I$ also always gives $k$ for a curve in $\A^3$. Even requiring an arbitrary finite thickening to be fixed pointwise does not help.
+
+For harmonic models, one may take, for example,
+\[
+f_x=C_c(y)-C_b(z),\quad
+f_y=C_c(x)-C_a(z),\quad
+f_z=C_b(x)-C_a(y).
+\]
+The mechanism of replicas is consistent with stronger results on flexibility of complements; see Flenner--Kaliman--Zaidenberg \cite{FKZ}. Thus the research strategy is corrected here; no new nontrivial invariant is being claimed.

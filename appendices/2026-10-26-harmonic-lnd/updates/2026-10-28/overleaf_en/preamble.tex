@@ -1,0 +1,33 @@
+% The article layout follows paper/main.tex in the source preprint.
+% XeLaTeX uses standard Unicode fonts for the English counterpart.
+\usepackage{fontspec,polyglossia}
+\setmainlanguage{english}
+\setmainfont{DejaVu Serif}[ItalicFont=DejaVu Serif,ItalicFeatures={FakeSlant=0.16},BoldItalicFont=DejaVu Serif Bold,BoldItalicFeatures={FakeSlant=0.16}]
+\setsansfont{DejaVu Sans}\setmonofont{DejaVu Sans Mono}[Scale=0.82]
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{unicode-math}\setmathfont{Latin Modern Math}
+\usepackage[margin=24mm,headheight=14pt]{geometry}
+\usepackage{microtype,xcolor,booktabs,tabularx,longtable,array,enumitem,fancyhdr,needspace,xurl}
+\usepackage[unicode,colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!45!black,citecolor=blue!45!black]{hyperref}
+\hypersetup{pdftitle={Rectification of Harmonic Embeddings, LNDs and the Makar-Limanov Invariant: Research Appendix},pdfauthor={Ivan Dorofeev and Alexander Frolov},pdfsubject={Research appendix under verification; 28 October 2026}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Research Appendix: LNDs and ML}
+\fancyhead[R]{\small I. Dorofeev and A. Frolov}\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}\setlength{\emergencystretch}{3em}
+\setlist{nosep,leftmargin=*}\setcounter{tocdepth}{1}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\A}{{\mathbb{A}}}\newcommand{\Q}{{\mathbb{Q}}}\newcommand{\C}{{\mathbb{C}}}\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Aut}{\operatorname{Aut}}\newcommand{\ML}{\operatorname{ML}}\newcommand{\LND}{\operatorname{LND}}
+\newcommand{\pl}{\operatorname{plinth}}\newcommand{\gr}{\operatorname{gr}}\newcommand{\wt}{\operatorname{wt}}\newcommand{\Div}{\operatorname{div}}\newcommand{\Span}{\operatorname{span}}\newcommand{\pr}{\operatorname{pr}}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}\newcommand{\file}[1]{\path{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\widowpenalty=10000\clubpenalty=10000
+% Reserve enough space for two-digit section numbers in the contents.
+\makeatletter
+\renewcommand*\l@section[2]{\ifnum\c@tocdepth>\z@\addpenalty\@secpenalty\addvspace{0.8em}\begingroup\parindent\z@\rightskip\@pnumwidth\parfillskip-\@pnumwidth\leavevmode\bfseries\advance\leftskip3em\hskip-\leftskip\@tempdima3em #1\nobreak\hfil\nobreak\hb@xt@\@pnumwidth{\hss #2}\par\endgroup\fi}
+\makeatother

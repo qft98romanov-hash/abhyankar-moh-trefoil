@@ -1,12 +1,37 @@
 # Polynomial rectification of the trefoil and a harmonic figure-eight
 
 **Ivan Dorofeev** · Independent Researcher  
+**Alexander Frolov** · Researcher  
 [qft98romanov@gmail.com](mailto:qft98romanov@gmail.com)
 
 The results were obtained on **24 October 2026** through interactive work with
 **GPT Astra**. The main polynomial identities and both explicit rectifications
 have been checked by exact symbolic computation; a reproducible computational
 certificate is included.
+
+## Further consequences of the trefoil rectification
+
+The explicit rectification of Shastri's trefoil also disproves
+**Conjectures 5.1–5.3** of van den Essen and van Rossum,
+[*Triangular derivations related to problems on affine n-space*
+(2002)](https://doi.org/10.1090/S0002-9939-01-06212-8), concerning their
+specific Shastri candidate:
+
+- the associated locally nilpotent derivation has a kernel isomorphic to a
+  polynomial ring in four variables over $`\mathbb C`$;
+- their original slice is an ambient coordinate, so its quotient is polynomial;
+- the associated extended Rees algebra is likewise a polynomial ring in four
+  variables.
+
+Conjecture 5.3 is labelled **“Asanuma's Conjecture”** in that paper. These are
+three formulations concerning the same candidate, not solutions of the general
+spatial embedding or cancellation problems. The full deductions, explicit
+coordinates and computational certificates are presented for verification in
+[Appendix 1](appendices/2026-10-26-harmonic-lnd/updates/2026-10-28/README_EN.md).
+
+[Appendix 1 — full English PDF](appendices/2026-10-26-harmonic-lnd/updates/2026-10-28/abhyankar_moh_research_appendix_2026-10-28_en.pdf)
+· [Appendix 2 — full English PDF](appendices/2026-10-28-cremona-program/appendix2_cremona_program_en.pdf)
+· [All appendices, Russian editions and sources](appendices/README.md)
 
 [Full paper](paper/rectification.pdf) · [LaTeX source](paper/main.tex) ·
 [Detailed mechanism](MECHANISM.md) · [Certificate](verify.py) ·
@@ -16,7 +41,8 @@ The paper is organized as **methods → trefoil → harmonic figure-eight**.
 
 ## Acknowledgements
 
-The author expresses his sincere gratitude to Alexei Kanel-Belov and Alexander Frolov.
+The authors express their sincere gratitude to Professor Alexei Kanel-Belov
+and Professor Alexander Gasnikov.
 
 ## Correction and literal-formula audit: 25 October 2026
 
@@ -189,3 +215,25 @@ explains the modification $`(x,y,z)\mapsto(x,xz-y^2+2,y)`$ used in its construct
 For the real knot identifications $`H(3,4,5)`$ and $`H(3,5,7)`$, see Koseleff and Pecker, [*Chebyshev diagrams for two-bridge knots*](https://arxiv.org/abs/0909.3281), Introduction and Definition 1.2 ([journal DOI](https://doi.org/10.1007/s10711-010-9514-7)). The normalization above changes the parameter and ambient coordinates linearly.
 
 **Scope.** These cases do not prove rectifiability of all Chebyshev or harmonic parametrizations. Further applications must verify that the complex parametrization is a closed embedding, find a coordinate restricting to the parameter, and meet the transfer theorem's hypotheses. Determining which further Chebyshev models admit this construction remains open here. Their real knot classification alone does not establish polynomial equivalence over $`\mathbb C`$.
+
+## Continuing research
+
+Ivan Dorofeev and Alexander Frolov plan to develop the connections between
+polynomial rectification, locally nilpotent derivations (LNDs), the
+Makar–Limanov (ML) and Derksen invariants, polynomial automorphism groups,
+extended Rees algebras, and birational geometry. This includes the
+three-dimensional Cremona group
+
+```math
+\operatorname{Cr}_3(\mathbb C)
+=\operatorname{Bir}_{\mathbb C}(\mathbb P^3)
+```
+
+and questions about tame and wild automorphisms and algebraic group actions.
+The [appendices](appendices/README.md) contain the detailed constructions,
+working arguments and open questions; their research status is stated separately
+from the original rectification certificates.
+
+Lean formal verification is planned for forthcoming updates. The repository
+will also expand its catalogue of knot parametrizations with verified polynomial
+rectifiers as further cases are established.

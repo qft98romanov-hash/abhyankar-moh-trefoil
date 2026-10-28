@@ -1,0 +1,246 @@
+\section{A normal Euler field: a complete constructive criterion}
+Let $R=k[Y_1,\ldots,Y_n]$, let $\gamma:\A^1\hookrightarrow\A^n$ be a closed embedding,
+and put $I=I_\gamma$, $B=R[t,I/t]$. For a derivation $\delta$, consider
+the conditions
+\begin{equation}\label{eq:normal}
+\delta(R)\subset I,\qquad (\delta-\mathrm{id})(I)\subset I^2.
+\end{equation}
+They say that the field vanishes on the curve and acts as the identity on
+first-order normal functions. Then
+\[
+E=\partial_t+t^{-1}\delta
+\]
+preserves $B$, since $E(Y_i)=\delta Y_i/t\in B$ and
+$E(F/t)=(\delta F-F)/t^2\in B$ for $F\in I$.
+Local finiteness of $\delta$ means that
+$\Span_k\{\delta^jF:j\ge0\}$ is finite-dimensional for every $F\in R$.
+
+\begin{theorem}\label{thm:euler}
+For a fixed $\delta$ satisfying \eqref{eq:normal}, the following are equivalent:
+\begin{enumerate}
+\item $E$ is an LND on $B$;
+\item $\delta$ is locally finite on $R$;
+\item there are coordinates $R=k[p,q_1,\ldots,q_{n-1}]$ such that
+$p\gamma=u$, $I=(q_1,\ldots,q_{n-1})$, and
+$\delta=\sum_jq_j\partial_{q_j}$.
+\end{enumerate}
+Consequently, the existence of such a locally finite field is equivalent
+to rectifiability of $\gamma$ over $k$.
+\end{theorem}
+
+\begin{proof}
+In the localization, direct induction gives
+\begin{equation}\label{eq:falling}
+E^mF=t^{-m}\prod_{j=0}^{m-1}(\delta-j)F,
+\qquad
+E^m(F/t)=t^{-m-1}\prod_{j=1}^{m}(\delta-j)F.
+\end{equation}
+If $E$ is locally nilpotent, every $F$ is annihilated by a nonzero
+polynomial in $\delta$, which gives local finiteness.
+
+The Leibniz rule and \eqref{eq:normal} give
+\[
+(\delta-m)I^m\subset I^{m+1}\quad(m\ge0).
+\]
+Now suppose that $\delta$ is locally finite.
+Let $V$ be a finite-dimensional $\delta$-stable space,
+and let $M$ be the largest ordinary degree of its elements.
+Since $I\subset\mathfrak m_{\gamma(0)}$, we have $V\cap I^{M+1}=0$.
+Thus $\delta(\delta-1)\cdots(\delta-M)$ annihilates $V$.
+Its roots are distinct and belong to $k$: semisimplicity and nonnegative
+integer weights follow automatically, without passage to the
+algebraic closure. We obtain
+\[
+R=\bigoplus_{d\ge0}R_d,\qquad \delta|_{R_d}=d.
+\]
+For a nonzero eigenvector, its exact $I$-adic order equals its weight,
+because the induced action on $I^m/I^{m+1}$ is multiplication by $m$.
+The ideals $I^m$ are graded: the spectral projectors are
+polynomials in $\delta$. Hence
+\[
+I^m=\bigoplus_{d\ge m}R_d,\quad R_0\simeq R/I\simeq k[u],\quad
+R_1\simeq I/I^2,\quad R=R_0[R_1].
+\]
+The last equality follows by induction on the weight: for $d\ge2$ we have
+$R_d\subset I^2$, and each homogeneous factor in a product
+has a smaller positive weight.
+
+Freeness of $I/I^2$ does not require homological algebra.
+Choose $P\gamma=u$, and put $v=\gamma'$, $a=\nabla P(\gamma)$.
+Then $av=1$, and the row module
+$L=\{\ell\in k[u]^n:\ell v=0\}$ is free of rank $n-1$
+over the PID $k[u]$. The gradient defines an isomorphism
+\[
+I/I^2\longrightarrow L,\qquad F\longmapsto\nabla F(\gamma).
+\]
+An explicit lift of a row is
+\[
+F_\ell(Y)=\sum_i\ell_i(P(Y))\bigl(Y_i-f_i(P(Y))\bigr).
+\]
+Injectivity follows from Taylor expansion: a function whose value
+and first gradient both vanish on the curve belongs to $I^2$.
+Choose an invariant lift $p$ of the parameter $u$ and a basis $q_j$ of
+$R_1$ over $R_0=k[p]$. Then $R=k[p,q_1,\ldots,q_{n-1}]$;
+algebraic independence follows from transcendence degree $n$.
+This gives the normal form of $\delta$.
+Finally, $B=k[t,p,q_1/t,\ldots,q_{n-1}/t]$, and $E=\partial_t$
+in these coordinates. This proves all the implications.
+\end{proof}
+
+\subsection{Finite verification and reconstruction of the automorphism}
+It suffices to exhibit the exact stability condition
+\[
+V_N=\Span_k\{1,\delta^jY_i:0\le j\le N, 1\le i\le n\},\qquad
+\delta^{N+1}Y_i\in V_N.
+\]
+Spaces spanned by products of elements of $V_N$ are stable by the Leibniz rule,
+so $\delta$ is locally finite on all of $R$.
+If the degrees of elements of $V_N$ are at most $M$, the spectral
+projection of a polynomial $F$ onto weight $j$ is computed by
+\[
+\pr_j(F)=\prod_{\substack{0\le i\le L\\i\ne j}}
+\frac{\delta-i}{j-i}F,\qquad L\ge M\deg F.
+\]
+Thus
+$p=\pr_0(P)$, $q_j=\pr_1(F_{\ell_j})$ are the required coordinates.
+The inverse map is reconstructed from the weight components of
+$Y_i$ and finitely many transverse derivatives. The detailed formula is retained
+in \file{euler/theory.md}. No universal a priori bound on $N$ is given here.
+
+A positive control reconstructs the nonlinear coordinates
+\[
+r=z-x^2,\qquad q=y-r^2,\qquad p=x-q^2.
+\]
+The corresponding space $V_4$ has dimension $9$ and is exactly
+stable. This checks the implementation; it does not replace the general proof.
+
+\subsection{Necessary conditions that are still insufficient}
+The normal form implies
+\[
+\Div\delta=n-1,\qquad (\delta Y_1,\ldots,\delta Y_n)=I.
+\]
+The equality of ideals describes the entire fixed-point scheme, rather than
+only its set of points. Constancy of the divergence of an LF field is a classical
+fact \cite{Nowicki}; no priority for this fact is claimed.
+
+Even both conditions together with \eqref{eq:normal} are insufficient.
+For the line $I=(y,z)$, the field
+\[
+\delta=yz\partial_x+y\partial_y+(z+y^2x)\partial_z
+\]
+passes all these tests. However, $\delta^{2m}x$ contains
+$xy^{3m}$ with a positive coefficient. It arises by repeating
+the path $x\mapsto yz\mapsto y^3x$; all coefficients are nonnegative,
+so no cancellation occurs. The degrees are unbounded, hence the field is not LF.
+Local finiteness of the normal field must not be confused with local
+nilpotence: in the correct normal form $\delta^m q_j=q_j$, while $E$
+is the locally nilpotent derivation.
+
+\section{The exact limitation of the naive normal field}
+For any parameter polynomial $P\gamma=u$, put
+\[
+\delta_P=\sum_i\bigl(Y_i-f_i(P)\bigr)\partial_{Y_i}.
+\]
+This field always satisfies \eqref{eq:normal}, but has the following
+essential limitation.
+
+\begin{theorem}
+There exists $P\gamma=u$ for which $\delta_P$ is locally finite
+if and only if there exists an affine-linear $L$ such that
+$L\gamma=u$.
+\end{theorem}
+\begin{proof}
+If $P=L$ is affine-linear, then $\delta_P(P)=0$ and
+$\delta_P^2Y_i=\delta_PY_i$, giving local finiteness on the generators.
+Conversely, the necessary divergence identity is
+\[
+\sum_i f_i'(P)\partial_iP=1.
+\]
+By an affine change of coordinates, make the positive degrees of the
+nonconstant $f_i$ pairwise distinct; the remaining components can be made zero.
+The form of $\delta_P$ is preserved under this change. If there is no linear
+parameter, all positive degrees are at least $2$.
+Let $d=\deg P$, and let $j$ correspond to the largest degree of an $f_j$
+with $\partial_jP\ne0$. The degree of this summand is at least
+$(\deg f_j-1)d$, whereas each preceding summand has degree at most
+$(\deg f_i)d-1\le(\deg f_j-1)d-1$.
+The leading term cannot cancel, so the sum cannot equal $1$.
+If there are no active nonzero components, the sum is zero,
+which is also impossible.
+\end{proof}
+
+For harmonic models with distinct indices $a,b,c\ge2$, there is no
+linear parameter. Thus \emph{no} choice of $P$, of any degree,
+makes this field LF. The exclusion also applies to the already rectified
+$H(3,4,5)$ and $H(3,5,7)$, so it is not an obstruction to rectifiability
+of the curve itself.
+
+\section{General normal fields: exact spaces of candidates}
+We seek all $\delta=a_1\partial_x+a_2\partial_y+a_3\partial_z$ with
+$\deg a_i\le d$, satisfying \eqref{eq:normal} and $\Div\delta=2$.
+Each $a_i$ is expanded in a full basis of $I\cap R_{\le d}$.
+Writing $v=\gamma'$, the second normal condition is equivalent to
+the columns of $J_a(\gamma)-\mathrm{Id}$ being multiples of the unimodular $v$.
+This gives a rational linear system $Ac=b$ covering
+all fields of the specified degree bound.
+
+\begin{center}\small
+\begin{tabular}{@{}lrrrrl@{}}\toprule
+Model & $d$ & $\dim I_{\le d}$ & Unknowns & $\operatorname{rank}A$ & Result\\\midrule
+$H(3,7,8)$ &7&63&189&189&inconsistent\\
+$H(3,7,8)$ &8&100&300&276&family $24$\\
+$H(4,5,7)$ &6&42&126&---&inconsistent\\
+$H(4,5,7)$ &7&71&213&194&family $19$\\\bottomrule
+\end{tabular}
+\end{center}
+Inconsistency is certified by an exact rational vector satisfying
+$\lambda^{\mathsf T}A=0$, $\lambda^{\mathsf T}b=1$; the conclusion therefore
+persists under any characteristic-zero field extension.
+For the consistent systems, a rational point and a full basis of
+directions are provided. Exact null vectors give upper bounds on rank;
+matching modular lower bounds certify completeness.
+
+Thus the first degrees at which the \emph{normal conditions together
+with global divergence $2$} are consistent are $8$ and $7$.
+These are not minimum degrees of LF fields or rectifiers.
+For $H(4,5,7)$, degree $6$ is already impossible without the divergence condition.
+For $H(3,7,8)$, the normal conditions alone at degree $7$ have
+an $11$-dimensional family; it is global divergence that excludes it.
+
+\subsection{Two selected representatives are rigorously excluded}
+In the $H(3,7,8)$ family, the selected rational representative preserves
+$(x,y)$ and acts on the quotient $k[z]$ as $\psi(z)\partial_z$,
+with $\deg\psi=6$. In the $H(4,5,7)$ family, the selected representative preserves
+$(y,z)$ and induces $\varphi(x)\partial_x$, with $\deg\varphi=7$.
+For a polynomial $a$ of degree $e\ge2$ in characteristic zero,
+\[
+\deg((a\partial_v)^m v)=1+(e-1)m,\qquad
+\operatorname{lc}((a\partial_v)^m v)
+=\operatorname{lc}(a)^m\prod_{j=0}^{m-1}(1+(e-1)j)\ne0.
+\]
+Hence neither representative is LF, and the corresponding $E$ are not LNDs.
+The full coefficients and separate checks are included in the JSON certificates.
+The axes are not preserved by the entire families: respectively $13$ of $24$ and
+$11$ of $19$ selected basis directions fail to preserve them.
+These counts concern the chosen bases; they are not dimensions of
+excluded subfamilies. No exclusion of all complex parameter values is established.
+
+\subsection{Real topology and conjugation}
+By \cite[p.~2, Fig.~3]{KP}, $H(3,7,8)$ has type $T(2,5)$
+up to mirror image, whereas $H(4,5,7)$ has type $5_2$.
+Consequently, these models admit no real polynomial rectifiers.
+By Theorem~\ref{thm:euler}, \emph{every} suitable LF field for them
+must have nonreal coefficients. This is a known topological
+restriction on the field of definition, not a complex obstruction.
+
+If a suitable complex $\delta$ commuted with $\bar\delta$,
+their average would be a real LF field satisfying the same normal
+conditions. Commuting LF operators have finite-dimensional joint
+cyclic spaces, so the average is indeed LF.
+This would give the forbidden real rectification. Similarly,
+commuting $E$ and $\bar E$ would give a real LND with slice $t$.
+Therefore, both commutators are nonzero in these cases. Moreover,
+\[
+[E,\bar E]=t^{-2}\bigl([\delta,\bar\delta]+\delta-\bar\delta\bigr),
+\]
+so the two commutation conditions must not be identified.

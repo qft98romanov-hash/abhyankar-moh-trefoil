@@ -9,5 +9,13 @@
   "bibliography_entries": 15,
   "new_certificates_status": "35/35 PASS",
   "old_appendix_unchanged": "75/75 Git blobs matched",
-  "delivery_layout": "Repository-relative additions only"
+  "delivery_layout": "Repository-relative additions only",
+  "pdf_pages_by_language": {
+    "Russian": 28,
+    "English": 27
+  },
+  "english_pdf_visual_review": "All 27 pages rendered and visually inspected.",
+  "english_latex_unresolved_references": 0,
+  "english_latex_overfull_boxes": 0,
+  "translation_status": "PASS: 833 mathematical fragments; all section structures and references preserved"
 }

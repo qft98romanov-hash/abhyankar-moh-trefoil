@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-28",
+  "status": "PASS",
+  "unchanged_computation_files": 342,
+  "unchanged_russian_pdf_and_sources": 12,
+  "permitted_metadata_updates": [
+    "appendices/2026-10-26-harmonic-lnd/UPDATE_2026-10-28.md",
+    "appendices/2026-10-26-harmonic-lnd/updates/2026-10-28/DELIVERY_STATUS.json",
+    "appendices/2026-10-26-harmonic-lnd/updates/2026-10-28/PROVENANCE.json",
+    "appendices/2026-10-26-harmonic-lnd/updates/2026-10-28/README.md",
+    "appendices/2026-10-26-harmonic-lnd/updates/2026-10-28/SHA256SUMS.txt"
+  ],
+  "note": "The manifest is regenerated after this check. No old manuscript, Russian text, mathematical program or certificate is changed."
+}

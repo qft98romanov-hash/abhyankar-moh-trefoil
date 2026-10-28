@@ -1,0 +1,111 @@
+\documentclass[11pt,a4paper]{article}
+% Compile with XeLaTeX. All nonstandard text fonts are bundled in fonts/.
+% The layout follows paper/main.tex; Russian text requires Unicode fonts.
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguage{english}
+\setmainfont{NimbusRoman}[Path=fonts/,Extension=.otf,
+ UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,
+ BoldItalicFont=*-BoldItalic]
+\setmonofont{NimbusMonoPS}[Path=fonts/,Extension=.otf,
+ UprightFont=*-Regular,BoldFont=*-Bold,Scale=0.85]
+\usepackage{amsmath,amsthm,mathtools}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor,booktabs,longtable,array,enumitem,fancyhdr,needspace}
+\usepackage{xurl}
+\usepackage[unicode,colorlinks=true,linkcolor=blue!45!black,
+ citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\hypersetup{pdftitle={Appendix 2: Cremona groups and polynomial rectification},
+ pdfauthor={Ivan Dorofeev and Alexander Frolov},pdfsubject={Research branch under verification; 28 October 2026}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Appendix 2: группы Кремоны}
+\fancyhead[R]{\small На стадии проверки}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\setlist{nosep,leftmargin=*}
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem{proposition}[theorem]{Предложение}
+\newtheorem{lemma}[theorem]{Лемма}
+\newtheorem{corollary}[theorem]{Следствие}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Определение}
+\newtheorem{question}[theorem]{Вопрос}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Замечание}
+\newcommand{\A}{{\mathbb A}}
+\newcommand{\Q}{{\mathbb Q}}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\Z}{{\mathbb Z}}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Cr}{\operatorname{Cr}}
+\newcommand{\Tame}{\operatorname{Tame}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\Stab}{\operatorname{Stab}}
+\newcommand{\Frac}{\operatorname{Frac}}
+\title{\vspace{-12mm}\LARGE\bfseries Appendix 2\\[4pt]
+ Группы Кремоны и полиномиальное выпрямление\\
+ вложенных прямых: результаты и программа исследования}
+\author{Ivan Dorofeev and Alexander Frolov\\[3pt]\normalsize Researchers\\
+ \normalsize\href{mailto:qft98romanov@gmail.com}{\texttt{qft98romanov@gmail.com}}}
+\date{28 октября 2026 года}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Исследовательское продолжение явных выпрямлений трилистника Шастри и
+гармонической восьмёрки над $\Q(\sqrt{-3})$. Задача рассматривается через
+различие между бирациональной и полиномиальной эквивалентностью, относительные
+автоморфизмы и устранение полюсов. Приведены рабочие доказательства дикости
+выбранных выпрямителей, их принадлежности стандартной кремоновой подгруппе
+и стабильной ручности. Построено семейство переносов и дан точный учёт
+того, какие конкретные вопросы получают ответ, какие результаты заимствованы
+из литературы и что остаётся открытым. Символьные сертификаты используют
+точную арифметику и сопровождаются воспроизводимым кодом.
+\end{abstract}
+
+\paragraph{Благодарности.}
+Авторы выражают искреннюю благодарность профессору Алексею Канель-Белову
+и профессору Александру Гасникову.
+
+
+\begin{quote}\small
+\textbf{Статус: исследовательская ветка, всё приложение находится на стадии проверки.}
+Эта ветка продолжает изучать следствия найденных выпрямлений и их связи
+с проблемой вложений Абъянкара--Моха, группами Кремоны, бирациональной
+и аффинной геометрией. Несмотря на предварительный статус, авторы считают
+полезным поделиться аргументами и вычислениями. Авторы надеются, что они
+вырастут в полноценную исследовательскую программу, которая поможет
+продвинуться в понимании этих областей, и приглашают всех заинтересованных
+к проверке, обсуждению, исправлению и дальнейшему исследованию.
+
+Материал подготовлен в ходе работы с ИИ. Внутренние повторные проверки и
+альтернативные реализации не являются внешним независимым рецензированием.
+Названия <<теорема>> и <<доказательство>> обозначают предлагаемые математические
+аргументы; они не отменяют общего статуса проверки. Публикационный приоритет
+не заявляется. Приложение не заменяет исходный препринт и Appendix 1.
+\end{quote}
+
+\paragraph{Источник и границы обновления.}
+Зафиксирован репозиторий
+\href{https://github.com/qft98romanov-hash/abhyankar-moh-trefoil/tree/b954f3609e900761fddc9c8ff03d8301e9604cab}{\nolinkurl{qft98romanov-hash/abhyankar-moh-trefoil}},
+commit \nolinkurl{b954f3609e900761fddc9c8ff03d8301e9604cab}.
+Исходные формулы и ранее опубликованные приложения сохранены.
+Здесь слово <<закрыт>> означает логическое следствие приведённых формул
+и цитируемых теорем внутри данной версии, а не заявление об общем решении
+проблемы или о принятии результата математическим сообществом.
+
+\tableofcontents
+\input{sections/status_literature.tex}
+\input{sections/program.tex}
+\input{sections/constructions.tex}
+\input{sections/group_results.tex}
+\input{sections/reproducibility.tex}
+\input{references.tex}
+\end{document}

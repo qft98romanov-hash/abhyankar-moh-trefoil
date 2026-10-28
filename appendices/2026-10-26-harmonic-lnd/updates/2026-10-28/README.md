@@ -1,23 +1,29 @@
 # Исследовательский аппендикс — 28 октября 2026 года
 
-**Автор: Ivan Dorofeev. Всё представленное находится на стадии проверки.**
+**Исследователи: Ivan Dorofeev и Alexander Frolov. Всё представленное находится на стадии проверки.**
 
 Это исследовательская ветка, продолжающая изучение следствий найденных
 выпрямлений и их связей с проблематикой Абъянкара–Моха, теорией LND,
-инвариантом Макар-Лиманова и аффинной геометрией. Автор счёл полезным
+инвариантом Макар-Лиманова и аффинной геометрией. Авторы сочли полезным
 поделиться промежуточными доказательствами и вычислениями до завершения
-проверки, надеется на развитие полноценной исследовательской программы
-и приглашает всех заинтересованных к проверке и совместному исследованию.
+проверки, надеются на развитие полноценной исследовательской программы
+и приглашают всех заинтересованных к проверке и совместному исследованию.
 
 Текст подготовлен при помощи ИИ. Проверки внутри этого процесса не являются
 независимым внешним рецензированием. Литературный приоритет не заявляется.
+
+**Благодарности.** Авторы выражают искреннюю благодарность профессору Алексею
+Канель-Белову и профессору Александру Гасникову.
 
 ## Что находится в пакете
 
 | Материал | Путь |
 | --- | --- |
 | Исследовательский текст на русском: 28 страниц, доказательства, реестр статусов и 15 источников | [PDF](abhyankar_moh_research_appendix_2026-10-28_ru.pdf) |
+| Полный английский исследовательский текст: те же 16 разделов, доказательства и источники | [English PDF](abhyankar_moh_research_appendix_2026-10-28_en.pdf) |
 | Исходники для Overleaf, преамбула в стиле исходного препринта | [overleaf/main.tex](overleaf/main.tex) |
+| Полный английский проект для Overleaf | [overleaf_en/main.tex](overleaf_en/main.tex) |
+| English overview and installation instructions | [README_EN.md](README_EN.md) |
 | Полный вычислительный пакет | [computations/README_RU.md](computations/README_RU.md) |
 | English reproduction instructions | [computations/README_EN.md](computations/README_EN.md) |
 | Свежий общий протокол | [computations/verification_summary.json](computations/verification_summary.json) |
@@ -75,12 +81,22 @@ python verify_delivery.py
 
 ## Overleaf
 
+Для английской версии используйте отдельный архив
+`abhyankar_moh_appendix_2026-10-28_overleaf_en.zip` или содержимое
+`overleaf_en/` в полном пакете. Основной файл также `main.tex`,
+компилятор **XeLaTeX**. Русский проект сохранён без изменений.
+
 Загрузите отдельный архив `abhyankar_moh_appendix_2026-10-28_overleaf.zip`
 через **New Project → Upload Project**. Основной файл — `main.tex`,
 компилятор — **XeLaTeX**. Для сборки из полного пакета можно импортировать
 содержимое каталога `overleaf/`. PDF в самом Overleaf-архиве не нужен.
 
 ## Обновление репозитория
+
+Если предыдущий русскоязычный пакет от 28 октября уже размещён,
+смотрите [ENGLISH_ADDITION.md](ENGLISH_ADDITION.md): добавляются английские
+материалы и обновляются перечисленные там файлы описания и манифест.
+Русский текст и вычислительный пакет остаются прежними.
 
 Проверенная база:
 `b954f3609e900761fddc9c8ff03d8301e9604cab`.
@@ -114,7 +130,7 @@ Push. Этот пакет подготовлен к загрузке; сам п�
 This research branch continues the study of consequences of the certified
 rectifications and their connections with the Abhyankar–Moh embedding
 problem, locally nilpotent derivations, the Makar-Limanov invariant and
-affine geometry. **All material remains under verification.** The author
-shares the work before completed external review, hopes that it develops
-into a broader research programme, and invites readers to check the proofs,
+affine geometry. **All material remains under verification.** The authors
+share the work before completed external review, hope that it develops
+into a broader research programme, and invite readers to check the proofs,
 reproduce the calculations and contribute to the investigation.

@@ -1,6 +1,6 @@
 # Build the paper
 
-Author: Ivan Dorofeev, Independent Researcher.
+Researchers: Ivan Dorofeev (Independent Researcher) and Alexander Frolov.
 
 Compile `main.tex` twice with pdfLaTeX:
 

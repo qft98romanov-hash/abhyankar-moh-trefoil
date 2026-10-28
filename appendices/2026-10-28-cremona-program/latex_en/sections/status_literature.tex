@@ -1,0 +1,145 @@
+\section{Established conclusions, excluded candidates, and open questions}
+\label{sec:status-literature}
+
+\paragraph{Status of this research branch.}
+All statements in this appendix are presented as working proofs and
+computational certificates under verification. Internal checks of identities
+and repeated applications of published criteria are not external independent
+peer review. Below, the word \emph{consequence} denotes a logical deduction
+from the displayed formulas and cited theorems; it does not assert priority
+in the literature.
+
+\begin{center}
+\small
+\begin{tabular}{@{}p{0.30\linewidth}p{0.64\linewidth}@{}}
+\toprule
+Question & Conclusion and its precise scope\\
+\midrule
+The specific Shastri curve &
+A polynomial rectifier over $K=\Q(\sqrt{-3})$ excludes this
+parametrization as a candidate for complex nonrectifiability. It does
+not exclude other nonrectifiable spatial lines.\\[4pt]
+The harmonic model and $C_N$ &
+The specified parametrizations are rectified. The harmonic model
+uses $D_5=t^5-5t^3+5t$; replacing $5t$ by $4t$ is not covered
+by this statement.\\[4pt]
+Tameness of the constructed maps &
+Wildness of $\Phi_T,\Phi_H,\Phi_N$ follows from relative-coordinate
+criteria. The nonexistence of \emph{any} tame rectifier of the same
+curves has not been proved.\\[4pt]
+Stabilization &
+$\Phi_\ast\times\id_{\A^3}\in\Tame_6(K)$ follows from a known
+stable-tameness theorem. The minimum number of additional variables
+has not been determined.\\[4pt]
+Cremona subgroup &
+The constructed maps belong to $\mathcal C_3(K)$.
+This neither describes the whole group $\Cr_3(K)$ nor provides the
+first example of a wild element of $\mathcal C_3(K)$.\\[4pt]
+Field of definition &
+For Shastri's curve, the minimum degree of a suitable number field
+over $\Q$ is $2$. Uniqueness of a suitable quadratic field and an
+effective classification of rectification fields are not established.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{The historical candidate and the general problem.}
+Shastri's paper \cite[\S1 and \S3, Example~1]{Shastri1992} proposes
+real knot parametrizations as candidates for investigating complex
+nonrectifiability. Thus a complete polynomial automorphism for
+$\gamma_T$ answers the rectification question for \emph{this curve}
+affirmatively. It does not disprove the historical conjecture that at
+least one nonrectifiable embedding
+$\A^1_{\C}\hookrightarrow\A^3_{\C}$ exists. Nor does it prove the
+opposite universal conjecture that every such embedding is rectifiable.
+We do not attribute to Shastri's paper a separate numbered conjecture
+that it does not state.
+
+\paragraph{Related conjectures from the first appendix.}
+The consequences for the van den Essen--van Rossum candidates already
+recorded in the first appendix must be accounted for separately
+\cite[\S5, Conjectures~5.1--5.3]{VdER2002}.\footnote{The numbering and
+identification of the objects here are inherited from Appendix 1.
+The publisher's record was checked in preparing this version, but a
+fresh download of the full AMS text was unavailable. The algebraic
+deductions below were checked directly; this limitation of the
+bibliographic audit is also recorded in
+\texttt{audit/claim\_status.md}.}
+These are consequences of the original rectification, rather than
+new results about the Cremona group. For $\gamma_T=(f,g,h)$, consider
+\[
+ D=t\partial_u+f'(u)\partial_x+g'(u)\partial_y+h'(u)\partial_z
+ \quad\text{on }\C[t,u,x,y,z].
+\]
+Conjecture~5.1, also called \emph{Conjecture E} in subsequent
+literature, predicted that $\ker D$ is not a polynomial algebra.
+From the rectifier $\Phi_T=(P,Q,R)$ with inverse $\Psi$, setting
+$V=\gamma_T(u)-t(x,y,z)$ gives
+\[
+ p=P(V),\qquad q=Q(V)/t,\qquad r=R(V)/t,\qquad
+ s=(u-P(V))/t.
+\]
+All divisions are exact because $\Phi_T\gamma_T=(u,0,0)$.
+The inverse change of variables is
+\[
+ u=p+ts,\qquad
+ (x,y,z)=\frac{\gamma_T(p+ts)-\Psi(p,tq,tr)}{t};
+\]
+it is polynomial as well. Consequently,
+\[
+ \C[t,u,x,y,z]=\C[t,p,q,r,s],\qquad
+ D=\partial_s,\qquad \ker D=\C[t,p,q,r].
+\]
+This negates precisely the specified conjecture~5.1. If $\sigma$
+denotes the original slice in the same construction, then
+$\sigma-s\in\ker D$, whence
+$\C[t,u,x,y,z]/(\sigma)\simeq\C^{[4]}$.
+Furthermore, for $I_{\gamma_T}=(Q,R)$ we have
+\[
+ \C[x,y,z][t,I_{\gamma_T}/t]
+ =\C[t,P,Q/t,R/t]\simeq\C^{[4]}.
+\]
+These are the corresponding polynomial descriptions of the objects
+in~5.2 and~5.3. Detailed formulas, identification of the notation,
+and certificates are provided in the repository's first appendix.
+These particular calculations do not solve the general cancellation,
+embedding, or action-linearization problems. Oda's withdrawn preprint
+\cite{OdaWithdrawn} is not used as a proof: its arXiv record states
+that it was withdrawn on 9 May 2020 because of an error.
+
+\paragraph{Predecessors of the programme.}
+The connection between the embedding problem and Cremona equivalence
+is explicitly discussed by Mella--Polastri
+\cite[introduction and Theorem~1]{MP2009}.
+Relative coordinates, factorizations over the fraction field, and
+transfer are studied by Edo--V\'en\'ereau \cite{EV2001}.
+The closest predecessor of the constructive part is Lewis
+\cite[Lemma~1, Theorems~2 and~12]{Lewis2024}: a coordinate restricting
+to the parameter is constructed using residual coordinates and
+corrections of rational transformations. That paper also compares
+earlier results of Craighero, Bhatwadekar--Roy, and Kuroda.
+Accordingly, the general procedure \emph{localize, then eliminate
+denominators} is not claimed here as a new strategy.
+
+The existence of wild automorphisms in three variables has long been
+established; the passage from a wild relative coordinate to wildness
+in three variables is supplied by \cite{UY2004}. Blanc--Hed\'en
+already proved $\operatorname{Nagata}\in\mathcal C_3$
+\cite[Proposition~6.8]{BH2015}. Stable tameness for the class used
+here follows from \cite[Corollary~4.9]{BEW2012}.
+The contribution of this appendix consists in applying these results
+to the \emph{specific} rectifiers, verifying their hypotheses, and
+formulating an explicit programme for further work.
+
+\paragraph{Unresolved questions and limits of the search.}
+Questions remaining open within this project include completeness
+of the relative method, the existence of a tame rectifier for the
+same curves, minimum rectifier degrees, descent to other totally
+imaginary number fields, and the general case
+$\A^1\hookrightarrow\A^3$ over $\C$.
+Finite computations for $N\leq N_{\max}$ check the implementation;
+statements for every $N$ rely on inductive proofs.
+Failure of a bounded search does not prove nonrectifiability.
+A targeted literature search as of 28 October 2026 did not identify
+an earlier publication containing our complete Shastri rectifier;
+failure to find such a publication does not establish priority.

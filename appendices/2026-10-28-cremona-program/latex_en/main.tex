@@ -1,0 +1,112 @@
+\documentclass[11pt,a4paper]{article}
+% English preprint edition. Compile twice with pdfLaTeX.
+% The preamble follows paper/main.tex in the original repository.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor,booktabs,longtable,array,enumitem,fancyhdr,needspace}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,
+ citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\hypersetup{pdftitle={Appendix 2: Cremona Groups and Polynomial Rectification of Embedded Affine Lines},
+ pdfauthor={Ivan Dorofeev and Alexander Frolov},pdfsubject={English research edition under verification; 28 October 2026}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Appendix 2: Cremona groups and rectification}
+\fancyhead[R]{\small Under verification}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\setlist{nosep,leftmargin=*}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{question}[theorem]{Question}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\A}{{\mathbb A}}
+\newcommand{\Q}{{\mathbb Q}}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\Z}{{\mathbb Z}}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Cr}{\operatorname{Cr}}
+\newcommand{\Tame}{\operatorname{Tame}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\Stab}{\operatorname{Stab}}
+\newcommand{\Frac}{\operatorname{Frac}}
+\title{\vspace{-12mm}\LARGE\bfseries Appendix 2\\[5pt]
+ Cremona Groups and Polynomial Rectification\\
+ of Embedded Affine Lines:\\[3pt]
+ Results and a Research Programme}
+\author{Ivan Dorofeev and Alexander Frolov\\[3pt]\normalsize Researchers\\
+ \normalsize\href{mailto:qft98romanov@gmail.com}{\texttt{qft98romanov@gmail.com}}}
+\date{28 October 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{abstract}
+This research continuation studies the explicit rectifications of the Shastri
+trefoil and a harmonic figure-eight over $\Q(\sqrt{-3})$. The embedding problem
+is approached through the distinction between birational and polynomial
+equivalence, relative automorphisms, and the removal of poles. We present
+working proofs that the chosen rectifiers are wild, belong to the standard
+Cremona subgroup, and are stably tame. A family of transfers is constructed,
+and we distinguish the specific questions answered by the constructions,
+the inputs taken from the literature, and the questions that remain open.
+Symbolic certificates use exact arithmetic and are accompanied by
+reproducible code.
+\end{abstract}
+
+\paragraph{Acknowledgements.}
+The authors express their sincere gratitude to Professor Alexei Kanel-Belov
+and Professor Alexander Gasnikov.
+
+
+\begin{quote}\small
+\textbf{Status: a research branch; the entire appendix remains under verification.}
+This branch continues the study of consequences of the constructed rectifiers
+and their connections with the Abhyankar--Moh embedding problem, Cremona
+groups, birational geometry, and affine geometry. Despite the preliminary
+status, the authors consider it useful to share these arguments and
+computations. The authors hope that they will develop into a full research
+programme contributing to the understanding of these areas, and invite
+all interested readers to check, discuss, correct, and extend the work.
+
+The material was prepared in an AI-assisted research process. Internal reruns
+and alternative implementations do not constitute external independent peer
+review. The terms ``theorem'' and ``proof'' designate proposed mathematical
+arguments and do not override the overall verification status. No claim of
+publication priority is made. This appendix does not replace the original
+preprint or Appendix 1.
+\end{quote}
+
+\paragraph{Source and scope of the update.}
+The source repository is
+\href{https://github.com/qft98romanov-hash/abhyankar-moh-trefoil/tree/b954f3609e900761fddc9c8ff03d8301e9604cab}{\nolinkurl{qft98romanov-hash/abhyankar-moh-trefoil}},
+at commit \nolinkurl{b954f3609e900761fddc9c8ff03d8301e9604cab}.
+The original formulas and previously released appendices are preserved.
+Here a question is called ``settled'' only in the sense of a logical
+consequence of the displayed formulas and cited theorems within this version;
+this does not assert a solution of a general problem or acceptance by the
+mathematical community. This English edition translates the Russian research
+version dated 28 October 2026 and retains its mathematical scope and caveats.
+
+\clearpage
+\tableofcontents
+\clearpage
+\input{sections/status_literature.tex}
+\input{sections/program.tex}
+\input{sections/constructions.tex}
+\input{sections/group_results.tex}
+\input{sections/reproducibility.tex}
+\input{references.tex}
+\end{document}

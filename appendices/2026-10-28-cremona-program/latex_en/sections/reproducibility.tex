@@ -1,0 +1,89 @@
+\section{Reproducibility and the limits of the computational certificate}
+\label{sec:reproducibility}
+
+\paragraph{Exact arithmetic.}
+The new code uses Python and SymPy with rational coefficients and the
+explicit relation $a^2-a+1=0$. No floating-point arithmetic is used.
+Comments, error messages, and function descriptions are in English.
+The checks use explicit exceptions and remain enabled when Python is
+run with the \texttt{-O} flag.
+
+\paragraph{What is checked computationally.}
+\begin{enumerate}
+\item Both congruences for $P_x,F_x$, exact divisions, the compact base
+inverse map, and substitutions into the trefoil parametrization.
+\item The harmonic identity, the transferred pair, exact divisions in
+the forward and inverse directions, and recovery of the curve from the axis.
+\item For an explicitly specified finite range of indices: the recursion
+for $p_N$, polynomiality of $C_N$, invertibility of the centre modulo the
+full power $x^N$, construction of the correction, certificates of
+polynomiality for both maps, and exact substitutions into the parametrizations.
+\item The normalization of the inner coordinate in the wildness proof,
+the order in $x$ of its quadratic coefficient, and the monomial parity
+used in the Cremona argument.
+\item Negative controls: a corrupted congruence and a numerator that
+does not admit the required exact division must be detected, including
+in \texttt{-O} mode.
+\end{enumerate}
+
+\paragraph{Scope of the computational certificate.}
+For large maps, the code uses factored certificates: polynomiality on
+both sides and identities after localization. This establishes global
+invertibility in an integral domain; fully expanding all six component
+compositions into large polynomials is neither required nor claimed for
+every $N$.
+The assertion for all $N$ follows from induction and the proofs in the
+text, not from the finite range of tests. The general theorems on
+wildness, stable tameness, and monomial transformations are used as
+published mathematical results. The accompanying programs do not
+formally verify those theorems in a proof assistant.
+An explicit word in elementary automorphisms of six variables has not
+been computed here: the existence of such a word follows from
+\cite{BEW2012}.
+
+\paragraph{Running the new appendix.}
+From the directory \nolinkurl{appendices/2026-10-28-cremona-program}:
+\begin{verbatim}
+python -m pip install -r requirements.txt
+python computations/run_all.py
+\end{verbatim}
+The command runs both normal and optimized modes; the precise range,
+software versions, results, and timings are recorded under \texttt{results/}.
+The supplied run checks $N=1,2,3$: 90 checks passed in each mode, and
+their mathematical results agreed.
+Individual checks are described in \nolinkurl{computations/README.md}.
+The verifier does not require network downloads while it runs.
+This English edition reuses the existing computation records; its
+preparation is not presented as a new execution of those computations.
+
+\paragraph{Reruns of the original preprint's verifiers.}
+The following commands were run from the full repository root when
+Appendix~2 was prepared:
+\begin{verbatim}
+python -u verify.py
+python -u verify_printed_formulas.py
+\end{verbatim}
+Both runs completed successfully. The second reads the actual right-hand
+sides of the formulas in the original \LaTeX{} source and checks all
+twelve components of the forward and inverse rectifiers. The logs are
+\nolinkurl{results/upstream_compact.log} and
+\nolinkurl{results/upstream_printed.log} in the new appendix.
+Other old logs are included in the full archive as historical material;
+their presence does not mean that every earlier search, GAP script, or
+Macaulay2 script was rerun during the preparation of Appendix~2.
+
+\paragraph{Building the English edition and auditing the files.}
+The English source is \nolinkurl{latex_en/main.tex}; it is compiled with
+two pdf\LaTeX{} passes. The helper \nolinkurl{build_pdf_en.py} automates
+this build. The standalone Overleaf ZIP contains all sections, the
+bibliography, and a README. It uses standard \TeX{} fonts, so no bundled
+font files are needed. The preamble follows the original preprint:
+\texttt{article}, 11\,pt, A4, 24\,mm margins, theorem environments,
+page headers, and clickable links.
+The files \nolinkurl{PROVENANCE.md}, \nolinkurl{audit/claim_status.md},
+and \nolinkurl{SHA256SUMS.txt} record the original source version,
+verification scope, and checksums. The English edition is additionally
+documented in \nolinkurl{ENGLISH_EDITION.md} and
+\nolinkurl{SHA256SUMS_EN.txt}.
+The original main text and Appendix~1 are not rewritten. This remains
+a separate research branch for further corrections and collaborative work.

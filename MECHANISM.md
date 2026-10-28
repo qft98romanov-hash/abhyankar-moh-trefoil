@@ -594,4 +594,5 @@ For the real knot identifications $H(3,4,5)$ and $H(3,5,7)$, see Koseleff and Pe
 
 ## Acknowledgements
 
-The author expresses his sincere gratitude to Alexei Kanel-Belov and Alexander Frolov.
+The authors express their sincere gratitude to Professor Alexei Kanel-Belov
+and Professor Alexander Gasnikov.

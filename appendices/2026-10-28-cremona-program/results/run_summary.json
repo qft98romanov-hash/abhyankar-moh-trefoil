@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "normal_optimized_results_identical": true,
+  "finite_family_range": [
+    1,
+    3
+  ],
+  "runs": [
+    {
+      "mode": "normal",
+      "returncode": 0,
+      "number_of_checks": 90,
+      "elapsed_seconds": 33.354
+    },
+    {
+      "mode": "optimized",
+      "returncode": 0,
+      "number_of_checks": 90,
+      "elapsed_seconds": 36.324
+    }
+  ],
+  "source_sha256": "1f540609cd2f3cb8f3eebd14069131c0a218b740e02e695c5f3f45ac6790335d",
+  "elapsed_seconds": 70.512
+}

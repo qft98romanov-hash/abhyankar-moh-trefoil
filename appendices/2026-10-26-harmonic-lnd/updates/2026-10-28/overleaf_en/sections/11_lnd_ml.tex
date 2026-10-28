@@ -1,0 +1,192 @@
+% This section is intended for inclusion in the consolidated English appendix.
+% Bibliography keys used below: vdER, Shastri, Craighero, Masuda.
+% All conclusions depend on the complete rectifier, not merely on a parameter lift.
+\section{Which named conjectures are affected by rectification}
+
+In this section, ``refutation'' means a complete mathematical argument
+with exact certificates, presented for verification. External peer review
+and priority in the literature are not claimed.
+
+Set $K=\mathbb Q(\sqrt{-3})$ and
+\[
+\gamma_T(u)=(f(u),g(u),h(u))
+=(u^3-3u,u^4-4u^2,u^5-10u).
+\]
+Three equivalent conjectures about a specific object associated with this
+embedding are formulated in \cite[pp.~1319--1320]{vdER}.
+They assert, respectively, that the kernel of a certain LND, the quotient
+by its slice, and the extended Rees algebra of the curve ideal are not
+polynomial rings. The last formulation is called Asanuma's Conjecture there.
+The argument below, applied to the certified rectifying map over $K$,
+negates all three formulations over $\mathbb C$.
+
+\begin{proposition}[Explicit coordinates for the associated LND]
+Let $k$ be a field of characteristic zero,
+$F=(P,Q,R_3)\in\operatorname{Aut}_k(\mathbb A^3)$,
+$G=F^{-1}$, $F\circ\gamma=(u,0,0)$ and $0\ne b(t)\in k[t]$.
+For
+\[
+A=k[t,u,X_1,X_2,X_3],\qquad
+D_b=b(t)\partial_u+\sum_i f_i'(u)\partial_{X_i}
+\]
+there is a polynomial coordinate system
+$A=k[t,p,q,r,s]$ in which $D_b=\partial_s$.
+\end{proposition}
+
+\begin{proof}
+Set $V_i=f_i(u)-b(t)X_i$ and
+\[
+p=P(V),\qquad q=\frac{Q(V)}{b(t)},\qquad
+r=\frac{R_3(V)}{b(t)},\qquad
+s=\frac{u-P(V)}{b(t)}.
+\]
+Every numerator is exactly divisible by $b(t)$, since
+$V\equiv\gamma(u)\pmod{b(t)}$. The inverse substitution is given by
+\[
+u=p+b(t)s,\qquad
+X_i=\frac{f_i(p+b(t)s)-G_i(p,b(t)q,b(t)r)}{b(t)}.
+\]
+It is also polynomial because $G(p,0,0)=\gamma(p)$.
+Both compositions are the identity after inverting $b(t)$; injectivity
+of localization proves the same identities in the original ring. Finally,
+$D_b(V_i)=0$, so $D_b(p)=D_b(q)=D_b(r)=0$ and $D_b(s)=1$.
+\end{proof}
+
+For the Shastri model with $b(t)=t$, this gives
+\[
+\ker D=K[t,p,q,r]\simeq K^{[4]}.
+\]
+After extension of scalars, this contradicts the nonpolynomiality
+asserted in Conjecture~5.1 \cite{vdER}.
+
+Shastri's original parameter polynomial is
+\[
+F_0(x,y,z)=yz-x^3-5xy+2z-7x,
+\]
+and the slice in Conjecture~5.2 is
+$\sigma=(u-F_0(V))/t$. Since $D(\sigma)=D(s)=1$,
+the difference $\sigma-s$ belongs to $B=\ker D$.
+Consequently, $A=B[\sigma]$; in particular,
+\[
+A/(\sigma-c)\simeq B\simeq K^{[4]}\qquad(c\in K).
+\]
+This negates Conjecture~5.2 after passing to $\mathbb C$.
+Nevertheless, $F_0$ itself is not a coordinate of $\mathbb A^3$:
+its gradient vanishes at $(1,-2,5)$ and $(-1,-2,-5)$.
+The fact that $F_0$ is not a coordinate is compatible with $\sigma$ being
+a coordinate, since these are different polynomials in different rings.
+
+Finally, with $R_0=K[x,y,z]$ and $I=I_{\gamma_T}$, we have
+$R_0=K[P,Q,R_3]$, $I=(Q,R_3)$, and hence
+\[
+R_0[t,I/t]=K[t,P,Q/t,R_3/t]\simeq K^{[4]}.
+\]
+Here $R_0[t,I/t]\subset R_0[t,t^{-1}]$ is precisely the extended
+Rees algebra occurring in Conjecture~5.3. This negates the third
+formulation; it is not a result about arbitrary Rees algebras.
+
+Thus one particular candidate is eliminated in three related presentations.
+This does not solve the general cancellation problem. Neither does it solve
+the general rectification problem for $\mathbb A^1\hookrightarrow
+\mathbb A^3$ or the general conjecture that nonrectifiable space lines exist.
+
+\paragraph{Historical distinctions.}
+The conjectured complex nonrectifiability of this specific $\gamma_T$
+is attributed to Shastri in \cite[p.~1319]{vdER}; the supplied rectifying
+map refutes it. However, Questions Q.1 and Q.2 in
+\cite[p.~12]{Shastri} were already solved by Shastri: they concern
+polynomial representations of real knots whose complexifications are
+closed embeddings, rather than their complex rectifiability.
+Special degree-based conjectures of Abhyankar had earlier refutations,
+as described in \cite[Introduction, pp.~115--116]{Craighero}.
+
+\paragraph{Fields and actions.}
+The resulting coordinates are defined over $K$ and hence over $\mathbb C$;
+descent to $\mathbb Q$ or $\mathbb R$ has not been proved.
+When $b=t$, the natural action
+$t\mapsto\lambda t$, $u\mapsto u$, $X_i\mapsto\lambda^{-1}X_i$
+is linear in the kernel coordinates, with weights $(1,0,-1,-1)$.
+This is a specific linearization. It does not imply statements about all
+group actions. In the reverse implications toward the embedding, the
+grading is essential, as in \cite{Masuda}; it cannot be replaced merely
+by abstract polynomiality of the kernel or by $\operatorname{ML}(B)=k$.
+
+\subsection{Full ML, relative ML and the filtration}
+For a rectified model $B=k[t,p,q,r]$, the four coordinate
+derivations give
+\[
+\ML(B)=k,\qquad \ML^*(B)=k,\qquad \operatorname{Dk}(B)=B.
+\]
+Here $\ML^*$ uses only LNDs with slices, and $\operatorname{Dk}$
+is the algebra generated by the kernels of all nonzero LNDs.
+For $D_b=\partial_s$, we have $\pl(D_b)=B$,
+$\ker D_b^{n+1}=\bigoplus_{j=0}^n Bs^j$ and
+$D_b^n(\ker D_b^{n+1})=B$.
+This is consistent with a large minimum slice degree in the original
+coordinates: these are different characteristics.
+
+For an arbitrary embedding whose rectifying map is unknown, the following
+dichotomy still holds:
+\[
+\ML(B_b)\in\{k,k[t]\},\qquad B_b=\ker D_b.
+\]
+Indeed, the derivations $\partial_{X_i}$ commute with $D_b$ and restrict
+to $B_b$. The intersection of their kernels there is
+$B_b\cap k[t,u]=k[t]$. If a nonconstant $a(t)$ belongs to the full ML,
+then for every LND $\Delta$ on $B_b$, the equality
+$0=\Delta a(t)=a'(t)\Delta t$ in a characteristic-zero domain
+implies $\Delta t=0$. Thus all of $k[t]$ belongs to ML.
+
+Therefore, $\ML(B_b)=k[t]$ would obstruct rectification.
+However, $\ML(B_b)=k$ proves neither polynomiality of $B_b$
+nor rectifiability. If only LNDs fixing $t$ are allowed from the outset,
+the relative ML equals $k[t]$ even in the polynomial case.
+For the new kernels associated with $H(3,7,8)$ and $H(4,5,7)$,
+the relevant branch of the dichotomy has not yet been determined.
+
+\subsection{What must be retained for the reverse implication}
+Let $R=k[x,y,z]$, $I=I_\gamma$,
+$B_\mu=R[t,I/t^\mu]$, $\mu\ge1$, $\wt(t)=1$, $\wt(R)=0$.
+The embedding is rectifiable if and only if there are homogeneous
+coordinates
+\[
+B_\mu=k[t,p,q,r],\qquad
+\wt(t,p,q,r)=(1,0,-\mu,-\mu)
+\]
+with \emph{the same distinguished element $t$}. The reverse implication
+follows from
+\[
+\begin{gathered}
+(B_\mu)_0=R=k[p,t^\mu q,t^\mu r],\\
+I=t^\mu(B_\mu)_{-\mu}=R\cap tB_\mu=(t^\mu q,t^\mu r).
+\end{gathered}
+\]
+The restriction of $p$ to the curve is an affine parameter and can
+be normalized to $u$.
+
+An equivalent formulation is the existence of a homogeneous LND $E$
+of degree $-1$ on $B_\mu$ with $E(t)=1$. The forward implication
+is supplied by $\partial_t$. Conversely, the slice theorem and the finite projection
+\[
+\rho(b)=\sum_{j\ge0}\frac{(-t)^j}{j!}E^j(b)
+\]
+give $B_\mu=(\ker E)[t]$ and a graded isomorphism
+$\ker E\simeq B_\mu/(t)$. This special fibre is polynomial with weights
+$(0,-\mu,-\mu)$ by the normal-basis construction in Section~\ref{sec:formal}.
+Thus the required homogeneous coordinates lift.
+
+For an LND $E$, without assuming homogeneity, the condition $E(t)=1$
+still gives abstract polynomiality of $B_\mu$, but the preceding proof
+no longer recovers the embedding.
+For an LND $E$ satisfying only $E(t)\ne0$, one obtains only $\ML(B_\mu)=k$.
+One cannot take an intermediate homogeneous component of an arbitrary LND
+and declare it locally nilpotent without proof.
+
+\paragraph{Direct connection with the planar theorem.}
+If the ideal $I$ contains a polynomial coordinate, the curve can be placed
+in a coordinate plane and the Abhyankar--Moh--Suzuki theorem applied.
+If a parameter polynomial $P\circ\gamma=u$ is itself a coordinate, then
+with $R=k[P,U,V]$ the required rectifying map is immediately
+$(P,U-U(\gamma(P)),V-V(\gamma(P)))$.
+A parameter polynomial that is not necessarily a coordinate is
+insufficient for either argument.

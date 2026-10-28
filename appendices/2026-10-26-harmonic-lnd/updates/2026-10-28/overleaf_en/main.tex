@@ -1,0 +1,62 @@
+% !TeX program = xelatex
+\documentclass[11pt,a4paper]{article}
+\input{preamble.tex}
+\title{\vspace{-12mm}\LARGE\bfseries Rectification of Harmonic Embeddings, LNDs\\and the Makar-Limanov Invariant\\[5pt]\large Research Appendix: Results, Exact Certificates,\\and Open Problems}
+\author{Ivan Dorofeev and Alexander Frolov\\[3pt]\normalsize Researchers\\\normalsize\href{mailto:qft98romanov@gmail.com}{\texttt{qft98romanov@gmail.com}}}
+\date{28 October 2026}
+\begin{document}
+\maketitle\thispagestyle{empty}\vspace{-4mm}
+\begin{abstract}
+We consolidate the results of a research branch starting from explicit
+complex rectifications of the Shastri trefoil and a harmonic figure-eight.
+Consequences for specific conjectures of van den Essen--van Rossum are
+distinguished from the general embedding, cancellation, and linearization
+problems, which are not resolved here. We give constructive passages to
+locally nilpotent derivations, exact minimum slice degrees, formal kernel
+coordinates, and filtration formulas for classes of affine modifications.
+Rectifiability of an embedded line is characterized by the existence of a
+normal locally finite vector field, and finite certificates for the search
+for such fields are provided. For $H(3,7,8)$ and $H(4,5,7)$, complete affine
+spaces of candidates of dimensions $24$ and $19$ are obtained; local
+finiteness and new complex rectifications have not been established.
+The appendix includes reproducible computations and precise limits on
+every assertion. No motivic methods, $K$-theory, or homological algebra
+are used.
+\end{abstract}
+\smallskip
+\textbf{Acknowledgements.} The authors express their sincere gratitude to
+Professor Alexei Kanel-Belov and Professor Alexander Gasnikov.
+\begin{quote}\small
+\textbf{Research branch. All material presented in this appendix remains
+under verification.} This branch continues the study of consequences of
+the known rectifications and their connections with the Abhyankar--Moh
+embedding problem, locally nilpotent derivations, the Makar-Limanov
+invariant, and affine geometry. The authors consider it useful to share
+these interim results, proofs, and computations before verification is
+complete. They hope that this direction will develop into a broader
+research programme and invite all interested readers to check, discuss,
+and participate in the investigation.
+\end{quote}
+\smallskip
+\textbf{Provenance and status.} This material was prepared through
+interactive work with AI; individual arguments and implementations were
+checked within the same process. This is not independent external peer
+review. No claim of priority is made. Below, ``proved'' means that a
+mathematical proof and, where applicable, an exact certificate are supplied;
+it does not mean that verification by the research community is complete.
+
+Source: the
+\href{https://github.com/qft98romanov-hash/abhyankar-moh-trefoil}{abhyankar-moh-trefoil repository},
+verified commit \texttt{b954f3609e900}.
+This text is a separate continuation of the appendix dated 26 October 2026
+and the full English counterpart of the Russian research text dated
+28 October 2026.
+\newpage\tableofcontents\newpage
+\input{sections/01_status.tex}
+\input{sections/02_baseline.tex}
+\input{sections/03_continuation.tex}
+\input{sections/11_lnd_ml.tex}
+\input{sections/12_euler.tex}
+\input{sections/15_program.tex}
+\input{references.tex}
+\end{document}

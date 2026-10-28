@@ -1,0 +1,173 @@
+\section{What remains hypothetical and how to proceed}
+
+The results established here resolve specific questions for specific
+models and classes of derivations. The following table records questions
+that must not be listed as solved.
+
+\begin{longtable}{L{0.30\textwidth}L{0.64\textwidth}}
+\toprule Problem & Precise status and next verifiable step \\ \midrule
+\endhead
+All harmonic embeddings & Two infinite families and finite checks
+are provided. A general passage between residue classes or a new
+constructive rectification is needed. A bounded search is not a classification.\\[6pt]
+Complex rectification of $H(3,7,8)$ and $H(4,5,7)$ & Not constructed.
+One can search for a locally finite field in the affine spaces of
+candidates obtained here. Absence of such a field at these degrees, if proved,
+would not exclude fields of higher degree.\\[6pt]
+Full ML of the new kernels & At present there is a dichotomy: $k$ or $k[t]$.
+For the value $k$, one LND moving $t$ suffices.
+For the value $k[t]$, one must prove that every LND fixes $t$;
+a bounded search cannot prove this.\\[6pt]
+Homogeneous $E$ with slice $t$ & The conditions $E(t)=1$ and preservation
+of the kernel do not yet imply local nilpotence. Vanishing of iterates
+on generators is an exact positive certificate; failure of finitely many
+iterates to vanish does not prove that no suitable field exists.\\[6pt]
+Formal coordinates & All finite thickenings and the completion have been
+constructed. Termination of the coordinates as polynomials has not been
+proved: this is a separate global problem.\\[6pt]
+Dasgupta--Gaifullin Question 4.21 & Filtration formulas have been obtained,
+but minimality of a three-step birational presentation has not
+been established. All admissible shorter presentations must be excluded.\\[6pt]
+Minimum degrees of rectifiers & The degrees of the exhibited automorphisms
+are upper bounds. Minimum slice degrees do not replace this problem.\\[6pt]
+Real descent & Real rectification of the nontrivial knots under consideration
+is impossible. This alone does not exclude polynomiality of the corresponding
+real kernel without preservation of the distinguished $t$.\\[6pt]
+General cancellation and linearization problems & One proposed
+candidate has been ruled out; the general problems and all possible
+actions have not been fully investigated.\\
+\bottomrule
+\end{longtable}
+
+\subsection*{Why the search for an LND with a slice is motivated}
+In $B_\mu$, the element $t$ is distinguished by the embedding itself, while
+the special fiber $t=0$ already has a polynomial description. If one can exhibit
+a homogeneous derivation $E$ of degree $-1$ with $E(t)=1$ and prove
+its local nilpotence, the slice formula gives
+\[
+ \rho_E(f)=\sum_{j\ge0}\frac{(-t)^j}{j!}E^j(f),\qquad
+ B_\mu=(\ker E)[t].
+\]
+The sum is finite precisely because of local nilpotence. Under
+homogeneity, this construction recovers coordinates for the original embedding,
+as proved in \S11. Thus the additional LND requirement serves a precise
+geometric purpose. It is not a technical detail that follows automatically
+from the linear equations on coefficients.
+
+For a finite generating set $b_1,\ldots,b_m$, it suffices to exhibit
+integers $N_i$ and identities $E^{N_i}(b_i)=0$. The Leibniz rule then gives
+local nilpotence on the whole algebra. For the search for a normal
+locally finite field, an alternative positive certificate is a
+finite-dimensional stable space containing the generators, as in \S12.
+Both methods yield a verifiable proof when successful,
+but no general time or degree bound for these searches is proved here.
+
+\subsection*{The role of Cremona groups}
+Birational changes of the form
+\[
+ (x,y,z)\longmapsto (x,y,m(x)z-q(x,y))
+\]
+provide an effective language for transferring fields and coordinates after
+localization. Returning to the polynomial ring requires exact divisibility
+and a check of the modification center. The obstruction established for
+the natural center of the family $H(3,3n+1,3n+2)$ shows that merely having
+a rational inverse is insufficient. The practical programme consists of
+searching for other centers, computing image ideals and comparing
+different factorizations. No general classification of Cremona subgroups
+is claimed here.
+
+\subsection*{Connection with the Abhyankar--Moh theorem}
+A direct application of the planar theorem becomes possible once
+a coordinate surface containing the curve has been exhibited: on this
+surface, the embedded line becomes a planar embedding to which
+\cite{AM,Suzuki} applies. Finding such a surface in the ambient space
+is the substantive missing step. The equivalent criteria through
+a coordinate parameter, a graded LND and a normal locally finite
+field offer different methods for addressing precisely this step.
+It must not be replaced by an appeal to the already known planar theorem.
+
+\subsection*{Suggested reading sequence}
+For an introduction to LNDs, a useful starting point is \emph{First Principles}
+and \emph{Further Properties of LNDs} in Freudenburg's book \cite{Freudenburg},
+followed by the chapters \emph{Dimension Three}, \emph{Algorithms},
+\emph{Makar-Limanov and Derksen Invariants} and
+\emph{Slices, Embeddings and Cancellation}. For this project,
+the next readings are \cite{vdER} (the precise conjectures and the kernel ring),
+\cite{Masuda} (equivariant structure), \cite{EVM} (relative
+coordinates), \cite{DG} (iterations of LNDs and complexity),
+and \cite{FF,KP} (harmonic curves and knots).
+
+\section{Reproducibility and contents of the supplement}
+
+All computational files are in \file{computations/}.
+Comments in the supplied code are in English. The original
+versions are retained in the provenance archive; a separate check verifies
+that edits to Python comments and documentation strings do not change
+the abstract syntax tree of the executable part.
+This is a useful packaging check, but not a proof of algorithmic correctness.
+
+\begin{longtable}{L{0.29\textwidth}L{0.65\textwidth}}
+\toprule Directory & Purpose \\ \midrule
+\endhead
+\file{baseline/} & Original rectifiers; exact checks of mutually inverse
+maps, printed components and original certificates.\\[5pt]
+\file{legacy_appendix/} & Computations from the published appendix
+of 26 October, including local dependencies for offline execution.\\[5pt]
+\file{continuation/} & Fourteen continuation checks: minimum slice
+degrees, multiplicity-dependent degrees, formal coordinates, transfer
+restrictions, LND filtrations and relative ML.\\[5pt]
+\file{euler/} & Normal fields, ranks of linear systems, dual
+inconsistency certificates and invariant-axis obstructions for selected fields.\\[5pt]
+\file{audit_checks/} & Verification identifying the candidate in
+Conjectures 5.1--5.3 with the original model and original slice.\\[5pt]
+\file{verification_logs/} & Standard output, errors and execution time
+for every program in the repeated run.\\[5pt]
+\file{provenance/} & Original versions, checksums and information
+on the origin of the materials.\\
+\bottomrule
+\end{longtable}
+
+The entry point is \file{computations/run_all_checks.py}.
+Run the following from the \file{computations/} directory:
+\begin{quote}\ttfamily\small
+python -m pip install -r requirements.txt\\
+python run\_all\_checks.py
+\end{quote}
+The fresh run of 28 October 2026 completed successfully: \textbf{35 out of 35
+programs}. All principal algebraic checks are exact, without replacing
+identities by numerical approximations. The final machine-readable record
+\file{verification_summary.json} records the results and commands.
+The number of programs is not the number of theorems: one program may
+check many identities, while infinite families require the mathematical
+proofs given above.
+
+GAP/Macaulay2 code and historical logs are included for independent
+checking, but those systems were not run in the current environment.
+Their older successful logs are explicitly distinguished from the new Python run.
+Lengthy search experiments are retained as source code and data;
+they do not replace the shorter verification programs.
+
+\subsection*{Compatibility with the repository}
+The baseline was checked at commit
+\file{b954f3609e900761fddc9c8ff03d8301e9604cab}.
+All 75 files of the published appendix matched the Git objects of that
+version. The update adds only a separate directory,
+\file{updates/2026-10-28/}, and a pointer to it within the earlier
+appendix. The main preprint and earlier certificates are not replaced.
+
+Two earlier research directions are clarified substantively.
+First, the relative ML invariant in the earlier appendix was proposed
+conditionally; \S10 shows that the anticipated nontriviality is impossible
+under that definition. Second, the new degree bound $\ge5$ for $H(4,5,7)$
+concerns coordinates preserving one of the original variables.
+The general search for an absolute coordinate starting at degree $4$ remains
+justified. This clarification does not require editing the archived text,
+but it should accompany future citations of that text.
+
+\subsection*{Verification by the reader}
+First check the precise model and its coefficient field; then run the
+rectifier certificates; next check the constructive passage to the kernel
+and slice. For new general statements, the principal object to verify
+remains the mathematical proof. If an error is found, please identify the model,
+the statement, the execution command and the full log. The authors invite
+readers to undertake this verification and to develop the research programme.

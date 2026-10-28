@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-28",
+  "status": "PASS",
+  "translated_section_files": 6,
+  "mathematical_fragments": 833,
+  "normalization": [
+    "Whitespace and translated prose labels inside math are ignored.",
+    "Formula multisets allow harmless inline reorderings required by English syntax.",
+    "In 03_continuation, M>10 is clarified as deg M>10, as already specified by Russian prose."
+  ],
+  "semantic_review": "A separate internal prose review found no omitted proofs, lost hypotheses or stronger claims; this is not external peer review.",
+  "computations": "Original 35-program computation run is unchanged and was not repeated for translation.",
+  "records": [
+    {
+      "file": "01_status.tex",
+      "russian_sha256": "d28613115e7edd8425f54edfdf6ddd229ad1d672b0ffc7f4e3ed5ad4605d1899",
+      "english_sha256": "c52251805b9dadbbe5238af914dcc4f2e1c323971782149182db7b6ad3c37ab1",
+      "mathematical_fragments": 14,
+      "checks": {
+        "formula_multisets_equal": true,
+        "section_count_equal": true,
+        "labels_equal": true,
+        "citation_keys_equal": true,
+        "environment_sequences_equal": true,
+        "no_cyrillic_in_english": true
+      },
+      "missing_formulas": [],
+      "extra_formulas": []
+    },
+    {
+      "file": "02_baseline.tex",
+      "russian_sha256": "2edcb08b7b925dc99474661531ed0f88cf30e9277fd4268c73da193da2a67e28",
+      "english_sha256": "8397a4c7ae701d00ff3e3889d7ddee4b64688659a1c2846d1708a2455fd20087",
+      "mathematical_fragments": 71,
+      "checks": {
+        "formula_multisets_equal": true,
+        "section_count_equal": true,
+        "labels_equal": true,
+        "citation_keys_equal": true,
+        "environment_sequences_equal": true,
+        "no_cyrillic_in_english": true
+      },
+      "missing_formulas": [],
+      "extra_formulas": []
+    },
+    {
+      "file": "03_continuation.tex",
+      "russian_sha256": "62e11aa698dd0e16bb2a6fdb31b7b329d725909fc03fcc6c59d4069d66d30712",
+      "english_sha256": "4a5ed7ce7cebaf4c6f3a2ccb608e1e51e48a5f90682f00561b72e4626c6972af",
+      "mathematical_fragments": 437,
+      "checks": {
+        "formula_multisets_equal": true,
+        "section_count_equal": true,
+        "labels_equal": true,
+        "citation_keys_equal": true,
+        "environment_sequences_equal": true,
+        "no_cyrillic_in_english": true
+      },
+      "missing_formulas": [],
+      "extra_formulas": []
+    },
+    {
+      "file": "11_lnd_ml.tex",
+      "russian_sha256": "597a8ce4f049c0fb10f488754640c4dd2e0ebf674b96eacdc4d1d222a202a85c",
+      "english_sha256": "2d01c91842c14010d801c6c22828d1fc9a37e8bd84f9b86bf3fa8a5831e6d5eb",
+      "mathematical_fragments": 112,
+      "checks": {
+        "formula_multisets_equal": true,
+        "section_count_equal": true,
+        "labels_equal": true,
+        "citation_keys_equal": true,
+        "environment_sequences_equal": true,
+        "no_cyrillic_in_english": true
+      },
+      "missing_formulas": [],
+      "extra_formulas": []
+    },
+    {
+      "file": "12_euler.tex",
+      "russian_sha256": "ab3e9491a2d1e3374ef91aa9efc82395d861885296afada827d96fd97587b43b",
+      "english_sha256": "7b72d9730c5de9bcb816fec00c6300d62b060910a1b6cf70c23e5e472d8689fe",
+      "mathematical_fragments": 172,
+      "checks": {
+        "formula_multisets_equal": true,
+        "section_count_equal": true,
+        "labels_equal": true,
+        "citation_keys_equal": true,
+        "environment_sequences_equal": true,
+        "no_cyrillic_in_english": true
+      },
+      "missing_formulas": [],
+      "extra_formulas": []
+    },
+    {
+      "file": "15_program.tex",
+      "russian_sha256": "64d950984388c5db05e16f43e47d31c5600cf7ab3074f2c2f6e9135bb20b34cc",
+      "english_sha256": "2c09f15415534c96703b3bc3049c9251a5d3d7d41eabe763b926a61132d762cf",
+      "mathematical_fragments": 27,
+      "checks": {
+        "formula_multisets_equal": true,
+        "section_count_equal": true,
+        "labels_equal": true,
+        "citation_keys_equal": true,
+        "environment_sequences_equal": true,
+        "no_cyrillic_in_english": true
+      },
+      "missing_formulas": [],
+      "extra_formulas": []
+    }
+  ]
+}

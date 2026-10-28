@@ -19,5 +19,16 @@
     "Executable certificate outputs are finite checks, not replacements for the general written proofs.",
     "No complex rectifier for H(3,7,8) or H(4,5,7) is asserted.",
     "The update adds repository paths without overwriting the old appendix."
-  ]
+  ],
+  "languages": [
+    "Russian",
+    "English"
+  ],
+  "english_addition": {
+    "date": "2026-10-28",
+    "scope": "Full English translation of all 16 sections and 15 references",
+    "russian_text_unchanged": true,
+    "mathematical_computations_unchanged": true,
+    "translation_fragments_checked": 833
+  }
 }

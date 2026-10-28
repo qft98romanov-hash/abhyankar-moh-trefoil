@@ -1,0 +1,3 @@
+# Compile the Russian preprint with XeLaTeX on Overleaf or locally.
+$pdf_mode = 5;
+$xelatex = 'xelatex -interaction=nonstopmode -halt-on-error %O %S';
