@@ -1,0 +1,421 @@
+[
+  {
+    "component": "forward_3",
+    "x_power": 1,
+    "U_power": 0,
+    "line": 46,
+    "old_constant": "-352",
+    "new_constant": "352",
+    "old": "&{}+x\\Bigl[135 y^{8} - 630 y^{6} + y^{4} \\left(40 a + 1112\\right) + y^{2} \\left(- 20 a - 1129\\right)\\\\\n&\\qquad - 26 a - 352\\Bigr]",
+    "new": "&{}+x\\Bigl[135 y^{8} - 630 y^{6} + y^{4} \\left(40 a + 1112\\right) + y^{2} \\left(- 20 a - 1129\\right)\\\\\n&\\qquad - 26 a + 352\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 1,
+    "U_power": 2,
+    "line": 49,
+    "old_constant": "-13",
+    "new_constant": "13",
+    "old": "&{}+x(xz-y^2+2)^{2}\\Bigl[- 630 a y^{4} + 1050 a y^{2} - 162 a - 13\\Bigr]",
+    "new": "&{}+x(xz-y^2+2)^{2}\\Bigl[- 630 a y^{4} + 1050 a y^{2} - 162 a + 13\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 3,
+    "U_power": 0,
+    "line": 58,
+    "old_constant": "940",
+    "new_constant": "-940",
+    "old": "&{}+x^{3}\\Bigl[- 14 a y^{10} - 140 a y^{8} + y^{6} \\left(2330 a + 580\\right)\\\\\n&\\qquad + y^{4} \\left(- 7550 a - 2400\\right) + y^{2} \\left(9147 a + 4135\\right) - 1346 a + 940\\Bigr]",
+    "new": "&{}+x^{3}\\Bigl[- 14 a y^{10} - 140 a y^{8} + y^{6} \\left(2330 a + 580\\right)\\\\\n&\\qquad + y^{4} \\left(- 7550 a - 2400\\right) + y^{2} \\left(9147 a + 4135\\right) - 1346 a - 940\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 3,
+    "U_power": 1,
+    "line": 60,
+    "old_constant": "-1332",
+    "new_constant": "1332",
+    "old": "&{}+x^{3}(xz-y^2+2)\\Bigl[- 630 y^{8} + 1120 y^{6} + y^{4} \\left(6286 - 2136 a\\right)\\\\\n&\\qquad + y^{2} \\left(4032 a - 11364\\right) - 620 a - 1332\\Bigr]",
+    "new": "&{}+x^{3}(xz-y^2+2)\\Bigl[- 630 y^{8} + 1120 y^{6} + y^{4} \\left(6286 - 2136 a\\right)\\\\\n&\\qquad + y^{2} \\left(4032 a - 11364\\right) - 620 a + 1332\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 3,
+    "U_power": 2,
+    "line": 62,
+    "old_constant": "-1149",
+    "new_constant": "1149",
+    "old": "&{}+x^{3}(xz-y^2+2)^{2}\\Bigl[y^{6} \\left(3780 a - 3780\\right) + y^{4} \\left(9450 - 9450 a\\right)\\\\\n&\\qquad + y^{2} \\left(6696 a - 6912\\right) - 1133 a - 1149\\Bigr]",
+    "new": "&{}+x^{3}(xz-y^2+2)^{2}\\Bigl[y^{6} \\left(3780 a - 3780\\right) + y^{4} \\left(9450 - 9450 a\\right)\\\\\n&\\qquad + y^{2} \\left(6696 a - 6912\\right) - 1133 a + 1149\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 5,
+    "U_power": 0,
+    "line": 76,
+    "old_constant": "-2356",
+    "new_constant": "2356",
+    "old": "&{}+x^{5}\\Bigl[140 y^{8} + y^{6} \\left(1680 - 3940 a\\right) + y^{4} \\left(25535 a - 11419\\right)\\\\\n&\\qquad + y^{2} \\left(16523 - 43464 a\\right) - 336 a - 2356\\Bigr]",
+    "new": "&{}+x^{5}\\Bigl[140 y^{8} + y^{6} \\left(1680 - 3940 a\\right) + y^{4} \\left(25535 a - 11419\\right)\\\\\n&\\qquad + y^{2} \\left(16523 - 43464 a\\right) - 336 a + 2356\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 5,
+    "U_power": 3,
+    "line": 82,
+    "old_constant": "-2444",
+    "new_constant": "2444",
+    "old": "&{}+x^{5}(xz-y^2+2)^{3}\\Bigl[y^{6} \\left(5880 - 5880 a\\right) + y^{4} \\left(5600 a - 5600\\right)\\\\\n&\\qquad + y^{2} \\left(12636 a - 8300\\right) - 3796 a - 2444\\Bigr]",
+    "new": "&{}+x^{5}(xz-y^2+2)^{3}\\Bigl[y^{6} \\left(5880 - 5880 a\\right) + y^{4} \\left(5600 a - 5600\\right)\\\\\n&\\qquad + y^{2} \\left(12636 a - 8300\\right) - 3796 a + 2444\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 5,
+    "U_power": 4,
+    "line": 83,
+    "old_constant": "-32",
+    "new_constant": "32",
+    "old": "&{}+x^{5}(xz-y^2+2)^{4}\\Bigl[- 9450 a y^{4} + 9450 a y^{2} - 1152 a - 32\\Bigr]",
+    "new": "&{}+x^{5}(xz-y^2+2)^{4}\\Bigl[- 9450 a y^{4} + 9450 a y^{2} - 1152 a + 32\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 7,
+    "U_power": 1,
+    "line": 100,
+    "old_constant": "-29088",
+    "new_constant": "29088",
+    "old": "&{}+x^{7}(xz-y^2+2)\\Bigl[- 560 a y^{8} + y^{6} \\left(13020 a - 6860\\right) + y^{4} \\left(45550 - 81190 a\\right)\\\\\n&\\qquad + y^{2} \\left(143380 a - 75288\\right) - 72656 a - 29088\\Bigr]",
+    "new": "&{}+x^{7}(xz-y^2+2)\\Bigl[- 560 a y^{8} + y^{6} \\left(13020 a - 6860\\right) + y^{4} \\left(45550 - 81190 a\\right)\\\\\n&\\qquad + y^{2} \\left(143380 a - 75288\\right) - 72656 a + 29088\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 7,
+    "U_power": 3,
+    "line": 104,
+    "old_constant": "-6034",
+    "new_constant": "6034",
+    "old": "&{}+x^{7}(xz-y^2+2)^{3}\\Bigl[- 5880 y^{6} + y^{4} \\left(55700 - 11600 a\\right) + y^{2} \\left(7400 a - 44600\\right)\\\\\n&\\qquad - 184 a - 6034\\Bigr]",
+    "new": "&{}+x^{7}(xz-y^2+2)^{3}\\Bigl[- 5880 y^{6} + y^{4} \\left(55700 - 11600 a\\right) + y^{2} \\left(7400 a - 44600\\right)\\\\\n&\\qquad - 184 a + 6034\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 7,
+    "U_power": 5,
+    "line": 107,
+    "old_constant": "440",
+    "new_constant": "-440",
+    "old": "&{}+x^{7}(xz-y^2+2)^{5}\\Bigl[8820 a y^{4} - 3360 a y^{2} - 830 a + 440\\Bigr]",
+    "new": "&{}+x^{7}(xz-y^2+2)^{5}\\Bigl[8820 a y^{4} - 3360 a y^{2} - 830 a - 440\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 7,
+    "U_power": 7,
+    "line": 109,
+    "old_constant": "-120",
+    "new_constant": "120",
+    "old": "&{}+x^{7}(xz-y^2+2)^{7}\\Bigl[- 120 a - 120\\Bigr]",
+    "new": "&{}+x^{7}(xz-y^2+2)^{7}\\Bigl[- 120 a + 120\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 9,
+    "U_power": 0,
+    "line": 123,
+    "old_constant": "-109376",
+    "new_constant": "109376",
+    "old": "&{}+x^{9}\\Bigl[y^{8} \\left(140 a - 140\\right) + y^{6} \\left(3920 - 2240 a\\right)\\\\\n&\\qquad + y^{4} \\left(22830 a - 37710\\right) + y^{2} \\left(91720 - 61032 a\\right) - 3984 a - 109376\\Bigr]",
+    "new": "&{}+x^{9}\\Bigl[y^{8} \\left(140 a - 140\\right) + y^{6} \\left(3920 - 2240 a\\right)\\\\\n&\\qquad + y^{4} \\left(22830 a - 37710\\right) + y^{2} \\left(91720 - 61032 a\\right) - 3984 a + 109376\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 9,
+    "U_power": 2,
+    "line": 127,
+    "old_constant": "-504",
+    "new_constant": "504",
+    "old": "&{}+x^{9}(xz-y^2+2)^{2}\\Bigl[1960 a y^{6} + y^{4} \\left(- 19950 a - 15510\\right) + y^{2} \\left(139500 a - 90\\right)\\\\\n&\\qquad - 46340 a - 504\\Bigr]",
+    "new": "&{}+x^{9}(xz-y^2+2)^{2}\\Bigl[1960 a y^{6} + y^{4} \\left(- 19950 a - 15510\\right) + y^{2} \\left(139500 a - 90\\right)\\\\\n&\\qquad - 46340 a + 504\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 9,
+    "U_power": 3,
+    "line": 129,
+    "old_constant": "30920",
+    "new_constant": "-30920",
+    "old": "&{}+x^{9}(xz-y^2+2)^{3}\\Bigl[3920 y^{6} + y^{4} \\left(- 34300 a - 33600\\right) + y^{2} \\left(85260 a + 94880\\right)\\\\\n&\\qquad - 22560 a + 30920\\Bigr]",
+    "new": "&{}+x^{9}(xz-y^2+2)^{3}\\Bigl[3920 y^{6} + y^{4} \\left(- 34300 a - 33600\\right) + y^{2} \\left(85260 a + 94880\\right)\\\\\n&\\qquad - 22560 a - 30920\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 9,
+    "U_power": 4,
+    "line": 130,
+    "old_constant": "-24615",
+    "new_constant": "24615",
+    "old": "&{}+x^{9}(xz-y^2+2)^{4}\\Bigl[- 9800 y^{4} + y^{2} \\left(24900 a - 50100\\right) - 13540 a - 24615\\Bigr]",
+    "new": "&{}+x^{9}(xz-y^2+2)^{4}\\Bigl[- 9800 y^{4} + y^{2} \\left(24900 a - 50100\\right) - 13540 a + 24615\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 9,
+    "U_power": 5,
+    "line": 131,
+    "old_constant": "-3720",
+    "new_constant": "3720",
+    "old": "&{}+x^{9}(xz-y^2+2)^{5}\\Bigl[y^{4} \\left(8820 - 8820 a\\right) + y^{2} \\left(35820 a - 26460\\right) - 5080 a - 3720\\Bigr]",
+    "new": "&{}+x^{9}(xz-y^2+2)^{5}\\Bigl[y^{4} \\left(8820 - 8820 a\\right) + y^{2} \\left(35820 a - 26460\\right) - 5080 a + 3720\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 11,
+    "U_power": 0,
+    "line": 149,
+    "old_constant": "112576",
+    "new_constant": "-112576",
+    "old": "&{}+x^{11}\\Bigl[y^{6} \\left(560 a - 2940\\right) + y^{4} \\left(30900 - 1640 a\\right)\\\\\n&\\qquad + y^{2} \\left(27660 a - 96460\\right) - 128224 a + 112576\\Bigr]",
+    "new": "&{}+x^{11}\\Bigl[y^{6} \\left(560 a - 2940\\right) + y^{4} \\left(30900 - 1640 a\\right)\\\\\n&\\qquad + y^{2} \\left(27660 a - 96460\\right) - 128224 a - 112576\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 11,
+    "U_power": 1,
+    "line": 151,
+    "old_constant": "-301480",
+    "new_constant": "301480",
+    "old": "&{}+x^{11}(xz-y^2+2)\\Bigl[y^{6} \\left(1260 a - 1260\\right) + y^{4} \\left(76020 - 33420 a\\right)\\\\\n&\\qquad + y^{2} \\left(142320 a - 390240\\right) - 104520 a - 301480\\Bigr]",
+    "new": "&{}+x^{11}(xz-y^2+2)\\Bigl[y^{6} \\left(1260 a - 1260\\right) + y^{4} \\left(76020 - 33420 a\\right)\\\\\n&\\qquad + y^{2} \\left(142320 a - 390240\\right) - 104520 a + 301480\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 11,
+    "U_power": 4,
+    "line": 155,
+    "old_constant": "14800",
+    "new_constant": "-14800",
+    "old": "&{}+x^{11}(xz-y^2+2)^{4}\\Bigl[y^{2} \\left(8010 - 9060 a\\right) - 2340 a + 14800\\Bigr]",
+    "new": "&{}+x^{11}(xz-y^2+2)^{4}\\Bigl[y^{2} \\left(8010 - 9060 a\\right) - 2340 a - 14800\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 11,
+    "U_power": 6,
+    "line": 157,
+    "old_constant": "-1680",
+    "new_constant": "1680",
+    "old": "&{}+x^{11}(xz-y^2+2)^{6}\\Bigl[y^{2} \\left(3920 - 5880 a\\right) - 3040 a - 1680\\Bigr]",
+    "new": "&{}+x^{11}(xz-y^2+2)^{6}\\Bigl[y^{2} \\left(3920 - 5880 a\\right) - 3040 a + 1680\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 11,
+    "U_power": 7,
+    "line": 158,
+    "old_constant": "560",
+    "new_constant": "-560",
+    "old": "&{}+x^{11}(xz-y^2+2)^{7}\\Bigl[2520 a y^{2} - 1260 a + 560\\Bigr]",
+    "new": "&{}+x^{11}(xz-y^2+2)^{7}\\Bigl[2520 a y^{2} - 1260 a - 560\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 11,
+    "U_power": 9,
+    "line": 160,
+    "old_constant": "-70",
+    "new_constant": "70",
+    "old": "&{}+x^{11}(xz-y^2+2)^{9}\\Bigl[- 70 a - 70\\Bigr]",
+    "new": "&{}+x^{11}(xz-y^2+2)^{9}\\Bigl[- 70 a + 70\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 13,
+    "U_power": 1,
+    "line": 177,
+    "old_constant": "214400",
+    "new_constant": "-214400",
+    "old": "&{}+x^{13}(xz-y^2+2)\\Bigl[y^{6} \\left(560 a - 560\\right) + y^{4} \\left(2800 a - 21700\\right)\\\\\n&\\qquad + y^{2} \\left(32680 a + 240600\\right) - 74400 a + 214400\\Bigr]",
+    "new": "&{}+x^{13}(xz-y^2+2)\\Bigl[y^{6} \\left(560 a - 560\\right) + y^{4} \\left(2800 a - 21700\\right)\\\\\n&\\qquad + y^{2} \\left(32680 a + 240600\\right) - 74400 a - 214400\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 13,
+    "U_power": 3,
+    "line": 179,
+    "old_constant": "-77280",
+    "new_constant": "77280",
+    "old": "&{}+x^{13}(xz-y^2+2)^{3}\\Bigl[- 7000 a y^{4} + y^{2} \\left(141260 a - 70280\\right) - 125680 a - 77280\\Bigr]",
+    "new": "&{}+x^{13}(xz-y^2+2)^{3}\\Bigl[- 7000 a y^{4} + y^{2} \\left(141260 a - 70280\\right) - 125680 a + 77280\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 13,
+    "U_power": 4,
+    "line": 180,
+    "old_constant": "2080",
+    "new_constant": "-2080",
+    "old": "&{}+x^{13}(xz-y^2+2)^{4}\\Bigl[2100 y^{4} + 5600 a y^{2} - 5460 a + 2080\\Bigr]",
+    "new": "&{}+x^{13}(xz-y^2+2)^{4}\\Bigl[2100 y^{4} + 5600 a y^{2} - 5460 a - 2080\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 13,
+    "U_power": 6,
+    "line": 182,
+    "old_constant": "-1470",
+    "new_constant": "1470",
+    "old": "&{}+x^{13}(xz-y^2+2)^{6}\\Bigl[y^{2} \\left(1960 a - 1960\\right) - 1400 a - 1470\\Bigr]",
+    "new": "&{}+x^{13}(xz-y^2+2)^{6}\\Bigl[y^{2} \\left(1960 a - 1960\\right) - 1400 a + 1470\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 15,
+    "U_power": 0,
+    "line": 198,
+    "old_constant": "-127360",
+    "new_constant": "127360",
+    "old": "&{}+x^{15}\\Bigl[70 y^{6} + y^{4} \\left(7000 a + 2100\\right) + y^{2} \\left(- 62720 a - 5720\\right)\\\\\n&\\qquad - 235840 a - 127360\\Bigr]",
+    "new": "&{}+x^{15}\\Bigl[70 y^{6} + y^{4} \\left(7000 a + 2100\\right) + y^{2} \\left(- 62720 a - 5720\\right)\\\\\n&\\qquad - 235840 a + 127360\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 15,
+    "U_power": 2,
+    "line": 201,
+    "old_constant": "-79680",
+    "new_constant": "79680",
+    "old": "&{}+x^{15}(xz-y^2+2)^{2}\\Bigl[y^{4} \\left(4200 a - 4200\\right) + y^{2} \\left(31080 - 19320 a\\right) - 11360 a - 79680\\Bigr]",
+    "new": "&{}+x^{15}(xz-y^2+2)^{2}\\Bigl[y^{4} \\left(4200 a - 4200\\right) + y^{2} \\left(31080 - 19320 a\\right) - 11360 a + 79680\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 15,
+    "U_power": 5,
+    "line": 204,
+    "old_constant": "5040",
+    "new_constant": "-5040",
+    "old": "&{}+x^{15}(xz-y^2+2)^{5}\\Bigl[2940 y^{2} - 6160 a + 5040\\Bigr]",
+    "new": "&{}+x^{15}(xz-y^2+2)^{5}\\Bigl[2940 y^{2} - 6160 a - 5040\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 15,
+    "U_power": 7,
+    "line": 206,
+    "old_constant": "-560",
+    "new_constant": "560",
+    "old": "&{}+x^{15}(xz-y^2+2)^{7}\\Bigl[- 560 a - 560\\Bigr]",
+    "new": "&{}+x^{15}(xz-y^2+2)^{7}\\Bigl[- 560 a + 560\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 17,
+    "U_power": 1,
+    "line": 217,
+    "old_constant": "-15680",
+    "new_constant": "15680",
+    "old": "&{}+x^{17}(xz-y^2+2)\\Bigl[1050 y^{4} + y^{2} \\left(23520 a + 8400\\right) - 67200 a - 15680\\Bigr]",
+    "new": "&{}+x^{17}(xz-y^2+2)\\Bigl[1050 y^{4} + y^{2} \\left(23520 a + 8400\\right) - 67200 a + 15680\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 17,
+    "U_power": 2,
+    "line": 218,
+    "old_constant": "32480",
+    "new_constant": "-32480",
+    "old": "&{}+x^{17}(xz-y^2+2)^{2}\\Bigl[y^{4} \\left(70 a - 70\\right) + y^{2} \\left(3360 a - 12600\\right) - 13440 a + 32480\\Bigr]",
+    "new": "&{}+x^{17}(xz-y^2+2)^{2}\\Bigl[y^{4} \\left(70 a - 70\\right) + y^{2} \\left(3360 a - 12600\\right) - 13440 a - 32480\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 17,
+    "U_power": 3,
+    "line": 219,
+    "old_constant": "-21840",
+    "new_constant": "21840",
+    "old": "&{}+x^{17}(xz-y^2+2)^{3}\\Bigl[y^{2} \\left(5040 a - 5040\\right) - 8960 a - 21840\\Bigr]",
+    "new": "&{}+x^{17}(xz-y^2+2)^{3}\\Bigl[y^{2} \\left(5040 a - 5040\\right) - 8960 a + 21840\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 17,
+    "U_power": 4,
+    "line": 220,
+    "old_constant": "-5040",
+    "new_constant": "5040",
+    "old": "&{}+x^{17}(xz-y^2+2)^{4}\\Bigl[- 840 a y^{2} - 8400 a - 5040\\Bigr]",
+    "new": "&{}+x^{17}(xz-y^2+2)^{4}\\Bigl[- 840 a y^{2} - 8400 a + 5040\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 19,
+    "U_power": 0,
+    "line": 229,
+    "old_constant": "-38080",
+    "new_constant": "38080",
+    "old": "&{}+x^{19}\\Bigl[- 140 a y^{4} + y^{2} \\left(7840 - 11200 a\\right) - 24640 a - 38080\\Bigr]",
+    "new": "&{}+x^{19}\\Bigl[- 140 a y^{4} + y^{2} \\left(7840 - 11200 a\\right) - 24640 a + 38080\\Bigr]"
+  },
+  {
+    "component": "forward_3",
+    "x_power": 21,
+    "U_power": 1,
+    "line": 237,
+    "old_constant": "-1120",
+    "new_constant": "1120",
+    "old": "&{}+x^{21}(xz-y^2+2)\\Bigl[- 1120 a - 1120\\Bigr]",
+    "new": "&{}+x^{21}(xz-y^2+2)\\Bigl[- 1120 a + 1120\\Bigr]"
+  },
+  {
+    "component": "inverse_2",
+    "block": "C^3",
+    "line": 297,
+    "old": "- 40 a - 44\\Bigr]",
+    "new": "- 40 a + 44\\Bigr]"
+  },
+  {
+    "component": "inverse_2",
+    "block": "C^4 D",
+    "line": 311,
+    "old": "- 5 a - 5\\Bigr]",
+    "new": "- 5 a + 5\\Bigr]"
+  },
+  {
+    "component": "inverse_3",
+    "block": "C^5",
+    "line": 344,
+    "old": "- 2112 a - 336\\Bigr]",
+    "new": "- 2112 a + 336\\Bigr]"
+  },
+  {
+    "component": "inverse_3",
+    "block": "C^6 D",
+    "line": 396,
+    "old": "- 408 a + 24\\Bigr]",
+    "new": "- 408 a - 24\\Bigr]"
+  },
+  {
+    "component": "inverse_3",
+    "block": "C^7 D^2",
+    "line": 431,
+    "old": "- 18 a + 8\\Bigr]",
+    "new": "- 18 a - 8\\Bigr]"
+  },
+  {
+    "component": "inverse_3",
+    "block": "C^8 D",
+    "line": 402,
+    "old": "- 32 a - 576\\Bigr]",
+    "new": "- 32 a + 576\\Bigr]"
+  },
+  {
+    "component": "inverse_3",
+    "block": "C^9 D^2",
+    "line": 433,
+    "old": "- 4 a - 12\\Bigr]",
+    "new": "- 4 a + 12\\Bigr]"
+  }
+]

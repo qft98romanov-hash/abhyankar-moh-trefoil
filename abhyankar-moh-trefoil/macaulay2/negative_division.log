@@ -1,0 +1,39 @@
+Macaulay2 exact rectification certificates
+Macaulay2 version: 1.22
+PASS: coefficient field relation
+PASS: a(1-a)=1
+PASS: simultaneous substitution sanity
+PASS: negative control rejects (1+x)/x
+PASS: exact division: W
+PASS: exact division: chi
+PASS: base H(x,R,S)=y
+PASS: base W(x,R,S)=z certificate
+PASS: base R(x,H,W)=y
+PASS: base S(x,H,W)=z
+PASS: base Jacobian=-1
+PASS: trefoil Phi(gamma(t))=(t,0,0)
+PASS: trefoil Psi(t,0,0)=gamma(t)
+PASS: trefoil normalization and outer inverse identities
+PASS: trefoil degrees {5, 15, 24}
+PASS: exact division: harmonic forward
+PASS: exact division: harmonic inverse
+PASS: harmonic transfer certificate
+PASS: harmonic inverse certificate
+PASS: harmonic relative Jacobian=+1
+PASS: harmonic Phi(gamma(t))=(t,0,0)
+PASS: harmonic Psi(t,0,0)=gamma(t)
+PASS: harmonic outer inverse identities
+PASS: harmonic degrees {7, 21, 41}
+PASS: negative control distinguishes +4t from +5t
+PASS: harmonic x=0 forward after inverse
+PASS: harmonic x=0 inverse after forward
+BOTH RECTIFICATIONS VERIFIED (Macaulay2 certificates)
+macaulay2/verify_rectification.m2:23:20:(3):[8]: error: FAIL: exact division: EXTERNAL NEGATIVE CONTROL: (1+x)/x
+macaulay2/verify_rectification.m2:34:5:(3):[7]: --back trace--
+macaulay2/negative_division.m2:4:1:(3):[6]: --back trace--
+/usr/share/Macaulay2/Core/startup.m2:66:17:(0):[6]: --back trace--
+/usr/share/Macaulay2/Core/Core.m2:106:22:(1):[5]: --back trace--
+/usr/share/Macaulay2/Core/Core.m2:102:10:(1):[3]: --back trace--
+/usr/share/Macaulay2/Core/Core.m2:113:22:(1):[2]: --back trace--
+/usr/share/Macaulay2/Core/startup.m2:552:63:(0):[1]: --back trace--
+/usr/share/Macaulay2/Core/startup.m2:662:6:(0): --back trace--

@@ -1,0 +1,66 @@
+[
+  {
+    "degree_A_bound": 1,
+    "degree_P_bound": 1,
+    "e": 7,
+    "basis": [
+      "1"
+    ]
+  },
+  {
+    "degree_A_bound": 1,
+    "degree_P_bound": 3,
+    "e": 9,
+    "basis": [
+      "1"
+    ]
+  },
+  {
+    "degree_A_bound": 1,
+    "degree_P_bound": 5,
+    "e": 11,
+    "basis": [
+      "1"
+    ]
+  },
+  {
+    "degree_A_bound": 3,
+    "degree_P_bound": 1,
+    "e": 13,
+    "basis": [
+      "1"
+    ]
+  },
+  {
+    "degree_A_bound": 3,
+    "degree_P_bound": 3,
+    "e": 15,
+    "basis": [
+      "1"
+    ]
+  },
+  {
+    "degree_A_bound": 3,
+    "degree_P_bound": 5,
+    "e": 17,
+    "basis": [
+      "1"
+    ]
+  },
+  {
+    "degree_A_bound": 5,
+    "degree_P_bound": 1,
+    "e": 19,
+    "basis": [
+      "1"
+    ]
+  },
+  {
+    "degree_A_bound": 5,
+    "degree_P_bound": 3,
+    "e": 21,
+    "basis": [
+      "1"
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sympy": "1.14.0",
+  "input_sha256": {
+    "verify.py": "5eafc642b3e7f8ab5a4e69aa36e919d3122496d0175c885d5a41700b396da2d5",
+    "verify_printed_formulas.py": "af9793b112fbd1f2ed6901f51095536cc8a3a804a01f6012f2ae9937162c3e82",
+    "paper/trefoil_explicit.tex": "3b876b410aa9499e4e7f250e6dd9e0c18a870b2ae078fd63a1699ad18cef9112",
+    "paper/harmonic_explicit.tex": "ef28dea738f08d6a022e39a1597c0dd23f117d39f964b2a3db27ed164a055585"
+  },
+  "hardened_auditor_sha256": {
+    "audit_trefoil.py": "c5aebfa87f72e090c4ce858a7ca5c2f4735c131282f7a62a5febb346db6ada52",
+    "audit_harmonic.py": "d4ba03c085cca93638adb49e6710ceee8e0bab3809057a1faf4078cd2f42a435",
+    "audit_harmonic_independent.py": "66bffa23c1888873e0815e6430f3e8f740c1965f8f3191b94766698cbd05e06c",
+    "run_negative_controls.py": "357dde55e4d5202a60342d09ff5a4152ea3d1e2d3c0710e13da70ced34c07738"
+  },
+  "fresh_runs": {
+    "compact_verify": {
+      "exit_code": 0,
+      "pass_lines": 17
+    },
+    "literal_tex_wrapper": {
+      "exit_code": 0,
+      "components": 12
+    },
+    "independent_harmonic": {
+      "exit_code": 0,
+      "components": 6
+    },
+    "hardened_tex_wrapper": {
+      "exit_code": 0,
+      "components": 12
+    },
+    "portable_controls": {
+      "exit_code": 0,
+      "positive_checks": 2,
+      "intended_failures": 5
+    }
+  }
+}

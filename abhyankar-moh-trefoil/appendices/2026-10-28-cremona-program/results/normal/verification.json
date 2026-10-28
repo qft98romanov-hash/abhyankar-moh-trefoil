@@ -1,0 +1,486 @@
+{
+  "status": "PASS",
+  "date": "2026-10-28",
+  "run_utc": "2026-10-28T18:01:22.486743+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "optimization_level": 0,
+    "arithmetic": "exact QQ[a]/(a^2-a+1)",
+    "source_sha256": "1f540609cd2f3cb8f3eebd14069131c0a218b740e02e695c5f3f45ac6790335d"
+  },
+  "finite_family_range": [
+    1,
+    3
+  ],
+  "checks": [
+    {
+      "name": "coefficient-ring units",
+      "status": "PASS"
+    },
+    {
+      "name": "P(F(T)) = T modulo x^5",
+      "status": "PASS"
+    },
+    {
+      "name": "F(P(U)) = U modulo x^5",
+      "status": "PASS"
+    },
+    {
+      "name": "base companion identity",
+      "status": "PASS"
+    },
+    {
+      "name": "base inverse factor identity",
+      "status": "PASS"
+    },
+    {
+      "name": "base inverse: H(R,S)=T",
+      "status": "PASS"
+    },
+    {
+      "name": "base inverse: W-component cancellation certificate",
+      "status": "PASS"
+    },
+    {
+      "name": "base inverse after forward: both expanded components",
+      "status": "PASS"
+    },
+    {
+      "name": "base relative Jacobian = -1",
+      "status": "PASS"
+    },
+    {
+      "name": "base certificates have integral coefficients",
+      "status": "PASS"
+    },
+    {
+      "name": "base wildness coefficient test: v_x(bx)=1<5",
+      "status": "PASS"
+    },
+    {
+      "name": "normalized trefoil parameter and companion",
+      "status": "PASS"
+    },
+    {
+      "name": "Shastri rectifier maps the curve to (t,0,0)",
+      "status": "PASS"
+    },
+    {
+      "name": "Shastri inverse on the axis",
+      "status": "PASS"
+    },
+    {
+      "name": "Shastri rectifier component degrees",
+      "status": "PASS",
+      "details": {
+        "degrees": [
+          5,
+          15,
+          24
+        ]
+      }
+    },
+    {
+      "name": "rational parameter tau: cleared-denominator identity",
+      "status": "PASS"
+    },
+    {
+      "name": "rational tau denominator is not identically zero on Shastri",
+      "status": "PASS"
+    },
+    {
+      "name": "rational Shastri rectifier: forward after inverse",
+      "status": "PASS"
+    },
+    {
+      "name": "rational Shastri rectifier: inverse after forward",
+      "status": "PASS"
+    },
+    {
+      "name": "Shastri rectifier integral coefficients",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: p_N modulo x",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: curve modification lands on normalized trefoil",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: parameter contraction modulo D3^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: curve degree",
+      "status": "PASS",
+      "details": {
+        "third_degree": 7
+      }
+    },
+    {
+      "name": "N=1: centre equals -y modulo x",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: two-sided inverse of centre modulo x^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: forward transfer numerator divisible by x^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: inverse transfer numerator divisible by x^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: wildness rational-length-two normal form",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: inner quadratic coefficient = -x modulo x^2",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: inner quadratic coefficient valuation is one",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: parameter coordinate degree",
+      "status": "PASS",
+      "details": {
+        "degree": 7
+      }
+    },
+    {
+      "name": "N=1: actual factored forward map on the curve",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: actual factored inverse recovers the curve",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: final outer rectifier on the curve",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: both generic outer composition identities",
+      "status": "PASS"
+    },
+    {
+      "name": "N=1: constructed coefficients are integral",
+      "status": "PASS"
+    },
+    {
+      "name": "harmonic model is C_1",
+      "status": "PASS"
+    },
+    {
+      "name": "harmonic correction matches the explicit known correction",
+      "status": "PASS"
+    },
+    {
+      "name": "harmonic full forward/inverse relative maps are integral polynomials",
+      "status": "PASS"
+    },
+    {
+      "name": "harmonic rectifier component degrees",
+      "status": "PASS",
+      "details": {
+        "degrees": [
+          7,
+          21,
+          41
+        ]
+      }
+    },
+    {
+      "name": "N=2: p_N modulo x",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: curve modification lands on normalized trefoil",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: parameter contraction modulo D3^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: curve degree",
+      "status": "PASS",
+      "details": {
+        "third_degree": 12
+      }
+    },
+    {
+      "name": "N=2: centre equals -y modulo x",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: two-sided inverse of centre modulo x^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: forward transfer numerator divisible by x^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: inverse transfer numerator divisible by x^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: wildness rational-length-two normal form",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: inner quadratic coefficient = -x modulo x^2",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: inner quadratic coefficient valuation is one",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: parameter coordinate degree",
+      "status": "PASS",
+      "details": {
+        "degree": 11
+      }
+    },
+    {
+      "name": "N=2: actual factored forward map on the curve",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: actual factored inverse recovers the curve",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: final outer rectifier on the curve",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: both generic outer composition identities",
+      "status": "PASS"
+    },
+    {
+      "name": "N=2: constructed coefficients are integral",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: p_N modulo x",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: curve modification lands on normalized trefoil",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: parameter contraction modulo D3^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: curve degree",
+      "status": "PASS",
+      "details": {
+        "third_degree": 17
+      }
+    },
+    {
+      "name": "N=3: centre equals -y modulo x",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: two-sided inverse of centre modulo x^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: forward transfer numerator divisible by x^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: inverse transfer numerator divisible by x^N",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: wildness rational-length-two normal form",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: inner quadratic coefficient = -x modulo x^2",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: inner quadratic coefficient valuation is one",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: parameter coordinate degree",
+      "status": "PASS",
+      "details": {
+        "degree": 15
+      }
+    },
+    {
+      "name": "N=3: actual factored forward map on the curve",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: actual factored inverse recovers the curve",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: final outer rectifier on the curve",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: both generic outer composition identities",
+      "status": "PASS"
+    },
+    {
+      "name": "N=3: constructed coefficients are integral",
+      "status": "PASS"
+    },
+    {
+      "name": "balanced monomial column parity r=-3",
+      "status": "PASS"
+    },
+    {
+      "name": "balanced monomial column parity r=-2",
+      "status": "PASS"
+    },
+    {
+      "name": "balanced monomial column parity r=-1",
+      "status": "PASS"
+    },
+    {
+      "name": "balanced monomial column parity r=0",
+      "status": "PASS"
+    },
+    {
+      "name": "balanced monomial column parity r=1",
+      "status": "PASS"
+    },
+    {
+      "name": "balanced monomial column parity r=2",
+      "status": "PASS"
+    },
+    {
+      "name": "balanced monomial column parity r=3",
+      "status": "PASS"
+    },
+    {
+      "name": "Laurent shear conjugation exact rational example",
+      "status": "PASS"
+    },
+    {
+      "name": "D_N normalizes swap generator N=1",
+      "status": "PASS"
+    },
+    {
+      "name": "D_N normalizes swap generator N=2",
+      "status": "PASS"
+    },
+    {
+      "name": "D_N normalizes swap generator N=3",
+      "status": "PASS"
+    },
+    {
+      "name": "negative control: nondivisible numerator rejected",
+      "status": "PASS",
+      "details": {
+        "expected_exception": "ArithmeticError"
+      }
+    },
+    {
+      "name": "negative control: altered inverse coefficient detected",
+      "status": "PASS",
+      "details": {
+        "expected_exception": "AssertionError"
+      }
+    },
+    {
+      "name": "negative control: false identity detected",
+      "status": "PASS",
+      "details": {
+        "expected_exception": "AssertionError"
+      }
+    },
+    {
+      "name": "scope control: +4t model is not certified by the harmonic H",
+      "status": "PASS"
+    }
+  ],
+  "families": [
+    {
+      "N": 1,
+      "p_N": "-y**2 + 2",
+      "nu_N": "-y",
+      "curve_third_component": "t**7 - 7*t**5 + 14*t**3 - 7*t",
+      "centre_inverse_mod_xN": "-y",
+      "correction_phi": "42*a*y**6 - 175*a*y**4 + 147*a*y**2 - 42*y**6 + 175*y**4 - 161*y**2 + 8",
+      "companion_on_curve": "-42*a*t**3 + 49*a*t + 42*t**3 - 49*t",
+      "wild_inner_coordinate": "-a*y + x**2*z - x*y**2 + y",
+      "curve_degrees": [
+        3,
+        5,
+        7
+      ],
+      "parameter_coordinate_degree": 7,
+      "inverse_verification": "Exact divisibility in both directions and invertible localized factors; explicit factored evaluation on the curve.",
+      "full_relative_maps_materialized": true
+    },
+    {
+      "N": 2,
+      "p_N": "2*x*y**3 - 5*x*y - y**2 + 2",
+      "nu_N": "x*y**2 - 2*x - y",
+      "curve_third_component": "-2*t**12 + 24*t**10 - 108*t**8 + 226*t**6 - 221*t**4 + 85*t**2 - 6",
+      "centre_inverse_mod_xN": "x*y**2 - 2*x - y",
+      "correction_phi": "-132*a*x*y**7 + 630*a*x*y**5 - 788*a*x*y**3 + 181*a*x*y + 42*a*y**6 - 175*a*y**4 + 147*a*y**2 + 48*x*y**3 - 67*x*y - 42*y**6 + 175*y**4 - 161*y**2 + 8",
+      "companion_on_curve": "132*a*t**4 - 234*a*t**2 + 44*a - 6",
+      "wild_inner_coordinate": "-a*y + x**3*z + 2*x**2*y**3 - 5*x**2*y - x*y**2 + y",
+      "curve_degrees": [
+        3,
+        5,
+        12
+      ],
+      "parameter_coordinate_degree": 11,
+      "inverse_verification": "Exact divisibility in both directions and invertible localized factors; explicit factored evaluation on the curve.",
+      "full_relative_maps_materialized": false
+    },
+    {
+      "N": 3,
+      "p_N": "-5*x**2*y**4 + 13*x**2*y**2 - 6*x**2 + 2*x*y**3 - 5*x*y - y**2 + 2",
+      "nu_N": "-2*x**2*y**3 + 4*x**2*y + x*y**2 - 2*x - y",
+      "curve_third_component": "5*t**17 - 85*t**15 + 595*t**13 - 2215*t**11 + 4728*t**9 - 5805*t**7 + 3857*t**5 - 1158*t**3 + 80*t",
+      "centre_inverse_mod_xN": "2*a*x**2*y**3 - 6*a*x**2*y + x*y**2 - 2*x - y",
+      "correction_phi": "165*a*x**2*y**4 - 333*a*x**2*y**2 + 44*a*x**2 - 132*a*x*y**7 + 630*a*x*y**5 - 788*a*x*y**3 + 181*a*x*y + 42*a*y**6 - 175*a*y**4 + 147*a*y**2 + 429*x**2*y**8 - 2310*x**2*y**6 + 3465*x**2*y**4 - 1188*x**2*y**2 - 6*x**2 + 48*x*y**3 - 67*x*y - 42*y**6 + 175*y**4 - 161*y**2 + 8",
+      "companion_on_curve": "-33*a*t - 429*t**5 + 1023*t**3 - 396*t",
+      "wild_inner_coordinate": "-a*y + x**4*z - 5*x**3*y**4 + 13*x**3*y**2 + 2*x**2*y**3 - 5*x**2*y - x*y**2 + y",
+      "curve_degrees": [
+        3,
+        5,
+        17
+      ],
+      "parameter_coordinate_degree": 15,
+      "inverse_verification": "Exact divisibility in both directions and invertible localized factors; explicit factored evaluation on the curve.",
+      "full_relative_maps_materialized": false
+    }
+  ],
+  "elapsed_seconds": 33.354,
+  "scope": {
+    "computational": "Finite polynomial identities, exact divisibility, coefficient tests and factored inverse certificates.",
+    "theoretical": "All-N induction, tame/wild criteria, stable tameness, Cremona membership and field descent require the manuscript proofs and cited theorems.",
+    "not_claimed": [
+      "A solution of the general A1 into A3 embedding problem",
+      "Nonexistence of a different tame rectifier of the same curve",
+      "Publication priority",
+      "Minimal stabilization dimension"
+    ]
+  }
+}

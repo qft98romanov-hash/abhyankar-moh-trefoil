@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-u",
+    "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verification/run_negative_controls.py",
+    "--output",
+    "/workspace/scratch/876f75ce875d/cross_audit/regression_results"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 282.0168601580008
+}

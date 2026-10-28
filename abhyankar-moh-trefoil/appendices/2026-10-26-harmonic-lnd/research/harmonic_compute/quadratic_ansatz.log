@@ -1,0 +1,31 @@
+A= c h= -c**3*x**7 + 6*c**3*x**5 - 10*c**3*x**3 + 4*c**3*x - 3*c**2*x**2 + 3*c**2 + 3*c*x + x**6 - 5*x**4 + 6*x**2 - 1
+{'A': 'c', 'e': 3, 'degree_P_bound': 0, 'basis': ['1']}
+{'A': 'c', 'e': 4, 'degree_P_bound': 1, 'basis': ['1']}
+{'A': 'c', 'e': 5, 'degree_P_bound': 2, 'basis': ['1']}
+{'A': 'c', 'e': 6, 'degree_P_bound': 3, 'basis': ['1']}
+{'A': 'c', 'e': 7, 'degree_P_bound': 4, 'basis': ['1']}
+{'A': 'c', 'e': 8, 'degree_P_bound': 5, 'basis': ['1']}
+{'A': 'c', 'e': 9, 'degree_P_bound': 6, 'basis': ['1']}
+A= c*x h= -c**3*x**10 + 6*c**3*x**8 - 10*c**3*x**6 + 4*c**3*x**4 - 3*c**2*x**4 + 3*c**2*x**2 + 3*c*x**2 + x**6 - 5*x**4 + 6*x**2 - 1
+{'A': 'c*x', 'e': 6, 'degree_P_bound': 0, 'basis': ['1']}
+{'A': 'c*x', 'e': 7, 'degree_P_bound': 1, 'basis': ['1']}
+{'A': 'c*x', 'e': 8, 'degree_P_bound': 2, 'basis': ['1']}
+{'A': 'c*x', 'e': 9, 'degree_P_bound': 3, 'basis': ['1']}
+{'A': 'c*x', 'e': 10, 'degree_P_bound': 4, 'basis': ['1']}
+{'A': 'c*x', 'e': 11, 'degree_P_bound': 5, 'basis': ['1']}
+{'A': 'c*x', 'e': 12, 'degree_P_bound': 6, 'basis': ['1']}
+A= c*x**2 h= -c**3*x**13 + 6*c**3*x**11 - 10*c**3*x**9 + 4*c**3*x**7 - 3*c**2*x**6 + 3*c**2*x**4 + 3*c*x**3 + x**6 - 5*x**4 + 6*x**2 - 1
+{'A': 'c*x**2', 'e': 9, 'degree_P_bound': 0, 'basis': ['1']}
+{'A': 'c*x**2', 'e': 10, 'degree_P_bound': 1, 'basis': ['1']}
+{'A': 'c*x**2', 'e': 11, 'degree_P_bound': 2, 'basis': ['1']}
+{'A': 'c*x**2', 'e': 12, 'degree_P_bound': 3, 'basis': ['1']}
+{'A': 'c*x**2', 'e': 13, 'degree_P_bound': 4, 'basis': ['1']}
+{'A': 'c*x**2', 'e': 14, 'degree_P_bound': 5, 'basis': ['1']}
+{'A': 'c*x**2', 'e': 15, 'degree_P_bound': 6, 'basis': ['1']}
+A= c*x**3 h= -c**3*x**16 + 6*c**3*x**14 - 10*c**3*x**12 + 4*c**3*x**10 - 3*c**2*x**8 + 3*c**2*x**6 + 3*c*x**4 + x**6 - 5*x**4 + 6*x**2 - 1
+{'A': 'c*x**3', 'e': 12, 'degree_P_bound': 0, 'basis': ['1']}
+{'A': 'c*x**3', 'e': 13, 'degree_P_bound': 1, 'basis': ['1']}
+{'A': 'c*x**3', 'e': 14, 'degree_P_bound': 2, 'basis': ['1']}
+{'A': 'c*x**3', 'e': 15, 'degree_P_bound': 3, 'basis': ['1']}
+{'A': 'c*x**3', 'e': 16, 'degree_P_bound': 4, 'basis': ['1']}
+COMPLETE: 26 systems; unit ideals: 26

@@ -1,0 +1,44 @@
+forward_3 line 46 x^1 U^0: -352 -> 352
+forward_3 line 49 x^1 U^2: -13 -> 13
+forward_3 line 58 x^3 U^0: 940 -> -940
+forward_3 line 60 x^3 U^1: -1332 -> 1332
+forward_3 line 62 x^3 U^2: -1149 -> 1149
+forward_3 line 76 x^5 U^0: -2356 -> 2356
+forward_3 line 82 x^5 U^3: -2444 -> 2444
+forward_3 line 83 x^5 U^4: -32 -> 32
+forward_3 line 100 x^7 U^1: -29088 -> 29088
+forward_3 line 104 x^7 U^3: -6034 -> 6034
+forward_3 line 107 x^7 U^5: 440 -> -440
+forward_3 line 109 x^7 U^7: -120 -> 120
+forward_3 line 123 x^9 U^0: -109376 -> 109376
+forward_3 line 127 x^9 U^2: -504 -> 504
+forward_3 line 129 x^9 U^3: 30920 -> -30920
+forward_3 line 130 x^9 U^4: -24615 -> 24615
+forward_3 line 131 x^9 U^5: -3720 -> 3720
+forward_3 line 149 x^11 U^0: 112576 -> -112576
+forward_3 line 151 x^11 U^1: -301480 -> 301480
+forward_3 line 155 x^11 U^4: 14800 -> -14800
+forward_3 line 157 x^11 U^6: -1680 -> 1680
+forward_3 line 158 x^11 U^7: 560 -> -560
+forward_3 line 160 x^11 U^9: -70 -> 70
+forward_3 line 177 x^13 U^1: 214400 -> -214400
+forward_3 line 179 x^13 U^3: -77280 -> 77280
+forward_3 line 180 x^13 U^4: 2080 -> -2080
+forward_3 line 182 x^13 U^6: -1470 -> 1470
+forward_3 line 198 x^15 U^0: -127360 -> 127360
+forward_3 line 201 x^15 U^2: -79680 -> 79680
+forward_3 line 204 x^15 U^5: 5040 -> -5040
+forward_3 line 206 x^15 U^7: -560 -> 560
+forward_3 line 217 x^17 U^1: -15680 -> 15680
+forward_3 line 218 x^17 U^2: 32480 -> -32480
+forward_3 line 219 x^17 U^3: -21840 -> 21840
+forward_3 line 220 x^17 U^4: -5040 -> 5040
+forward_3 line 229 x^19 U^0: -38080 -> 38080
+forward_3 line 237 x^21 U^1: -1120 -> 1120
+inverse_2 line 297 C^3: - 40 a - 44\Bigr] -> - 40 a + 44\Bigr]
+inverse_2 line 311 C^4 D: - 5 a - 5\Bigr] -> - 5 a + 5\Bigr]
+inverse_3 line 344 C^5: - 2112 a - 336\Bigr] -> - 2112 a + 336\Bigr]
+inverse_3 line 396 C^6 D: - 408 a + 24\Bigr] -> - 408 a - 24\Bigr]
+inverse_3 line 431 C^7 D^2: - 18 a + 8\Bigr] -> - 18 a - 8\Bigr]
+inverse_3 line 402 C^8 D: - 32 a - 576\Bigr] -> - 32 a + 576\Bigr]
+inverse_3 line 433 C^9 D^2: - 4 a - 12\Bigr] -> - 4 a + 12\Bigr]

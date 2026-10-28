@@ -1,0 +1,3 @@
+PASS: normal and optimized exact polynomial results agree.
+The negative controls were detected in both modes.
+Finite tests do not replace the manuscript proofs for all N.

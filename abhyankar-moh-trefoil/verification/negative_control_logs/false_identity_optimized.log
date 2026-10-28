@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verification/run_negative_controls.py", line 223, in <module>
+    main()
+  File "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verification/run_negative_controls.py", line 93, in main
+    internal_case(args.internal_case)
+  File "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verification/run_negative_controls.py", line 35, in internal_case
+    namespace['check']('deliberately false identity', namespace['one'])
+  File "verify.py", line 70, in check
+AssertionError: deliberately false identity

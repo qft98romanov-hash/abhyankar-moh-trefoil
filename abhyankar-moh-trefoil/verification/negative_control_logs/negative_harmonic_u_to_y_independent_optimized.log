@@ -1,0 +1,21 @@
+SymPy 1.14.0
+SHA256 verify.py 73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef
+SHA256 harmonic_explicit.tex a68a87155ed41e0b4bca91d754220885babac38a5b42fb02356ca9f9375ff601
+Both compact constructions loaded in 1.261 seconds
+PASS independent parsing component 1 ; 19 QQ monomials
+PASS independent parsing component 2 ; 322 QQ monomials
+PASS independent parsing component 3 ; 2108 QQ monomials
+PASS independent parsing component 4 ; 1 QQ monomials
+PASS independent parsing component 5 ; 87 QQ monomials
+PASS independent parsing component 6 ; 477 QQ monomials
+forward1 difference (inverse x,y,z = X,U,V): 0
+forward2 difference (inverse x,y,z = X,U,V): 0
+forward3 difference (inverse x,y,z = X,U,V): 0
+inverse1 difference (inverse x,y,z = X,U,V): 0
+inverse2 difference (inverse x,y,z = X,U,V): -x**5 + 5*x**3 - 6*x
+inverse3 difference (inverse x,y,z = X,U,V): 0
+Inverse axis point X=1,Y=0,Z=0 => X=1,U=-2,V=7(a-1)
+printed ('-2', '-1', '1')
+compact ('-2', '1', '1')
+Elapsed 3.875 seconds
+FAIL: printed formulas differ from the compact construction.

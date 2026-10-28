@@ -1,0 +1,65 @@
+GAP 4.12.1 exact rectification verification
+Coefficient a = -E(3)^2; arithmetic in Q(E(3)).
+PASS 1: coefficient field
+PASS 2: simultaneous substitution
+PASS 3: exact division W
+PASS 4: exact division chi
+PASS 5: base H(x,R,S)=y
+PASS 6: base certificate for W(x,R,S)=z
+PASS 7: base R(x,H,W)=y
+PASS 8: base S(x,H,W)=z
+PASS 9: base relative Jacobian = -1
+PASS 10: trefoil affine normalization and inverse
+PASS 11: trefoil outer maps: both compositions
+PASS 12: trefoil Phi(gamma(t))=(t,0,0)
+PASS 13: trefoil inverse on axis
+PASS 14: trefoil forward degrees [ 5, 15, 24 ]
+PASS 15: exact division harmonic forward
+PASS 16: exact division harmonic inverse
+PASS 17: harmonic centre at x=0 is -y
+PASS 18: harmonic companion on centre
+PASS 19: harmonic relative Jacobian = +1
+PASS 20: harmonic outer maps: both compositions
+PASS 21: harmonic Phi(gamma(t))=(t,0,0)
+PASS 22: harmonic inverse on axis
+PASS 23: harmonic forward degrees [ 7, 21, 41 ]
+PASS 24: negative control rejects the +4t model
+BOTH RECTIFICATIONS VERIFIED IN GAP
+Checks: 24; runtime (CPU ms): 2652
+GAP 4.12.1 exact rectification verification
+Coefficient a = -E(3); arithmetic in Q(E(3)).
+PASS 1: coefficient field
+PASS 2: simultaneous substitution
+PASS 3: exact division W
+PASS 4: exact division chi
+PASS 5: base H(x,R,S)=y
+PASS 6: base certificate for W(x,R,S)=z
+PASS 7: base R(x,H,W)=y
+PASS 8: base S(x,H,W)=z
+PASS 9: base relative Jacobian = -1
+PASS 10: trefoil affine normalization and inverse
+PASS 11: trefoil outer maps: both compositions
+PASS 12: trefoil Phi(gamma(t))=(t,0,0)
+PASS 13: trefoil inverse on axis
+PASS 14: trefoil forward degrees [ 5, 15, 24 ]
+PASS 15: exact division harmonic forward
+PASS 16: exact division harmonic inverse
+PASS 17: harmonic centre at x=0 is -y
+PASS 18: harmonic companion on centre
+PASS 19: harmonic relative Jacobian = +1
+PASS 20: harmonic outer maps: both compositions
+PASS 21: harmonic Phi(gamma(t))=(t,0,0)
+PASS 22: harmonic inverse on axis
+PASS 23: harmonic forward degrees [ 7, 21, 41 ]
+PASS 24: negative control rejects the +4t model
+BOTH RECTIFICATIONS VERIFIED IN GAP
+Checks: 24; runtime (CPU ms): 2998
+EXTRA PASS 1: M and its inverse; M(gamma_T)=(C3,C4,C5)
+EXTRA PASS 2: harmonic gamma_H=(C3,C5,C7)
+EXTRA PASS 3: transported Chebyshev rectifier and inverse on the axis
+CHEBYSHEV NORMALIZATIONS VERIFIED; additional checks: 3
+EXTRA PASS 1: M and its inverse; M(gamma_T)=(C3,C4,C5)
+EXTRA PASS 2: harmonic gamma_H=(C3,C5,C7)
+EXTRA PASS 3: transported Chebyshev rectifier and inverse on the axis
+CHEBYSHEV NORMALIZATIONS VERIFIED; additional checks: 3
+Error, NOT DIVISIBLE: deliberate 1/x at verify_rectification.g:49 called from

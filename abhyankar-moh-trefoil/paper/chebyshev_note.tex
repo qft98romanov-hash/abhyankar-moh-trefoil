@@ -1,0 +1,53 @@
+\subsection{Chebyshev parametrizations and the scope of the result}
+
+Let $T_n$ denote the classical Chebyshev polynomial,
+$T_n(\cos\theta)=\cos(n\theta)$, and use the normalization
+$C_n(t)=2T_n(t/2)$. Thus
+\[
+\begin{aligned}
+C_3&=t^3-3t, & C_4&=t^4-4t^2+2,\\
+C_5&=t^5-5t^3+5t, & C_7&=t^7-7t^5+14t^3-7t.
+\end{aligned}
+\]
+The real harmonic knots $H(3,4,5)$ and $H(3,5,7)$ are the trefoil and
+the figure-eight, respectively; see \cite[Introduction and
+Definition~1.2]{KP}. The change from $T_n$ to $C_n$ is a linear
+reparametrization together with a common linear scaling of the ambient
+coordinates.
+
+The normalized Chebyshev trefoil is already covered by the construction:
+\[
+(C_3(t),C_4(t),C_5(t))=M(\gamma_T(t)),\qquad
+M(x,y,z)=(x,y+2,z-5x).
+\]
+This affine normalization is already recorded in
+\cite[Introduction, p.~3]{FF}.
+Consequently its rectifier and inverse are
+\[
+\Psi=\Phi_T\comp M^{-1},\qquad
+\Psi^{-1}=M\comp\Phi_T^{-1},\qquad
+M^{-1}(x,y,z)=(x,y-2,z+5x).
+\]
+In particular, $\Psi(C_3(t),C_4(t),C_5(t))=(t,0,0)$ over
+$K=\Q(\sqrt{-3})$. This is a direct consequence of the explicit affine
+normalization, rather than an additional hypothesis.
+
+The harmonic model treated above is exactly $(C_3,C_5,C_7)$. The
+polynomial identity
+\[
+C_3C_7-C_5^2+2=C_4
+\]
+explains the modification
+$\beta(x,y,z)=(x,xz-y^2+2,y)$ connecting it to $(C_3,C_4,C_5)$.
+The map $\beta$ becomes invertible after inverting $x$; the transfer
+construction and its two exact divisions produce the global polynomial
+automorphism.
+
+These two cases do not establish rectifiability for all Chebyshev or
+harmonic parametrizations. A further application must supply a closed
+complex embedding, a coordinate restricting to its parameter, and the
+hypotheses of the transfer theorem. Determining which additional
+Chebyshev parametrizations satisfy these conditions remains a natural
+question. In particular, the real knot classification in \cite{KP}
+does not by itself establish polynomial equivalence of their complex
+embeddings.

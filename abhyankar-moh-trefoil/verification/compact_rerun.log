@@ -1,0 +1,18 @@
+PASS: base polynomial identity for W
+PASS: base inverse: first nontrivial component
+PASS: base inverse: certificate for the other component
+PASS: inverse after forward: both nontrivial components expanded
+PASS: the original trefoil normalization is invertible
+PASS: the trefoil outer map is invertible in both directions
+PASS: the trefoil maps to (t,0,0)
+PASS: the inverse recovers the trefoil from the axis
+PASS: component degrees (5, 15, 24)
+PASS: the base relative Jacobian determinant is -1
+PASS: polynomiality of the forward figure-eight transfer
+PASS: polynomiality of the inverse figure-eight transfer
+PASS: the figure-eight outer map is invertible in both directions
+PASS: the harmonic figure-eight maps to (t,0,0)
+PASS: the inverse recovers the figure-eight from the axis
+PASS: component degrees (7, 21, 41)
+PASS: the figure-eight relative Jacobian determinant is +1
+BOTH RECTIFICATIONS VERIFIED; elapsed: 33.32 s

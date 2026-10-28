@@ -1,0 +1,31 @@
+PASS: base polynomial identity for W
+PASS: base inverse: first nontrivial component
+PASS: base inverse: certificate for the other component
+PASS: inverse after forward: both nontrivial components expanded
+PASS: the trefoil inverse callable matches the proved factorization
+PASS: the original trefoil normalization is invertible
+PASS: the trefoil outer map is invertible in both directions
+PASS: the trefoil maps to (t,0,0)
+PASS: the inverse recovers the trefoil from the axis
+PASS: component degrees (5, 15, 24)
+PASS: the base relative Jacobian determinant is -1
+PASS: polynomiality of the forward figure-eight transfer
+PASS: polynomiality of the inverse figure-eight transfer
+PASS: the figure-eight inverse callable matches the proved factorization
+PASS: the figure-eight outer map is invertible in both directions
+PASS: the harmonic figure-eight maps to (t,0,0)
+PASS: the inverse recovers the figure-eight from the axis
+PASS: component degrees (7, 21, 41)
+PASS: the figure-eight relative Jacobian determinant is +1
+BOTH RECTIFICATIONS VERIFIED; elapsed: 30.65 s
+Parser self-tests passed 5
+{"component": 1, "label": "(\\Phi_H)_1(x,y,z)", "equal": true, "printed_terms": 19, "compact_terms": 19, "differing_QQ_a_coefficients": 0, "coordinate_system": "original x,y,z"}
+{"component": 2, "label": "(\\Phi_H)_2(x,y,z)", "equal": true, "printed_terms": 322, "compact_terms": 322, "differing_QQ_a_coefficients": 0, "coordinate_system": "original x,y,z"}
+{"component": 3, "label": "(\\Phi_H)_3(x,y,z)", "equal": false, "printed_terms": 2108, "compact_terms": 2108, "differing_QQ_a_coefficients": 1, "coordinate_system": "original x,y,z"}
+First discrepancies [('(1, 0, 0, 0)', -704)]
+{"component": 4, "label": "(\\Phi_H^{-1})_1(X,Y,Z)", "equal": true, "printed_terms": 1, "compact_terms": 1, "differing_QQ_a_coefficients": 0, "coordinate_system": "X=y, Y=x-y^3+3y, Z=z-(1-a)(42y^3-49y)"}
+{"component": 5, "label": "(\\Phi_H^{-1})_2(X,Y,Z)", "equal": true, "printed_terms": 85, "compact_terms": 85, "differing_QQ_a_coefficients": 0, "coordinate_system": "X=y, Y=x-y^3+3y, Z=z-(1-a)(42y^3-49y)"}
+{"component": 6, "label": "(\\Phi_H^{-1})_3(X,Y,Z)", "equal": true, "printed_terms": 477, "compact_terms": 477, "differing_QQ_a_coefficients": 0, "coordinate_system": "X=y, Y=x-y^3+3y, Z=z-(1-a)(42y^3-49y)"}
+Printed harmonic_inverse(1,0,0): ('-2', '1', '1')
+Expected gamma_H(1): ('-2', '1', '1')
+TOTAL 1 unequal of 6; seconds 32.10148732500238

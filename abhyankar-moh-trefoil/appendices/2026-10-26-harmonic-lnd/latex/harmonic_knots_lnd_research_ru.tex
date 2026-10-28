@@ -1,0 +1,113 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguage{english}
+\setmainfont{DejaVu Serif}[ItalicFont=DejaVu Serif,BoldItalicFont=DejaVu Serif Bold,ItalicFeatures={FakeSlant=0.18},BoldItalicFeatures={FakeSlant=0.18}]
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}[Scale=0.86]
+\usepackage{amsmath,amsthm}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage{booktabs,longtable,array,enumitem,xcolor,fancyhdr,ragged2e,needspace}
+\usepackage{xurl}
+\usepackage[unicode,colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!55!black]{hyperref}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+\setlist{itemsep=3pt,topsep=5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Приложение: на стадии проверки}
+\fancyhead[R]{\small 26 октября 2026}
+\fancyfoot[C]{\thepage}
+\newcommand{\Aut}{\operatorname{Aut}}
+\providecommand{\square}{\mdlgwhtsquare}
+\title{\fontsize{18}{23}\selectfont Гармонические узлы и группы Кремоны\protect\\Локально нильпотентные дифференцирования}
+\author{Дополнительное исследовательское приложение\\На стадии проверки}
+\date{26 октября 2026 года}
+\begin{document}
+\raggedright
+\maketitle
+\begin{abstract}
+\textbf{Статус на 26 октября 2026 года: предварительные результаты,
+на стадии проверки.} Проверки выполнены в рамках исследовательской работы
+с ИИ; внешнее независимое рецензирование и литературный приоритет не заявляются.
+Приложение не заменяет исходную статью и её сертификаты.
+
+
+Исследованы следствия явных выпрямлений трилистника Шастри и
+$H(3,5,7)$ из указанного пользователем репозитория. Получены полные
+бесконечные семейства выпрямляемых параметризаций $H(3,4,c)$ и
+$H(3,5,c)$, точный относительный критерий переноса через LND,
+явные координаты ядра дифференцирования из гипотезы E и
+самостоятельные доказательства минимальных степеней слайсов.
+Общая выпрямляемость всех $H(a,b,c)$ не установлена.
+Мотивы, K-теория и гомологическая алгебра не используются.
+\end{abstract}
+
+\section{Основание, статус и воспроизводимость}
+Проверена текущая версия репозитория
+\href{https://github.com/qft98romanov-hash/abhyankar-moh-trefoil/tree/3cf41be3fb3b1108e1ec91dd23dff7bfcf59569e}{\texttt{qft98romanov-hash/abhyankar-moh-trefoil}},
+commit \texttt{3cf41be3fb3b1108e1ec91dd23dff7bfcf59569e}.
+Это рабочее математическое досье; заявления о первенстве результатов
+требуют отдельной литературной проверки. Общие классические механизмы
+отделены от их применения к проверенным формулам.
+
+Точные запуски \texttt{verify.py} и
+\texttt{verify\_printed\_formulas.py} успешно подтвердили оба выпрямления
+и все двенадцать напечатанных прямых и обратных компонент.
+Использована SymPy 1.14.0 с точной рациональной арифметикой и соотношением
+$a^2-a+1=0$; числа с плавающей точкой для сертификатов не применялись.
+GAP и Macaulay2 в этом запуске не выполнялись. Проверка обратимости
+использует факторизации, точную делимость и инъективность локализации;
+она не подменяется одной проверкой якобиана.
+
+Поле коэффициентов базовых выпрямлений равно
+\[
+K=\mathbb Q[a]/(a^2-a+1)\simeq\mathbb Q(\sqrt{-3}).
+\]
+Проверенные модели:
+\[
+\gamma_T=(t^3-3t,t^4-4t^2,t^5-10t),\qquad
+\gamma_H=(C_3,C_5,C_7).
+\]
+Аффинная замена $M(x,y,z)=(x,y+2,z-5x)$ переводит $\gamma_T$
+в $(C_3,C_4,C_5)$, где $C_n(t)=2T_n(t/2)$.
+Таким образом, именно три исходные параметризации снабжены
+удостоверенными выпрямителями. Средняя координата $\gamma_H$ имеет
+линейный член $+5t$, а не $+4t$.
+
+\Needspace{5\baselineskip}
+\paragraph{Главные результаты продолжения.}
+\begin{enumerate}
+\item При фиксированных взаимно простых $a,b\geq2$ построены явные
+полиномиальные сдвиги третьей координаты; достаточно не более
+$\varphi(a)\varphi(b)/2$ представителей индекса $c$.
+\item Все $H(3,4,c)$ при $\gcd(c,12)=1$ и все $H(3,5,c)$ при
+$\gcd(c,15)=1$ выпрямляются над $K$. Это бесконечно много
+параметризаций, но не бесконечно много различных вещественных типов узлов.
+\item Для конкретного дифференцирования гипотезы E получены явные
+полиномиальные координаты ядра: оно изоморфно $\mathbb C^{[4]}$.
+Это следствие проверенного выпрямителя, не решение общей проблемы сокращения.
+\item Минимальные полные степени слайсов связанных LND равны $7$ для
+трилистника Шастри и $11$ для $H(3,5,7)$. Доказательства и отдельные
+рациональные сертификаты не зависят от выпрямлений репозитория.
+\item Критерий центра переноса усилен до необходимого и достаточного
+внутри указанной относительной конструкции. Он равносилен наличию
+слайса у соответствующего LND.
+\item Для естественной модификации $H(3,7,8)$ доказана невозможность
+выполнить критерий центра. Это ограничение метода, не доказательство
+невыпрямляемости самой кривой.
+\end{enumerate}
+
+\input{sections/harmonic.tex}
+\input{sections/cremona.tex}
+\input{sections/base_lnd.tex}
+\input{sections/van_den_essen.tex}
+\input{sections/minimum_slice.tex}
+\input{sections/harmonic_minimum_slice.tex}
+\input{sections/computations.tex}
+\input{sections/consequences.tex}
+\end{document}

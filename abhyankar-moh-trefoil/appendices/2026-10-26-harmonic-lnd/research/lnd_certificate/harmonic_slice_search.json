@@ -1,0 +1,326 @@
+{
+  "degree": 11,
+  "coefficients": [
+    {
+      "monomial": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": "-1"
+    },
+    {
+      "monomial": [
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "coefficient": "9"
+    },
+    {
+      "monomial": [
+        0,
+        4,
+        0,
+        0,
+        1
+      ],
+      "coefficient": "-6"
+    },
+    {
+      "monomial": [
+        0,
+        6,
+        0,
+        0,
+        1
+      ],
+      "coefficient": "1"
+    },
+    {
+      "monomial": [
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      "coefficient": "30"
+    },
+    {
+      "monomial": [
+        0,
+        4,
+        0,
+        1,
+        0
+      ],
+      "coefficient": "-40"
+    },
+    {
+      "monomial": [
+        0,
+        6,
+        0,
+        1,
+        0
+      ],
+      "coefficient": "16"
+    },
+    {
+      "monomial": [
+        0,
+        8,
+        0,
+        1,
+        0
+      ],
+      "coefficient": "-2"
+    },
+    {
+      "monomial": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "2"
+    },
+    {
+      "monomial": [
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "17"
+    },
+    {
+      "monomial": [
+        0,
+        4,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "-48"
+    },
+    {
+      "monomial": [
+        0,
+        6,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "35"
+    },
+    {
+      "monomial": [
+        0,
+        8,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "-10"
+    },
+    {
+      "monomial": [
+        0,
+        10,
+        1,
+        0,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "monomial": [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "coefficient": "-3"
+    },
+    {
+      "monomial": [
+        1,
+        3,
+        0,
+        2,
+        0
+      ],
+      "coefficient": "1"
+    },
+    {
+      "monomial": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": "6"
+    },
+    {
+      "monomial": [
+        1,
+        3,
+        1,
+        0,
+        1
+      ],
+      "coefficient": "-2"
+    },
+    {
+      "monomial": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": "10"
+    },
+    {
+      "monomial": [
+        1,
+        3,
+        1,
+        1,
+        0
+      ],
+      "coefficient": "-10"
+    },
+    {
+      "monomial": [
+        1,
+        5,
+        1,
+        1,
+        0
+      ],
+      "coefficient": "2"
+    },
+    {
+      "monomial": [
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "coefficient": "7"
+    },
+    {
+      "monomial": [
+        1,
+        3,
+        2,
+        0,
+        0
+      ],
+      "coefficient": "-14"
+    },
+    {
+      "monomial": [
+        1,
+        5,
+        2,
+        0,
+        0
+      ],
+      "coefficient": "7"
+    },
+    {
+      "monomial": [
+        1,
+        7,
+        2,
+        0,
+        0
+      ],
+      "coefficient": "-1"
+    },
+    {
+      "monomial": [
+        2,
+        0,
+        1,
+        2,
+        0
+      ],
+      "coefficient": "-1"
+    },
+    {
+      "monomial": [
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "coefficient": "1"
+    }
+  ],
+  "variables": [
+    "B",
+    "u",
+    "x",
+    "y",
+    "z"
+  ],
+  "derivatives": [
+    [
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        -3
+      ]
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        2,
+        -15
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    [
+      [
+        6,
+        7
+      ],
+      [
+        4,
+        -35
+      ],
+      [
+        2,
+        42
+      ],
+      [
+        0,
+        -7
+      ]
+    ]
+  ]
+}

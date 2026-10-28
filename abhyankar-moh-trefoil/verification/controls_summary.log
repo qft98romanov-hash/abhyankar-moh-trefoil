@@ -1,0 +1,7 @@
+{'label': 'hardened_printed', 'exit_code': 0, 'expected_exit': 0, 'seconds': 36.528}
+{'label': 'hardened_independent_harmonic', 'exit_code': 0, 'expected_exit': 0, 'seconds': 6.23}
+{'label': 'hardened_trefoil_optimized', 'exit_code': 0, 'expected_exit': 0, 'seconds': 1.949}
+{'label': 'negative_trefoil_wrapper', 'exit_code': 1, 'expected_exit': 1, 'seconds': 1.656}
+{'label': 'negative_harmonic_wrapper', 'exit_code': 1, 'expected_exit': 1, 'seconds': 34.817}
+{'label': 'negative_harmonic_standalone_optimized', 'exit_code': 1, 'expected_exit': 1, 'seconds': 32.569}
+ALL POSITIVE AND NEGATIVE CONTROLS PASSED

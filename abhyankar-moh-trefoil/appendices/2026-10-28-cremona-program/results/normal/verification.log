@@ -1,0 +1,92 @@
+PASS: coefficient-ring units
+PASS: P(F(T)) = T modulo x^5
+PASS: F(P(U)) = U modulo x^5
+PASS: base companion identity
+PASS: base inverse factor identity
+PASS: base inverse: H(R,S)=T
+PASS: base inverse: W-component cancellation certificate
+PASS: base inverse after forward: both expanded components
+PASS: base relative Jacobian = -1
+PASS: base certificates have integral coefficients
+PASS: base wildness coefficient test: v_x(bx)=1<5
+PASS: normalized trefoil parameter and companion
+PASS: Shastri rectifier maps the curve to (t,0,0)
+PASS: Shastri inverse on the axis
+PASS: Shastri rectifier component degrees
+PASS: rational parameter tau: cleared-denominator identity
+PASS: rational tau denominator is not identically zero on Shastri
+PASS: rational Shastri rectifier: forward after inverse
+PASS: rational Shastri rectifier: inverse after forward
+PASS: Shastri rectifier integral coefficients
+PASS: N=1: p_N modulo x
+PASS: N=1: curve modification lands on normalized trefoil
+PASS: N=1: parameter contraction modulo D3^N
+PASS: N=1: curve degree
+PASS: N=1: centre equals -y modulo x
+PASS: N=1: two-sided inverse of centre modulo x^N
+PASS: N=1: forward transfer numerator divisible by x^N
+PASS: N=1: inverse transfer numerator divisible by x^N
+PASS: N=1: wildness rational-length-two normal form
+PASS: N=1: inner quadratic coefficient = -x modulo x^2
+PASS: N=1: inner quadratic coefficient valuation is one
+PASS: N=1: parameter coordinate degree
+PASS: N=1: actual factored forward map on the curve
+PASS: N=1: actual factored inverse recovers the curve
+PASS: N=1: final outer rectifier on the curve
+PASS: N=1: both generic outer composition identities
+PASS: N=1: constructed coefficients are integral
+PASS: harmonic model is C_1
+PASS: harmonic correction matches the explicit known correction
+PASS: harmonic full forward/inverse relative maps are integral polynomials
+PASS: harmonic rectifier component degrees
+PASS: N=2: p_N modulo x
+PASS: N=2: curve modification lands on normalized trefoil
+PASS: N=2: parameter contraction modulo D3^N
+PASS: N=2: curve degree
+PASS: N=2: centre equals -y modulo x
+PASS: N=2: two-sided inverse of centre modulo x^N
+PASS: N=2: forward transfer numerator divisible by x^N
+PASS: N=2: inverse transfer numerator divisible by x^N
+PASS: N=2: wildness rational-length-two normal form
+PASS: N=2: inner quadratic coefficient = -x modulo x^2
+PASS: N=2: inner quadratic coefficient valuation is one
+PASS: N=2: parameter coordinate degree
+PASS: N=2: actual factored forward map on the curve
+PASS: N=2: actual factored inverse recovers the curve
+PASS: N=2: final outer rectifier on the curve
+PASS: N=2: both generic outer composition identities
+PASS: N=2: constructed coefficients are integral
+PASS: N=3: p_N modulo x
+PASS: N=3: curve modification lands on normalized trefoil
+PASS: N=3: parameter contraction modulo D3^N
+PASS: N=3: curve degree
+PASS: N=3: centre equals -y modulo x
+PASS: N=3: two-sided inverse of centre modulo x^N
+PASS: N=3: forward transfer numerator divisible by x^N
+PASS: N=3: inverse transfer numerator divisible by x^N
+PASS: N=3: wildness rational-length-two normal form
+PASS: N=3: inner quadratic coefficient = -x modulo x^2
+PASS: N=3: inner quadratic coefficient valuation is one
+PASS: N=3: parameter coordinate degree
+PASS: N=3: actual factored forward map on the curve
+PASS: N=3: actual factored inverse recovers the curve
+PASS: N=3: final outer rectifier on the curve
+PASS: N=3: both generic outer composition identities
+PASS: N=3: constructed coefficients are integral
+PASS: balanced monomial column parity r=-3
+PASS: balanced monomial column parity r=-2
+PASS: balanced monomial column parity r=-1
+PASS: balanced monomial column parity r=0
+PASS: balanced monomial column parity r=1
+PASS: balanced monomial column parity r=2
+PASS: balanced monomial column parity r=3
+PASS: Laurent shear conjugation exact rational example
+PASS: D_N normalizes swap generator N=1
+PASS: D_N normalizes swap generator N=2
+PASS: D_N normalizes swap generator N=3
+PASS: negative control: nondivisible numerator rejected
+PASS: negative control: altered inverse coefficient detected
+PASS: negative control: false identity detected
+PASS: scope control: +4t model is not certified by the harmonic H
+ALL CHECKS PASSED; finite family range 1..3
+Elapsed seconds: 33.354

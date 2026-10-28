@@ -1,0 +1,34 @@
+SymPy 1.14.0
+SHA256 verify.py 73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef
+SHA256 trefoil_explicit.tex 7ba43e5a7102630af42748d9d2968f7b7474beee07a2dec81e4e2286aaee2928
+Compact trefoil constructed in 0.239 seconds
+Traceback (most recent call last):
+  File "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py", line 113, in <module>
+    actual=[TexParser(body).parse() for body in bodies]
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py", line 101, in parse
+    result=red(self.expr());require(self.peek()=='EOF', 'Validation failed');return result
+               ^^^^^^^^^^^
+  File "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py", line 67, in expr
+    op=self.consume();q=self.product();result=result+q if op=='+' else result-q
+                        ^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py", line 75, in product
+    result=red(result*self.power())
+                      ^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py", line 78, in power
+    result=self.atom()
+           ^^^^^^^^^^^
+  File "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py", line 96, in atom
+    result=self.expr()
+           ^^^^^^^^^^^
+  File "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py", line 67, in expr
+    op=self.consume();q=self.product();result=result+q if op=='+' else result-q
+                        ^^^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py", line 75, in product
+    result=red(result*self.power())
+                      ^^^^^^^^^^^^
+  File "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py", line 85, in power
+    require(len(exponent)==1 and exponent.isdigit(),
+  File "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py", line 14, in require
+    raise AssertionError(message)
+AssertionError: Unbraced TeX exponent must be a single digit

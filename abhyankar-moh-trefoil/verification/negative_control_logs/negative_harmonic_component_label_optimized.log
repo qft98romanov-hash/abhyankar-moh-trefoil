@@ -1,0 +1,10 @@
+SymPy 1.14.0
+SHA256 verify.py 73298260d92c924a1525ec62a0cc4189e0e8a303ea12311f89faf34647ae51ef
+SHA256 harmonic_explicit.tex 44c0151fd360418ad7fd5cb934d97892f1c04640620b5b92b2cad7c2373c2735
+Both compact constructions loaded in 1.107 seconds
+Traceback (most recent call last):
+  File "/tmp/rectification_syntax_bs2eqdze/repository/verification/audit_harmonic_independent.py", line 119, in <module>
+    require(re.sub(r'\s+', '', block.split('=',1)[0])==signature,
+  File "/tmp/rectification_syntax_bs2eqdze/repository/verification/audit_harmonic_independent.py", line 15, in require
+    raise AssertionError(message)
+AssertionError: ('Unexpected component label or argument order', '(\\Phi_H)_1(x,y,z)')

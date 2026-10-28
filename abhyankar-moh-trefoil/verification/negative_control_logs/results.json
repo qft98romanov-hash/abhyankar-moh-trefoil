@@ -1,0 +1,339 @@
+[
+  {
+    "label": "false_identity_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verification/run_negative_controls.py",
+      "--internal-case",
+      "false_identity"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "AssertionError: deliberately false identity"
+    ],
+    "marker_present": true,
+    "seconds": 0.431
+  },
+  {
+    "label": "nondivisible_numerator_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verification/run_negative_controls.py",
+      "--internal-case",
+      "nondivisible_numerator"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "ArithmeticError: The numerator is not divisible"
+    ],
+    "marker_present": true,
+    "seconds": 0.42
+  },
+  {
+    "label": "positive_explicit_times_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verification/run_negative_controls.py",
+      "--internal-case",
+      "explicit_times"
+    ],
+    "exit_code": 0,
+    "expected_exit": 0,
+    "markers": [
+      "PASS explicit multiplication parser: 3 cases"
+    ],
+    "marker_present": true,
+    "seconds": 0.429
+  },
+  {
+    "label": "positive_core_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "-u",
+      "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verify.py"
+    ],
+    "exit_code": 0,
+    "expected_exit": 0,
+    "markers": [
+      "PASS: the trefoil inverse callable matches the proved factorization",
+      "PASS: the figure-eight inverse callable matches the proved factorization",
+      "BOTH RECTIFICATIONS VERIFIED"
+    ],
+    "marker_present": true,
+    "seconds": 31.373
+  },
+  {
+    "label": "positive_trefoil_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verification/audit_trefoil.py",
+      "--repository",
+      "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository",
+      "--expect-correct"
+    ],
+    "exit_code": 0,
+    "expected_exit": 0,
+    "markers": [
+      "PASS all six literal components equal compact formulas after 0 in-memory changes"
+    ],
+    "marker_present": true,
+    "seconds": 1.694
+  },
+  {
+    "label": "positive_harmonic_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verification/audit_harmonic_independent.py",
+      "--repository",
+      "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository",
+      "--expect-correct"
+    ],
+    "exit_code": 0,
+    "expected_exit": 0,
+    "markers": [
+      "inverse3 difference (inverse x,y,z = X,U,V): 0"
+    ],
+    "marker_present": true,
+    "seconds": 4.11
+  },
+  {
+    "label": "positive_harmonic_standalone_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository/verification/audit_harmonic.py",
+      "--repo",
+      "/workspace/scratch/876f75ce875d/cross_audit/working/rectification_repository",
+      "--output",
+      "/tmp/rectification_positive_7txtx2px"
+    ],
+    "exit_code": 0,
+    "expected_exit": 0,
+    "markers": [
+      "TOTAL 0 unequal of 6"
+    ],
+    "marker_present": true,
+    "seconds": 33.597
+  },
+  {
+    "label": "negative_trefoil_wrapper",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_negative_t4ai_fqc/repository/verify_printed_formulas.py"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "FAIL: printed formulas differ"
+    ],
+    "marker_present": true,
+    "seconds": 2.131
+  },
+  {
+    "label": "negative_harmonic_wrapper",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_negative_zfwbr50x/repository/verify_printed_formulas.py"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "TOTAL 1 unequal of 6"
+    ],
+    "marker_present": true,
+    "seconds": 34.234
+  },
+  {
+    "label": "negative_harmonic_standalone_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_negative_zfwbr50x/repository/verification/audit_harmonic.py",
+      "--repo",
+      "/tmp/rectification_negative_zfwbr50x/repository",
+      "--output",
+      "/tmp/rectification_negative_zfwbr50x/results"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "TOTAL 1 unequal of 6"
+    ],
+    "marker_present": true,
+    "seconds": 32.277
+  },
+  {
+    "label": "negative_trefoil_unbraced_exponent_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_syntax_5otohbpl/repository/verification/audit_trefoil.py",
+      "--repository",
+      "/tmp/rectification_syntax_5otohbpl/repository",
+      "--expect-correct"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "AssertionError: Unbraced TeX exponent must be a single digit"
+    ],
+    "marker_present": true,
+    "seconds": 0.749
+  },
+  {
+    "label": "negative_trefoil_component_label_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_syntax_az8s1u_k/repository/verification/audit_trefoil.py",
+      "--repository",
+      "/tmp/rectification_syntax_az8s1u_k/repository",
+      "--expect-correct"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "Unexpected component label or argument order"
+    ],
+    "marker_present": true,
+    "seconds": 0.678
+  },
+  {
+    "label": "negative_harmonic_unbraced_exponent_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic_independent.py",
+      "--repository",
+      "/tmp/rectification_syntax_8c67aybq/repository",
+      "--expect-correct"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "AssertionError: Unbraced TeX exponent must be a single digit"
+    ],
+    "marker_present": true,
+    "seconds": 1.644
+  },
+  {
+    "label": "negative_harmonic_unbraced_exponent_standalone_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_syntax_8c67aybq/repository/verification/audit_harmonic.py",
+      "--repo",
+      "/tmp/rectification_syntax_8c67aybq/repository",
+      "--output",
+      "/tmp/rectification_syntax_8c67aybq/results"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "AssertionError: Unbraced TeX exponent must be a single digit"
+    ],
+    "marker_present": true,
+    "seconds": 31.947
+  },
+  {
+    "label": "negative_harmonic_component_label_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_syntax_bs2eqdze/repository/verification/audit_harmonic_independent.py",
+      "--repository",
+      "/tmp/rectification_syntax_bs2eqdze/repository",
+      "--expect-correct"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "Unexpected component label or argument order"
+    ],
+    "marker_present": true,
+    "seconds": 1.552
+  },
+  {
+    "label": "negative_harmonic_component_label_standalone_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_syntax_bs2eqdze/repository/verification/audit_harmonic.py",
+      "--repo",
+      "/tmp/rectification_syntax_bs2eqdze/repository",
+      "--output",
+      "/tmp/rectification_syntax_bs2eqdze/results"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "Unexpected component label or argument order"
+    ],
+    "marker_present": true,
+    "seconds": 33.097
+  },
+  {
+    "label": "negative_harmonic_u_to_y_independent_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_coordinate_mxs_zaj6/repository/verification/audit_harmonic_independent.py",
+      "--repository",
+      "/tmp/rectification_coordinate_mxs_zaj6/repository",
+      "--expect-correct"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "inverse2 difference (inverse x,y,z = X,U,V): -x**5 + 5*x**3 - 6*x",
+      "FAIL: printed formulas differ"
+    ],
+    "marker_present": true,
+    "seconds": 4.478
+  },
+  {
+    "label": "negative_harmonic_u_to_y_standalone_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "/tmp/rectification_coordinate_mxs_zaj6/repository/verification/audit_harmonic.py",
+      "--repo",
+      "/tmp/rectification_coordinate_mxs_zaj6/repository",
+      "--output",
+      "/tmp/rectification_coordinate_mxs_zaj6/results"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "TOTAL 1 unequal of 6"
+    ],
+    "marker_present": true,
+    "seconds": 38.455
+  },
+  {
+    "label": "negative_harmonic_inverse_callable_optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-O",
+      "-u",
+      "/tmp/rectification_callable_g2ni8anu/repository/verify.py"
+    ],
+    "exit_code": 1,
+    "expected_exit": 1,
+    "markers": [
+      "AssertionError: the figure-eight inverse callable matches the proved factorization"
+    ],
+    "marker_present": true,
+    "seconds": 28.649
+  }
+]

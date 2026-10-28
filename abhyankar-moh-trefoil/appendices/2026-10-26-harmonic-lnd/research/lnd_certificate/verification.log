@@ -1,0 +1,36 @@
+PASS: base polynomial identity for W
+PASS: base inverse: first nontrivial component
+PASS: base inverse: certificate for the other component
+PASS: inverse after forward: both nontrivial components expanded
+PASS: the trefoil inverse callable matches the proved factorization
+PASS: the original trefoil normalization is invertible
+PASS: the trefoil outer map is invertible in both directions
+PASS: the trefoil maps to (t,0,0)
+PASS: the inverse recovers the trefoil from the axis
+PASS: component degrees (5, 15, 24)
+PASS: the base relative Jacobian determinant is -1
+PASS: polynomiality of the forward figure-eight transfer
+PASS: polynomiality of the inverse figure-eight transfer
+PASS: the figure-eight inverse callable matches the proved factorization
+PASS: the figure-eight outer map is invertible in both directions
+PASS: the harmonic figure-eight maps to (t,0,0)
+PASS: the inverse recovers the figure-eight from the axis
+PASS: component degrees (7, 21, 41)
+PASS: the figure-eight relative Jacobian determinant is +1
+BOTH RECTIFICATIONS VERIFIED; elapsed: 58.41 s
+PASS: D(B)=0 and D(V_i)=0: universal chain-rule certificate
+PASS: literal source F(gamma(u))=(u,0,0)
+PASS: literal source F^{-1}(u,0,0)=gamma(u)
+PASS: literal expanded p is D-invariant and s is a slice
+PASS: exact slice numerator division
+PASS: q=Q(V)/B and r=R(V)/B have zero polynomial remainder modulo B
+PASS: all premises of the q,r chain-rule and cancellation certificate
+PASS: JF(gamma(u))*gamma'(u)=(1,0,0)
+PASS: det JF(gamma(u))=1
+PASS: special-fiber coordinate matrix is unimodular
+PASS: specialization B=0: D0(q0)=D0(r0)=0, D0(s0)=1
+PASS: the low-degree F0 is a parameter retraction
+PASS: simple degree-seven slice formula and D(simple_slice)=1
+PASS: F0 has a critical point at (-1, -2, -5)
+PASS: F0 has a critical point at (1, -2, 5)
+ALL LND CERTIFICATE CHECKS PASSED; elapsed 60.81 s
