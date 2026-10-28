@@ -2,6 +2,8 @@
 
 **Researchers: Ivan Dorofeev and Alexander Frolov.**
 
+Alexander Frolov: Higher School of Modern Mathematics, MIPT.
+
 The appendices provide the full proofs, constructions, computations and research
 questions accompanying the original rectification paper. They retain their
 stated **under-verification** status. Internal symbolic checks do not constitute
@@ -42,7 +44,7 @@ explicitly presented for further verification.
 - [Computations and certificates](2026-10-28-cremona-program/computations/README.md)
 
 Here ML denotes the Makar–Limanov invariant, and
-$`\operatorname{Cr}_3(\mathbb C)=\operatorname{Bir}_{\mathbb C}(\mathbb P^3)`$.
+$`\mathrm{Cr}_3(\mathbb{C})=\mathrm{Bir}_{\mathbb{C}}(\mathbb{P}^3)`$.
 Lean verification and an expanded catalogue of verified knot rectifications
 are planned for future repository updates.
 

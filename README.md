@@ -1,7 +1,7 @@
 # Polynomial rectification of the trefoil and a harmonic figure-eight
 
 **Ivan Dorofeev** · Independent Researcher  
-**Alexander Frolov** · Researcher  
+**Alexander Frolov** · Researcher · Higher School of Modern Mathematics, MIPT  
 [qft98romanov@gmail.com](mailto:qft98romanov@gmail.com)
 
 The results were obtained on **24 October 2026** through interactive work with
@@ -225,8 +225,8 @@ extended Rees algebras, and birational geometry. This includes the
 three-dimensional Cremona group
 
 ```math
-\operatorname{Cr}_3(\mathbb C)
-=\operatorname{Bir}_{\mathbb C}(\mathbb P^3)
+\mathrm{Cr}_3(\mathbb{C})
+=\mathrm{Bir}_{\mathbb{C}}(\mathbb{P}^3)
 ```
 
 and questions about tame and wild automorphisms and algebraic group actions.

@@ -2,6 +2,8 @@
 
 **Ivan Dorofeev and Alexander Frolov — Researchers — 28 October 2026.**
 
+**Alexander Frolov’s affiliation:** Higher School of Modern Mathematics, MIPT.
+
 **Status: research branch, under verification.**
 
 This is the complete English edition of the Russian Appendix 2 dated

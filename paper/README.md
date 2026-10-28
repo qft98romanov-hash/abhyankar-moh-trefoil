@@ -1,6 +1,7 @@
 # Build the paper
 
-Researchers: Ivan Dorofeev (Independent Researcher) and Alexander Frolov.
+Researchers: Ivan Dorofeev (Independent Researcher) and Alexander Frolov
+(Higher School of Modern Mathematics, MIPT).
 
 Compile `main.tex` twice with pdfLaTeX:
 

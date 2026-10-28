@@ -2,6 +2,8 @@
 
 **Ivan Dorofeev and Alexander Frolov — Researchers — 28 October 2026.**
 
+**Alexander Frolov’s affiliation:** Higher School of Modern Mathematics, MIPT.
+
 **Research branch: UNDER VERIFICATION. / Исследовательская ветка: НА СТАДИИ ПРОВЕРКИ.**
 
 This appendix continues the study of consequences of the explicit rectifiers

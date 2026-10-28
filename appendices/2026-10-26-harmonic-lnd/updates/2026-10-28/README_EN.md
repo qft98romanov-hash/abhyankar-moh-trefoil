@@ -2,6 +2,9 @@
 
 **Researchers: Ivan Dorofeev and Alexander Frolov. All material remains under verification.**
 
+**Ivan Dorofeev** — Independent Researcher.  
+**Alexander Frolov** — Higher School of Modern Mathematics, MIPT.
+
 This research branch continues the study of consequences of the certified
 rectifications and their connections with the Abhyankar–Moh embedding problem,
 locally nilpotent derivations, the Makar-Limanov invariant and affine geometry.
