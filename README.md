@@ -4,6 +4,13 @@
 **Alexander Frolov** · Researcher · Higher School of Modern Mathematics, MIPT  
 [qft98romanov@gmail.com](mailto:qft98romanov@gmail.com)
 
+## Main paper
+
+The main paper for this repository is now available as a preprint on arXiv:
+
+**[Read the main paper — arXiv:2610.38474](https://arxiv.org/abs/2610.38474)**
+· [Download the arXiv PDF](https://arxiv.org/pdf/2610.38474)
+
 The results were obtained on **24 October 2026** through interactive work with
 **GPT Astra**. The main polynomial identities and both explicit rectifications
 have been checked by exact symbolic computation; a reproducible computational
